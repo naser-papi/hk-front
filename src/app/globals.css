@@ -3,25 +3,71 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary: #364057;
+  --white: #ffffff;
+  --black:#000000;
+  --cyan: #626262;
+  --alt:#626262;
+  --secondary:#E94D4E;
+  --alt-light:#536184;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #364057;
+    --white: #ffffff;
+    --black:#000000;
+    --cyan: #626262;
+    --alt:#626262;
+    --secondary:#E94D4E;
+    --alt-light:#536184;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+  background: var(--primary);
+  font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
+  .normal-flex-row-container{
+    @apply flex items-center gap-2;
+  }
   .text-balance {
     text-wrap: balance;
+  }
+  .text-heading{
+    font-size: 85px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .text-alt-heading{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .text-title{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .text-alt-title{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26;
+  }
+  .text-label{
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .text-desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28;
+  }
+  .text-body{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28;
   }
 }

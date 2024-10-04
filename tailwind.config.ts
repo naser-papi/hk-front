@@ -9,11 +9,16 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        white: "var(--white)",
+        cyan: "var(--cyan)",
+        alt:"var(--alt)",
+        black: "var(--black)",
+        altLight:"var(--alt-light)"
       },
     },
   },
   plugins: [],
-};
+} as Config;
 export default config;
