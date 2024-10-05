@@ -3,8 +3,10 @@ import { AnchorHTMLAttributes } from "react";
 import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDoubleRight } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+
 const linkButtonVariants = cva(
     [
+        "link-button",
         "normal-flex-row-container",
         "border-b-2",
         "border-black",

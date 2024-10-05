@@ -26,7 +26,7 @@
 
 body {
   color: var(--white);
-  background: var(--primary);
+  background: #dddddd;
   font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
@@ -38,36 +38,28 @@ body {
     text-wrap: balance;
   }
   .text-heading{
-    font-size: 85px;
-    font-weight: 600;
-    line-height: normal;
+    @apply text-7xl font-semibold;
   }
   .text-alt-heading{
-    font-size: 48px;
-    font-weight: 600;
-    line-height: normal;
+    @apply text-5xl font-semibold;
   }
   .text-title{
-    font-size: 24px;
-    font-weight: 600;
+    @apply text-2xl font-semibold;
   }
   .text-alt-title{
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 26;
+    @apply text-xl font-medium;
   }
   .text-label{
-    font-size: 18px;
-    font-weight: 600;
+    @apply text-lg font-semibold;
   }
   .text-desc{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 28;
+    @apply text-base font-medium;
   }
   .text-body{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 28;
+    @apply text-sm font-normal
+  }
+
+  .border-shadow {
+    @apply border-2 border-white drop-shadow-lg;
   }
 }
