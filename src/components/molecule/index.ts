@@ -1,2 +1,5 @@
 export { default as ServiceCard } from "./service-card";
 export { default as KnowledgeCard } from "./knowledge-card";
+export { default as QuoteCard } from "./quote-card";
+export { default as EventCard } from "./event-card";
+export { default as ExternalLink } from "./external-link";

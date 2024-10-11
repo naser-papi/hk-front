@@ -12,6 +12,7 @@ const linkButtonVariants = cva(
         "border-black",
         "text-label",
         "text-black",
+        "max-w-[fit-content]",
         "[&>svg]:text-secondary",
     ],
     {
@@ -32,6 +33,7 @@ interface LinkButtonProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
         VariantProps<typeof linkButtonVariants> {
     label: string;
+    href: string;
 }
 const LinkButton = ({ label, href, disabled, hover }: LinkButtonProps) => {
     return (

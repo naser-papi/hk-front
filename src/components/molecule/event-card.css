@@ -1,0 +1,21 @@
+.event-card {
+    container-type: inline-size;
+    container-name: event-card;
+    section{
+        background: linear-gradient(270deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.90) 20%, #FFF 100%);
+        h4{
+            .icon-label:nth-of-type(2){
+                display: none;
+            }
+        }
+    }
+}
+@container event-card (width>=400px) {
+    section{
+        h4{
+            .icon-label:nth-of-type(2){
+                display: block;
+            }
+        }
+    }
+}

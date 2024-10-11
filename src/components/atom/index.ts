@@ -9,3 +9,5 @@ export { default as TextBox } from "./text-box";
 export { default as ShowMoreLink } from "./show-more-link";
 export { default as Avatar } from "./avatar";
 export { default as ProfileAvatar } from "./profile-avatar";
+export { default as IconLabel } from "./icon-label";
+export { default as OpenLinkBox } from "./open-link-box";

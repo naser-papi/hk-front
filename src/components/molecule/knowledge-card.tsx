@@ -6,7 +6,7 @@ import { Button } from "@/components";
 const variants = cva(["flex", "flex-col", "gap-0", "items-end"], {
     variants: {
         size: {
-            small: ["w-[300px]"],
+            small: ["min-w-[300px]"],
         },
     },
     defaultVariants: {

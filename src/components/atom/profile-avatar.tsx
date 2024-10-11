@@ -27,7 +27,7 @@ const variants = cva(
     }
 );
 
-interface ProfileAvatarProps
+export interface ProfileAvatarProps
     extends ImgHTMLAttributes<HTMLImageElement>,
         VariantProps<typeof varaints> {
     image: StaticImageData;
