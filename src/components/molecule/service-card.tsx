@@ -2,6 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { Button } from "../atom";
 import { BaseHTMLAttributes } from "react";
 import Image, { StaticImageData } from "next/image";
+import { useTranslation } from "@/helpers";
 
 const variants = cva(
     [
@@ -46,12 +47,17 @@ interface ServiceCardProps
 }
 
 const ServiceCard = ({ title, image, description, href }: ServiceCardProps) => {
+    const { t } = useTranslation();
     return (
         <div className={variants({})}>
             <Image src={image} alt={title} />
             <h3>{title}</h3>
             <p>{description}</p>
-            <Button label={"Read More"} link={href} intend={"primary"} />
+            <Button
+                label={t("common.readMore")}
+                link={href}
+                intend={"primary"}
+            />
         </div>
     );
 };

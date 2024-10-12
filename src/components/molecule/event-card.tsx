@@ -1,13 +1,14 @@
 import { cva, VariantProps } from "class-variance-authority";
 import Image, { StaticImageData } from "next/image";
-import { cookies } from "next/headers";
 import { BaseHTMLAttributes } from "react";
-import { faCalendarDays } from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import { faMessage } from "@awesome.me/kit-026a927a83/icons/classic/regular";
+import {
+    faCalendarDays,
+    faMessage,
+} from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { IconLabel, LinkButton } from "@/components";
 import { formatEventDate, useTranslation } from "@/helpers";
-import { i18nCookieName } from "@/constants/locale";
 import "./event-card.css";
+
 const variants = cva([
     "event-card",
     "min-w-[300px]",
@@ -48,9 +49,7 @@ const EventCard = ({
     commentsCount,
     href,
 }: EventCardProps) => {
-    const cookieStore = cookies();
-    const locale = cookieStore.get(i18nCookieName as any);
-    const { t } = useTranslation(locale?.value!);
+    const { t } = useTranslation();
     return (
         <div className={variants({})}>
             <Image src={image} alt={"event"} fill />

@@ -1,6 +1,14 @@
 import enTranslation from "@/constants/locale/en";
 import { LanguageResources } from "@/constants/locale";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
+export interface IMenuLink {
+    title: string;
+    icon: IconDefinition;
+    path: string;
+    id: string;
+    isActive?: boolean;
+}
 export type DtoType = {
     [key in string]: string | number | boolean | number[] | undefined | null;
 };

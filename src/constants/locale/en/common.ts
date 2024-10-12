@@ -56,4 +56,11 @@ export default {
     general: "General",
     language: "Language",
     detailDot: "Detail...",
+    services: "Services",
+    posts: "Posts",
+    events: "Events",
+    links: "Links",
+    contactUs: "Contact Us",
+    aboutUs: "About Us",
+    readMore: "Read More",
 };

@@ -7,7 +7,7 @@ import Link from "next/link";
 const menuLinkVariants = cva(
     [
         "menu-link",
-        "normal-flex-row-container",
+        "row-container",
         "text-secondary",
         "py-2",
         "px-4",
