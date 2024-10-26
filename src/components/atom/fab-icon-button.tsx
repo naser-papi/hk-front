@@ -1,7 +1,8 @@
 import { cva, VariantProps } from "class-variance-authority";
-import type { FabIconProps } from "./fab-icon";
+
 import FabIcon from "./fab-icon";
 import { ButtonHTMLAttributes } from "react";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 
 const fabIconButtonVaraints = cva(
     [
@@ -23,10 +24,10 @@ const fabIconButtonVaraints = cva(
 );
 
 interface FabIconButtonProps
-    extends ButtonHTMLAttributes<HTMLButtonElement>,
-        FabIconProps,
+    extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
         VariantProps<typeof fabIconButtonVaraints> {
     label: string;
+    icon: IconDefinition;
 }
 
 const FabIconButton = ({

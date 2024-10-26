@@ -1,8 +1,8 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { Button } from "../atom";
 import { BaseHTMLAttributes } from "react";
-import Image, { StaticImageData } from "next/image";
 import { useTranslation } from "@/helpers";
+import { ImageKit } from "@/components";
 
 const variants = cva(
     [
@@ -40,17 +40,17 @@ const variants = cva(
 interface ServiceCardProps
     extends BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof variants> {
-    image: StaticImageData;
+    ikUrl: string;
     title: string;
     description: string;
     href: string;
 }
 
-const ServiceCard = ({ title, image, description, href }: ServiceCardProps) => {
+const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
     const { t } = useTranslation();
     return (
         <div className={variants({})}>
-            <Image src={image} alt={title} />
+            <ImageKit src={ikUrl} alt={title} width={70} height={70} />
             <h3>{title}</h3>
             <p>{description}</p>
             <Button

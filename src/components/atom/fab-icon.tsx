@@ -36,9 +36,9 @@ export interface FabIconProps
     icon: IconDefinition;
 }
 
-const FabIcon = ({ enabled, icon }: FabIconProps) => {
+const FabIcon = ({ disabled, icon }: FabIconProps) => {
     return (
-        <div className={iconVariants({ enabled })}>
+        <div className={iconVariants({ disabled })}>
             <FontAwesomeIcon icon={icon} />
         </div>
     );

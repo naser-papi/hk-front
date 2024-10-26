@@ -46,3 +46,6 @@ export const MenuLinks: IMenuLink[] = [
         id: "about",
     },
 ];
+
+export const TopEntityQuery =
+    "pagination[page]=1&pagination[pageSize]=4&sort[0]=id:desc";

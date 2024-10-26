@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { EventCard } from "@/components";
-import event from "assets/images/event1.webp";
+
 const meta: Meta<typeof EventCard> = {
     title: "Molecule/EventCard",
     component: EventCard,
@@ -18,10 +18,10 @@ type Story = StoryObj<typeof EventCard>;
 
 export const Default: Story = {
     args: {
-        date: new Date(),
+        date: "2024-10-25T13:21:18.781Z",
         commentsCount: 5,
         desc: "This Place Really Place For Awesome Moment",
-        image: event,
+        ikUrl: "https://ik.imagekit.io/tdvmspnmgu/temp/event1_48f8daccab_3M0_u9SPS.webp",
         href: "#",
     },
 };

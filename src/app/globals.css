@@ -9,6 +9,7 @@
   --cyan: #626262;
   --alt:#626262;
   --secondary:#E94D4E;
+  --warning: #FFC107;
   --alt-light:#536184;
 }
 
@@ -20,6 +21,7 @@
     --cyan: #626262;
     --alt:#626262;
     --secondary:#E94D4E;
+    --warning: #FFC107;
     --alt-light:#536184;
   }
 }
@@ -31,11 +33,6 @@ body {
 }
 
 @layer utilities {
-  .logo-rounded{
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-  }
   .row-container{
     @apply flex items-center gap-2;
   }

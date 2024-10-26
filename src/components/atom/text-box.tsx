@@ -12,8 +12,8 @@ const textboxVariants = cva(
         "border-cyan",
         "p-2",
         "rounded-lg",
-        "[&>input]:outline-none",
-        "[&>input]:bg-transparent",
+        "[&>.text]:outline-none",
+        "[&>.text]:bg-transparent",
     ],
     {
         variants: {
@@ -29,12 +29,46 @@ interface TextBoxProps
     extends InputHTMLAttributes<HTMLInputElement>,
         VariantProps<typeof textboxVariants> {
     type: "text" | "textarea" | "password";
+    updateDto?: (name: string, value: any) => void;
+    rows?: number;
 }
 
-const TextBox = ({ intend, type, ...rest }: TextBoxProps) => {
+const TextBox = ({
+    intend,
+    type,
+    updateDto,
+    name,
+    value,
+    rows,
+    ...rest
+}: TextBoxProps) => {
     return (
         <div className={textboxVariants({ intend })}>
-            <input {...rest} type={type} />
+            {type === "textarea" ? (
+                <textarea
+                    className={"text"}
+                    onChange={(event) =>
+                        updateDto &&
+                        updateDto(event.target.name, event.target.value)
+                    }
+                    value={value}
+                    name={name}
+                    placeholder={rest.placeholder}
+                    rows={rows}
+                ></textarea>
+            ) : (
+                <input
+                    {...rest}
+                    className={"text"}
+                    value={value}
+                    name={name}
+                    type={type}
+                    onChange={(event) =>
+                        updateDto &&
+                        updateDto(event.target.name, event.target.value)
+                    }
+                />
+            )}
         </div>
     );
 };

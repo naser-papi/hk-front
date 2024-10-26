@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added organism components (part 1)">
+      <change afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/footer-bk.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atom/image-kit.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/contact-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/customer-rate.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/user-message.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/company-info.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/user-messages.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/blog-cards-container.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/contact-form.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/event-cards-container.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/footer.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/link-cards-container.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/service-cards-container.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/blog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/common.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/company-info.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/event.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/external-link.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/user-message.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/event-card.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/event-card.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/external-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/external-link.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/service-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/service-card.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2nI9rE05lK0QGl09QNJdGaYVBRb" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "D:/projects/hk-app/hk-front/public/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.intellij.reactbuddy.reactComponents" value="false" />
+        <entry key="com.intellij.reactbuddy.reactInspector" value="false" />
+        <entry key="com.intellij.reactbuddy.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
+      <recent name="D:\projects\hk-app\hk-front" />
+      <recent name="D:\projects\hk-app\hk-front\src\services\rest-api" />
+      <recent name="D:\projects\hk-app\hk-front\src\services" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\constants\api-path" />
+      <recent name="D:\projects\hk-app\hk-front\src\components\atom" />
+      <recent name="D:\projects\hk-app\hk-front\src\services\rest-api" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="" />
+      <created>1728649922264</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1728649922264</updated>
+      <workItem from="1728649925755" duration="3257000" />
+      <workItem from="1728735959747" duration="8218000" />
+      <workItem from="1728829487972" duration="23000" />
+      <workItem from="1728925340934" duration="1624000" />
+      <workItem from="1728983672193" duration="28000" />
+      <workItem from="1729014553237" duration="1813000" />
+      <workItem from="1729059105367" duration="2086000" />
+      <workItem from="1729086742612" duration="1794000" />
+      <workItem from="1729259797868" duration="9139000" />
+      <workItem from="1729323131995" duration="4599000" />
+      <workItem from="1729344901583" duration="4236000" />
+      <workItem from="1729407937408" duration="271000" />
+      <workItem from="1729754884094" duration="3134000" />
+      <workItem from="1729839961062" duration="15197000" />
+      <workItem from="1729938576345" duration="23581000" />
+    </task>
+    <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
+      <option name="closed" value="true" />
+      <created>1728673588173</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673588173</updated>
+    </task>
+    <task id="LOCAL-00002" summary="added organism components (part 1)">
+      <option name="closed" value="true" />
+      <created>1728762185912</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1728762185912</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="added base components&#10;added some base configurations" />
+    <MESSAGE value="added organism components (part 1)" />
+    <option name="LAST_COMMIT_MESSAGE" value="added organism components (part 1)" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
+</project>

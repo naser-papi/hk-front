@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { KnowledgeCard } from "@/components";
-import sample from "assets/images/sample.webp";
 
 const meta: Meta<typeof KnowledgeCard> = {
     title: "Molecule/KnowledgeCard",
@@ -11,7 +10,7 @@ type Story = StoryObj<typeof KnowledgeCard>;
 
 export const Small: Story = {
     args: {
-        image: sample,
+        ikUrl: "https://ik.imagekit.io/tdvmspnmgu/cms/transportation_11ca20d886_qvGoETFeT.webp?updatedAt=1729344423860",
         title: "Service Title",
         description:
             "some short description about this service that should explain the main point of this service.",

@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { ServiceCard } from "@/components";
-import person from "assets/images/person.jpg";
 
 const meta: Meta<typeof ServiceCard> = {
     title: "Molecule/ServiceCard",
@@ -9,9 +8,9 @@ const meta: Meta<typeof ServiceCard> = {
 export default meta;
 type Story = StoryObj<typeof ServiceCard>;
 
-export const Small: Story = {
+export const Default: Story = {
     args: {
-        image: person,
+        ikUrl: "https://ik.imagekit.io/tdvmspnmgu/cms/startup_990219a35e_Mjvqi-sZv.png?updatedAt=1729258448781",
         title: "Service Title",
         description:
             "some short description about this service that should explain the main point of this service.",

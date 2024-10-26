@@ -1,24 +1,16 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import Image, { StaticImageData } from "next/image";
+import { ImageKit } from "@/components/atom";
 import { Button } from "@/components";
 
 const variants = cva(["flex", "flex-col", "gap-0", "items-end"], {
     variants: {
         size: {
-            small: ["min-w-[300px]"],
+            small: ["min-w-[300px]", "[&>img]:h-300px", "[&>img]:w-full"],
         },
     },
     defaultVariants: {
         size: "small",
-    },
-});
-
-const imageVariants = cva(["rounded-t-lg"], {
-    variants: {
-        size: {
-            small: ["h-[300px]", "w-full"],
-        },
     },
 });
 
@@ -61,7 +53,7 @@ interface KnowledgeCardProps
         VariantProps<typeof variants> {
     title: string;
     description: string;
-    image: StaticImageData;
+    ikUrl: string;
     href: string;
 }
 
@@ -69,16 +61,13 @@ const KnowledgeCard = ({
     size,
     title,
     description,
-    image,
+    ikUrl,
     href,
 }: KnowledgeCardProps) => {
     return (
         <div className={variants({ size })}>
-            <Image
-                src={image}
-                alt={title}
-                className={imageVariants({ size })}
-            />
+            <ImageKit src={ikUrl} alt={title} width={300} height={300} />
+
             <section className={infoVariants({ size })}>
                 <h3>{title}</h3>
                 <p>{description}</p>

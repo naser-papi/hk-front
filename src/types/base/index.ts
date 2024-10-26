@@ -1,9 +1,10 @@
 import enTranslation from "@/constants/locale/en";
 import { LanguageResources } from "@/constants/locale";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { HTTP_METHOD } from "next/dist/server/web/http";
 
 export interface IMenuLink {
-    title: string;
+    title: NestedKeyOf<LocaleType>;
     icon: IconDefinition;
     path: string;
     id: string;
@@ -33,12 +34,57 @@ export type Params = {
     [key: string]: string | number;
 };
 export type SortType = "asc" | "desc";
+
+export type LanguageName = keyof typeof LanguageResources;
+
+export type LocaleType = typeof enTranslation; //en is default
+
+interface IPagination {
+    page: number;
+    pageSize: number;
+    pageCount: number;
+    total: number;
+}
+
+interface IMeta {
+    pagination: IPagination;
+}
+
+export interface ICMSListApiResponse<T> {
+    data: T[];
+    meta: IMeta;
+}
+
+export interface ICMSApiResponse<T> {
+    data: T;
+}
 export interface IAPIResponse<T> {
     status: number;
     data?: T;
     error?: string;
 }
 
-export type LanguageName = keyof typeof LanguageResources;
+export type IParams = {
+    [key: string]: string | number;
+};
 
-export type LocaleType = typeof enTranslation; //en is default
+export interface IAPIInfo {
+    url: string;
+    method: HTTP_METHOD;
+    body?: any;
+    tokenLess?: boolean;
+    params?: IParams;
+    query?: IParams;
+    options?: RequestInit;
+    isCms?: boolean;
+}
+
+export type FormInputValue = string | number | string[] | undefined | boolean;
+
+export interface IFormInput {
+    name: string;
+    defaultValue: string | number | string[] | undefined;
+    type: "text" | "password" | "textarea";
+    label: string;
+    placeholder?: string;
+}
