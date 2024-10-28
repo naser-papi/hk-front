@@ -4,4 +4,5 @@ export interface ServiceDto extends BaseDto {
     title: string;
     shortDesc: string;
     icon: MediaDto;
+    bannerMedia: MediaDto;
 }

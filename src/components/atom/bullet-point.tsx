@@ -1,23 +1,32 @@
-import {cva,VariantProps} from "class-variance-authority"
-import {BaseHTMLAttributes} from "react";
+import { cva, VariantProps } from "class-variance-authority";
+import { BaseHTMLAttributes } from "react";
 
-const bulletVariants=cva(["bullet-point", "w-6","h-6","border-1","border-cyan","rounded-full","drop-shadow-lg"],{
-    variants:{
-        active:{
-            true:["bg-white"],
-            false:["bg-secondary"]
-        }
+const bulletVariants = cva(
+    [
+        "bullet-point",
+        "w-6",
+        "h-6",
+        "border-1",
+        "border-cyan",
+        "rounded-full",
+        "drop-shadow-lg",
+    ],
+    {
+        variants: {
+            active: {
+                true: ["bg-secondary"],
+                false: ["bg-white"],
+            },
+        },
     }
-});
-interface BulletPointProps extends BaseHTMLAttributes<HTMLDivElement>, VariantProps<typeof bulletVariants>{
+);
 
-}
-const BulletPoint = ({active}:BulletPointProps) => {
-    return (
-        <div className={bulletVariants({active})}>
+interface BulletPointProps
+    extends BaseHTMLAttributes<HTMLDivElement>,
+        VariantProps<typeof bulletVariants> {}
 
-        </div>
-    );
+const BulletPoint = ({ active, ...rest }: BulletPointProps) => {
+    return <div className={bulletVariants({ active })} {...rest}></div>;
 };
 
 export default BulletPoint;

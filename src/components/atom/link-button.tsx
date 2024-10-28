@@ -25,6 +25,18 @@ const linkButtonVariants = cva(
                 true: [],
                 false: [],
             },
+            intend: {
+                primary: [],
+                secondary: [
+                    "bg-secondary",
+                    "[&>svg]:hidden",
+                    "text-white",
+                    "px-4",
+                    "py-2",
+                    "border-b-0",
+                    "rounded-lg",
+                ],
+            },
         },
     }
 );
@@ -35,9 +47,19 @@ interface LinkButtonProps
     label: string;
     href: string;
 }
-const LinkButton = ({ label, href, disabled, hover }: LinkButtonProps) => {
+
+const LinkButton = ({
+    label,
+    href,
+    disabled,
+    hover,
+    intend,
+}: LinkButtonProps) => {
     return (
-        <Link href={href} className={linkButtonVariants({ disabled, hover })}>
+        <Link
+            href={href}
+            className={linkButtonVariants({ disabled, hover, intend })}
+        >
             <span>{label}</span>
             <FontAwesomeIcon icon={faChevronDoubleRight} />
         </Link>

@@ -6,6 +6,7 @@ export interface BlogDto extends BaseDto {
     shortDesc: string;
     readTime: number;
     cardImage: MediaDto;
+    bannerMedia: MediaDto;
     firstSection?: any;
     secondSection?: any;
     author: string;

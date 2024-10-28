@@ -2,30 +2,36 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes } from "react";
 import { useRouter } from "next/navigation";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { twMerge } from "tailwind-merge";
 
-const variants = cva(
-    [
-        "hk-button",
-        "block",
-        "px-4",
-        "py-2",
-        "rounded-lg",
-        "text-label",
-        "text-white",
-        "hover:border-shadow",
-    ],
-    {
-        variants: {
-            intend: {
-                primary: ["bg-primary"],
-                secondary: ["bg-secondary"],
-            },
+const variants = cva(["hk-button", "block", "rounded-lg", "text-label"], {
+    variants: {
+        intend: {
+            primary: [
+                "text-white",
+                "bg-primary",
+                "hover:bg-secondary",
+                "hover:drop-shadow-lg",
+                "px-4",
+                "py-2",
+            ],
+            secondary: [
+                "text-white",
+                "bg-secondary",
+                "hover:bg-primary",
+                "hover:drop-shadow-lg",
+                "px-4",
+                "py-2",
+            ],
+            tertiary: [],
         },
-        defaultVariants: {
-            intend: "primary",
-        },
-    }
-);
+    },
+    defaultVariants: {
+        intend: "primary",
+    },
+});
 
 interface buttonProps
     extends ButtonHTMLAttributes<HTMLButtonElement>,
@@ -33,13 +39,22 @@ interface buttonProps
     label: string;
     type?: "button" | "submit";
     link?: string;
+    icon?: IconDefinition;
 }
 
-const Button = ({ label, intend, onClick, link, type }: buttonProps) => {
+const Button = ({
+    label,
+    intend,
+    onClick,
+    link,
+    type,
+    icon,
+    className,
+}: buttonProps) => {
     const router = useRouter();
     return (
         <button
-            className={variants({ intend })}
+            className={twMerge(variants({ intend }), className)}
             type={type ?? "button"}
             onClick={
                 link
@@ -49,7 +64,8 @@ const Button = ({ label, intend, onClick, link, type }: buttonProps) => {
                     : onClick
             }
         >
-            {label}
+            {label && label}
+            {icon && <FontAwesomeIcon icon={icon} />}
         </button>
     );
 };

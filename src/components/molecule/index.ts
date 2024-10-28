@@ -3,3 +3,4 @@ export { default as KnowledgeCard } from "./knowledge-card";
 export { default as QuoteCard } from "./quote-card";
 export { default as EventCard } from "./event-card";
 export { default as ExternalLink } from "./external-link";
+export { default as BannerCard } from "./banner-card";
