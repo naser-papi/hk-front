@@ -14,3 +14,4 @@ export const fallbackLng = "en";
 export const languages = [fallbackLng, "fa"];
 export const defaultNS = "translation";
 export const i18nCookieName = "NEXT_LOCALE";
+export const i18nHeaderName = " x-next-i18n-router-locale";

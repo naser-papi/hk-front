@@ -1,7 +1,8 @@
+"use server";
 import { createInstance } from "i18next";
 import { initReactI18next } from "react-i18next/initReactI18next";
 import { getOptions } from "./settings";
-import { TransFuntion } from "@/types/base";
+import { LocaleType, NestedKeyOf, TransFuntion } from "@/types/base";
 import { GetLocaleFromCookie } from "@/services/common";
 
 const initI18next = (lng: string, ns?: string) => {
@@ -9,14 +10,11 @@ const initI18next = (lng: string, ns?: string) => {
     i18nInstance.use(initReactI18next).init(getOptions(lng, ns)).then();
     return i18nInstance;
 };
+const trans = (path: NestedKeyOf<LocaleType>) => {
+    const local = GetLocaleFromCookie();
+    const i18nextInstance = initI18next(local);
+    const t = i18nextInstance.getFixedT(local) as TransFuntion;
+    return t(path);
+};
 
-export function useTranslation(lng = "") {
-    if (!lng) {
-        lng = GetLocaleFromCookie();
-    }
-    const i18nextInstance = initI18next(lng);
-    return {
-        t: i18nextInstance.getFixedT(lng) as TransFuntion,
-        i18n: i18nextInstance,
-    };
-}
+export default trans;

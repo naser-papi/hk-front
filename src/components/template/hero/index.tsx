@@ -1,13 +1,18 @@
-import { BannerCarousel, MobileNav } from "@/components";
+import { BannerCarousel } from "@/components";
+import MobileMenu from "./mobile-menu";
+import TopNav from "./top-nav";
 
 const Hero = () => {
     return (
         <section
             id={"hero"}
-            className={"grid w-full place-items-center gap-4 bg-altLight p-4"}
+            className={
+                "[&_.banner-card] relative mx-auto grid w-full max-w-5xl place-items-center gap-4 bg-primary p-4"
+            }
         >
-            <MobileNav />
+            <TopNav />
             <BannerCarousel />
+            <MobileMenu />
         </section>
     );
 };

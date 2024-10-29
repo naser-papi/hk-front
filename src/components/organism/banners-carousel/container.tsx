@@ -1,7 +1,7 @@
 "use client";
 import { twMerge } from "tailwind-merge";
 import { useMemo, useState } from "react";
-import { BulletPoint } from "@/components";
+import { BulletPoint } from "@/components/atom";
 
 interface ContainerProps {
     children: JSX.Element[];
@@ -35,7 +35,7 @@ const Container = ({ children }: ContainerProps) => {
     return (
         <div
             className={twMerge(
-                "banner-carousel relative [&>.banner-card]:hidden",
+                "banner-carousel relative w-full [&>.banner-card]:hidden",
                 visible
             )}
         >

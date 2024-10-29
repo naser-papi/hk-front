@@ -4,31 +4,36 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="finished the oranisms">
-      <change afterPath="$PROJECT_DIR$/src/components/atom/icon-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/mobile-nav.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/hero/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/banners.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/molecule/banner-card.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/organism/banner-carousel.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/template/hero.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/dto/banner.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added some new components">
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/background.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/background.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/hero/mobile-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/i18n/use-translation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/bullet-point.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/bullet-point.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/image-kit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/image-kit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/blog.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/main-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/main-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/mobile-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/top-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/i18n/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18nConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18nConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +43,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -61,28 +67,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/public/assets/images&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;settings.typescriptcompiler&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "D:/projects/hk-app/hk-front/public/assets/images",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -100,6 +107,7 @@
       <recent name="D:\projects\hk-app\hk-front\src\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\components\template\hero" />
       <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\constants\api-path" />
       <recent name="D:\projects\hk-app\hk-front\src\components\atom" />
@@ -133,7 +141,9 @@
       <workItem from="1730020291130" duration="52000" />
       <workItem from="1730026827750" duration="833000" />
       <workItem from="1730048062157" duration="6045000" />
-      <workItem from="1730112904648" duration="10014000" />
+      <workItem from="1730112904648" duration="20489000" />
+      <workItem from="1730183791280" duration="5830000" />
+      <workItem from="1730205054748" duration="16175000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -159,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1729971289569</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="added some new components">
+      <option name="closed" value="true" />
+      <created>1730127299603</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730127299603</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,7 +189,8 @@
     <MESSAGE value="added base components&#10;added some base configurations" />
     <MESSAGE value="added organism components (part 1)" />
     <MESSAGE value="finished the oranisms" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished the oranisms" />
+    <MESSAGE value="added some new components" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some new components" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

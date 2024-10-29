@@ -1,8 +1,8 @@
 import { cva, VariantProps } from "class-variance-authority";
-import { Button } from "../atom";
+import { LinkButton } from "../atom";
 import { BaseHTMLAttributes } from "react";
-import { useTranslation } from "@/helpers";
 import { ImageKit } from "@/components";
+import trans from "@/helpers/i18n/server";
 
 const variants = cva(
     [
@@ -47,16 +47,15 @@ interface ServiceCardProps
 }
 
 const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
-    const { t } = useTranslation();
     return (
         <div className={variants({})}>
             <ImageKit src={ikUrl} alt={title} width={70} height={70} />
             <h3>{title}</h3>
             <p>{description}</p>
-            <Button
-                label={t("common.readMore")}
-                link={href}
-                intend={"primary"}
+            <LinkButton
+                label={trans("common.readMore")}
+                href={href}
+                intend={"secondary"}
             />
         </div>
     );

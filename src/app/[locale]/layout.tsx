@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import i18nConfig from "../../i18nConfig";
+import i18nConfig from "@/i18nConfig";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "../globals.css";
@@ -33,7 +33,8 @@ export default function RootLayout({
     return (
         <html lang={params.locale}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+                className={`${geistSans.variable} ${geistMono.variable} antialiased ${params.locale === "fa" ? "rtl" : "ltr"}`}
+                dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
                 {children}
             </body>

@@ -6,4 +6,3 @@ export { default as LinkCardsContainer } from "./link-cards-container";
 export { default as ContactForm } from "./contact-form";
 export { default as Footer } from "./footer";
 export { default as BannerCarousel } from "./banners-carousel";
-export { default as MobileNav } from "./mobile-nav";

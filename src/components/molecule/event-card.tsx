@@ -1,12 +1,12 @@
 import { cva, VariantProps } from "class-variance-authority";
-
+import trans from "@/helpers/i18n/server";
 import { BaseHTMLAttributes } from "react";
 import {
     faCalendarDays,
     faMessage,
 } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { IconLabel, ImageKit, LinkButton } from "@/components";
-import { formatEventDate, useTranslation } from "@/helpers";
+import { formatEventDate } from "@/helpers";
 import "./event-card.css";
 
 const variants = cva([
@@ -52,7 +52,6 @@ const EventCard = ({
     commentsCount,
     href,
 }: EventCardProps) => {
-    const { t } = useTranslation();
     return (
         <div className={variants({})}>
             <ImageKit src={ikUrl} alt={"event"} fill />
@@ -65,7 +64,7 @@ const EventCard = ({
                     <IconLabel icon={faMessage} label={commentsCount} />
                 </h4>
                 <p>{desc}</p>
-                <LinkButton label={t("common.detailDot")} href={href} />
+                <LinkButton label={trans("common.detailDot")} href={href} />
             </section>
         </div>
     );

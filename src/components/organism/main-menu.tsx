@@ -1,26 +1,29 @@
 import { MenuLinks } from "@/constants/base";
-import { useTranslation } from "@/helpers";
 import { MenuLink } from "@/components";
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
+import useTranslation from "@/helpers/i18n/use-translation";
 
-const variants = cva([
-    "grid",
-    "py-2",
-    "min-w-[300px]",
-    "gap-y-4",
-    "bg-primary",
-    "text-secondary",
-]);
+const variants = cva(["main-menu", "min-w-[300px]"], {
+    variants: {
+        direction: {
+            row: ["flex", "items-center", "justify-between"],
+            col: ["grid", "py-2", "gap-y-4"],
+        },
+    },
+    defaultVariants: {
+        direction: "col",
+    },
+});
 
 interface MainMenuProps
     extends BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof variants> {}
 
-const MainMenu = ({}: MainMenuProps) => {
+const MainMenu = ({ direction }: MainMenuProps) => {
     const { t } = useTranslation();
     return (
-        <ul className={variants({})}>
+        <ul className={variants({ direction })}>
             {MenuLinks.map((link) => (
                 <li key={link.id}>
                     <MenuLink

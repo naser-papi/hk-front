@@ -30,6 +30,9 @@ export function replaceParams(urlTemplate: string, params: IParams): string {
     });
 }
 
+export function getRandom(min: number, max: number) {
+    return Math.floor(Math.random() * (max - min)) + min;
+}
 export function addQueryParamsToUrl(url: string, queryParams: IParams): string {
     const urlObject = new URL(url, "http://example.com"); // Base URL for parsing
 

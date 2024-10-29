@@ -60,7 +60,5 @@ export default {
     posts: "Posts",
     events: "Events",
     links: "Links",
-    contactUs: "Contact Us",
     aboutUs: "About Us",
-    readMore: "Read More",
 };

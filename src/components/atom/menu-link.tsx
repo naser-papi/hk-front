@@ -11,8 +11,9 @@ const menuLinkVariants = cva(
         "text-secondary",
         "py-2",
         "px-4",
+        "w-full",
         "rounded-lg",
-        "hover:bg-primary",
+        "hover:bg-altLight",
         "hover:text-white",
     ],
     {
@@ -30,6 +31,7 @@ interface menuLinkProps
         VariantProps<typeof menuLinkVariants> {
     label: string;
     icon: IconDefinition;
+    href: string;
 }
 
 const MenuLink = ({ label, disabled, href, icon }: menuLinkProps) => {
