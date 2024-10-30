@@ -4,36 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="some cool changes">
-      <change afterPath="$PROJECT_DIR$/src/components/template/blogs/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/contact/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/events/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/footer/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/links/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/template.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/template/blogs.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/template/events.stories.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="first release for test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/contact-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/index.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/services/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/services/services.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/profile-avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/profile-avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/example/Page.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/example/Page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/example/page.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +124,7 @@
       <workItem from="1730205054748" duration="18194000" />
       <workItem from="1730283081871" duration="7707000" />
       <workItem from="1730298151385" duration="573000" />
-      <workItem from="1730310796592" duration="13296000" />
+      <workItem from="1730310796592" duration="13630000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -197,7 +174,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730292045634</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="first release for test">
+      <option name="closed" value="true" />
+      <created>1730324241426</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730324241426</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +197,8 @@
     <MESSAGE value="added some new components" />
     <MESSAGE value="first beta" />
     <MESSAGE value="some cool changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="some cool changes" />
+    <MESSAGE value="first release for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="first release for test" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -33,7 +33,7 @@ interface AvatarProps
 const Avatar = ({ size, image, alt }: AvatarProps) => {
     return (
         <div className={variants({ size })}>
-            <Image src={image} alt={alt} fill />
+            <Image src={image} alt={alt || "avatar"} fill />
         </div>
     );
 };
