@@ -36,6 +36,15 @@ const linkButtonVariants = cva(
                     "border-b-0",
                     "rounded-lg",
                 ],
+                tertiary: [
+                    "bg-primary",
+                    "[&>svg]:hidden",
+                    "text-white",
+                    "px-4",
+                    "py-2",
+                    "border-b-0",
+                    "rounded-lg",
+                ],
             },
         },
     }

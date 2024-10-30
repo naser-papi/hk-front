@@ -1,4 +1,4 @@
-import { Hero } from "@/components";
+import { Hero, Services } from "@/components";
 import Background from "@/app/[locale]/background";
 
 interface HomeProps {
@@ -9,6 +9,7 @@ export default function Home({ params }: HomeProps) {
         <main className="relative grid h-screen w-screen place-items-start">
             <Background />
             <Hero />
+            <Services />
         </main>
     );
 }

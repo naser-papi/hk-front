@@ -6,6 +6,7 @@ import trans from "@/helpers/i18n/server";
 
 const variants = cva(
     [
+        "service-card",
         "flex",
         "flex-col",
         "p-4",
@@ -55,7 +56,7 @@ const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
             <LinkButton
                 label={trans("common.readMore")}
                 href={href}
-                intend={"secondary"}
+                intend={"tertiary"}
             />
         </div>
     );

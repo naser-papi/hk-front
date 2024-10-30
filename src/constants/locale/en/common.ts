@@ -61,4 +61,6 @@ export default {
     events: "Events",
     links: "Links",
     aboutUs: "About Us",
+    allServices: "All Services",
+    ourServices: "Our Services",
 };

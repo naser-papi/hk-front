@@ -61,4 +61,5 @@ export default {
     events: "رویدادها",
     links: "لینک ها",
     aboutUs: "درباره ما",
+    allServices: "همه سرویس ها",
 };

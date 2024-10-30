@@ -4,36 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added some new components">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/background.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/background.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/hero/mobile-menu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/i18n/use-translation.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="first beta">
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/view-more-button-image.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/services/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/services/services.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/template/services.stories.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.storybook/preview.ts" beforeDir="false" afterPath="$PROJECT_DIR$/.storybook/preview.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/image-kit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/image-kit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/main-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/main-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/mobile-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/top-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/hero/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/i18n/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/i18n/server.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/i18nConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18nConfig.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +59,7 @@
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front/public/assets/images",
+    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/stories/template",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -85,7 +69,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.typescriptcompiler",
+    "settings.editor.selected.configurable": "settings.javascript.prettier",
     "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
@@ -101,6 +85,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
       <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front" />
       <recent name="D:\projects\hk-app\hk-front\src\services\rest-api" />
@@ -143,7 +128,8 @@
       <workItem from="1730048062157" duration="6045000" />
       <workItem from="1730112904648" duration="20489000" />
       <workItem from="1730183791280" duration="5830000" />
-      <workItem from="1730205054748" duration="16175000" />
+      <workItem from="1730205054748" duration="18194000" />
+      <workItem from="1730283081871" duration="7615000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -177,7 +163,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730127299603</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="first beta">
+      <option name="closed" value="true" />
+      <created>1730225012002</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730225012002</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,7 +184,8 @@
     <MESSAGE value="added organism components (part 1)" />
     <MESSAGE value="finished the oranisms" />
     <MESSAGE value="added some new components" />
-    <option name="LAST_COMMIT_MESSAGE" value="added some new components" />
+    <MESSAGE value="first beta" />
+    <option name="LAST_COMMIT_MESSAGE" value="first beta" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

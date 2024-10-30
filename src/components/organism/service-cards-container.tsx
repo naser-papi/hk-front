@@ -14,7 +14,11 @@ const ServiceCardsContainer = async () => {
         />
     ));
     return (
-        <article className={"grid place-items-center gap-y-8"}>{cards}</article>
+        <article
+            className={"service-card-container grid place-items-center gap-y-8"}
+        >
+            {cards}
+        </article>
     );
 };
 
