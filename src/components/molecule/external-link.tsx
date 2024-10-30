@@ -5,6 +5,7 @@ import { ImageKit, OpenLinkBox } from "@/components";
 import urlImg from "assets/images/url.jpeg";
 
 const variants = cva([
+    "w-full",
     "external-link",
     "min-w-[300px]",
     "relative",
@@ -17,6 +18,7 @@ const infoVariants = cva([
     "z-10",
     "relative",
     "w-full",
+    "h-full",
     "grid",
     "place-items-center",
     "gap-y-4",

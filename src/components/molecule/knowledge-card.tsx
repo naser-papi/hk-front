@@ -3,19 +3,23 @@ import { BaseHTMLAttributes } from "react";
 import { ImageKit } from "@/components/atom";
 import { Button } from "@/components";
 
-const variants = cva(["flex", "flex-col", "gap-0", "items-end"], {
-    variants: {
-        size: {
-            small: ["min-w-[300px]", "[&>img]:h-300px", "[&>img]:w-full"],
+const variants = cva(
+    ["knowledge-card", "w-full", "flex", "flex-col", "gap-0", "items-end"],
+    {
+        variants: {
+            size: {
+                small: ["min-w-[300px]", "[&>img]:h-300px", "[&>img]:w-full"],
+            },
         },
-    },
-    defaultVariants: {
-        size: "small",
-    },
-});
+        defaultVariants: {
+            size: "small",
+        },
+    }
+);
 
 const infoVariants = cva(
     [
+        "info-part",
         "bg-white",
         "text-primary",
         "w-full",

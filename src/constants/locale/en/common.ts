@@ -63,4 +63,12 @@ export default {
     aboutUs: "About Us",
     allServices: "All Services",
     ourServices: "Our Services",
+    knowledgeSharing: "Knowledge Sharing",
+    allBlogs: "All Blogs",
+    whatHappening: "What is happening around you",
+    allEvents: "All Events",
+    usefulLinks: "Useful Links",
+    allLinks: "All Links",
+    getInTouch: "Get in touch",
+    haveAQuestion: "Have be any question?\n" + "feel free to Contact",
 };

@@ -13,6 +13,7 @@ const linkButtonVariants = cva(
         "text-label",
         "text-black",
         "max-w-[fit-content]",
+        "h-[max-content]",
         "[&>svg]:text-secondary",
     ],
     {

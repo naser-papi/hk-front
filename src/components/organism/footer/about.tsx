@@ -1,5 +1,5 @@
 import { GetCompanyInfo } from "@/services/company-info";
-import Image from "next/image";
+import { ImageKit } from "@/components";
 
 const About = async () => {
     const companyInfo = await GetCompanyInfo();
@@ -10,7 +10,7 @@ const About = async () => {
                 "grid grid-cols-[52px_auto] items-center gap-x-2 gap-y-2"
             }
         >
-            <Image
+            <ImageKit
                 src={companyInfo.logo.url}
                 alt={companyInfo.title}
                 width={48}

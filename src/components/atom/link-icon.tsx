@@ -5,7 +5,7 @@ import { AnchorHTMLAttributes } from "react";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const variants = cva(["text-5xl", "rounded-full"], {
+const variants = cva(["link-icon", "text-5xl", "rounded-full"], {
     variants: {
         intend: {
             primary: ["text-white"],

@@ -20,6 +20,7 @@ const variants = cva([
 ]);
 
 const infoVariants = cva([
+    "info-part",
     "grid",
     "gap-y-3",
     "text-primary",

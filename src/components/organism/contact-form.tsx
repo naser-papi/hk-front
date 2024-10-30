@@ -31,7 +31,7 @@ const ContactForm = () => {
     return (
         <form
             className={
-                "grid place-items-center gap-y-4 [&>.hk-text-box]:w-full [&>button]:w-full"
+                "contact-form grid place-items-center gap-y-4 [&>.hk-text-box]:w-full [&>button]:w-full"
             }
             onSubmit={onSubmit}
         >

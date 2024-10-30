@@ -3,6 +3,7 @@ import i18nConfig from "@/i18nConfig";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "../globals.css";
+import Background from "./background";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -33,9 +34,10 @@ export default function RootLayout({
     return (
         <html lang={params.locale}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased ${params.locale === "fa" ? "rtl" : "ltr"}`}
+                className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen antialiased ${params.locale === "fa" ? "rtl" : "ltr"}`}
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
+                <Background />
                 {children}
             </body>
         </html>

@@ -14,7 +14,11 @@ const BlogCardContainer = async () => {
         />
     ));
     return (
-        <article className={"grid place-items-center gap-y-8"}>{cards}</article>
+        <article
+            className={"blog-card-container grid place-items-center gap-y-8"}
+        >
+            {cards}
+        </article>
     );
 };
 

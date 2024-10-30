@@ -15,7 +15,11 @@ const EventCardsContainer = async () => {
         />
     ));
     return (
-        <article className={"grid place-items-center gap-y-8"}>{cards}</article>
+        <article
+            className={"event-cards-container grid place-items-center gap-y-8"}
+        >
+            {cards}
+        </article>
     );
 };
 
