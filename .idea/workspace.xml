@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed build bugs">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/no-data.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/no-data.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/avatar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the no-data component">
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,7 +120,7 @@
       <workItem from="1730283081871" duration="7707000" />
       <workItem from="1730298151385" duration="573000" />
       <workItem from="1730310796592" duration="13713000" />
-      <workItem from="1730389967424" duration="2460000" />
+      <workItem from="1730389967424" duration="2592000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -194,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730324599179</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added the no-data component">
+      <option name="closed" value="true" />
+      <created>1730396027079</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730396027079</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,7 +211,8 @@
     <MESSAGE value="some cool changes" />
     <MESSAGE value="first release for test" />
     <MESSAGE value="fixed build bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed build bugs" />
+    <MESSAGE value="added the no-data component" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the no-data component" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

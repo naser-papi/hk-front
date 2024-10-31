@@ -7,6 +7,7 @@ ARG SHOW_CONSTRUCTION
 
 WORKDIR /app
 
+COPY .npmrc ./
 COPY package.json package-lock.json ./
 RUN npm install
 
