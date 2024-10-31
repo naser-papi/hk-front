@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the no-data component">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed build issue">
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,7 +123,7 @@
       <workItem from="1730283081871" duration="7707000" />
       <workItem from="1730298151385" duration="573000" />
       <workItem from="1730310796592" duration="13713000" />
-      <workItem from="1730389967424" duration="2592000" />
+      <workItem from="1730389967424" duration="2772000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -194,7 +197,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730396027079</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed build issue">
+      <option name="closed" value="true" />
+      <created>1730396098118</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730396098118</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -212,7 +223,8 @@
     <MESSAGE value="first release for test" />
     <MESSAGE value="fixed build bugs" />
     <MESSAGE value="added the no-data component" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the no-data component" />
+    <MESSAGE value="fixed build issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed build issue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

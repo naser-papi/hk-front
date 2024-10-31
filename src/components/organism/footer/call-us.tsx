@@ -4,6 +4,7 @@ import { GetCompanyInfo } from "@/services/company-info";
 
 const CallUs = async () => {
     const companyInfo = await GetCompanyInfo();
+    if (!companyInfo) return null;
     return (
         <section
             className={

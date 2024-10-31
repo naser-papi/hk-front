@@ -4,6 +4,7 @@ import { GetCompanyInfo } from "@/services/company-info";
 
 const Address = async () => {
     const companyInfo = await GetCompanyInfo();
+    if (!companyInfo) return null;
     return (
         <section className={"flex items-center gap-4"}>
             <LinkIcon

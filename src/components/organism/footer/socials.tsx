@@ -9,6 +9,7 @@ import { LinkIcon } from "@/components";
 
 const Socials = async () => {
     const companyInfo = await GetCompanyInfo();
+    if (!companyInfo) return null;
     return (
         <section className={"socials grid place-items-center gap-y-2"}>
             <span className={"text-secondary"}>Any Question? Hit Us</span>

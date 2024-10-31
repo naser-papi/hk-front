@@ -1,9 +1,10 @@
 import { GetCompanyInfo } from "@/services/company-info";
 import { ImageKit } from "@/components";
+import NoData from "@/components/organism/no-data";
 
 const About = async () => {
     const companyInfo = await GetCompanyInfo();
-
+    if (!companyInfo) return <NoData />;
     return (
         <section
             className={
