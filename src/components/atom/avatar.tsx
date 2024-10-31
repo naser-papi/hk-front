@@ -15,7 +15,7 @@ const variants = cva(
             size: {
                 small: ["w-[72px]", "h-[72px]"],
                 medium: [],
-                large: [],
+                large: ["w-[252px]", "h-[252px]"],
             },
         },
         defaultVariants: {

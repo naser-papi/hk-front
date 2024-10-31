@@ -1,9 +1,11 @@
 import { GetHeroBanners } from "@/services/banners";
 import Container from "./container";
 import BannerCard from "@/components/molecule/banner-card";
+import NoData from "../no-data";
 
 const BannerCarousel = async () => {
     const banners = await GetHeroBanners();
+    if (!banners || !banners.length) return <NoData />;
     const images = banners.flatMap((banner) => {
         const result = [];
         if (banner.blogs && banner.blogs.bannerMedia) {

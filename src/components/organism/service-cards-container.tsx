@@ -1,9 +1,11 @@
 import { GetTopServices } from "@/services/services";
 import { ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
+import NoData from "@/components/organism/no-data";
 
 const ServiceCardsContainer = async () => {
     const list = await GetTopServices();
+    if (!list || !list.length) return <NoData />;
     const cards = list.map((item: ServiceDto) => (
         <ServiceCard
             key={item.id}

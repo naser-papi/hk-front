@@ -1,9 +1,11 @@
 import { GetTopLinks } from "@/services/external-links";
 import { ExternalLink } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
+import NoData from "@/components/organism/no-data";
 
 const LinkCardsContainer = async () => {
     const list = await GetTopLinks();
+    if (!list || !list.length) return <NoData />;
     const cards = list.map((item: LinkDto) => (
         <ExternalLink
             key={item.id}
