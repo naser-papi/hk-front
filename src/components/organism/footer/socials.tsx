@@ -6,13 +6,16 @@ import {
     faYoutube,
 } from "@awesome.me/kit-8b348a8267/icons/classic/brands";
 import { LinkIcon } from "@/components";
+import trans from "@/helpers/i18n/server";
 
 const Socials = async () => {
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo) return null;
     return (
         <section className={"socials grid place-items-center gap-y-2"}>
-            <span className={"text-secondary"}>Any Question? Hit Us</span>
+            <span className={"text-secondary"}>
+                {trans("common.anyQuestion")}
+            </span>
             <div
                 className={
                     "flex w-full items-center justify-between text-white"

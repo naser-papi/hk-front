@@ -71,4 +71,5 @@ export default {
     allLinks: "All Links",
     getInTouch: "Get in touch",
     haveAQuestion: "Have be any question?\n" + "feel free to Contact",
+    anyQuestion: "Any Question? Hit Us",
 };
