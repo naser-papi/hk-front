@@ -15,6 +15,7 @@
     "@awesome.me/kit-8b348a8267": "^1.0.4",
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
     "@fortawesome/react-fontawesome": "^0.2.2",
+    "@sentry/nextjs": "^8.36.0",
     "class-variance-authority": "^0.7.0",
     "i18next": "^23.15.2",
     "next": "14.2.13",

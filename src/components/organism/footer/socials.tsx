@@ -7,10 +7,11 @@ import {
 } from "@awesome.me/kit-8b348a8267/icons/classic/brands";
 import { LinkIcon } from "@/components";
 import trans from "@/helpers/i18n/server";
+import NoData from "@/components/organism/no-data";
 
 const Socials = async () => {
     const companyInfo = await GetCompanyInfo();
-    if (!companyInfo) return null;
+    if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (
         <section className={"socials grid place-items-center gap-y-2"}>
             <span className={"text-secondary"}>

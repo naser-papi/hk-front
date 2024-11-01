@@ -4,7 +4,7 @@ import NoData from "@/components/organism/no-data";
 
 const About = async () => {
     const companyInfo = await GetCompanyInfo();
-    if (!companyInfo) return <NoData />;
+    if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (
         <section
             className={
