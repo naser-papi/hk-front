@@ -32,6 +32,14 @@ jobs:
         push: true
         tags: hollandkade.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_b7f3fb7202114d5eb9965889e6e460dc }}/hk-dev-front:${{ github.sha }}
         file: ./Dockerfile
+        build-args: |
+          API_SERVER=https://api.holandkade.nl
+          NEXT_PUBLIC_API_SERVER=https://api.holandkade.nl
+          E2E_TEST=no
+          NEXT_PUBLIC_IMAGE_KIT_ID=tdvmspnmgu
+          CMS_SERVER=https://cms.hollandkade.nl
+          NEXT_PUBLIC_CMS_SERVER=https://cms.hollandkade.nl
+          SHOW_CONSTRUCTION=no
 
   deploy:
     runs-on: ubuntu-latest
