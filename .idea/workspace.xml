@@ -4,22 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="rollback test dev start">
-      <change afterPath="$PROJECT_DIR$/sentry.client.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentry.edge.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sentry.server.config.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/sentry-example-page/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/api/sentry-example-api/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/global-error.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/instrumentation.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed the footer render issue&#10;added the sentry">
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-SemiBold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Thin.woff" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/hero/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/hero/top-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18nConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18nConfig.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +60,7 @@
     "git-widget-placeholder": "dev",
     "ignore.virus.scanning.warn.message": "true",
     "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/stories/template",
+    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/app/[locale]/fonts/yekan",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
@@ -88,11 +86,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
       <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
       <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front" />
       <recent name="D:\projects\hk-app\hk-front\src\services\rest-api" />
-      <recent name="D:\projects\hk-app\hk-front\src\services" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]" />
@@ -136,7 +134,10 @@
       <workItem from="1730298151385" duration="573000" />
       <workItem from="1730310796592" duration="13713000" />
       <workItem from="1730389967424" duration="5252000" />
-      <workItem from="1730447386585" duration="9355000" />
+      <workItem from="1730447386585" duration="10056000" />
+      <workItem from="1730475664837" duration="1059000" />
+      <workItem from="1730618151396" duration="1055000" />
+      <workItem from="1730650064293" duration="3641000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -258,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730464568226</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed the footer render issue&#10;added the sentry">
+      <option name="closed" value="true" />
+      <created>1730466800967</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1730466800967</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,7 +291,8 @@
     <MESSAGE value="fixed build issue" />
     <MESSAGE value="test dev start" />
     <MESSAGE value="rollback test dev start" />
-    <option name="LAST_COMMIT_MESSAGE" value="rollback test dev start" />
+    <MESSAGE value="fixed the footer render issue&#10;added the sentry" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the footer render issue&#10;added the sentry" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

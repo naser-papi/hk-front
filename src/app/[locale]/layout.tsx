@@ -16,6 +16,26 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
+const yakanThin = localFont({
+    src: "./fonts/yekan/YekanBakh-Thin.woff",
+    variable: "--font-yekan",
+    weight: "100 300",
+});
+const yakanRegular = localFont({
+    src: "./fonts/yekan/YekanBakh-Regular.woff",
+    variable: "--font-yekan",
+    weight: "400 500",
+});
+const yakanBold = localFont({
+    src: "./fonts/yekan/YekanBakh-Bold.woff",
+    variable: "--font-yekan",
+    weight: "600 700",
+});
+const yakanBlack = localFont({
+    src: "./fonts/yekan/YekanBakh-Black.woff",
+    variable: "--font-yekan",
+    weight: "800 900",
+});
 export const metadata: Metadata = {
     title: "HollandKade",
     description: "An Awesome Immigration Website for NL lovers",
@@ -31,10 +51,14 @@ export default function RootLayout({
     if (!i18nConfig.locales.includes(params.locale)) {
         notFound();
     }
+    const fontClasses =
+        params.locale === "fa"
+            ? `rtl ${yakanThin.variable} ${yakanRegular.variable} ${yakanBold.variable} ${yakanBlack.variable}`
+            : `ltr ${geistSans.variable} ${geistMono.variable}`;
     return (
         <html lang={params.locale}>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} h-screen w-screen antialiased ${params.locale === "fa" ? "rtl" : "ltr"}`}
+                className={`h-screen w-screen antialiased ${fontClasses}`}
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
                 <Background />

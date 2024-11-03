@@ -28,7 +28,7 @@ const TopNav = () => {
                 />
                 <MainMenu direction={"row"} />
                 <Button
-                    label={"FA"}
+                    label={"EN"}
                     intend={"tertiary"}
                     className={"text-xl font-bold text-secondary"}
                 />

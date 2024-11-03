@@ -32,6 +32,10 @@ body {
   font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
+body.rtl {
+  font-family: var(--font-yekan), Tahoma, Helvetica, sans-serif;
+}
+
 @layer utilities {
   .row-container{
     @apply flex items-center gap-2;
