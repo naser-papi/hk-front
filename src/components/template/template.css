@@ -129,6 +129,10 @@ footer {
                 & > .info-part {
                     align-items: start;
                 }
+
+                & > img {
+                    max-height: 400px;
+                }
             }
         }
     }
@@ -205,6 +209,15 @@ footer {
         }
     }
 
+    .blogs {
+        & > .blog-card-container {
+            & > .knowledge-card {
+                & > img {
+                    max-height: 500px;
+                }
+            }
+        }
+    }
     .links {
         & > .link-cards-container {
             & > .external-link {

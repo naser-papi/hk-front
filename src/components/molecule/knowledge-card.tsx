@@ -8,7 +8,12 @@ const variants = cva(
     {
         variants: {
             size: {
-                small: ["min-w-[300px]", "[&>img]:h-300px", "[&>img]:w-full"],
+                small: [
+                    "min-w-[300px]",
+                    "[&>img]:w-full",
+                    "[&>img]:h-300px",
+                    "[&>img]:max-h-[300px]",
+                ],
             },
         },
         defaultVariants: {
