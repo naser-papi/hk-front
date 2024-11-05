@@ -72,4 +72,9 @@ export default {
     getInTouch: "Get in touch",
     haveAQuestion: "Have be any question?\n" + "feel free to Contact",
     anyQuestion: "Any Question? Hit Us",
+    fullName: "Full name",
+    phoneNo: "Phone No",
+    message: "Message",
+    sendMessage: "Send Message",
+    callUs: "Any Question? Call Us Now",
 };

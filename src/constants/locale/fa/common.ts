@@ -72,4 +72,9 @@ export default {
     getInTouch: "با ما در تماس باشید",
     haveAQuestion: "سوالی دارید؟\n" + "براحتی با با در تماس باشید",
     anyQuestion: "سوالی دارید؟ به ما پیام دهید",
+    fullName: "نام کامل",
+    phoneNo: "شماره تماس",
+    message: "پیام",
+    sendMessage: "ارسال پیام",
+    callUs: "سوالی دارید؟ با ما تماس بگیرید",
 };

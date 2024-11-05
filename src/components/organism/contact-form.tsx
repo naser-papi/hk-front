@@ -4,6 +4,7 @@ import { FormEvent, useState } from "react";
 import { UserMessageDto } from "@/types/dto/user-message";
 import { Button, TextBox } from "@/components";
 import { SendNewMessage } from "@/services/user-messages";
+import useTranslation from "@/helpers/i18n/use-translation";
 
 const initialState = {
     fullName: "",
@@ -13,6 +14,7 @@ const initialState = {
 } as UserMessageDto;
 const ContactForm = () => {
     const [info, setInfo] = useState({ ...initialState });
+    const { t } = useTranslation();
     const updateDto = (name: string, value: string) => {
         setInfo({ ...info, [name]: value });
     };
@@ -40,7 +42,7 @@ const ContactForm = () => {
                 value={info.fullName}
                 name={"fullName"}
                 key={"fullName"}
-                placeholder={"Full name"}
+                placeholder={t("common.fullName")}
                 updateDto={updateDto}
             />
             <TextBox
@@ -48,7 +50,7 @@ const ContactForm = () => {
                 value={info.email}
                 name={"email"}
                 key={"email"}
-                placeholder={"Email"}
+                placeholder={t("common.email")}
                 updateDto={updateDto}
             />
             <TextBox
@@ -57,7 +59,7 @@ const ContactForm = () => {
                 name={"phoneNo"}
                 key={"phoneNo"}
                 updateDto={updateDto}
-                placeholder={"Phone No"}
+                placeholder={t("common.phoneNo")}
             />
             <TextBox
                 type={"textarea"}
@@ -65,11 +67,11 @@ const ContactForm = () => {
                 name={"message"}
                 key={"message"}
                 updateDto={updateDto}
-                placeholder={"Message"}
+                placeholder={t("common.message")}
                 rows={4}
             />
             <Button
-                label={"Send Message"}
+                label={t("common.sendMessage")}
                 intend={"secondary"}
                 type={"submit"}
             />

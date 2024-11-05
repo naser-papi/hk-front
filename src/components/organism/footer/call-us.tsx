@@ -1,6 +1,7 @@
 import { faPhoneVolume } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import { LinkIcon } from "@/components";
 import { GetCompanyInfo } from "@/services/company-info";
+import trans from "@/helpers/i18n/server";
 
 const CallUs = async () => {
     const companyInfo = await GetCompanyInfo();
@@ -16,7 +17,7 @@ const CallUs = async () => {
                 href={`tel:${companyInfo.phoneNo1}`}
                 className={"row-span-2"}
             />
-            <span className={"text-secondary"}>Any Question? Call us</span>
+            <span className={"text-secondary"}>{trans("common.callUs")}</span>
             <strong>{companyInfo.phoneNo1}</strong>
         </section>
     );
