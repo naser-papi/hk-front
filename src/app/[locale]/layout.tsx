@@ -16,24 +16,24 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
-const yakanThin = localFont({
-    src: "./fonts/yekan/YekanBakh-Thin.woff",
-    variable: "--font-yekan",
+const iranSansThin = localFont({
+    src: "./fonts/iran-sans/IRANSansXFaNum-Thin.woff2",
+    variable: "--font-iransans",
     weight: "100 300",
 });
-const yakanRegular = localFont({
-    src: "./fonts/yekan/YekanBakh-Regular.woff",
-    variable: "--font-yekan",
+const iranSansRegular = localFont({
+    src: "./fonts/iran-sans/IRANSansXFaNum-Regular.woff2",
+    variable: "--font-iransans",
     weight: "400 500",
 });
-const yakanBold = localFont({
-    src: "./fonts/yekan/YekanBakh-Bold.woff",
-    variable: "--font-yekan",
+const iranSansBold = localFont({
+    src: "./fonts/iran-sans/IRANSansXFaNum-Bold.woff2",
+    variable: "--font-iransans",
     weight: "600 700",
 });
-const yakanBlack = localFont({
-    src: "./fonts/yekan/YekanBakh-Black.woff",
-    variable: "--font-yekan",
+const iranSansBlack = localFont({
+    src: "./fonts/iran-sans/IRANSansXFaNum-ExtraBold.woff2",
+    variable: "--font-iransans",
     weight: "800 900",
 });
 export const metadata: Metadata = {
@@ -53,7 +53,7 @@ export default function RootLayout({
     }
     const fontClasses =
         params.locale === "fa"
-            ? `rtl ${yakanThin.variable} ${yakanRegular.variable} ${yakanBold.variable} ${yakanBlack.variable}`
+            ? `rtl ${iranSansThin.variable} ${iranSansRegular.variable} ${iranSansBold.variable} ${iranSansBlack.variable}`
             : `ltr ${geistSans.variable} ${geistMono.variable}`;
     return (
         <html lang={params.locale}>

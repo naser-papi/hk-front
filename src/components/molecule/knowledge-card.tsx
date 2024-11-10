@@ -2,6 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
 import { ImageKit } from "@/components/atom";
 import { Button } from "@/components";
+import trans from "@/helpers/i18n/server";
 
 const variants = cva(
     ["knowledge-card", "w-full", "flex", "flex-col", "gap-0", "items-end"],
@@ -82,7 +83,7 @@ const KnowledgeCard = ({
                 <p>{description}</p>
             </section>
             <section className={actionsVariants({ size })}>
-                <Button label={"View Detail"} link={href} />
+                <Button label={trans("common.viewDetail")} link={href} />
             </section>
         </div>
     );

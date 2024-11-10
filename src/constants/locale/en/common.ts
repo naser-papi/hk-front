@@ -77,4 +77,5 @@ export default {
     message: "Message",
     sendMessage: "Send Message",
     callUs: "Any Question? Call Us Now",
+    viewDetail: "View Detail",
 };

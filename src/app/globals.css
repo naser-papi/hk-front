@@ -33,7 +33,7 @@ body {
 }
 
 body.rtl {
-  font-family: var(--font-yekan), Tahoma, Helvetica, sans-serif;
+  font-family: var(--font-iransans), Tahoma, Helvetica, sans-serif;
 }
 
 @layer utilities {

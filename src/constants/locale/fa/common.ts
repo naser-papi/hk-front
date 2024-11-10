@@ -70,11 +70,12 @@ export default {
     usefulLinks: "لینک‌های مفید",
     allLinks: "تمام لینک‌ها",
     getInTouch: "با ما در تماس باشید",
-    haveAQuestion: "سوالی دارید؟\n" + "براحتی با با در تماس باشید",
+    haveAQuestion: "سوالی دارید؟\n" + "براحتی با ما در تماس باشید",
     anyQuestion: "سوالی دارید؟ به ما پیام دهید",
     fullName: "نام کامل",
     phoneNo: "شماره تماس",
     message: "پیام",
     sendMessage: "ارسال پیام",
     callUs: "سوالی دارید؟ با ما تماس بگیرید",
+    viewDetail: "مطالعه کامل",
 };
