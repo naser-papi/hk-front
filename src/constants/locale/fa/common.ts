@@ -78,4 +78,5 @@ export default {
     sendMessage: "ارسال پیام",
     callUs: "سوالی دارید؟ با ما تماس بگیرید",
     viewDetail: "مطالعه کامل",
+    readFullArticle: "مطالعه کامل",
 };

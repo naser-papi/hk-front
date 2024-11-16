@@ -39,6 +39,7 @@ export type LanguageName = keyof typeof LanguageResources;
 
 export type LocaleType = typeof enTranslation; //en is default
 
+export type Direction = "both" | "left" | "right" | "none";
 interface IPagination {
     page: number;
     pageSize: number;

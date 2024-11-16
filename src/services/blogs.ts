@@ -13,3 +13,13 @@ export const GetTopBlogs = cache(async () => {
         return [] as BlogDto[];
     }
 });
+
+export const GetBlogList = cache(async () => {
+    const apiInfo = BlogsAPIPath.getBlogList;
+    const resp = await mainCall<ICMSListApiResponse<BlogDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    } else {
+        return [] as BlogDto[];
+    }
+});

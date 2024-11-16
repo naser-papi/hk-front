@@ -4,24 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some styles &amp; locale issues">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/iran-sans/IRANSansXFaNum-Black.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/iran-sans/IRANSansXFaNum-Bold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/iran-sans/IRANSansXFaNum-ExtraBold.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/iran-sans/IRANSansXFaNum-Regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/fonts/iran-sans/IRANSansXFaNum-Thin.woff2" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="used IranSans Fonts instead of the yekan...">
+      <change afterPath="$PROJECT_DIR$/instrumentation.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atom/slide-perv-next.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/blog-banner-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/knowledge-card.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/atom/slide-next-perv.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/molecule/blog-banner-card.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/blog-banner-carousel.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.env.development" beforeDir="false" afterPath="$PROJECT_DIR$/.env.development" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-SemiBold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/fonts/yekan/YekanBakh-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/api/sentry-example-api/route.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,9 +41,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="CSS File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -55,30 +65,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/app/[locale]/fonts/iran-sans",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/src/app/[locale]/fonts/iran-sans&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -146,7 +156,15 @@
       <workItem from="1730989769757" duration="576000" />
       <workItem from="1731255445416" duration="123000" />
       <workItem from="1731255921663" duration="12000" />
-      <workItem from="1731260426717" duration="1542000" />
+      <workItem from="1731260426717" duration="2020000" />
+      <workItem from="1731346462435" duration="5062000" />
+      <workItem from="1731411646921" duration="307000" />
+      <workItem from="1731431622033" duration="7016000" />
+      <workItem from="1731478264763" duration="10000" />
+      <workItem from="1731479122070" duration="5847000" />
+      <workItem from="1731745301686" duration="1264000" />
+      <workItem from="1731754861059" duration="739000" />
+      <workItem from="1731755715509" duration="14519000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -324,7 +342,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730795405575</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="used IranSans Fonts instead of the yekan...">
+      <option name="closed" value="true" />
+      <created>1731262176442</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1731262176442</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -353,7 +379,8 @@
     <MESSAGE value="removed the sentry" />
     <MESSAGE value="fixed issue with blogs images in landing page" />
     <MESSAGE value="fixed some styles &amp; locale issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some styles &amp; locale issues" />
+    <MESSAGE value="used IranSans Fonts instead of the yekan..." />
+    <option name="LAST_COMMIT_MESSAGE" value="used IranSans Fonts instead of the yekan..." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

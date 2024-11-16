@@ -5,7 +5,17 @@ import { Button } from "@/components";
 import trans from "@/helpers/i18n/server";
 
 const variants = cva(
-    ["knowledge-card", "w-full", "flex", "flex-col", "gap-0", "items-end"],
+    [
+        "w-full",
+        "flex",
+        "flex-col",
+        "gap-0",
+        "items-end",
+        "@5xl:flex-row",
+        "@5xl:items-stretch",
+        "@5xl:drop-shadow-lg",
+        "relative",
+    ],
     {
         variants: {
             size: {
@@ -38,6 +48,9 @@ const infoVariants = cva(
         "rounded-bl-lg",
         "[&>h3]:text-title",
         "[&>p]:text-desc",
+        "@5xl:grow-1",
+        "@5xl:rounded-bl-none",
+        "@5xl:drop-shadow-none",
     ],
     {
         variants: {
@@ -48,7 +61,15 @@ const infoVariants = cva(
     }
 );
 const actionsVariants = cva(
-    ["[&>.hk-button]:w-full", "[&>.hk-button]:rounded-t-none"],
+    [
+        "[&>.hk-button]:w-full",
+        "[&>.hk-button]:rounded-t-none",
+        "@5xl:absolute",
+        "@5xl:bottom-0",
+        "@5xl:right-0",
+        "@5xl:[&>.hk-button]:rounded-r-none",
+        "@5xl:[&>.hk-button]:rounded-tl-lg",
+    ],
     {
         variants: {
             size: {
@@ -75,16 +96,17 @@ const KnowledgeCard = ({
     href,
 }: KnowledgeCardProps) => {
     return (
-        <div className={variants({ size })}>
-            <ImageKit src={ikUrl} alt={title} width={300} height={300} />
-
-            <section className={infoVariants({ size })}>
-                <h3>{title}</h3>
-                <p>{description}</p>
-            </section>
-            <section className={actionsVariants({ size })}>
-                <Button label={trans("common.viewDetail")} link={href} />
-            </section>
+        <div className={"knowledge-card w-full @container"}>
+            <div className={variants({ size })}>
+                <ImageKit src={ikUrl} alt={title} width={300} height={300} />
+                <section className={infoVariants({ size })}>
+                    <h3>{title}</h3>
+                    <p>{description}</p>
+                </section>
+                <section className={actionsVariants({ size })}>
+                    <Button label={trans("common.viewDetail")} link={href} />
+                </section>
+            </div>
         </div>
     );
 };

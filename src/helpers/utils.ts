@@ -1,5 +1,11 @@
-import { IParams } from "@/types/base";
+import { Direction, IParams } from "@/types/base";
 
+export function getNavDirection(count: number, index: number): Direction {
+    if (count === 1) return "none";
+    if (count > 1 && index === 0) return "right";
+    if (index === count - 1) return "left";
+    return "both";
+}
 export function formatEventDate(date: string): string {
     if (!date) return "";
     const process = new Date(date);

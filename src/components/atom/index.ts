@@ -13,3 +13,4 @@ export { default as IconLabel } from "./icon-label";
 export { default as OpenLinkBox } from "./open-link-box";
 export { default as ImageKit } from "./image-kit";
 export { default as LinkIcon } from "./link-icon";
+export { default as SlidePervNext } from "./slide-perv-next";

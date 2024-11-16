@@ -78,4 +78,5 @@ export default {
     sendMessage: "Send Message",
     callUs: "Any Question? Call Us Now",
     viewDetail: "View Detail",
+    readFullArticle: "Read Full Article",
 };
