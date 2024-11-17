@@ -6,6 +6,7 @@ import { Direction } from "@/types/base";
 
 const variants = cva(
     [
+        "blog-banner-card",
         "w-full",
         "grid",
         "gap-4",
@@ -17,6 +18,12 @@ const variants = cva(
         "[&>h3]:font-bold",
         "text-white",
         "text-center",
+        "[&>img]:max-h-[300px]",
+        "[&>img]:h-[300px]",
+        "border-2",
+        "border-dotted",
+        "drop-shadow-lg",
+        "border-primary",
     ],
     {
         variants: {

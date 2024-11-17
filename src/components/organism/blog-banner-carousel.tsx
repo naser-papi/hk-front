@@ -17,7 +17,15 @@ const BlogBannerCarousel = async () => {
             navDirection={getNavDirection(list.length, index)}
         />
     ));
-    return <div className={"gap2 flex max-w-full items-center"}>{cards}</div>;
+    return (
+        <div
+            className={
+                "hidden-scroll flex max-w-lg items-stretch gap-3 overflow-x-auto [&>.blog-banner-card]:w-[320px] [&>.blog-banner-card]:shrink-0"
+            }
+        >
+            {cards}
+        </div>
+    );
 };
 
 export default BlogBannerCarousel;

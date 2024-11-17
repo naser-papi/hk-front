@@ -17,6 +17,7 @@ export const GetTopBlogs = cache(async () => {
 export const GetBlogList = cache(async () => {
     const apiInfo = BlogsAPIPath.getBlogList;
     const resp = await mainCall<ICMSListApiResponse<BlogDto>>(apiInfo);
+    console.log("resp", resp);
     if (resp && resp.data) {
         return resp.data.data;
     } else {

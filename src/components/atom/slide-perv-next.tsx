@@ -20,8 +20,8 @@ const variants = cva(
         variants: {
             mode: {
                 both: [],
-                left: ["[&>svg:nth-of-type(2)]:hidden"],
-                right: ["[&>svg:nth-of-type(1)]:hidden"],
+                left: ["[&>svg:nth-of-type(2)]:invisible"],
+                right: ["[&>svg:nth-of-type(1)]:invisible"],
                 none: ["[&>svg]:hidden"],
             },
         },
