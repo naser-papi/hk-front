@@ -79,4 +79,5 @@ export default {
     callUs: "Any Question? Call Us Now",
     viewDetail: "View Detail",
     readFullArticle: "Read Full Article",
+    gotoPage: "Go To Page",
 };

@@ -1,9 +1,10 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { ProfileAvatar } from "@/components";
+import { ProfileAvatar } from "@/components/atom";
 import { ProfileAvatarProps } from "@/components/atom/profile-avatar";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faQuoteRight } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+
 const variants = cva([
     "grid",
     "gap-4",

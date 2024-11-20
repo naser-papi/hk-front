@@ -2,6 +2,7 @@ import { BlogDto } from "@/types/dto";
 import { KnowledgeCard } from "../molecule";
 import { GetTopBlogs } from "@/services/blogs";
 import NoData from "@/components/organism/no-data";
+import { Container } from "@/components/molecule";
 
 const BlogCardContainer = async () => {
     const list = await GetTopBlogs();
@@ -16,11 +17,9 @@ const BlogCardContainer = async () => {
         />
     ));
     return (
-        <article
-            className={"blog-card-container grid place-items-center gap-y-8"}
-        >
+        <Container direction={"column"} gap={"medium"}>
             {cards}
-        </article>
+        </Container>
     );
 };
 

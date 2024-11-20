@@ -47,6 +47,96 @@ body.rtl {
 }
 
 @layer utilities {
+  .template {
+    @apply grid w-full place-items-center gap-4 max-w-4xl mx-auto p-8 bg-white/50 z-20;
+
+    & > h2 {
+      @apply text-center text-xl font-bold text-black;
+    }
+
+    &:not(.hero):nth-of-type(odd) {
+      @apply bg-gray-800/50;
+    }
+
+    &:nth-of-type(even) {
+      @apply bg-white/50;
+    }
+  }
+
+  .footer {
+    @apply relative z-20 grid justify-start w-full gap-1;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+
+    & > section {
+      @apply h-fit border-b-2 border-dotted border-white py-2;
+    }
+  }
+
+  @media screen and (min-width: 744px) {
+    .template {
+      @apply p-32;
+
+      & > h2 {
+        @apply text-1.6rem;
+      }
+
+      & > .show-more-button {
+        @apply w-[260px] h-[230px] pb-[52px];
+
+        & > span {
+          @apply text-[1.4rem];
+        }
+      }
+    }
+
+    .footer {
+      @apply gap-6;
+    }
+
+    .footer > section {
+      @apply p-2;
+    }
+
+    .footer > .socials .link-icon {
+      @apply text-4xl;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .template {
+      & > h2 {
+        @apply text-1.9rem;
+      }
+
+      & > .show-more-button {
+        @apply w-[300px] h-[260px] pb-[60px];
+
+        & > span {
+          @apply text-[1.8rem];
+        }
+      }
+    }
+
+    .footer {
+      @apply gap-8;
+    }
+
+    .footer > .socials .link-icon {
+      @apply text-5xl;
+    }
+  }
+
+  .page-default-container {
+    @apply relative grid h-full max-h-screen w-full place-items-start overflow-y-auto;
+  }
+
+  .grid-col-2-gap-4 {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .grid-col-2-gap-6 {
+    @apply grid grid-cols-2 gap-6;
+  }
   .row-container{
     @apply flex items-center gap-2;
   }

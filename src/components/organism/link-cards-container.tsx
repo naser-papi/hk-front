@@ -16,7 +16,9 @@ const LinkCardsContainer = async () => {
     ));
     return (
         <article
-            className={"link-cards-container grid place-items-center gap-y-8"}
+            className={
+                "link-cards-container grid w-full place-items-center gap-y-8 @container"
+            }
         >
             {cards}
         </article>

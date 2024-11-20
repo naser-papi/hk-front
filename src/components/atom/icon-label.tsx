@@ -3,17 +3,20 @@ import { LabelHTMLAttributes } from "react";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const variants = cva(["icon-label", "flex", "gap-2", "items-center"], {
-    variants: {
-        intend: {
-            primary: ["[&>svg]:text-altLight", "text-secondary"],
-            secondary: ["[&>svg]:text-secondary", "text-altLight"],
+const variants = cva(
+    ["icon-label", "flex", "gap-2", "items-center", "h-[max-content]"],
+    {
+        variants: {
+            intend: {
+                primary: ["[&>svg]:text-altLight", "text-secondary"],
+                secondary: ["[&>svg]:text-secondary", "text-altLight"],
+            },
         },
-    },
-    defaultVariants: {
-        intend: "primary",
-    },
-});
+        defaultVariants: {
+            intend: "primary",
+        },
+    }
+);
 
 interface IconLabelProps
     extends LabelHTMLAttributes<HTMLLabelElement>,

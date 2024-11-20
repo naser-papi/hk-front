@@ -16,6 +16,12 @@ export interface MediaDto {
     provider: string;
 }
 
+export interface CategoryDto {
+    id: number;
+    title: string;
+    parent: CategoryDto;
+}
+
 export interface BaseDto {
     id: number;
     documentId: string;

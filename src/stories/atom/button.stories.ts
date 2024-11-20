@@ -20,3 +20,11 @@ export const Secondary: Story = {
         intend: "secondary",
     },
 };
+
+export const FilterButton: Story = {
+    args: {
+        label: "Filter",
+        intend: "filter",
+        selected: false,
+    },
+};

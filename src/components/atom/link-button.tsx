@@ -7,6 +7,7 @@ import { faChevronDoubleRight } from "@awesome.me/kit-026a927a83/icons/classic/s
 const linkButtonVariants = cva(
     [
         "link-button",
+        "text-center",
         "normal-flex-row-container",
         "border-b-2",
         "border-black",
@@ -15,6 +16,7 @@ const linkButtonVariants = cva(
         "max-w-[fit-content]",
         "h-[max-content]",
         "[&>svg]:text-secondary",
+        "rtl:[&>svg]:rotate-180",
     ],
     {
         variants: {

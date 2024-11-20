@@ -1,6 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { Button, ImageKit, SlidePervNext } from "@/components";
+import { Button, ImageKit, SlidePervNext } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { Direction } from "@/types/base";
 

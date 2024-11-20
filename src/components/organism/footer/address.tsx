@@ -1,4 +1,4 @@
-import { LinkIcon } from "@/components";
+import { LinkIcon } from "@/components/atom";
 import { faMapLocationDot } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import { GetCompanyInfo } from "@/services/company-info";
 

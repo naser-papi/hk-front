@@ -1,12 +1,16 @@
 import trans from "@/helpers/i18n/server";
 import ServiceCardsContainer from "@/components/organism/service-cards-container";
-import { ShowMoreLink } from "@/components";
+import { ShowMoreLink } from "@/components/atom";
 import face2 from "assets/show-more/face-2.svg";
-import "../template.css";
 
 const Services = () => {
     return (
-        <section id={"services"} className={"template services"}>
+        <section
+            id={"services"}
+            className={
+                "template lg:[&_.service-card-container]:grid-col-2-gap-6"
+            }
+        >
             <h2>{trans("common.ourServices")}</h2>
             <ServiceCardsContainer />
             <ShowMoreLink

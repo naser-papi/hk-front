@@ -1,7 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { ImageKit } from "@/components/atom";
-import { Button } from "@/components";
+import { Button, ImageKit } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 
 const variants = cva(
@@ -11,9 +10,9 @@ const variants = cva(
         "flex-col",
         "gap-0",
         "items-end",
-        "@5xl:flex-row",
-        "@5xl:items-stretch",
-        "@5xl:drop-shadow-lg",
+        "@4xl:flex-row",
+        "@4xl:items-stretch",
+        "@4xl:drop-shadow-lg",
         "relative",
     ],
     {
@@ -48,9 +47,9 @@ const infoVariants = cva(
         "rounded-bl-lg",
         "[&>h3]:text-title",
         "[&>p]:text-desc",
-        "@5xl:grow-1",
-        "@5xl:rounded-bl-none",
-        "@5xl:drop-shadow-none",
+        "@4xl:grow-1",
+        "@4xl:rounded-bl-none",
+        "@4xl:drop-shadow-none",
     ],
     {
         variants: {
@@ -64,11 +63,10 @@ const actionsVariants = cva(
     [
         "[&>.hk-button]:w-full",
         "[&>.hk-button]:rounded-t-none",
-        "@5xl:absolute",
-        "@5xl:bottom-0",
-        "@5xl:right-0",
-        "@5xl:[&>.hk-button]:rounded-r-none",
-        "@5xl:[&>.hk-button]:rounded-tl-lg",
+        "@4xl:absolute",
+        "@4xl:bottom-0",
+        "@4xl:end-0",
+        "@4xl:[&>.hk-button]:rounded-none",
     ],
     {
         variants: {

@@ -1,12 +1,11 @@
 import trans from "@/helpers/i18n/server";
 import EventCardsContainer from "@/components/organism/event-cards-container";
-import { ShowMoreLink } from "@/components";
+import { ShowMoreLink } from "@/components/atom";
 import face1 from "assets/show-more/face-1.svg";
-import "../template.css";
 
-const Events = () => {
+const LandingEvents = () => {
     return (
-        <section id={"events"} className={"template events"}>
+        <section id={"events"} className={"template"}>
             <h2>{trans("common.whatHappening")}</h2>
             <EventCardsContainer />
             <ShowMoreLink
@@ -18,4 +17,4 @@ const Events = () => {
     );
 };
 
-export default Events;
+export default LandingEvents;

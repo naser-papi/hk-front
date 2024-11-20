@@ -1,7 +1,9 @@
-export { default as Hero } from "./hero";
-export { default as Services } from "./services";
-export { default as Blogs } from "./blogs";
-export { default as Events } from "./events";
-export { default as Links } from "./links";
-export { default as Contact } from "./contact";
+export { default as LandingHero } from "./landing-hero";
+export { default as LandingServices } from "./landing-services";
+export { default as LandingBlogs } from "./landing-blogs";
+export { default as LandingEvents } from "./landing-events";
+export { default as LandingLinks } from "./landing-links";
+export { default as LandingContact } from "./landing-contact";
 export { default as Footer } from "./footer";
+export { default as BlogsHero } from "./blogs-hero";
+export { default as BlogsList } from "./blogs-list";

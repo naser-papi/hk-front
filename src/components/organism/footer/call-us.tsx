@@ -1,5 +1,5 @@
 import { faPhoneVolume } from "@awesome.me/kit-026a927a83/icons/classic/solid";
-import { LinkIcon } from "@/components";
+import { LinkIcon } from "@/components/atom";
 import { GetCompanyInfo } from "@/services/company-info";
 import trans from "@/helpers/i18n/server";
 

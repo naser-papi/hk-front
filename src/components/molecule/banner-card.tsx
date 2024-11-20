@@ -1,4 +1,4 @@
-import { ImageKit, LinkButton } from "@/components";
+import { ImageKit, LinkButton } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 
 interface BannerCardProps {

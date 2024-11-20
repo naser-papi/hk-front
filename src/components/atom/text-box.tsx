@@ -1,6 +1,9 @@
 "use client";
 import { cva, VariantProps } from "class-variance-authority";
-import { InputHTMLAttributes } from "react";
+import { InputHTMLAttributes, useState } from "react";
+import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { twMerge } from "tailwind-merge";
 
 const textboxVariants = cva(
     [
@@ -14,6 +17,7 @@ const textboxVariants = cva(
         "rounded-lg",
         "[&>.text]:outline-none",
         "[&>.text]:bg-transparent",
+        "[&>svg]:mr-2",
     ],
     {
         variants: {
@@ -31,6 +35,8 @@ interface TextBoxProps
     type: "text" | "textarea" | "password";
     updateDto?: (name: string, value: any) => void;
     rows?: number;
+    icon?: IconDefinition;
+    onEnterKeyPressed?: (text: string) => void;
 }
 
 const TextBox = ({
@@ -40,18 +46,29 @@ const TextBox = ({
     name,
     value,
     rows,
+    icon,
+    className,
+    onEnterKeyPressed,
     ...rest
 }: TextBoxProps) => {
+    const [text, setText] = useState(value);
     return (
-        <div className={textboxVariants({ intend })}>
+        <div className={twMerge(textboxVariants({ intend }), className)}>
+            {icon && <FontAwesomeIcon icon={icon} />}
             {type === "textarea" ? (
                 <textarea
                     className={"text"}
-                    onChange={(event) =>
-                        updateDto &&
-                        updateDto(event.target.name, event.target.value)
+                    onKeyDown={(event) =>
+                        onEnterKeyPressed &&
+                        event.key === "Enter" &&
+                        onEnterKeyPressed(text as string)
                     }
-                    value={value}
+                    onChange={(event) =>
+                        updateDto
+                            ? updateDto(event.target.name, event.target.value)
+                            : setText(event.target.value)
+                    }
+                    value={updateDto ? value : text}
                     name={name}
                     placeholder={rest.placeholder}
                     rows={rows}
@@ -60,12 +77,18 @@ const TextBox = ({
                 <input
                     {...rest}
                     className={"text"}
-                    value={value}
+                    value={updateDto ? value : text}
                     name={name}
                     type={type}
+                    onKeyDown={(event) =>
+                        onEnterKeyPressed &&
+                        event.key === "Enter" &&
+                        onEnterKeyPressed(text as string)
+                    }
                     onChange={(event) =>
-                        updateDto &&
-                        updateDto(event.target.name, event.target.value)
+                        updateDto
+                            ? updateDto(event.target.name, event.target.value)
+                            : setText(event.target.value)
                     }
                 />
             )}

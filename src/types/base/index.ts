@@ -89,3 +89,8 @@ export interface IFormInput {
     label: string;
     placeholder?: string;
 }
+
+export interface KeyText {
+    key: number;
+    text: string;
+}

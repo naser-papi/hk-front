@@ -1,11 +1,11 @@
 import trans from "@/helpers/i18n/server";
-import { BlogCardsContainer, ShowMoreLink } from "@/components";
+import { BlogCardsContainer } from "@/components/organism";
+import { ShowMoreLink } from "@/components/atom";
 import face6 from "assets/show-more/face-6.svg";
-import "../template.css";
 
-const Blogs = () => {
+const LandingBlogs = () => {
     return (
-        <section id={"blogs"} className={"template blogs"}>
+        <section id={"blogs"} className={"template"}>
             <h2>{trans("common.knowledgeSharing")}</h2>
             <BlogCardsContainer />
             <ShowMoreLink
@@ -17,4 +17,4 @@ const Blogs = () => {
     );
 };
 
-export default Blogs;
+export default LandingBlogs;

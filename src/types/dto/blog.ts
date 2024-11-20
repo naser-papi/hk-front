@@ -1,4 +1,4 @@
-import { BaseDto, MediaDto } from "@/types/dto/common";
+import { BaseDto, CategoryDto, MediaDto } from "@/types/dto/common";
 
 export interface BlogDto extends BaseDto {
     title: string;
@@ -11,4 +11,5 @@ export interface BlogDto extends BaseDto {
     secondSection?: any;
     author: string;
     keywords: string;
+    category?: CategoryDto;
 }

@@ -2,7 +2,7 @@
 
 import { FormEvent, useState } from "react";
 import { UserMessageDto } from "@/types/dto/user-message";
-import { Button, TextBox } from "@/components";
+import { Button, TextBox } from "@/components/atom";
 import { SendNewMessage } from "@/services/user-messages";
 import useTranslation from "@/helpers/i18n/use-translation";
 
@@ -33,7 +33,7 @@ const ContactForm = () => {
     return (
         <form
             className={
-                "contact-form grid place-items-center gap-y-4 [&>.hk-text-box]:w-full [&>button]:w-full"
+                "contact-form lg:grid-col-2-gap-4 grid w-full place-items-center gap-y-4 md:text-2xl [&>.hk-text-box]:w-full [&>button]:w-full"
             }
             onSubmit={onSubmit}
         >
@@ -44,6 +44,7 @@ const ContactForm = () => {
                 key={"fullName"}
                 placeholder={t("common.fullName")}
                 updateDto={updateDto}
+                className={"lg:col-span-2"}
             />
             <TextBox
                 type={"text"}
@@ -69,11 +70,13 @@ const ContactForm = () => {
                 updateDto={updateDto}
                 placeholder={t("common.message")}
                 rows={4}
+                className={"lg:col-span-2"}
             />
             <Button
                 label={t("common.sendMessage")}
                 intend={"secondary"}
                 type={"submit"}
+                className={"lg:col-span-2"}
             />
         </form>
     );

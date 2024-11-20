@@ -5,7 +5,7 @@ export const BlogsAPIPath = {
     getTopBlogs: {
         isCms: true,
         method: "GET",
-        url: `api/blogs?populate=cardImage&${TopEntityQuery}`,
+        url: `api/blogs?populate[0]=cardImage&populate[1]=bannerMedia&${TopEntityQuery}`,
         options: {
             next: { revalidate: 3600 },
         },
@@ -13,11 +13,7 @@ export const BlogsAPIPath = {
     getBlogList: {
         isCms: true,
         method: "GET",
-        url: "api/blogs?populate=bannerMedia",
-        params: {
-            page: 1,
-            pageSize: 10,
-        },
+        url: "api/blogs?populate[0]=cardImage&populate[1]=bannerMedia",
         options: {
             next: { revalidate: 3600 },
         },

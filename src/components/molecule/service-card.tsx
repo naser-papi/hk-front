@@ -1,12 +1,13 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { LinkButton } from "../atom";
 import { BaseHTMLAttributes } from "react";
-import { ImageKit } from "@/components";
+import { ImageKit } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 
 const variants = cva(
     [
         "service-card",
+        "w-full",
         "flex",
         "flex-col",
         "p-4",

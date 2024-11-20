@@ -1,5 +1,6 @@
 "use client";
-import { Button, MainMenu, NlLogo } from "@/components";
+import { Button, NlLogo } from "@/components/atom";
+import { MainMenu } from "@/components/organism";
 import { faBars } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import BaseState from "@/stores/base";
 

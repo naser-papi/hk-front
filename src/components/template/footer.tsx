@@ -1,4 +1,3 @@
-import "../template.css";
 import Image from "next/image";
 import footerBk from "assets/images/footer-bk.png";
 import {
@@ -8,11 +7,11 @@ import {
     Copyright,
     CustomerRate,
     Socials,
-} from "@/components";
+} from "@/components/organism";
 
 const Footer = () => {
     return (
-        <footer id={"footer"} className={"template"}>
+        <footer id={"footer"} className={"template relative"}>
             <Image src={footerBk} alt="footer" fill className={"z-0"} />
             <div className={"footer"}>
                 <About />

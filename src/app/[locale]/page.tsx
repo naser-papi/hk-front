@@ -1,25 +1,22 @@
 import {
-    Blogs,
-    Contact,
-    Events,
     Footer,
-    Hero,
-    Links,
-    Services,
-} from "@/components";
+    LandingBlogs,
+    LandingContact,
+    LandingEvents,
+    LandingHero,
+    LandingLinks,
+    LandingServices,
+} from "@/components/template";
 
-interface HomeProps {
-    params: any;
-}
-export default function Home({ params }: HomeProps) {
+export default function Home() {
     return (
-        <main className="relative grid h-full max-h-screen w-full place-items-start overflow-y-auto">
-            <Hero />
-            <Services />
-            <Blogs />
-            <Events />
-            <Links />
-            <Contact />
+        <main className="page-default-container">
+            <LandingHero />
+            <LandingServices />
+            <LandingBlogs />
+            <LandingEvents />
+            <LandingLinks />
+            <LandingContact />
             <Footer />
         </main>
     );

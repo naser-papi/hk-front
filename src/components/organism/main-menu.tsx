@@ -1,5 +1,5 @@
 import { MenuLinks } from "@/constants/base";
-import { MenuLink } from "@/components";
+import { MenuLink } from "@/components/atom";
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
 import useTranslation from "@/helpers/i18n/use-translation";

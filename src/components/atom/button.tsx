@@ -26,11 +26,33 @@ const variants = cva(["hk-button", "block", "rounded-lg", "text-label"], {
                 "py-2",
             ],
             tertiary: [],
+            filter: [
+                "text-primary",
+                "bg-white",
+                "hover:bg-primary",
+                "hover:text-white",
+                "rounded-full",
+                "border-[1px]",
+                "border-black",
+                "px-5",
+                "py-1",
+            ],
+        },
+        selected: {
+            true: [],
+            false: [],
         },
     },
     defaultVariants: {
         intend: "primary",
     },
+    compoundVariants: [
+        {
+            selected: true,
+            intend: "filter",
+            className: ["bg-primary", "text-white"],
+        },
+    ],
 });
 
 interface buttonProps
@@ -45,6 +67,7 @@ interface buttonProps
 const Button = ({
     label,
     intend,
+    selected,
     onClick,
     link,
     type,
@@ -54,7 +77,7 @@ const Button = ({
     const router = useRouter();
     return (
         <button
-            className={twMerge(variants({ intend }), className)}
+            className={twMerge(variants({ intend, selected }), className)}
             type={type ?? "button"}
             onClick={
                 link

@@ -1,11 +1,11 @@
 import trans from "@/helpers/i18n/server";
-import { LinkCardsContainer, ShowMoreLink } from "@/components";
+import { LinkCardsContainer } from "@/components/organism";
+import { ShowMoreLink } from "@/components/atom";
 import face4 from "assets/show-more/face-4.svg";
-import "../template.css";
 
-const Links = () => {
+const LandingLinks = () => {
     return (
-        <section id={"links"} className={"template links"}>
+        <section id={"links"} className={"template"}>
             <h2>{trans("common.usefulLinks")}</h2>
             <LinkCardsContainer />
             <ShowMoreLink
@@ -17,4 +17,4 @@ const Links = () => {
     );
 };
 
-export default Links;
+export default LandingLinks;

@@ -1,5 +1,5 @@
 import { GetCompanyInfo } from "@/services/company-info";
-import { ImageKit } from "@/components";
+import { ImageKit } from "@/components/atom";
 import NoData from "@/components/organism/no-data";
 
 const About = async () => {

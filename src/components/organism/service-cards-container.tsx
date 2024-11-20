@@ -1,7 +1,7 @@
 import { GetTopServices } from "@/services/services";
 import { ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
-import NoData from "@/components/organism/no-data";
+import { NoData } from "@/components/organism";
 
 const ServiceCardsContainer = async () => {
     const list = await GetTopServices();
@@ -17,7 +17,9 @@ const ServiceCardsContainer = async () => {
     ));
     return (
         <article
-            className={"service-card-container grid place-items-center gap-y-8"}
+            className={
+                "service-card-container grid w-full place-items-center gap-y-8"
+            }
         >
             {cards}
         </article>

@@ -79,4 +79,5 @@ export default {
     callUs: "سوالی دارید؟ با ما تماس بگیرید",
     viewDetail: "مطالعه کامل",
     readFullArticle: "مطالعه کامل",
+    gotoPage: "دیدن صفحه",
 };

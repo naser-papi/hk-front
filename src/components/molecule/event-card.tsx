@@ -5,21 +5,29 @@ import {
     faCalendarDays,
     faMessage,
 } from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import { IconLabel, ImageKit, LinkButton } from "@/components";
+import { IconLabel, ImageKit, LinkButton } from "@/components/atom";
 import { formatEventDate } from "@/helpers";
-import "./event-card.css";
 
 const variants = cva([
     "event-card",
+    "w-full",
+    "@container",
     "min-w-[300px]",
-    "pr-[90px]",
+    "pe-[90px]",
     "grid",
     "relative",
     "[&>img]:z-0",
-    "xs:min-w-[360px]",
+    "@sm:min-w-[360px]",
+    "@3xl:h-[420px]",
+    "@5xl:pe-[120px]",
 ]);
 
 const infoVariants = cva([
+    "bg-gradient-to-r",
+    "from-white",
+    "to-transparent",
+    "from-50%",
+    "to-100%",
     "info-part",
     "grid",
     "gap-y-3",
@@ -31,9 +39,12 @@ const infoVariants = cva([
     "[&>h4]:row-container",
     "w-full",
     "h-full",
-    "bg-white",
     "text-sm",
-    "xs:text-base",
+    "@sm:text-base",
+    "@3xl:text-2xl",
+    "@3xl:[&_.link-button]:text-2xl",
+    "rtl:bg-gradient-to-l",
+    "[&_.icon-label:nth-of-type(2)]:hidden",
 ]);
 
 interface EventCardProps

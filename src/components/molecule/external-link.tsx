@@ -1,8 +1,9 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
 import Image from "next/image";
-import { ImageKit, OpenLinkBox } from "@/components";
+import { ImageKit, OpenLinkBox } from "@/components/atom";
 import urlImg from "assets/images/url.jpeg";
+import trans from "@/helpers/i18n/server";
 
 const variants = cva([
     "w-full",
@@ -12,6 +13,8 @@ const variants = cva([
     "[&>img]:z-0",
     "[&>img]:opacity-50",
     "[&>img]:rounded-lg",
+    "@3xl:h-[300px]",
+    "@5xl:h-[360px]",
 ]);
 
 const infoVariants = cva([
@@ -44,7 +47,7 @@ const ExternalLink = ({ logo, title, href }: ExternalLinkProps) => {
             <section className={infoVariants({})}>
                 <ImageKit src={logo} alt={"logo"} width={120} height={120} />
                 <h2>{title}</h2>
-                <OpenLinkBox title={"Go To Page"} href={href} />
+                <OpenLinkBox title={trans("common.gotoPage")} href={href} />
             </section>
         </div>
     );
