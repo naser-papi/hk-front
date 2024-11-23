@@ -1,7 +1,6 @@
 import { GetTopBlogs } from "@/services/blogs";
-import { NoData } from "@/components/organism";
 import { BlogDto } from "@/types/dto";
-import { BlogBannerCard } from "@/components/molecule";
+import { BlogBannerCard, NoData } from "@/components/molecule";
 import { getNavDirection } from "@/helpers";
 
 const BlogBannerCarousel = async () => {

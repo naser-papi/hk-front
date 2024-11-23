@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { FabIconButton } from "@/components";
+import { FabIconButton } from "@/components/atom";
 import { faPlay } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+
 const meta: Meta<typeof FabIconButton> = {
     title: "Atom/FabIconButton",
     component: FabIconButton,

@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { OpenLinkBox } from "@/components";
+import { OpenLinkBox } from "@/components/atom";
 
 const meta: Meta<typeof OpenLinkBox> = {
     title: "Atom/OpenLinkBox",

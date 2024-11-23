@@ -1,6 +1,7 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { IconLabel } from "@/components";
+import { IconLabel } from "@/components/atom";
 import { faHouse } from "@awesome.me/kit-026a927a83/icons/classic/regular";
+
 const meta: Meta<typeof IconLabel> = {
     title: "Atom/IconLabel",
     component: IconLabel,

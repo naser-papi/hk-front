@@ -1,7 +1,6 @@
 import { GetTopServices } from "@/services/services";
-import { ServiceCard } from "@/components/molecule";
+import { NoData, ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
-import { NoData } from "@/components/organism";
 
 const ServiceCardsContainer = async () => {
     const list = await GetTopServices();

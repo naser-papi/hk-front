@@ -19,6 +19,10 @@ export function formatEventDate(date: string): string {
     return process.toLocaleString("en-US", options).replace(", ", " - ");
 }
 
+export function getStrapiPaginationQuery(page: number, pageSize: number) {
+    return `&pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort[0]=id:desc`;
+}
+
 export function replaceParams(urlTemplate: string, params: IParams): string {
     // Regular expression to match placeholder patterns like {param1}, {param2}, etc.
     const regex = /{([^}]+)}/g;

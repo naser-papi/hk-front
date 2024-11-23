@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { EventCard } from "@/components";
+import { EventCard } from "@/components/molecule";
 
 const meta: Meta<typeof EventCard> = {
     title: "Molecule/EventCard",

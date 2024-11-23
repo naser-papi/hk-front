@@ -44,7 +44,7 @@ const FilterListContainer = ({
                 icon={faSearch}
                 className={"w-full"}
                 value={query.filter}
-                placeholder={"Filter The List"}
+                placeholder={"Type And Press Enter to Filter"}
                 onEnterKeyPressed={(filter) =>
                     setQuery((perv) => ({
                         ...perv,

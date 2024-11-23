@@ -1,7 +1,6 @@
 import { GetBlogList } from "@/services/blogs";
-import { NoData } from "@/components/organism";
 import { BlogDto } from "@/types/dto";
-import { Container, KnowledgeCard } from "@/components/molecule";
+import { Container, KnowledgeCard, NoData } from "@/components/molecule";
 import FilterListContainer from "./filter-list-container";
 
 const BlogsFilterList = async () => {

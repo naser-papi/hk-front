@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { MainMenu } from "@/components";
+import { MainMenu } from "@/components/organism";
 
 const meta: Meta<typeof MainMenu> = {
     title: "Organism/MainMenu",

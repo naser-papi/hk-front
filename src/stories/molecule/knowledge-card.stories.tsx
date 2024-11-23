@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { KnowledgeCard } from "@/components";
+import { KnowledgeCard } from "@/components/molecule";
 
 const meta: Meta<typeof KnowledgeCard> = {
     title: "Molecule/KnowledgeCard",
@@ -22,6 +22,5 @@ export const Small: Story = {
         description:
             "some short description about this service that should explain the main point of this service.",
         href: "#",
-        size: "small",
     },
 };

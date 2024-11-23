@@ -80,4 +80,5 @@ export default {
     viewDetail: "مطالعه کامل",
     readFullArticle: "مطالعه کامل",
     gotoPage: "دیدن صفحه",
+    typeAndPressToFilter: "تایپ کنید و برای فیلتر دکمه اینتر را بزنید",
 };

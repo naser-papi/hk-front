@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { ShowMoreLink } from "@/components";
+import { ShowMoreLink } from "@/components/atom";
 import face1 from "assets/show-more/face-1.svg";
 
 const meta: Meta<typeof ShowMoreLink> = {

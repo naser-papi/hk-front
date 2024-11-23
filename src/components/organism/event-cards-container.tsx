@@ -1,7 +1,6 @@
 import { GetTopEvents } from "@/services/events";
-import { EventCard } from "@/components/molecule";
+import { EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
-import NoData from "@/components/organism/no-data";
 
 const EventCardsContainer = async () => {
     const list = await GetTopEvents();

@@ -80,4 +80,5 @@ export default {
     viewDetail: "View Detail",
     readFullArticle: "Read Full Article",
     gotoPage: "Go To Page",
+    typeAndPressToFilter: "Type And Press Enter to Filter",
 };

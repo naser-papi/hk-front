@@ -1,7 +1,6 @@
 import { GetHeroBanners } from "@/services/banners";
 import Container from "./container";
-import BannerCard from "@/components/molecule/banner-card";
-import NoData from "../no-data";
+import { BannerCard, NoData } from "@/components/molecule";
 
 const BannerCarousel = async () => {
     const banners = await GetHeroBanners();

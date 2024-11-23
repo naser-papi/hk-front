@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { QuoteCard } from "@/components";
+import { QuoteCard } from "@/components/molecule";
 import person from "assets/images/person.jpg";
 
 const meta: Meta<typeof QuoteCard> = {

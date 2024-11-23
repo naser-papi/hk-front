@@ -7,7 +7,7 @@ import {
 } from "@awesome.me/kit-8b348a8267/icons/classic/brands";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
-import NoData from "@/components/organism/no-data";
+import { NoData } from "@/components/molecule";
 
 const Socials = async () => {
     const companyInfo = await GetCompanyInfo();

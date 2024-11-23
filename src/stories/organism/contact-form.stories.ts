@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { ContactForm } from "@/components";
+import { ContactForm } from "@/components/organism";
 
 const meta: Meta<typeof ContactForm> = {
     title: "Organism/ContactForm",

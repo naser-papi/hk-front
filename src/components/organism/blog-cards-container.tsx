@@ -1,8 +1,7 @@
 import { BlogDto } from "@/types/dto";
 import { KnowledgeCard } from "../molecule";
 import { GetTopBlogs } from "@/services/blogs";
-import NoData from "@/components/organism/no-data";
-import { Container } from "@/components/molecule";
+import { Container, NoData } from "@/components/molecule";
 
 const BlogCardContainer = async () => {
     const list = await GetTopBlogs();

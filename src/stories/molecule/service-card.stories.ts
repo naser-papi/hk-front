@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { ServiceCard } from "@/components";
+import { ServiceCard } from "@/components/molecule";
 
 const meta: Meta<typeof ServiceCard> = {
     title: "Molecule/ServiceCard",
@@ -15,6 +15,5 @@ export const Default: Story = {
         description:
             "some short description about this service that should explain the main point of this service.",
         href: "#",
-        size: "small",
     },
 };

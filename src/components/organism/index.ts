@@ -11,6 +11,6 @@ export { default as CallUs } from "./footer/call-us";
 export { default as CustomerRate } from "./footer/customer-rate";
 export { default as Copyright } from "./footer/copyright";
 export { default as Socials } from "./footer/socials";
-export { default as NoData } from "./no-data";
+
 export { default as BlogBannerCarousel } from "./blog-banner-carousel";
 export { default as BlogsFilterList } from "./blogs-filter-list";

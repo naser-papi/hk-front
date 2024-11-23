@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { MenuLink } from "@/components";
+import { MenuLink } from "@/components/atom";
 import { faHandshakeAngle } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 
 const meta: Meta<typeof MenuLink> = {

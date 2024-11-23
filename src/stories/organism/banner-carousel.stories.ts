@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { BannerCarousel } from "@/components";
+import { BannerCarousel } from "@/components/organism";
 
 const meta: Meta<typeof BannerCarousel> = {
     title: "Organism/BannerCarousel",

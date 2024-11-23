@@ -21,6 +21,5 @@ export const Default: Story = {
         ikUrl: "https://ik.imagekit.io/tdvmspnmgu/temp/medium_sample_cdedf4f2d4_ysA2Lnfjd.webp?updatedAt=1729840552439",
         shortDesc: "This is a short description of the blog post.",
         link: "#",
-        screen: "mobile",
     },
 };

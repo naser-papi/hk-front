@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { LinkIcon } from "@/components";
+import { LinkIcon } from "@/components/atom";
 import {
     faTelegram,
     faWhatsapp,

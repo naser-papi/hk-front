@@ -76,7 +76,7 @@ const LinkButton = ({
                 linkButtonVariants({ disabled, hover, intend }),
                 className
             )}
-    ,    >
+        >
             <span>{label}</span>
             <FontAwesomeIcon icon={faChevronDoubleRight} />
         </Link>
