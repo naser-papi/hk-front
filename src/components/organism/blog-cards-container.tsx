@@ -17,7 +17,11 @@ const BlogCardContainer = async () => {
         />
     ));
     return (
-        <Container direction={"column"} gap={"medium"}>
+        <Container
+            direction={"column"}
+            gap={"big"}
+            className={"w-full @container"}
+        >
             {cards}
         </Container>
     );

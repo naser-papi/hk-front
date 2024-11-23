@@ -1,7 +1,8 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
+import { twMerge } from "tailwind-merge";
 
-const variants = cva(["flex", "items-center", "w-full"], {
+const variants = cva(["flex", "items-center", "w-full", "z-20"], {
     variants: {
         direction: {
             row: ["flex-row", "overflow-x-auto"],
@@ -28,11 +29,15 @@ const variants = cva(["flex", "items-center", "w-full"], {
 interface ContainerProps
     extends BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof variants> {
-    children: React.ReactNode[];
+    children: React.ReactNode[] | JSX.Element;
 }
 
-const Container = ({ children, direction }: ContainerProps) => {
-    return <article className={variants({ direction })}>{children}</article>;
+const Container = ({ children, direction, className, gap }: ContainerProps) => {
+    return (
+        <article className={twMerge(variants({ direction, gap }), className)}>
+            {children}
+        </article>
+    );
 };
 
 export default Container;

@@ -11,14 +11,13 @@ import { formatEventDate } from "@/helpers";
 const variants = cva([
     "event-card",
     "w-full",
-    "@container",
     "min-w-[300px]",
     "pe-[90px]",
     "grid",
     "relative",
     "[&>img]:z-0",
     "@sm:min-w-[360px]",
-    "@3xl:h-[420px]",
+    "@3xl:h-[260px]",
     "@5xl:pe-[120px]",
 ]);
 
@@ -45,6 +44,7 @@ const infoVariants = cva([
     "@3xl:[&_.link-button]:text-2xl",
     "rtl:bg-gradient-to-l",
     "[&_.icon-label:nth-of-type(2)]:hidden",
+    "md:text-xl",
 ]);
 
 interface EventCardProps

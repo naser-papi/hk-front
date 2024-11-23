@@ -7,32 +7,31 @@ import { Direction } from "@/types/base";
 const variants = cva(
     [
         "blog-banner-card",
-        "w-full",
         "grid",
+        "grid-rows-[32px_300px_1fr_1fr]",
         "gap-4",
-        "[&>img]:w-full",
         "rounded-lg",
         "bg-altLight",
         "p-2",
-        "[&>h3]:text-3xl",
-        "[&>h3]:font-bold",
         "text-white",
         "text-center",
-        "[&>img]:max-h-[300px]",
-        "[&>img]:h-[300px]",
         "border-2",
         "border-dotted",
         "drop-shadow-lg",
         "border-primary",
+        "w-[min(100%-64px,620px)]",
+        "shrink-0",
+        "[&>img]:w-full",
+        "[&>h3]:text-3xl",
+        "[&>h3]:font-bold",
+        "[&>img]:max-h-[300px]",
+        "[&>img]:h-[300px]",
+        "[&>section]:mt-auto",
+        "[&>section]:flex",
+        "[&>section]:flex-col",
     ],
     {
-        variants: {
-            screen: {
-                mobile: [],
-                tablet: [],
-                desktop: [],
-            },
-        },
+        variants: {},
     }
 );
 
@@ -51,16 +50,17 @@ const BlogBannerCard = ({
     ikUrl,
     shortDesc,
     link,
-    screen,
     navDirection,
 }: BlogBannerCardProps) => {
     return (
-        <div className={variants({ screen })}>
+        <div className={variants({})}>
             <h3>{title}</h3>
             <ImageKit src={ikUrl} alt={title} width={300} height={300} />
             <p>{shortDesc}</p>
-            <Button label={trans("common.readFullArticle")} link={link} />
-            <SlidePervNext mode={navDirection} />
+            <section>
+                <Button label={trans("common.readFullArticle")} link={link} />
+                <SlidePervNext mode={navDirection} />
+            </section>
         </div>
     );
 };

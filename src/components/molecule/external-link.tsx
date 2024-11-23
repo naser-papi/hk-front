@@ -26,12 +26,14 @@ const infoVariants = cva([
     "place-items-center",
     "gap-y-4",
     "p-4",
-    "text-secondary",
+    "text-primary",
     "text-lg",
     "font-semibold",
+    "[&>h2]:text-border-white",
     "[&>img]:rounded-full",
     "[&>img]:drop-shadow-lg",
     "[&>img]:bg-white",
+    "md:text-xl",
 ]);
 interface ExternalLinkProps
     extends BaseHTMLAttributes<HTMLDivElement>,

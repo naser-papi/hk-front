@@ -48,21 +48,24 @@ body.rtl {
 
 @layer utilities {
   .template {
-    @apply grid w-full place-items-center gap-4 max-w-4xl mx-auto p-8 bg-white/50 z-20;
+    @apply grid w-full place-items-center gap-4 max-w-5xl mx-auto p-4 z-20;
 
     & > h2 {
-      @apply text-center text-xl font-bold text-black;
+      @apply text-center text-2xl font-bold text-black;
     }
 
     &:not(.hero):nth-of-type(odd) {
-      @apply bg-gray-800/50;
+      @apply bg-[rgba(31,41,55,0.5)];
+
+      & > h2 {
+        @apply text-white;
+      }
     }
 
     &:nth-of-type(even) {
-      @apply bg-white/50;
+      @apply bg-[rgba(255,255,255,0.5)];
     }
   }
-
   .footer {
     @apply relative z-20 grid justify-start w-full gap-1;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
@@ -72,12 +75,16 @@ body.rtl {
     }
   }
 
+  .text-border-white {
+    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff
+  }
+
   @media screen and (min-width: 744px) {
     .template {
-      @apply p-32;
+      @apply p-8;
 
       & > h2 {
-        @apply text-1.6rem;
+        @apply text-4xl;
       }
 
       & > .show-more-button {
@@ -91,21 +98,23 @@ body.rtl {
 
     .footer {
       @apply gap-6;
-    }
 
-    .footer > section {
-      @apply p-2;
-    }
+      & > section {
+        @apply p-2;
+      }
 
-    .footer > .socials .link-icon {
-      @apply text-4xl;
+      & .socials {
+        & > .link-icon {
+          @apply text-[4rem];
+        }
+      }
     }
   }
 
   @media screen and (min-width: 1024px) {
     .template {
       & > h2 {
-        @apply text-1.9rem;
+        @apply text-[1.9rem];
       }
 
       & > .show-more-button {
@@ -121,9 +130,13 @@ body.rtl {
       @apply gap-8;
     }
 
-    .footer > .socials .link-icon {
-      @apply text-5xl;
+    .footer > .socials > .link-icon {
+      @apply text-6xl;
     }
+  }
+
+  .carousel-container {
+    @apply hidden-scroll flex max-w-5xl items-stretch gap-3 overflow-x-auto;
   }
 
   .page-default-container {

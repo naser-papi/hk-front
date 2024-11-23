@@ -12,7 +12,7 @@ const BannerCard = ({ title, desc, image, detailLink }: BannerCardProps) => {
     return (
         <div
             className={
-                "banner-card rounded-lg border-2 border-altLight p-2 text-white"
+                "banner-card flex h-[500px] flex-col gap-3 rounded-lg border-2 border-altLight p-2 text-white md:h-[780px]"
             }
         >
             <ImageKit
@@ -21,18 +21,17 @@ const BannerCard = ({ title, desc, image, detailLink }: BannerCardProps) => {
                 width={290}
                 height={260}
                 className={
-                    "banner-card-image w-full rounded-lg object-cover lg:h-[520px]"
+                    "banner-card-image h-[240px] w-full rounded-lg object-cover md:h-[480px] lg:h-[520px]"
                 }
             />
             <h1 className={"text-4xl font-bold"}>{title}</h1>
-            <p className={"mt-5 text-lg"}>{desc}</p>
-            <div className={"mt-5 flex items-center"}>
-                <LinkButton
-                    label={trans("common.readMore")}
-                    href={detailLink}
-                    intend={"secondary"}
-                />
-            </div>
+            <p className={"text-lg"}>{desc}</p>
+            <LinkButton
+                label={trans("common.readMore")}
+                href={detailLink}
+                intend={"secondary"}
+                className={"mt-auto"}
+            />
         </div>
     );
 };

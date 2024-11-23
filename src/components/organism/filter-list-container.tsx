@@ -43,6 +43,8 @@ const FilterListContainer = ({
                 type={"text"}
                 icon={faSearch}
                 className={"w-full"}
+                value={query.filter}
+                placeholder={"Filter The List"}
                 onEnterKeyPressed={(filter) =>
                     setQuery((perv) => ({
                         ...perv,

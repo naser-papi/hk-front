@@ -18,24 +18,21 @@ const variants = cva(
         "rounded-lg",
         "drop-shadow-lg",
         "[&>.hk-button]:w-full",
+        "w-[300px]",
+        "[&>img]:w-[70px]",
+        "[&>img]:h-[70px]",
+        "[&>h3]:text-title",
+        "[&>p]:text-desc",
+        "[&>p]:text-altLight",
+        "[&>p]:text-center",
+        "md:[&>img]:w-[140px]",
+        "md:[&>img]:h-[140px]",
+        "md:[&>h3]:text-3xl",
+        "md:[&>p]:text-2xl",
+        "md:[&>.link-button]:text-2xl",
     ],
     {
-        variants: {
-            size: {
-                small: [
-                    "w-[300px]",
-                    "[&>img]:w-[70px]",
-                    "[&>img]:h-[70px]",
-                    "[&>h3]:text-title",
-                    "[&>p]:text-desc",
-                    "[&>p]:text-altLight",
-                    "[&>p]:text-center",
-                ],
-            },
-        },
-        defaultVariants: {
-            size: "small",
-        },
+        variants: {},
     }
 );
 

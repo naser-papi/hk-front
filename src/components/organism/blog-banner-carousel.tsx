@@ -17,15 +17,7 @@ const BlogBannerCarousel = async () => {
             navDirection={getNavDirection(list.length, index)}
         />
     ));
-    return (
-        <div
-            className={
-                "hidden-scroll flex max-w-5xl items-stretch gap-3 overflow-x-auto [&>.blog-banner-card]:w-[min(100%-64px,620px)] [&>.blog-banner-card]:shrink-0"
-            }
-        >
-            {cards}
-        </div>
-    );
+    return <article className={"carousel-container"}>{cards}</article>;
 };
 
 export default BlogBannerCarousel;

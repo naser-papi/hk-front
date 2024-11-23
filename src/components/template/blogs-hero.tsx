@@ -4,7 +4,7 @@ import { BlogBannerCarousel } from "@/components/organism";
 
 const BlogsHero = () => {
     return (
-        <section id={"blogs-hero"} className={"template hero"}>
+        <section id={"blogs-hero"} className={"template hero bg-primary"}>
             <TopNav />
             <BlogBannerCarousel />
             <MobileMenu />

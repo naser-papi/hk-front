@@ -1,6 +1,7 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { AnchorHTMLAttributes } from "react";
 import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDoubleRight } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 
@@ -63,6 +64,7 @@ interface LinkButtonProps
 const LinkButton = ({
     label,
     href,
+    className,
     disabled,
     hover,
     intend,
@@ -70,8 +72,11 @@ const LinkButton = ({
     return (
         <Link
             href={href}
-            className={linkButtonVariants({ disabled, hover, intend })}
-        >
+            className={twMerge(
+                linkButtonVariants({ disabled, hover, intend }),
+                className
+            )}
+    ,    >
             <span>{label}</span>
             <FontAwesomeIcon icon={faChevronDoubleRight} />
         </Link>

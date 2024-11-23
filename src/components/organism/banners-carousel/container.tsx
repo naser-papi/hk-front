@@ -12,15 +12,15 @@ const Container = ({ children }: ContainerProps) => {
     const visible = useMemo(() => {
         switch (index) {
             case 1:
-                return `[&>.banner-card:nth-of-type(1)]:block`;
+                return `[&>.banner-card:nth-of-type(1)]:flex`;
             case 2:
-                return `[&>.banner-card:nth-of-type(2)]:block`;
+                return `[&>.banner-card:nth-of-type(2)]:flex`;
             case 3:
-                return `[&>.banner-card:nth-of-type(3)]:block`;
+                return `[&>.banner-card:nth-of-type(3)]:flex`;
             case 4:
-                return `[&>.banner-card:nth-of-type(4)]:block`;
+                return `[&>.banner-card:nth-of-type(4)]:flex`;
             case 5:
-                return `[&>.banner-card:nth-of-type(5)]:block`;
+                return `[&>.banner-card:nth-of-type(5)]:flex`;
         }
     }, [index]);
     const bullets = children.map((_, order) => (

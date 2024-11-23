@@ -4,7 +4,7 @@ import MobileMenu from "./mobile-menu";
 
 const LandingHero = () => {
     return (
-        <section id={"hero"} className={"bg-primary"}>
+        <section id={"hero"} className={"template hero bg-primary"}>
             <TopNav />
             <BannerCarousel />
             <MobileMenu />
