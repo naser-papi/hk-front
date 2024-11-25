@@ -12,7 +12,7 @@ const initialState = {
     phoneNo: "",
     message: "",
 } as UserMessageDto;
-const ContactForm = () => {
+const LandingContactForm = () => {
     const [info, setInfo] = useState({ ...initialState });
     const { t } = useTranslation();
     const updateDto = (name: string, value: string) => {
@@ -82,4 +82,4 @@ const ContactForm = () => {
     );
 };
 
-export default ContactForm;
+export default LandingContactForm;

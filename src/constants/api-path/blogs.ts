@@ -18,4 +18,12 @@ export const BlogsAPIPath = {
             next: { revalidate: 3600 },
         },
     },
+    getBlogDetail: {
+        isCms: true,
+        method: "GET",
+        url: "api/blogs/{uuid}?populate[0]=cardImage&populate[1]=bannerMedia&populate[2]=category",
+        params: {
+            uuid: "",
+        },
+    },
 } satisfies { [key: string]: IAPIInfo };

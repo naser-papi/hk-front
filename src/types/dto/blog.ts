@@ -11,5 +11,7 @@ export interface BlogDto extends BaseDto {
     secondSection?: any;
     author: string;
     keywords: string;
+    videoUrl?: string;
+    voiceUrl?: string;
     category?: CategoryDto;
 }

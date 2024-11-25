@@ -1,5 +1,5 @@
 import trans from "@/helpers/i18n/server";
-import { ContactForm } from "@/components/organism";
+import { LandingContactForm } from "@/components/organism";
 
 const LandingContact = () => {
     return (
@@ -10,7 +10,7 @@ const LandingContact = () => {
             <h2 className={"whitespace-pre"}>
                 {trans("common.haveAQuestion")}
             </h2>
-            <ContactForm />
+            <LandingContactForm />
         </section>
     );
 };

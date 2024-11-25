@@ -12,7 +12,7 @@ const BannerCard = ({ title, desc, image, detailLink }: BannerCardProps) => {
     return (
         <div
             className={
-                "banner-card flex h-[500px] flex-col gap-3 rounded-lg border-2 border-altLight p-2 text-white md:h-[780px]"
+                "banner-card card flex h-[500px] flex-col gap-3 rounded-lg border-2 border-altLight p-2 text-white md:h-[780px]"
             }
         >
             <ImageKit

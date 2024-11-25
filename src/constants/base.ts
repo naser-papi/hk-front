@@ -12,37 +12,37 @@ export const MenuLinks: IMenuLink[] = [
     {
         title: "common.services",
         icon: faHandshakeAngle,
-        path: "#services",
+        path: "/#services",
         id: "services",
     },
     {
         title: "common.posts",
         icon: faNotebook,
-        path: "#posts",
+        path: "/#blogs",
         id: "posts",
     },
     {
         title: "common.events",
         icon: faCalendarDays,
-        path: "#events",
+        path: "/#events",
         id: "events",
     },
     {
         title: "common.links",
         icon: faLink,
-        path: "#links",
+        path: "/#links",
         id: "links",
     },
     {
         title: "common.contactUs",
         icon: faMessageText,
-        path: "#contact",
+        path: "/#contact",
         id: "contact",
     },
     {
         title: "common.aboutUs",
         icon: faInfo,
-        path: "#about",
+        path: "/#about",
         id: "about",
     },
 ];

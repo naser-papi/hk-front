@@ -7,3 +7,7 @@ export { default as LandingContact } from "./landing-contact";
 export { default as Footer } from "./footer";
 export { default as BlogsHero } from "./blogs-hero";
 export { default as BlogsList } from "./blogs-list";
+export { default as ServicesHero } from "./services-hero";
+export { default as ServicesList } from "./services-list";
+export { default as BlogDetailHero } from "./blog-detail-hero";
+export { default as BlogDetailContent } from "./blog-detail-content";

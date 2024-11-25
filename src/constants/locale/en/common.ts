@@ -81,4 +81,9 @@ export default {
     readFullArticle: "Read Full Article",
     gotoPage: "Go To Page",
     typeAndPressToFilter: "Type And Press Enter to Filter",
+    author: "Author",
+    publishDate: "Publish Date",
+    readTime: "Read Time",
+    category: "Category",
+    keywords: "Keywords",
 };

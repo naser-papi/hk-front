@@ -2,7 +2,7 @@
 import { cache } from "react";
 import { BlogsAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
-import { ICMSListApiResponse } from "@/types/base";
+import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
 import { BlogDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
@@ -35,4 +35,18 @@ export const GetBlogList = cache(async () => {
     } else {
         return [] as BlogDto[];
     }
+});
+
+export const GetBlogDetail = cache(async (): Promise<BlogDto | undefined> => {
+    const url = headers().get("x-url");
+    const uuid = url?.split("/").pop();
+    if (uuid) {
+        const apiInfo = { ...BlogsAPIPath.getBlogDetail };
+        apiInfo.params.uuid = uuid;
+        const resp = await mainCall<IAPIResponse<BlogDto>>(apiInfo);
+        if (resp && resp.data) {
+            return resp.data.data;
+        }
+    }
+    return undefined;
 });

@@ -1,10 +1,31 @@
 import { Direction, IParams } from "@/types/base";
 
+export function getYouTubeVideoId(url: string): string | null {
+    const regex =
+        /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|.+\?v=))([\w-]{11})/;
+    const match = url.match(regex);
+    return match ? match[1] : null;
+}
+
 export function getNavDirection(count: number, index: number): Direction {
     if (count === 1) return "none";
     if (count > 1 && index === 0) return "right";
     if (index === count - 1) return "left";
     return "both";
+}
+
+export function formatPublishDateString(dateString: string | undefined) {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+
+    // Define options for formatting the date
+    const options: Intl.DateTimeFormatOptions = {
+        year: "numeric",
+        month: "short",
+        day: "2-digit",
+    };
+
+    return date.toLocaleDateString("en-US", options);
 }
 export function formatEventDate(date: string): string {
     if (!date) return "";

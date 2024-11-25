@@ -81,4 +81,9 @@ export default {
     readFullArticle: "مطالعه کامل",
     gotoPage: "دیدن صفحه",
     typeAndPressToFilter: "تایپ کنید و برای فیلتر دکمه اینتر را بزنید",
+    author: "نویسنده",
+    publishDate: "تاریخ انتشار",
+    readTime: "زمان مطالعه",
+    category: "دسته بندی",
+    keywords: "کلمات کلیدی",
 };

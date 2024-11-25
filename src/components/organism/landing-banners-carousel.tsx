@@ -1,8 +1,11 @@
 import { GetHeroBanners } from "@/services/banners";
-import Container from "./container";
-import { BannerCard, NoData } from "@/components/molecule";
+import {
+    BannerCard,
+    BulletCarouselContainer,
+    NoData,
+} from "@/components/molecule";
 
-const BannerCarousel = async () => {
+const LandingBannerCarousel = async () => {
     const banners = await GetHeroBanners();
     if (!banners || !banners.length) return <NoData />;
     const images = banners.flatMap((banner) => {
@@ -53,7 +56,7 @@ const BannerCarousel = async () => {
         }
         return result;
     });
-    return <Container>{images}</Container>;
+    return <BulletCarouselContainer>{images}</BulletCarouselContainer>;
 };
 
-export default BannerCarousel;
+export default LandingBannerCarousel;

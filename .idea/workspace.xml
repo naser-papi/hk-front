@@ -4,65 +4,52 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="list page part 1">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/video-player.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/services-video.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/molecule/video-player.stories.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some issue.&#10;added the video player">
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/atom/info-box.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/bullet-carousel-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/images-carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/blog-detail-hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/services-hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/services-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/atom/info-box.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/molecule/detail-page-banner.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/molecule/images-carousel.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/blog-detail-banner.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/landing-contact-form.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/services-video.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/template/services-hero.stories.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/video-player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/video-player.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-contact-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/no-data.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/no-data.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/avatar.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/avatar.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/bullet-point.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/bullet-point.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/button.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/button.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/link-button.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/link-button.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/nl-logo.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/nl-logo.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/open-link-box.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/open-link-box.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/profile-avatar.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/profile-avatar.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/show-more-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/show-more-link.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/banner-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/banner-card.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/blog-banner-card.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/blog-banner-card.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/category-list.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/category-list.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/event-card.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/event-card.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/external-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/external-link.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/knowledge-card.stories.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/quote-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/quote-card.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/molecule/service-card.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/service-card.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/banner-carousel.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/banner-carousel.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/blog-banner-carousel.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/blog-banner-carousel.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/blog-cards-container.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/blog-cards-container.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/contact-form.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/contact-form.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/event-cards-container.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/event-cards-container.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/footer.stories.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/link-cards-container.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/link-cards-container.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/main-menu.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/main-menu.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/service-cards-container.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/service-cards-container.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/template/blogs.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/template/landing-blogs.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/template/events.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/template/landing-events.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/template/hero.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/template/landing-hero.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/template/services.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/template/landing-services.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/company-info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/organism/banner-carousel.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/landing-banner-carousel.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/organism/contact-form.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/blog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +60,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -205,7 +192,12 @@
       <workItem from="1732296742299" duration="9811000" />
       <workItem from="1732344365368" duration="9550000" />
       <workItem from="1732369011403" duration="3773000" />
-      <workItem from="1732373874646" duration="5329000" />
+      <workItem from="1732373874646" duration="15431000" />
+      <workItem from="1732434008477" duration="6381000" />
+      <workItem from="1732469504861" duration="84000" />
+      <workItem from="1732470514386" duration="523000" />
+      <workItem from="1732472579514" duration="5026000" />
+      <workItem from="1732518555776" duration="5383000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -431,7 +423,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732359594292</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="fixed some issue.&#10;added the video player">
+      <option name="closed" value="true" />
+      <created>1732384642919</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1732384642919</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -464,7 +464,8 @@
     <MESSAGE value="added the blog-banner-carousel" />
     <MESSAGE value="some new changes" />
     <MESSAGE value="list page part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="list page part 1" />
+    <MESSAGE value="fixed some issue.&#10;added the video player" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some issue.&#10;added the video player" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

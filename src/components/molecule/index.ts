@@ -9,3 +9,6 @@ export { default as CategoryList } from "./category-list";
 export { default as Container } from "./container";
 export { default as NoData } from "./no-data";
 export { default as VideoPlayer } from "./video-player";
+export { default as BulletCarouselContainer } from "./bullet-carousel-container";
+export { default as ImagesCarousel } from "./images-carousel";
+export { default as DetailPageBanner } from "./detail-page-banner";

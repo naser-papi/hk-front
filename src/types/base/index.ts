@@ -94,3 +94,8 @@ export interface KeyText {
     key: number;
     text: string;
 }
+
+export interface LabelValue {
+    label: string;
+    value: string | number;
+}
