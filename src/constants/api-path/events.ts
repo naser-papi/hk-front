@@ -3,7 +3,6 @@ import { TopEntityQuery } from "@/constants/base";
 
 export const EventsAPIPath = {
     getTopEvents: {
-        isCms: true,
         method: "GET",
         url: `api/events?populate=cardImage&${TopEntityQuery}`,
         options: {

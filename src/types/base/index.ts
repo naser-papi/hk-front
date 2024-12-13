@@ -3,6 +3,13 @@ import { LanguageResources } from "@/constants/locale";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { HTTP_METHOD } from "next/dist/server/web/http";
 
+export interface ILocalStorageInfo {
+    token?: {
+        access: string;
+        refresh: string;
+    };
+}
+
 export interface IMenuLink {
     title: NestedKeyOf<LocaleType>;
     icon: IconDefinition;
@@ -77,7 +84,6 @@ export interface IAPIInfo {
     params?: IParams;
     query?: IParams;
     options?: RequestInit;
-    isCms?: boolean;
 }
 
 export type FormInputValue = string | number | string[] | undefined | boolean;

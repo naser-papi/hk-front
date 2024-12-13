@@ -87,7 +87,7 @@ body.rtl {
   }
 
   .text-border-white {
-    text-shadow: 1px 0 #fff, -1px 0 #fff, 0 1px #fff, 0 -1px #fff
+    text-shadow: 1px 0 var(--white), -1px 0 var(--white), 0 1px var(--white), 0 -1px var(--white)
   }
 
   @media screen and (min-width: 744px) {

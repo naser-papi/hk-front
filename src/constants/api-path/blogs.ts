@@ -3,7 +3,6 @@ import { TopEntityQuery } from "@/constants/base";
 
 export const BlogsAPIPath = {
     getTopBlogs: {
-        isCms: true,
         method: "GET",
         url: `api/blogs?populate[0]=cardImage&populate[1]=bannerMedia&${TopEntityQuery}`,
         options: {
@@ -11,7 +10,6 @@ export const BlogsAPIPath = {
         },
     },
     getBlogList: {
-        isCms: true,
         method: "GET",
         url: "api/blogs?populate[0]=cardImage&populate[1]=bannerMedia",
         options: {
@@ -19,7 +17,6 @@ export const BlogsAPIPath = {
         },
     },
     getBlogDetail: {
-        isCms: true,
         method: "GET",
         url: "api/blogs/{uuid}?populate[0]=cardImage&populate[1]=bannerMedia&populate[2]=category",
         params: {

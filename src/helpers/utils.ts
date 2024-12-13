@@ -1,5 +1,38 @@
-import { Direction, IParams } from "@/types/base";
+import { Direction, ILocalStorageInfo, IParams } from "@/types/base";
+import { GlobalKeys } from "@/constants/base";
 
+export const clearTokensFormAppLocalStorage = () => {
+    const exist = getAppLocalStorage() as ILocalStorageInfo;
+    if (exist && exist.hasOwnProperty("token")) {
+        delete exist.token;
+    }
+    localStorage.setItem(GlobalKeys.localStorageInfo, JSON.stringify(exist));
+};
+export const setTokensToAppLocalStorage = (token: string) => {
+    const exist =
+        getAppLocalStorage() ??
+        ({ token: { access: token, refresh: token } } as ILocalStorageInfo);
+    exist.token = { access: token, refresh: token };
+    localStorage.setItem(GlobalKeys.localStorageInfo, JSON.stringify(exist));
+};
+
+export const getAppLocalStorage = () => {
+    const value = localStorage.getItem(GlobalKeys.localStorageInfo);
+    if (value) {
+        return JSON.parse(value) as ILocalStorageInfo;
+    }
+    return null;
+};
+
+export function isValidEmail(email: string) {
+    const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return regex.test(email);
+}
+
+export function isValidTelegramID(username: string) {
+    const telegramRegex = /^@[a-zA-Z0-9_]{5,32}$/;
+    return telegramRegex.test(username);
+}
 export function getYouTubeVideoId(url: string): string | null {
     const regex =
         /(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|embed\/|v\/|.+\?v=))([\w-]{11})/;

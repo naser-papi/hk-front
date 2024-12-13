@@ -8,9 +8,7 @@ const coreCall = async (info: IAPIInfo, token = "") => {
         : info.query
           ? addQueryParamsToUrl(url, info.query)
           : url;
-    const server = info.isCms
-        ? (process.env.CMS_SERVER ?? process.env.NEXT_PUBLIC_CMS_SERVER)
-        : (process.env.API_SERVER ?? process.env.NEXT_PUBLIC_API_SERVER);
+    const server = process.env.CMS_SERVER ?? process.env.NEXT_PUBLIC_CMS_SERVER;
     const fullURL = `${server}/${normalizeUrl}`;
     if (info.body instanceof FormData) {
         /*When using the fetch method with FormData, you don't need to manually set the Content-Type header to multipart/form-data. The browser automatically sets the appropriate Content-Type boundary for FormData objects. Setting it manually would override this boundary, leading to issues with the request.*/

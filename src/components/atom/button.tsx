@@ -38,6 +38,10 @@ const variants = cva(["hk-button", "block", "rounded-lg", "text-label"], {
                 "py-1",
             ],
         },
+        disabled: {
+            true: ["bg-alt", "cursor-not-allowed", "hover:bg-alt"],
+            false: [],
+        },
         selected: {
             true: [],
             false: [],
@@ -55,8 +59,8 @@ const variants = cva(["hk-button", "block", "rounded-lg", "text-label"], {
     ],
 });
 
-interface buttonProps
-    extends ButtonHTMLAttributes<HTMLButtonElement>,
+interface ButtonProps
+    extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
         VariantProps<typeof variants> {
     label: string;
     type?: "button" | "submit";
@@ -73,12 +77,17 @@ const Button = ({
     type,
     icon,
     className,
-}: buttonProps) => {
+    disabled,
+    ...rest
+}: ButtonProps) => {
     const router = useRouter();
     return (
         <button
-            className={twMerge(variants({ intend, selected }), className)}
-            type={type ?? "button"}
+            className={twMerge(
+                variants({ intend, selected, disabled }),
+                className
+            )}
+            type={type ?? "butto,n"}
             onClick={
                 link
                     ? () => {
@@ -86,6 +95,8 @@ const Button = ({
                       }
                     : onClick
             }
+            disabled={!!disabled}
+            {...rest}
         >
             {label && label}
             {icon && <FontAwesomeIcon icon={icon} />}

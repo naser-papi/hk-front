@@ -15,11 +15,14 @@ const mainCall = async <T>(
             return { status: resp.status, data: {} as T };
         } else {
             const res = await resp.json();
+            if (res.error?.status === 500) {
+                alert("Server Side Error!");
+            }
             return {
-                status: resp.status,
+                status: res.error.status,
                 error:
-                    (res.detail as string) ||
-                    (res.message as string) ||
+                    (res.error.detail as string) ||
+                    (res.error.message as string) ||
                     "Something went wrong",
             };
         }

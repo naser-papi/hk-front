@@ -4,52 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some issue.&#10;added the video player">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atom/info-box.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/bullet-carousel-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/images-carousel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/blog-detail-hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/services-hero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/services-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/atom/info-box.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/molecule/detail-page-banner.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/molecule/images-carousel.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/organism/blog-detail-banner.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/organism/landing-contact-form.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/organism/services-video.stories.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/template/services-hero.stories.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the blog detail page">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/big-flag.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/welcome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/auth/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/flag-header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/form-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/auth-header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/auth-template.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/members.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/members.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/molecule/flag-header.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/molecule/form-item.stories.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/auth-form.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stories/organism/auth-header.stories.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/members.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/video-player.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/video-player.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/container.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/banners-carousel/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-contact-form.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/user-message.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/user-message.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/banner-carousel.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/organism/landing-banner-carousel.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/organism/contact-form.stories.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/blog.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/blog.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +51,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -92,7 +83,7 @@
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/src/app/[locale]/fonts/iran-sans&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/public/assets/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -102,7 +93,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -118,18 +109,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\iran-sans" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
       <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
-      <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\services" />
       <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template" />
       <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template\common" />
-      <recent name="D:\projects\hk-app\hk-front\src\app\[locale]" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -197,7 +188,25 @@
       <workItem from="1732469504861" duration="84000" />
       <workItem from="1732470514386" duration="523000" />
       <workItem from="1732472579514" duration="5026000" />
-      <workItem from="1732518555776" duration="5383000" />
+      <workItem from="1732518555776" duration="9210000" />
+      <workItem from="1732887988320" duration="3049000" />
+      <workItem from="1733053996511" duration="634000" />
+      <workItem from="1733057691686" duration="1616000" />
+      <workItem from="1733081052322" duration="3524000" />
+      <workItem from="1733132357782" duration="7235000" />
+      <workItem from="1733476580794" duration="12148000" />
+      <workItem from="1733571258348" duration="3784000" />
+      <workItem from="1733650252070" duration="899000" />
+      <workItem from="1733661385353" duration="157000" />
+      <workItem from="1733735388645" duration="4243000" />
+      <workItem from="1733818620118" duration="621000" />
+      <workItem from="1733827271446" duration="4782000" />
+      <workItem from="1733846481231" duration="781000" />
+      <workItem from="1733903644446" duration="3512000" />
+      <workItem from="1733947112653" duration="606000" />
+      <workItem from="1733995065810" duration="4590000" />
+      <workItem from="1734012039873" duration="156000" />
+      <workItem from="1734084179903" duration="11042000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -431,7 +440,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732384642919</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="added the blog detail page">
+      <option name="closed" value="true" />
+      <created>1732525610609</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1732525610609</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -465,7 +482,8 @@
     <MESSAGE value="some new changes" />
     <MESSAGE value="list page part 1" />
     <MESSAGE value="fixed some issue.&#10;added the video player" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some issue.&#10;added the video player" />
+    <MESSAGE value="added the blog detail page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the blog detail page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

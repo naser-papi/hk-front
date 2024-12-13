@@ -8,6 +8,10 @@ import {
     faNotebook,
 } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 
+export const GlobalKeys = {
+    localStorageInfo: "HK_APP_INFO",
+};
+
 export const MenuLinks: IMenuLink[] = [
     {
         title: "common.services",

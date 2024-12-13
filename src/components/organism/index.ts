@@ -16,3 +16,5 @@ export { default as BlogsFilterList } from "./blogs-filter-list";
 export { default as ServicesVideo } from "./services-video";
 export { default as BlogDetailBanner } from "./blog-detail-banner";
 export { default as BlogDetail } from "./blog-detail";
+export { default as AuthForm } from "./auth-form";
+export { default as AuthHeader } from "./auth-header";

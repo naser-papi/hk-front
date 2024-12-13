@@ -12,3 +12,5 @@ export { default as VideoPlayer } from "./video-player";
 export { default as BulletCarouselContainer } from "./bullet-carousel-container";
 export { default as ImagesCarousel } from "./images-carousel";
 export { default as DetailPageBanner } from "./detail-page-banner";
+export { default as FlagHeader } from "./flag-header";
+export { default as FormItem } from "./form-item";
