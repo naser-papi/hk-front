@@ -86,4 +86,5 @@ export default {
     readTime: "زمان مطالعه",
     category: "دسته بندی",
     keywords: "کلمات کلیدی",
+    dashboard: "پنل کاربری",
 };

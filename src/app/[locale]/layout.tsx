@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "../globals.css";
 import Background from "./background";
+import GlobalAlert from "@/components/organism/global-alert";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -62,6 +63,7 @@ export default function RootLayout({
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
                 <Background />
+                <GlobalAlert />
                 {children}
             </body>
         </html>

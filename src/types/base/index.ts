@@ -3,20 +3,6 @@ import { LanguageResources } from "@/constants/locale";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { HTTP_METHOD } from "next/dist/server/web/http";
 
-export interface ILocalStorageInfo {
-    token?: {
-        access: string;
-        refresh: string;
-    };
-}
-
-export interface IMenuLink {
-    title: NestedKeyOf<LocaleType>;
-    icon: IconDefinition;
-    path: string;
-    id: string;
-    isActive?: boolean;
-}
 export type DtoType = {
     [key in string]: string | number | boolean | number[] | undefined | null;
 };
@@ -47,6 +33,32 @@ export type LanguageName = keyof typeof LanguageResources;
 export type LocaleType = typeof enTranslation; //en is default
 
 export type Direction = "both" | "left" | "right" | "none";
+
+export type IParams = {
+    [key: string]: string | number;
+};
+export type FormInputValue = string | number | string[] | undefined | boolean;
+
+export interface IAlert {
+    type: "success" | "error" | "warn" | "info";
+    message: string;
+    closable?: boolean;
+}
+export interface ILocalStorageInfo {
+    token?: {
+        access: string;
+        refresh: string;
+    };
+}
+
+export interface IMenuLink {
+    title: NestedKeyOf<LocaleType>;
+    icon: IconDefinition;
+    path: string;
+    id: string;
+    isActive?: boolean;
+}
+
 interface IPagination {
     page: number;
     pageSize: number;
@@ -72,10 +84,6 @@ export interface IAPIResponse<T> {
     error?: string;
 }
 
-export type IParams = {
-    [key: string]: string | number;
-};
-
 export interface IAPIInfo {
     url: string;
     method: HTTP_METHOD;
@@ -85,8 +93,6 @@ export interface IAPIInfo {
     query?: IParams;
     options?: RequestInit;
 }
-
-export type FormInputValue = string | number | string[] | undefined | boolean;
 
 export interface IFormInput {
     name: string;

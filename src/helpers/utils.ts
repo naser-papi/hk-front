@@ -7,6 +7,8 @@ export const clearTokensFormAppLocalStorage = () => {
         delete exist.token;
     }
     localStorage.setItem(GlobalKeys.localStorageInfo, JSON.stringify(exist));
+    document.cookie =
+        "hkAuthToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 };
 export const setTokensToAppLocalStorage = (token: string) => {
     const exist =
@@ -14,6 +16,7 @@ export const setTokensToAppLocalStorage = (token: string) => {
         ({ token: { access: token, refresh: token } } as ILocalStorageInfo);
     exist.token = { access: token, refresh: token };
     localStorage.setItem(GlobalKeys.localStorageInfo, JSON.stringify(exist));
+    document.cookie = `hkAuthToken=${token}; path=/; expires=${new Date(Date.now() + 86400000).toUTCString()};`;
 };
 
 export const getAppLocalStorage = () => {

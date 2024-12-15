@@ -8,6 +8,7 @@ const BaseState = proxy<IBaseState>({
     toggleMenu: () => {
         BaseState.showMenu = !BaseState.showMenu;
     },
+    globalAlert: null,
 });
 
 export default BaseState;

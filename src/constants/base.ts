@@ -1,6 +1,7 @@
 import { IMenuLink } from "@/types/base";
 import {
     faCalendarDays,
+    faDashboard,
     faHandshakeAngle,
     faInfo,
     faLink,
@@ -48,6 +49,12 @@ export const MenuLinks: IMenuLink[] = [
         icon: faInfo,
         path: "/#about",
         id: "about",
+    },
+    {
+        title: "common.dashboard",
+        icon: faDashboard,
+        path: "/dashboard",
+        id: "Dashboard",
     },
 ];
 

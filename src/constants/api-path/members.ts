@@ -2,6 +2,13 @@ import { IAPIInfo } from "@/types/base";
 import { MemberDto } from "@/types/dto/members";
 
 export const MembersAPIPath = {
+    getUserInfo: {
+        method: "POST",
+        url: "api/members/user-info",
+        body: {
+            token: "",
+        },
+    },
     getUserToken: {
         method: "POST",
         url: "api/members/user-token",

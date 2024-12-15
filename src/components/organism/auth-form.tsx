@@ -94,7 +94,7 @@ const AuthForm = () => {
         setDto((perv) => ({ ...perv, isLoading: false }));
         if (token) {
             setTokensToAppLocalStorage(token);
-            await router.push("/");
+            router.push("/");
         }
     };
 

@@ -18,3 +18,4 @@ export { default as BlogDetailBanner } from "./blog-detail-banner";
 export { default as BlogDetail } from "./blog-detail";
 export { default as AuthForm } from "./auth-form";
 export { default as AuthHeader } from "./auth-header";
+export { default as GlobalAlert } from "./global-alert";

@@ -86,4 +86,5 @@ export default {
     readTime: "Read Time",
     category: "Category",
     keywords: "Keywords",
+    dashboard: "Dashboard",
 };
