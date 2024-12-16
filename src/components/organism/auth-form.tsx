@@ -176,10 +176,12 @@ const AuthForm = () => {
             />
             <FormItem label={t("auth.otpCode")}>
                 <TextBox
-                    type={"text"}
                     placeholder={"1234"}
                     name={"otpCode"}
                     updateDto={updateDto}
+                    type="text"
+                    pattern="\d*"
+                    inputMode="numeric"
                 />
             </FormItem>
             <Button
