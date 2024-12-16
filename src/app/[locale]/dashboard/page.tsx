@@ -1,7 +1,6 @@
-import { NextRequest } from "next/server";
 import { GetHeaderUserInfo } from "@/services/server";
 
-const DashboardPage = async (request: NextRequest) => {
+const DashboardPage = async () => {
     //retrieve userInfo from request header
     const userInfo = await GetHeaderUserInfo();
     return (
@@ -9,7 +8,7 @@ const DashboardPage = async (request: NextRequest) => {
             <h2 className={"text-2xl text-black"}>
                 Welcome{" "}
                 <span className={"text-secondary"}>{userInfo.fullName}</span> to
-                the Holland Kadeh User&#39;s Panel
+                the Holland Kade User&#39;s Panel
             </h2>
         </main>
     );

@@ -21,7 +21,7 @@ export const SendOTPCode = cache(async (dto: MemberDto) => {
     if (resp?.data) {
         return true;
     } else if (resp.status === 400 && resp.error) {
-        alert(resp.error);
+        throw new Error(resp.error);
     }
     throw new Error("Something went wrong");
 });

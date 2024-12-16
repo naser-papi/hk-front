@@ -4,6 +4,7 @@ import { FormItem } from "@/components/molecule";
 import { Button, TextBox } from "@/components/atom";
 import { useCallback, useState } from "react";
 import {
+    GetErrorText,
     isValidEmail,
     isValidTelegramID,
     setTokensToAppLocalStorage,
@@ -14,6 +15,7 @@ import {
     SendOTPCode,
 } from "@/services/members";
 import { MemberDto } from "@/types/dto/members";
+import BaseState from "@/stores/base";
 
 interface AuthFormState extends MemberDto {
     isLogin: boolean;
@@ -32,15 +34,24 @@ const AuthForm = () => {
     } as AuthFormState);
     const doOTPValidations = useCallback(() => {
         if ((!dto.email && !dto.telegramId) || !dto.fullName) {
-            alert("Please fill email or telegramId with full name");
+            BaseState.setAlert({
+                message: "Please fill email or telegramId with full name",
+                type: "error",
+            });
             return false;
         }
         if (dto.email && !isValidEmail(dto.email)) {
-            alert("Please enter a valid email address");
+            BaseState.setAlert({
+                message: "Please enter a valid email",
+                type: "error",
+            });
             return false;
         }
         if (dto.telegramId && !isValidTelegramID(dto.telegramId)) {
-            alert("Please enter a valid telegram ID");
+            BaseState.setAlert({
+                message: "Please enter a valid telegramId",
+                type: "error",
+            });
             return false;
         }
         return true;
@@ -50,15 +61,25 @@ const AuthForm = () => {
         if (!doOTPValidations()) {
             return;
         }
-        //call the sendOTP service function and check if the OTP is sent
-        setDto((perv) => ({ ...perv, isLoading: true }));
-        const resp = await SendOTPCode(dto);
-        if (resp) {
-            alert(
-                "we just sent an OPT code for you, please use it to proceed with your authentication"
-            );
+        try {
+            //call the sendOTP service function and check if the OTP is sent
+            setDto((perv) => ({ ...perv, isLoading: true }));
+            const resp = await SendOTPCode(dto);
+            if (resp) {
+                BaseState.setAlert({
+                    message: "OTP Code Sent Successfully",
+                    type: "success",
+                });
+            }
+        } catch (error) {
+            BaseState.setAlert({
+                message: GetErrorText(error),
+                type: "error",
+                closable: true,
+            });
+        } finally {
+            setDto((perv) => ({ ...perv, isLoading: false }));
         }
-        setDto((perv) => ({ ...perv, isLoading: false }));
     };
     const updateDto = useCallback(async (name: string, value: any) => {
         setDto((prev) => ({ ...prev, [name]: value }));
@@ -85,16 +106,27 @@ const AuthForm = () => {
             return;
         }
         if (!dto.otpCode || dto.otpCode.length < 4) {
-            alert("Please enter a valid OTP code");
+            BaseState.setAlert({
+                message: "Please enter a valid OTP code",
+                type: "error",
+            });
             return;
         }
-        setDto((perv) => ({ ...perv, isLoading: true }));
-        //call the GetUserToken service function and check if the token is received
-        const token = await GetUserToken(dto);
-        setDto((perv) => ({ ...perv, isLoading: false }));
-        if (token) {
-            setTokensToAppLocalStorage(token);
-            router.push("/");
+        try {
+            setDto((perv) => ({ ...perv, isLoading: true }));
+            //call the GetUserToken service function and check if the token is received
+            const token = await GetUserToken(dto);
+            if (token) {
+                setTokensToAppLocalStorage(token);
+                router.push("/dashboard");
+            }
+        } catch (error) {
+            BaseState.setAlert({
+                message: GetErrorText(error),
+                type: "error",
+            });
+        } finally {
+            setDto((perv) => ({ ...perv, isLoading: false }));
         }
     };
 

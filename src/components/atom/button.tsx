@@ -87,7 +87,7 @@ const Button = ({
                 variants({ intend, selected, disabled }),
                 className
             )}
-            type={type ?? "butto,n"}
+            type={type ?? "button"}
             onClick={
                 link
                     ? () => {

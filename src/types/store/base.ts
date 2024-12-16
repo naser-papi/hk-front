@@ -6,4 +6,5 @@ export interface IBaseState {
     toggleMenu: () => void;
     locale: string;
     globalAlert: IAlert | null;
+    setAlert: (alert: IAlert) => void;
 }

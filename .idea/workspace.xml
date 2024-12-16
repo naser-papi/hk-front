@@ -4,25 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the auth form">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atom/alert.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/global-alert.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stories/atom/alert.stories.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the Dashboard page.&#10;added the global alert part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/alert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/members.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/global-alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/global-alert.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/stores/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/types/store/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -193,7 +185,8 @@
       <workItem from="1734163650860" duration="14000" />
       <workItem from="1734177439867" duration="334000" />
       <workItem from="1734196968602" duration="8500000" />
-      <workItem from="1734256884563" duration="8532000" />
+      <workItem from="1734256884563" duration="8651000" />
+      <workItem from="1734342340259" duration="9701000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -443,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734104901080</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="added the Dashboard page.&#10;added the global alert part 1">
+      <option name="closed" value="true" />
+      <created>1734266345540</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1734266345540</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -453,7 +454,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added organism components (part 1)" />
     <MESSAGE value="finished the oranisms" />
     <MESSAGE value="added some new components" />
     <MESSAGE value="first beta" />
@@ -478,7 +478,8 @@
     <MESSAGE value="fixed some issue.&#10;added the video player" />
     <MESSAGE value="added the blog detail page" />
     <MESSAGE value="added the auth form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the auth form" />
+    <MESSAGE value="added the Dashboard page.&#10;added the global alert part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the Dashboard page.&#10;added the global alert part 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

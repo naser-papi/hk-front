@@ -9,6 +9,12 @@ const BaseState = proxy<IBaseState>({
         BaseState.showMenu = !BaseState.showMenu;
     },
     globalAlert: null,
+    setAlert(alert) {
+        BaseState.globalAlert = null;
+        setTimeout(() => {
+            BaseState.globalAlert = alert;
+        }, 1000);
+    },
 });
 
 export default BaseState;

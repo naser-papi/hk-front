@@ -1,3 +1,4 @@
+"use client";
 import { cva, VariantProps } from "class-variance-authority";
 import { useEffect, useState } from "react";
 
@@ -6,14 +7,13 @@ const alertVariants = cva(
     {
         variants: {
             variant: {
-                success: ["bg-white", "bg-primary"],
+                success: ["bg-white", "text-primary"],
                 info: ["bg-primary", "text-white"],
                 warn: ["bg-warning", "text-black"],
                 error: ["bg-secondary", "text-primary"],
             },
             closable: {
                 true: [
-                    "w-full",
                     "relative",
                     "flex",
                     "items-center",

@@ -1,6 +1,14 @@
 import { Direction, ILocalStorageInfo, IParams } from "@/types/base";
 import { GlobalKeys } from "@/constants/base";
 
+export const GetErrorText = (error: unknown) => {
+    if (typeof error === "string") {
+        return error;
+    } else if (error instanceof Error) {
+        return error.message;
+    }
+    return "Something went wrong.";
+};
 export const clearTokensFormAppLocalStorage = () => {
     const exist = getAppLocalStorage() as ILocalStorageInfo;
     if (exist && exist.hasOwnProperty("token")) {
