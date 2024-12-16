@@ -5,8 +5,10 @@ interface FormItemProps {
 
 const FormItem = ({ label, children }: FormItemProps) => {
     return (
-        <div className={"flex w-full flex-col gap-2"}>
-            <label className={"text-black"}>{label}</label>
+        <div className={"w-full"}>
+            <label className={"mb-2 inline-block bg-gray-50/50 text-black"}>
+                {`${label}:`}
+            </label>
             {children}
         </div>
     );

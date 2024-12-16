@@ -16,6 +16,8 @@ import {
 } from "@/services/members";
 import { MemberDto } from "@/types/dto/members";
 import BaseState from "@/stores/base";
+import useTranslation from "@/helpers/i18n/use-translation";
+import { useSnapshot } from "valtio/react";
 
 interface AuthFormState extends MemberDto {
     isLogin: boolean;
@@ -24,6 +26,8 @@ interface AuthFormState extends MemberDto {
 
 const AuthForm = () => {
     const router = useRouter();
+    const { locale } = useSnapshot(BaseState);
+    const { t } = useTranslation(locale);
     const [dto, setDto] = useState({
         email: "",
         telegramId: "",
@@ -35,7 +39,7 @@ const AuthForm = () => {
     const doOTPValidations = useCallback(() => {
         if ((!dto.email && !dto.telegramId) || !dto.fullName) {
             BaseState.setAlert({
-                message: "Please fill email or telegramId with full name",
+                message: t("auth.fillEmailOrTelegram"),
                 type: "error",
             });
             return false;
@@ -49,7 +53,7 @@ const AuthForm = () => {
         }
         if (dto.telegramId && !isValidTelegramID(dto.telegramId)) {
             BaseState.setAlert({
-                message: "Please enter a valid telegramId",
+                message: t("auth.validTelegramId"),
                 type: "error",
             });
             return false;
@@ -67,7 +71,7 @@ const AuthForm = () => {
             const resp = await SendOTPCode(dto);
             if (resp) {
                 BaseState.setAlert({
-                    message: "OTP Code Sent Successfully",
+                    message: t("auth.otpSent"),
                     type: "success",
                 });
             }
@@ -107,7 +111,7 @@ const AuthForm = () => {
         }
         if (!dto.otpCode || dto.otpCode.length < 4) {
             BaseState.setAlert({
-                message: "Please enter a valid OTP code",
+                message: t("auth.enterValidOTP"),
                 type: "error",
             });
             return;
@@ -136,7 +140,7 @@ const AuthForm = () => {
                 "auth-form grid w-full place-items-center gap-3 [&>.hk-button]:w-full"
             }
         >
-            <FormItem label={"Email"}>
+            <FormItem label={t("common.email")}>
                 <TextBox
                     type={"text"}
                     placeholder={"john@example.com"}
@@ -145,7 +149,7 @@ const AuthForm = () => {
                     updateDto={updateDto}
                 />
             </FormItem>
-            <FormItem label={"Telegram ID"}>
+            <FormItem label={t("auth.telegramId")}>
                 <TextBox
                     type={"text"}
                     placeholder={"@john2024"}
@@ -154,7 +158,7 @@ const AuthForm = () => {
                     updateDto={updateDto}
                 />
             </FormItem>
-            <FormItem label={"Full Name"}>
+            <FormItem label={t("common.fullName")}>
                 <TextBox
                     type={"text"}
                     placeholder={"John Doe"}
@@ -165,12 +169,12 @@ const AuthForm = () => {
                 />
             </FormItem>
             <Button
-                label={"Send OTP Code"}
+                label={t("auth.sendOTP")}
                 intend={"primary"}
                 onClick={sendOTP}
                 disabled={dto.isLoading}
             />
-            <FormItem label={"OTP Code"}>
+            <FormItem label={t("auth.otpCode")}>
                 <TextBox
                     type={"text"}
                     placeholder={"1234"}
@@ -179,7 +183,9 @@ const AuthForm = () => {
                 />
             </FormItem>
             <Button
-                label={dto.isLogin ? "Login to App" : "Register to App"}
+                label={
+                    dto.isLogin ? t("auth.loginToApp") : t("auth.registerToApp")
+                }
                 intend={"primary"}
                 onClick={loginOrRegister}
                 disabled={

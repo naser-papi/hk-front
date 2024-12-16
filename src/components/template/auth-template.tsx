@@ -1,7 +1,7 @@
-import React from "react";
 import { AuthForm, AuthHeader } from "@/components/organism";
 import Image from "next/image";
 import welcomImg from "assets/images/welcome.png";
+import trans from "@/helpers/i18n/server";
 
 const AuthTemplate = () => {
     return (
@@ -12,7 +12,7 @@ const AuthTemplate = () => {
         >
             <AuthHeader />
             <h2 className={"mt-4"}>
-                <span>Welcome to Holland Kadeh</span>
+                <span>{trans("auth.welcome")}</span>
                 <Image
                     src={welcomImg}
                     alt={":)"}

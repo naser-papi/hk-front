@@ -4,18 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the Dashboard page.&#10;added the global alert part 1">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the Dashboard page part 2.&#10;added the global alert part 2">
+      <change afterPath="$PROJECT_DIR$/src/constants/locale/en/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/locale/fa/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/alert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/form-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/form-item.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/global-alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/global-alert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/main-call.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/store/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/auth-template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/auth-template.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +23,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -49,30 +46,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/public/assets/images&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.github.copilot.settings.ApplicationConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "dev",
+    "ignore.virus.scanning.warn.message": "true",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/constants/locale/fa",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "com.github.copilot.settings.ApplicationConfigurable",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2023.3.6\\plugins\\javascript-impl\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -84,11 +81,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\constants\locale\fa" />
       <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\iran-sans" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
       <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
-      <recent name="D:\projects\hk-app\hk-front" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\hk-app\hk-front\src\services" />
@@ -186,7 +183,9 @@
       <workItem from="1734177439867" duration="334000" />
       <workItem from="1734196968602" duration="8500000" />
       <workItem from="1734256884563" duration="8651000" />
-      <workItem from="1734342340259" duration="9701000" />
+      <workItem from="1734342340259" duration="10135000" />
+      <workItem from="1734367673910" duration="508000" />
+      <workItem from="1734368854991" duration="3613000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -444,7 +443,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734266345540</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="added the Dashboard page part 2.&#10;added the global alert part 2">
+      <option name="closed" value="true" />
+      <created>1734356877412</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1734356877412</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -454,7 +461,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="finished the oranisms" />
     <MESSAGE value="added some new components" />
     <MESSAGE value="first beta" />
     <MESSAGE value="some cool changes" />
@@ -479,7 +485,8 @@
     <MESSAGE value="added the blog detail page" />
     <MESSAGE value="added the auth form" />
     <MESSAGE value="added the Dashboard page.&#10;added the global alert part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the Dashboard page.&#10;added the global alert part 1" />
+    <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

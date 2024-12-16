@@ -1,2 +1,4 @@
 import common from "./common";
-export default { common };
+import auth from "./auth";
+
+export default { common, auth };
