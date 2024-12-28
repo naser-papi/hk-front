@@ -87,4 +87,5 @@ export default {
     category: "Category",
     keywords: "Keywords",
     dashboard: "Dashboard",
+    min: "min",
 };

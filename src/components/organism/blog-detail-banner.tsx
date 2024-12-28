@@ -18,7 +18,7 @@ const BlogDetailBanner = async () => {
         },
         {
             label: trans("common.readTime"),
-            value: `${info.readTime} min`,
+            value: `${info.readTime} ${trans("common.min")}`,
         },
         {
             label: trans("common.category"),

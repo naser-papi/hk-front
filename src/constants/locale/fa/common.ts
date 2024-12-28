@@ -87,4 +87,5 @@ export default {
     category: "دسته بندی",
     keywords: "کلمات کلیدی",
     dashboard: "پنل کاربری",
+    min: "دقیقه",
 };
