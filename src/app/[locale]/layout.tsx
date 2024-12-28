@@ -17,26 +17,33 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
-const iranSansThin = localFont({
-    src: "./fonts/iran-sans/IRANSansXFaNum-Thin.woff2",
-    variable: "--font-iransans",
-    weight: "100 300",
+const IRANSansXFaNum = localFont({
+    src: [
+        {
+            path: "./fonts/iran-sans/IRANSansXFaNum-Thin.woff2",
+            weight: "100 300", // Thin style weights
+            style: "normal", // Ensure you specify style
+        },
+        {
+            path: "./fonts/iran-sans/IRANSansXFaNum-Regular.woff2",
+            weight: "400 500", // Regular style weights
+            style: "normal",
+        },
+        {
+            path: "./fonts/iran-sans/IRANSansXFaNum-Bold.woff2",
+            weight: "600 700", // Bold style weights
+            style: "normal",
+        },
+        {
+            path: "./fonts/iran-sans/IRANSansXFaNum-ExtraBold.woff2",
+            weight: "800 900", // Extra-bold style weights
+            style: "normal",
+        },
+    ],
+    variable: "--font-iransans", // CSS variable reference
+    display: "swap", // Optional: Better user experience while loading fonts
 });
-const iranSansRegular = localFont({
-    src: "./fonts/iran-sans/IRANSansXFaNum-Regular.woff2",
-    variable: "--font-iransans",
-    weight: "400 500",
-});
-const iranSansBold = localFont({
-    src: "./fonts/iran-sans/IRANSansXFaNum-Bold.woff2",
-    variable: "--font-iransans",
-    weight: "600 700",
-});
-const iranSansBlack = localFont({
-    src: "./fonts/iran-sans/IRANSansXFaNum-ExtraBold.woff2",
-    variable: "--font-iransans",
-    weight: "800 900",
-});
+
 export const metadata: Metadata = {
     title: "HollandKade",
     description: "An Awesome Immigration Website for NL lovers",
@@ -54,7 +61,7 @@ export default function RootLayout({
     }
     const fontClasses =
         params.locale === "fa"
-            ? `rtl ${iranSansThin.variable} ${iranSansRegular.variable} ${iranSansBold.variable} ${iranSansBlack.variable}`
+            ? `rtl ${IRANSansXFaNum.variable}`
             : `ltr ${geistSans.variable} ${geistMono.variable}`;
     return (
         <html lang={params.locale}>

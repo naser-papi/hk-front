@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="OTP numeric">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed a bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +203,7 @@
       <workItem from="1734368854991" duration="5774000" />
       <workItem from="1734544416717" duration="1862000" />
       <workItem from="1735146424529" duration="1255000" />
-      <workItem from="1735405898146" duration="4093000" />
+      <workItem from="1735405898146" duration="8258000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -487,7 +485,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734376416447</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="fixed a bug">
+      <option name="closed" value="true" />
+      <created>1735410156956</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1735410156956</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +503,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="some cool changes" />
     <MESSAGE value="first release for test" />
     <MESSAGE value="fixed build bugs" />
     <MESSAGE value="added the no-data component" />
@@ -522,7 +527,8 @@
     <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <MESSAGE value="added the locales" />
     <MESSAGE value="OTP numeric" />
-    <option name="LAST_COMMIT_MESSAGE" value="OTP numeric" />
+    <MESSAGE value="fixed a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
