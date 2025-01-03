@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="remove the unneeded font">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="some changes for test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <workItem from="1734544416717" duration="1862000" />
       <workItem from="1735146424529" duration="1255000" />
       <workItem from="1735405898146" duration="9311000" />
-      <workItem from="1735893349739" duration="2638000" />
+      <workItem from="1735893349739" duration="5730000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -509,7 +509,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735415733379</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="some changes for test">
+      <option name="closed" value="true" />
+      <created>1735896070665</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1735896070665</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -519,7 +527,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the no-data component" />
     <MESSAGE value="fixed the footer issue" />
     <MESSAGE value="fixed a locale issue" />
     <MESSAGE value="fixed build issue" />
@@ -544,7 +551,8 @@
     <MESSAGE value="fixed a bug" />
     <MESSAGE value="set font with new way." />
     <MESSAGE value="remove the unneeded font" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove the unneeded font" />
+    <MESSAGE value="some changes for test" />
+    <option name="LAST_COMMIT_MESSAGE" value="some changes for test" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
