@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="change Dockerfile to dev state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,7 +203,7 @@
       <workItem from="1734544416717" duration="1862000" />
       <workItem from="1735146424529" duration="1255000" />
       <workItem from="1735405898146" duration="9311000" />
-      <workItem from="1735893349739" duration="9236000" />
+      <workItem from="1735893349739" duration="13817000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -525,7 +525,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735900454892</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="change Dockerfile to dev state">
+      <option name="closed" value="true" />
+      <created>1735905088339</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1735905088339</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
