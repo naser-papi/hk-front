@@ -1,6 +1,6 @@
 "use client";
 import { twMerge } from "tailwind-merge";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { BulletPoint } from "@/components/atom";
 
 interface ContainerProps {
@@ -33,6 +33,19 @@ const BulletCarouselContainer = ({ children }: ContainerProps) => {
                 return `[&>.card:nth-of-type(10)]:flex`;
         }
     }, [index]);
+
+    useEffect(() => {
+        const interval = setTimeout(() => {
+            const nextIndex = index + 1;
+            if (nextIndex > children.length) {
+                setIndex(1);
+            } else {
+                setIndex(nextIndex);
+            }
+        }, 10 * 1000);
+        return () => clearTimeout(interval);
+    }, [index]);
+
     const bullets = children.map((_, order) => (
         <li
             className={"cursor-pointer"}
