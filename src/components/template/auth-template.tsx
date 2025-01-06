@@ -11,7 +11,7 @@ const AuthTemplate = () => {
             }
         >
             <AuthHeader />
-            <h2 className={"mt-4"}>
+            <h2 className={"mt-4 w-full text-center"}>
                 <span>{trans("auth.welcome")}</span>
                 <Image
                     src={welcomImg}

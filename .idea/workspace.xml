@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="auto change banner cur slide">
-      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner-bk.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner-full.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner.png" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="changed the auth banner">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/template/auth-template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/auth-template.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -210,7 +206,7 @@
       <workItem from="1735893349739" duration="13870000" />
       <workItem from="1736000297446" duration="5768000" />
       <workItem from="1736176015587" duration="4110000" />
-      <workItem from="1736188691617" duration="1442000" />
+      <workItem from="1736188691617" duration="1621000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -556,7 +552,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736005823252</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="changed the auth banner">
+      <option name="closed" value="true" />
+      <created>1736190258836</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1736190258836</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -566,7 +570,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="test dev start" />
     <MESSAGE value="rollback test dev start" />
     <MESSAGE value="fixed the footer render issue&#10;added the sentry" />
     <MESSAGE value="changed the default lang to fa&#10;added farsi fonts" />
@@ -591,7 +594,8 @@
     <MESSAGE value="change Dockerfile to dev state" />
     <MESSAGE value="a simple cache test" />
     <MESSAGE value="auto change banner cur slide" />
-    <option name="LAST_COMMIT_MESSAGE" value="auto change banner cur slide" />
+    <MESSAGE value="changed the auth banner" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the auth banner" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
