@@ -5,7 +5,7 @@ const AuthHeader = () => {
     return (
         <header
             className={
-                "relative mx-auto h-[220px] w-full max-w-[1024px] overflow-x-hidden md:h-[320px]"
+                "relative mx-auto h-[220px] w-full max-w-[1024px] overflow-x-hidden sm:h-[260px] md:h-[350px]"
             }
         >
             <Image
