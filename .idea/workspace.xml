@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="a simple cache test">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="auto change banner cur slide">
+      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner-bk.webp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner-full.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/auth-banner.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/bullet-carousel-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/bullet-carousel-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/auth-template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/auth-template.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +66,7 @@
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-cms&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/public/assets/images&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -88,8 +92,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\projects\hk-app\hk-front\src\constants\locale\fa" />
       <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
+      <recent name="D:\projects\hk-app\hk-front\src\constants\locale\fa" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\iran-sans" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
       <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
@@ -204,7 +208,9 @@
       <workItem from="1735146424529" duration="1255000" />
       <workItem from="1735405898146" duration="9311000" />
       <workItem from="1735893349739" duration="13870000" />
-      <workItem from="1736000297446" duration="4223000" />
+      <workItem from="1736000297446" duration="5768000" />
+      <workItem from="1736176015587" duration="4110000" />
+      <workItem from="1736188691617" duration="1442000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -542,7 +548,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735932712606</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="auto change banner cur slide">
+      <option name="closed" value="true" />
+      <created>1736005823252</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1736005823252</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,7 +566,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed build issue" />
     <MESSAGE value="test dev start" />
     <MESSAGE value="rollback test dev start" />
     <MESSAGE value="fixed the footer render issue&#10;added the sentry" />
@@ -577,7 +590,8 @@
     <MESSAGE value="some changes for test" />
     <MESSAGE value="change Dockerfile to dev state" />
     <MESSAGE value="a simple cache test" />
-    <option name="LAST_COMMIT_MESSAGE" value="a simple cache test" />
+    <MESSAGE value="auto change banner cur slide" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto change banner cur slide" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
