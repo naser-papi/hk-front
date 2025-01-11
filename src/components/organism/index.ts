@@ -23,3 +23,5 @@ export { default as ServiceDetailBanner } from "./service-detail-banner";
 export { default as ServiceDetail } from "./service-detail";
 export { default as EventBannerCarousel } from "./event-banner-carousel";
 export { default as EventsFilterList } from "./events-filter-list";
+export { default as EventDetailBanner } from "./event-detail-banner";
+export { default as EventDetail } from "./event-detail";

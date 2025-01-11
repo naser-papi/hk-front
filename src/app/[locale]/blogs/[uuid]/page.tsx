@@ -1,5 +1,4 @@
-import { BlogDetailHero } from "@/components/template";
-import BlogDetailContent from "@/components/template/blog-detail-content";
+import { BlogDetailContent, BlogDetailHero } from "@/components/template";
 import Footer from "@/components/template/footer";
 
 const BlogDetailPage = () => {

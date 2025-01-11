@@ -1,4 +1,4 @@
-import { BaseDto, MediaDto } from "@/types/dto/common";
+import { BaseDto, CategoryDto, MediaDto } from "@/types/dto/common";
 
 export interface EventDto extends BaseDto {
     title: string;
@@ -6,5 +6,9 @@ export interface EventDto extends BaseDto {
     detailLink: string;
     dateAndTime: string;
     cardImage: MediaDto;
-    bannerMedia: MediaDto;
+    bannerMedia: MediaDto[];
+    firstSection?: any;
+    secondSection?: any;
+    videoUrl?: string;
+    category?: CategoryDto;
 }

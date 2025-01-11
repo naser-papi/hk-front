@@ -2,7 +2,7 @@
 import { cache } from "react";
 import { EventsAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
-import { ICMSListApiResponse } from "@/types/base";
+import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
 import { EventDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
@@ -35,4 +35,18 @@ export const GetEventList = cache(async () => {
     } else {
         return [] as EventDto[];
     }
+});
+
+export const GetEventDetail = cache(async (): Promise<EventDto | undefined> => {
+    const url = headers().get("x-url");
+    const uuid = url?.split("/").pop();
+    if (uuid) {
+        const apiInfo = { ...EventsAPIPath.getEventDetail };
+        apiInfo.params.uuid = uuid;
+        const resp = await mainCall<IAPIResponse<EventDto>>(apiInfo);
+        if (resp && resp.data) {
+            return resp.data.data;
+        }
+    }
+    return undefined;
 });

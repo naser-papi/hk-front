@@ -37,7 +37,7 @@ const LandingBannerCarousel = async () => {
                 <BannerCard
                     title={banner.event.title}
                     desc={banner.event.shortDesc}
-                    image={banner.event.bannerMedia.url}
+                    image={banner.event.bannerMedia[0].url}
                     detailLink={`/events/${banner.event.detailLink}`}
                     key={banner.event.documentId}
                 />

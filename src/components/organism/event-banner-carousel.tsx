@@ -10,7 +10,7 @@ const EventBannerCarousel = async () => {
         <ListBannerCard
             key={item.documentId}
             title={item.title}
-            ikUrl={item.bannerMedia.url}
+            ikUrl={item.bannerMedia[0].url}
             shortDesc={item.shortDesc}
             link={`/events/${item.documentId}`}
             navDirection={getNavDirection(list.length, index)}
