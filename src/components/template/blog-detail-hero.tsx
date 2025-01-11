@@ -7,7 +7,7 @@ const BlogDetailHero = () => {
         <section
             id={"blog-detail-hero"}
             className={
-                "template bg-primary [&_.detail-page-banner]:mt-8 [&_.info-box:last-of-type]:w-auto"
+                "template bg-primary [&_.detail-page-banner]:mt-4 [&_.info-box:last-of-type]:w-auto"
             }
         >
             <TopNav />

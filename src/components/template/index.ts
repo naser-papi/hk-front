@@ -12,3 +12,5 @@ export { default as ServicesList } from "./services-list";
 export { default as BlogDetailHero } from "./blog-detail-hero";
 export { default as BlogDetailContent } from "./blog-detail-content";
 export { default as AuthTemplate } from "./auth-template";
+export { default as ServiceDetailHero } from "./service-detail-hero";
+export { default as ServiceDetailContent } from "./service-detail-content";

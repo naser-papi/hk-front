@@ -6,6 +6,7 @@ import { CategoryList, Container } from "@/components/molecule";
 import { faSearch } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { TextBox } from "@/components/atom";
 import { KeyText } from "@/types/base";
+import useTranslation from "@/helpers/i18n/use-translation";
 
 interface FilterListContainerProps {
     children: React.ReactNode[] | JSX.Element;
@@ -24,6 +25,7 @@ const FilterListContainer = ({
         page: 1,
     });
     const router = useRouter();
+    const { t } = useTranslation();
     useEffect(() => {
         const urlQuery = `?page=${query.page}&cat=${query.cat}&filter=${query.filter}`;
         router.push(`${route}${urlQuery}`);
@@ -44,7 +46,7 @@ const FilterListContainer = ({
                 icon={faSearch}
                 className={"w-full"}
                 value={query.filter}
-                placeholder={"Type And Press Enter to Filter"}
+                placeholder={t("common.typeToFilter")}
                 onEnterKeyPressed={(filter) =>
                     setQuery((perv) => ({
                         ...perv,

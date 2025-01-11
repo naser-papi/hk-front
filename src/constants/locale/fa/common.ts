@@ -88,4 +88,5 @@ export default {
     keywords: "کلمات کلیدی",
     dashboard: "پنل کاربری",
     min: "دقیقه",
+    typeToFilter: "تایپ کنید و Enter رو بزنید",
 };

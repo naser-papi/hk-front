@@ -19,6 +19,7 @@ const textboxVariants = cva(
         "[&>.text]:outline-none",
         "[&>.text]:bg-transparent",
         "[&>svg]:mr-2",
+        "gap-2",
     ],
     {
         variants: {

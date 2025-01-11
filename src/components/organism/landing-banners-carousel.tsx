@@ -38,7 +38,7 @@ const LandingBannerCarousel = async () => {
                     title={banner.event.title}
                     desc={banner.event.shortDesc}
                     image={banner.event.bannerMedia.url}
-                    detailLink={banner.event.detailLink}
+                    detailLink={`/events/${banner.event.detailLink}`}
                     key={banner.event.documentId}
                 />
             );

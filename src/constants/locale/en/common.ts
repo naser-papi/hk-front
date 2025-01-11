@@ -88,4 +88,5 @@ export default {
     keywords: "Keywords",
     dashboard: "Dashboard",
     min: "min",
+    typeToFilter: "Type And Press Enter to Filter",
 };

@@ -16,4 +16,11 @@ export const ServicesAPIPath = {
             next: { revalidate: 3600 },
         },
     },
+    getServiceDetail: {
+        method: "GET",
+        url: "api/services/{uuid}?populate[0]=icon&populate[1]=bannerMedia&populate[2]=category",
+        params: {
+            uuid: "",
+        },
+    },
 } satisfies { [key: string]: IAPIInfo };

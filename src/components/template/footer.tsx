@@ -5,7 +5,6 @@ import {
     Address,
     CallUs,
     Copyright,
-    CustomerRate,
     Socials,
 } from "@/components/organism";
 
@@ -15,7 +14,6 @@ const Footer = () => {
             <Image src={footerBk} alt="footer" fill className={"z-0"} />
             <div className={"footer"}>
                 <About />
-                <CustomerRate />
                 <CallUs />
                 <Address />
                 <Socials />

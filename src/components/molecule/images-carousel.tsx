@@ -18,6 +18,7 @@ const ImagesCarousel = ({ images }: ImagesCarouselProps) => {
             <ImageKit src={image} alt={"image"} fill className={"object-fit"} />
         </div>
     ));
+    if (cards.length === 1) return cards[0];
     return <BulletCarouselContainer>{cards}</BulletCarouselContainer>;
 };
 

@@ -1,5 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
+import Link from "next/link";
 
 const logoVariants = cva(
     ["nl-logo", "text-heading", "border-cyan", "drop-shadow-lg"],
@@ -24,7 +25,11 @@ interface NlLogoProps
         VariantProps<typeof logoVariants> {}
 
 const NlLogo = ({ type }: NlLogoProps) => {
-    return <h1 className={logoVariants({ type })}>H</h1>;
+    return (
+        <Link href={"/"}>
+            <h1 className={logoVariants({ type })}>H</h1>
+        </Link>
+    );
 };
 
 export default NlLogo;
