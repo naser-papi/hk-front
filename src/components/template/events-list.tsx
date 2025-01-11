@@ -1,7 +1,12 @@
 import React from "react";
+import { EventsFilterList } from "@/components/organism";
 
 const EventsList = () => {
-    return <div></div>;
+    return (
+        <section id={"events-list"} className={"template"}>
+            <EventsFilterList />
+        </section>
+    );
 };
 
 export default EventsList;

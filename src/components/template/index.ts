@@ -16,3 +16,4 @@ export { default as ServiceDetailHero } from "./service-detail-hero";
 export { default as ServiceDetailContent } from "./service-detail-content";
 export { default as TopNav } from "./top-nav";
 export { default as EventsHero } from "./events-hero";
+export { default as EventsList } from "./events-list";

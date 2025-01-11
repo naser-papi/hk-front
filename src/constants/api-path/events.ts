@@ -9,4 +9,11 @@ export const EventsAPIPath = {
             next: { revalidate: 3600 },
         },
     },
+    getEventList: {
+        method: "GET",
+        url: "api/events?populate[0]=cardImage&populate[1]=bannerMedia",
+        options: {
+            next: { revalidate: 3600 },
+        },
+    },
 } satisfies { [key: string]: IAPIInfo };

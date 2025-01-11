@@ -1,10 +1,11 @@
 import React from "react";
-import { EventsHero, Footer } from "@/components/template";
+import { EventsHero, EventsList, Footer } from "@/components/template";
 
 const EventsPage = () => {
     return (
         <main className="page-default-container">
             <EventsHero />
+            <EventsList />
             <Footer />
         </main>
     );
