@@ -1,9 +1,9 @@
 import { Meta, StoryObj } from "@storybook/react";
-import { BlogBannerCard } from "@/components/molecule";
+import { ListBannerCard } from "@/components/molecule";
 
-const meta: Meta<typeof BlogBannerCard> = {
-    title: "Molecule/BlogBannerCard",
-    component: BlogBannerCard,
+const meta: Meta<typeof ListBannerCard> = {
+    title: "Molecule/ListBannerCard",
+    component: ListBannerCard,
     decorators: [
         (Story) => (
             <div style={{ width: "360px" }}>
@@ -13,7 +13,7 @@ const meta: Meta<typeof BlogBannerCard> = {
     ],
 };
 export default meta;
-type Story = StoryObj<typeof BlogBannerCard>;
+type Story = StoryObj<typeof ListBannerCard>;
 
 export const Default: Story = {
     args: {

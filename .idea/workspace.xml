@@ -4,28 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="changed the banner styles">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/services/[uuid]/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/service-detail-banner.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/service-detail-hero.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added detail of services page">
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/events-hero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/events-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/nl-logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/nl-logo.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/images-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/images-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/blog-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/blog-detail-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/blog-detail-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/footer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/molecule/blog-banner-card.stories.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/molecule/blog-banner-card.stories.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -228,7 +219,7 @@
       <workItem from="1736188691617" duration="2447000" />
       <workItem from="1736247225105" duration="5092000" />
       <workItem from="1736347962475" duration="345000" />
-      <workItem from="1736591356887" duration="6600000" />
+      <workItem from="1736591356887" duration="9791000" />
     </task>
     <task id="LOCAL-00001" summary="added base components&#10;added some base configurations">
       <option name="closed" value="true" />
@@ -598,7 +589,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736191011320</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="added detail of services page">
+      <option name="closed" value="true" />
+      <created>1736600831042</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1736600831043</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -608,7 +607,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed the default lang to fa&#10;added farsi fonts" />
     <MESSAGE value="removed the sentry" />
     <MESSAGE value="fixed issue with blogs images in landing page" />
     <MESSAGE value="fixed some styles &amp; locale issues" />
@@ -633,9 +631,11 @@
     <MESSAGE value="changed the auth banner" />
     <MESSAGE value="centered the welcome message" />
     <MESSAGE value="changed the banner styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed the banner styles" />
+    <MESSAGE value="added detail of services page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added detail of services page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="NON_MODAL_COMMIT_POSTPONE_SLOW_CHECKS" value="false" />
   </component>
 </project>

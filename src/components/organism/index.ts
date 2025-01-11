@@ -21,3 +21,4 @@ export { default as AuthHeader } from "./auth-header";
 export { default as GlobalAlert } from "./global-alert";
 export { default as ServiceDetailBanner } from "./service-detail-banner";
 export { default as ServiceDetail } from "./service-detail";
+export { default as EventBannerCarousel } from "./event-banner-carousel";

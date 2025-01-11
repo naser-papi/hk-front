@@ -1,22 +1,22 @@
-import { GetTopBlogs } from "@/services/blogs";
-import { BlogDto } from "@/types/dto";
 import { ListBannerCard, NoData } from "@/components/molecule";
+import { GetTopEvents } from "@/services/events";
+import { EventDto } from "@/types/dto";
 import { getNavDirection } from "@/helpers";
 
-const BlogBannerCarousel = async () => {
-    const list = await GetTopBlogs();
+const EventBannerCarousel = async () => {
+    const list = await GetTopEvents();
     if (!list || !list.length) return <NoData />;
-    const cards = list.map((item: BlogDto, index) => (
+    const cards = list.map((item: EventDto, index) => (
         <ListBannerCard
             key={item.documentId}
             title={item.title}
             ikUrl={item.bannerMedia.url}
             shortDesc={item.shortDesc}
-            link={`/blogs/${item.documentId}`}
+            link={`/events/${item.documentId}`}
             navDirection={getNavDirection(list.length, index)}
         />
     ));
     return <article className={"carousel-container"}>{cards}</article>;
 };
 
-export default BlogBannerCarousel;
+export default EventBannerCarousel;

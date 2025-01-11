@@ -1,6 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { Button, ImageKit, SlidePervNext } from "@/components/atom";
+import { Button, ImageKit } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { Direction } from "@/types/base";
 
@@ -35,7 +35,7 @@ const variants = cva(
     }
 );
 
-interface BlogBannerCardProps
+interface ListBannerCardProps
     extends BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof variants> {
     title: string;
@@ -45,13 +45,12 @@ interface BlogBannerCardProps
     navDirection: Direction;
 }
 
-const BlogBannerCard = ({
+const ListBannerCard = ({
     title,
     ikUrl,
     shortDesc,
     link,
-    navDirection,
-}: BlogBannerCardProps) => {
+}: ListBannerCardProps) => {
     return (
         <div className={variants({})}>
             <h3>{title}</h3>
@@ -59,10 +58,9 @@ const BlogBannerCard = ({
             <p>{shortDesc}</p>
             <section>
                 <Button label={trans("common.readFullArticle")} link={link} />
-                <SlidePervNext mode={navDirection} />
             </section>
         </div>
     );
 };
 
-export default BlogBannerCard;
+export default ListBannerCard;
