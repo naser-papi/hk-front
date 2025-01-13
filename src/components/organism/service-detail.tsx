@@ -4,7 +4,8 @@ import { GetServiceDetail } from "@/services/services";
 const ServiceDetail = async () => {
     const info = await GetServiceDetail();
     if (!info) return <NoData />;
-    const replacedFontFS = info.firstSection.replace(/font-family:[^;]+;/g, "");
+    const replacedFontFS =
+        info.firstSection?.replace(/font-family:[^;]+;/g, "") || "";
     const replacedFontSS =
         info.secondSection?.replace(/font-family:[^;]+;/g, "") || "";
     return (

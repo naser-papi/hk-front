@@ -4,7 +4,8 @@ import { NoData, VideoPlayer } from "@/components/molecule";
 const BlogDetail = async () => {
     const info = await GetBlogDetail();
     if (!info) return <NoData />;
-    const replacedFontFS = info.firstSection.replace(/font-family:[^;]+;/g, "");
+    const replacedFontFS =
+        info.firstSection?.replace(/font-family:[^;]+;/g, "") || "";
     const replacedFontSS =
         info.secondSection?.replace(/font-family:[^;]+;/g, "") || "";
     return (
