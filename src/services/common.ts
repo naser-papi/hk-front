@@ -5,7 +5,7 @@ import { i18nCookieName } from "@/constants/locale";
 export const GetLocaleFromCookie = () => {
     const cookieStore = cookies();
     const locale = cookieStore.get(i18nCookieName);
-    return locale?.value ?? "en";
+    return locale?.value ?? "fa";
 };
 
 export const GetUrlParams = cache((url: string) => {

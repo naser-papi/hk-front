@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="switched to prod mod" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed a bug">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/i18n/use-translation.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/i18n/use-translation.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/i18nConfig.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/i18nConfig.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -208,14 +215,10 @@
       <workItem from="1736347962475" duration="345000" />
       <workItem from="1736591356887" duration="16120000" />
       <workItem from="1736681858166" duration="3188000" />
-    </task>
-    <task id="LOCAL-00005" summary="first beta">
-      <option name="closed" value="true" />
-      <created>1730225012002</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1730225012002</updated>
+      <workItem from="1736752609862" duration="1571000" />
+      <workItem from="1737037114191" duration="72000" />
+      <workItem from="1737051228280" duration="726000" />
+      <workItem from="1737314147391" duration="3076000" />
     </task>
     <task id="LOCAL-00006" summary="some cool changes">
       <option name="closed" value="true" />
@@ -601,7 +604,15 @@
       <option name="project" value="LOCAL" />
       <updated>1736686901569</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="fixed a bug">
+      <option name="closed" value="true" />
+      <created>1736752843026</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752843026</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +631,6 @@
     <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <MESSAGE value="added the locales" />
     <MESSAGE value="OTP numeric" />
-    <MESSAGE value="fixed a bug" />
     <MESSAGE value="set font with new way." />
     <MESSAGE value="remove the unneeded font" />
     <MESSAGE value="some changes for test" />
@@ -636,7 +646,8 @@
     <MESSAGE value="added the event detail page" />
     <MESSAGE value="switched to dev mod" />
     <MESSAGE value="switched to prod mod" />
-    <option name="LAST_COMMIT_MESSAGE" value="switched to prod mod" />
+    <MESSAGE value="fixed a bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed a bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

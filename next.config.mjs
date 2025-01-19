@@ -47,24 +47,24 @@ const nextConfig = {
                 hostname: "ik.imagekit.io",
                 port: "443",
                 pathname: "/x3m9judsik/**",
-            }
+            },
         ],
     },
     webpack: (config) => {
         config.module.rules.push({
             test: /\.(wav)$/,
             use: {
-                loader: 'file-loader',
+                loader: "file-loader",
                 options: {
-                    publicPath: '/_next/static/sounds/',
-                    outputPath: 'static/sounds/',
-                    name: '[name].[ext]'
-                }
-            }
+                    publicPath: "/_next/static/sounds/",
+                    outputPath: "static/sounds/",
+                    name: "[name].[ext]",
+                },
+            },
         });
-        config.resolve.alias.canvas = false
+        config.resolve.alias.canvas = false;
         return config;
-    }
+    },
 };
 
 export default nextConfig;

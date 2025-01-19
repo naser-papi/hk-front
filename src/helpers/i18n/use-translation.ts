@@ -15,7 +15,7 @@ const initI18next = (lng: string, ns?: string) => {
 const useTranslation = (lng = "") => {
     const locale = useCurrentLocale(i18nConfig);
     if (!lng) {
-        lng = locale || "en";
+        lng = locale || "fa";
     }
     const i18nextInstance = initI18next(lng);
     return {
