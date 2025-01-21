@@ -1,6 +1,11 @@
 import { Direction, ILocalStorageInfo, IParams } from "@/types/base";
 import { GlobalKeys } from "@/constants/base";
 
+export const normalizeHTMLContent = (content?: string) => {
+    if (!content) return "";
+    const result = content.replace(/font-family:[^;]+;/g, "");
+    return result;
+};
 export const GetErrorText = (error: unknown) => {
     if (typeof error === "string") {
         return error;

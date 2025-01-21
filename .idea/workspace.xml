@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="solution for inline youtube videos">
-      <change afterPath="$PROJECT_DIR$/src/components/atom/info-line.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="removed the extra meta box on blog detail page.&#10;changed styles of those box.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,15 +222,7 @@
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
       <workItem from="1737401618948" duration="2494000" />
-      <workItem from="1737446498791" duration="8720000" />
-    </task>
-    <task id="LOCAL-00012" summary="fixed a locale issue">
-      <option name="closed" value="true" />
-      <created>1730397228774</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1730397228774</updated>
+      <workItem from="1737446498791" duration="12582000" />
     </task>
     <task id="LOCAL-00013" summary="fixed build issue">
       <option name="closed" value="true" />
@@ -618,7 +608,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737457210743</updated>
     </task>
-    <option name="localTasksCounter" value="61" />
+    <task id="LOCAL-00061" summary="removed the extra meta box on blog detail page.&#10;changed styles of those box.">
+      <option name="closed" value="true" />
+      <created>1737458337340</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1737458337340</updated>
+    </task>
+    <option name="localTasksCounter" value="62" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,7 +626,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the Dashboard page.&#10;added the global alert part 1" />
     <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <MESSAGE value="added the locales" />
     <MESSAGE value="OTP numeric" />
@@ -653,7 +650,8 @@
     <MESSAGE value="fixed the category filter buttons issue." />
     <MESSAGE value="solution for inline medias in CMS Editor" />
     <MESSAGE value="solution for inline youtube videos" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution for inline youtube videos" />
+    <MESSAGE value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,6 +1,7 @@
 import { GetCompanyInfo } from "@/services/company-info";
 import { ImageKit } from "@/components/atom";
 import { NoData } from "@/components/molecule";
+import { normalizeHTMLContent } from "@/helpers";
 
 const About = async () => {
     const companyInfo = await GetCompanyInfo();
@@ -22,7 +23,9 @@ const About = async () => {
             </h3>
             <article
                 className={"col-span-2 text-base text-white"}
-                dangerouslySetInnerHTML={{ __html: companyInfo.about }}
+                dangerouslySetInnerHTML={{
+                    __html: normalizeHTMLContent(companyInfo.about),
+                }}
             ></article>
         </section>
     );

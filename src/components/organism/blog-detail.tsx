@@ -1,13 +1,12 @@
 import { GetBlogDetail } from "@/services/blogs";
 import { NoData, VideoPlayer } from "@/components/molecule";
+import { normalizeHTMLContent } from "@/helpers";
 
 const BlogDetail = async () => {
     const info = await GetBlogDetail();
     if (!info) return <NoData />;
-    const replacedFontFS =
-        info.firstSection?.replace(/font-family:[^;]+;/g, "") || "";
-    const replacedFontSS =
-        info.secondSection?.replace(/font-family:[^;]+;/g, "") || "";
+    const replacedFontFS = normalizeHTMLContent(info.firstSection);
+    const replacedFontSS = normalizeHTMLContent(info.secondSection);
     return (
         <div className={"content-detail-body"}>
             <h3>{info.subTitle}</h3>
