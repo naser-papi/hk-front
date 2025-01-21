@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="removed the extra meta box on blog detail page.&#10;changed styles of those box.">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="refactored HTML normalizing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -222,15 +217,7 @@
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
       <workItem from="1737401618948" duration="2494000" />
-      <workItem from="1737446498791" duration="12582000" />
-    </task>
-    <task id="LOCAL-00013" summary="fixed build issue">
-      <option name="closed" value="true" />
-      <created>1730448973264</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1730448973265</updated>
+      <workItem from="1737446498791" duration="13579000" />
     </task>
     <task id="LOCAL-00014" summary="test dev start">
       <option name="closed" value="true" />
@@ -616,7 +603,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737458337340</updated>
     </task>
-    <option name="localTasksCounter" value="62" />
+    <task id="LOCAL-00062" summary="refactored HTML normalizing">
+      <option name="closed" value="true" />
+      <created>1737463988530</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1737463988530</updated>
+    </task>
+    <option name="localTasksCounter" value="63" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -626,7 +621,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <MESSAGE value="added the locales" />
     <MESSAGE value="OTP numeric" />
     <MESSAGE value="set font with new way." />
@@ -651,7 +645,8 @@
     <MESSAGE value="solution for inline medias in CMS Editor" />
     <MESSAGE value="solution for inline youtube videos" />
     <MESSAGE value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
+    <MESSAGE value="refactored HTML normalizing" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored HTML normalizing" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
