@@ -56,6 +56,10 @@ body.rtl {
 
     & > article {
       @apply w-full;
+
+      & > figure.image {
+        margin: 0 auto;
+      }
     }
   }
   .template {
