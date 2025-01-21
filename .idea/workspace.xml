@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="refactored HTML normalizing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="changed the Dockerfile">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,15 +217,7 @@
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
       <workItem from="1737401618948" duration="2494000" />
-      <workItem from="1737446498791" duration="13579000" />
-    </task>
-    <task id="LOCAL-00014" summary="test dev start">
-      <option name="closed" value="true" />
-      <created>1730462654453</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1730462654453</updated>
+      <workItem from="1737446498791" duration="14023000" />
     </task>
     <task id="LOCAL-00015" summary="rollback test dev start">
       <option name="closed" value="true" />
@@ -611,17 +603,35 @@
       <option name="project" value="LOCAL" />
       <updated>1737463988530</updated>
     </task>
-    <option name="localTasksCounter" value="63" />
+    <task id="LOCAL-00063" summary="changed the Dockerfile">
+      <option name="closed" value="true" />
+      <created>1737465351192</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1737465351192</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the locales" />
     <MESSAGE value="OTP numeric" />
     <MESSAGE value="set font with new way." />
     <MESSAGE value="remove the unneeded font" />
@@ -646,7 +656,8 @@
     <MESSAGE value="solution for inline youtube videos" />
     <MESSAGE value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
     <MESSAGE value="refactored HTML normalizing" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored HTML normalizing" />
+    <MESSAGE value="changed the Dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed the Dockerfile" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
