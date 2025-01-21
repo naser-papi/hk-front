@@ -11,6 +11,9 @@ const BlogDetailBanner = async () => {
         {
             label: trans("common.author"),
             value: info.author,
+            meta: {
+                hide: true,
+            },
         },
         {
             label: trans("common.publishDate"),
@@ -27,6 +30,9 @@ const BlogDetailBanner = async () => {
         {
             label: trans("common.keywords"),
             value: info.keywords,
+            meta: {
+                hide: true,
+            },
         },
     ];
     return (

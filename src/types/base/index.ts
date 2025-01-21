@@ -110,4 +110,7 @@ export interface KeyText {
 export interface LabelValue {
     label: string;
     value: string | number;
+    meta?: {
+        [key: string]: boolean | number | string;
+    };
 }

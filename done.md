@@ -5,3 +5,5 @@
 # fixed the category filter buttons issue.
 
 # solution for inline medias in CMS Editor
+
+# solution for inline youtube videos with embed code

@@ -17,6 +17,7 @@ const config: Config = {
                 black: "var(--black)",
                 warning: "var(--warning)",
                 altLight: "var(--alt-light)",
+                light: "var(--light)",
             },
             screens: {
                 xs: "380px",

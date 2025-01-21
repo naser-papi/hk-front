@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="solution for inline medias in CMS Editor">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="solution for inline youtube videos">
+      <change afterPath="$PROJECT_DIR$/src/components/atom/info-line.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/detail-page-banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail-banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,15 +224,7 @@
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
       <workItem from="1737401618948" duration="2494000" />
-      <workItem from="1737446498791" duration="7614000" />
-    </task>
-    <task id="LOCAL-00011" summary="fixed the footer issue">
-      <option name="closed" value="true" />
-      <created>1730396263440</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1730396263440</updated>
+      <workItem from="1737446498791" duration="8720000" />
     </task>
     <task id="LOCAL-00012" summary="fixed a locale issue">
       <option name="closed" value="true" />
@@ -611,7 +610,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737455994503</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="solution for inline youtube videos">
+      <option name="closed" value="true" />
+      <created>1737457210743</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1737457210743</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -621,7 +628,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the auth form" />
     <MESSAGE value="added the Dashboard page.&#10;added the global alert part 1" />
     <MESSAGE value="added the Dashboard page part 2.&#10;added the global alert part 2" />
     <MESSAGE value="added the locales" />
@@ -646,7 +652,8 @@
     <MESSAGE value="fixed language toggle button issue" />
     <MESSAGE value="fixed the category filter buttons issue." />
     <MESSAGE value="solution for inline medias in CMS Editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="solution for inline medias in CMS Editor" />
+    <MESSAGE value="solution for inline youtube videos" />
+    <option name="LAST_COMMIT_MESSAGE" value="solution for inline youtube videos" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
