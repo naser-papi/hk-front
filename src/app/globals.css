@@ -60,6 +60,12 @@ body.rtl {
       & > figure.image {
         margin: 0 auto;
       }
+
+      & > .raw-html-embed {
+        iframe {
+          margin: 0 auto;
+        }
+      }
     }
   }
   .template {
