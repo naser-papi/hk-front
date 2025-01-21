@@ -89,4 +89,5 @@ export default {
     dashboard: "Dashboard",
     min: "min",
     typeToFilter: "Type And Press Enter to Filter",
+    allCategories: "All",
 };

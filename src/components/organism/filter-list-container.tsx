@@ -9,7 +9,7 @@ import { KeyText } from "@/types/base";
 import useTranslation from "@/helpers/i18n/use-translation";
 
 interface FilterListContainerProps {
-    children: React.ReactNode[] | JSX.Element;
+    children: JSX.Element[] | JSX.Element;
     route: string;
     list: { id: number; category?: CategoryDto }[];
 }
@@ -37,7 +37,7 @@ const FilterListContainer = ({
             text: item.category!.title,
         }));
     if (cats && cats.length) {
-        cats.unshift({ key: 0, text: "All" });
+        cats.unshift({ key: 0, text: t("common.allCategories") });
     }
     return (
         <Container direction={"column"} gap={"little"}>

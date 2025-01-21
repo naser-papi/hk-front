@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed the default language to fa">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed language toggle button issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/top-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,15 +222,8 @@
       <workItem from="1737051228280" duration="726000" />
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
-      <workItem from="1737401618948" duration="1651000" />
-    </task>
-    <task id="LOCAL-00008" summary="fixed build bugs">
-      <option name="closed" value="true" />
-      <created>1730324599179</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1730324599179</updated>
+      <workItem from="1737401618948" duration="2494000" />
+      <workItem from="1737446498791" duration="4876000" />
     </task>
     <task id="LOCAL-00009" summary="added the no-data component">
       <option name="closed" value="true" />
@@ -610,7 +609,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737318186632</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="fixed language toggle button issue">
+      <option name="closed" value="true" />
+      <created>1737403477836</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1737403477836</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,7 +627,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="list page part 1" />
     <MESSAGE value="fixed some issue.&#10;added the video player" />
     <MESSAGE value="added the blog detail page" />
     <MESSAGE value="added the auth form" />
@@ -645,7 +651,8 @@
     <MESSAGE value="switched to prod mod" />
     <MESSAGE value="fixed a bug" />
     <MESSAGE value="fixed the default language to fa" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the default language to fa" />
+    <MESSAGE value="fixed language toggle button issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed language toggle button issue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

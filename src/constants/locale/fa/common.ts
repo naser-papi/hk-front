@@ -89,4 +89,5 @@ export default {
     dashboard: "پنل کاربری",
     min: "دقیقه",
     typeToFilter: "تایپ کنید و Enter رو بزنید",
+    allCategories: "همه",
 };

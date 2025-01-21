@@ -11,7 +11,7 @@ export const EventsAPIPath = {
     },
     getEventList: {
         method: "GET",
-        url: "api/events?populate[0]=cardImage&populate[1]=bannerMedia",
+        url: "api/events?populate[0]=cardImage&populate[1]=bannerMedia&populate[2]=category",
         options: {
             next: { revalidate: 3600 },
         },
