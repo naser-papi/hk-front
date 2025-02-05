@@ -3,7 +3,7 @@ import i18nConfig from "@/i18nConfig";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import Background from "./background";
+import { Background, SideFloatMenu } from "@/components/organism";
 import GlobalAlert from "@/components/organism/global-alert";
 
 const geistSans = localFont({
@@ -71,6 +71,7 @@ export default function RootLayout({
             >
                 <Background />
                 <GlobalAlert />
+                <SideFloatMenu />
                 {children}
             </body>
         </html>

@@ -25,3 +25,5 @@ export { default as EventBannerCarousel } from "./event-banner-carousel";
 export { default as EventsFilterList } from "./events-filter-list";
 export { default as EventDetailBanner } from "./event-detail-banner";
 export { default as EventDetail } from "./event-detail";
+export { default as Background } from "./background";
+export { default as SideFloatMenu } from "./side-float-menu";

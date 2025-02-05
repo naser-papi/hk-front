@@ -17,3 +17,4 @@ export { default as SlidePervNext } from "./slide-perv-next";
 export { default as InfoBox } from "./info-box";
 export { default as Alert } from "./alert";
 export { default as InfoLine } from "./info-line";
+export { default as IconButton } from "./icon-button";

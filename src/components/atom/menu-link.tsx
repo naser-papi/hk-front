@@ -13,6 +13,7 @@ const menuLinkVariants = cva(
         "px-4",
         "w-full",
         "rounded-lg",
+        "text-center",
         "hover:bg-altLight",
         "hover:text-white",
     ],
@@ -32,13 +33,20 @@ interface menuLinkProps
     label: string;
     icon: IconDefinition;
     href: string;
+    hideLabel?: boolean;
 }
 
-const MenuLink = ({ label, disabled, href, icon }: menuLinkProps) => {
+const MenuLink = ({
+    label,
+    disabled,
+    href,
+    icon,
+    hideLabel,
+}: menuLinkProps) => {
     return (
         <Link href={href} className={menuLinkVariants({ disabled })}>
             <FontAwesomeIcon icon={icon} />
-            <span>{label}</span>
+            {!hideLabel && <span>{label}</span>}
         </Link>
     );
 };

@@ -134,7 +134,6 @@
 
 
 .image-background {
-    background-image: url('https://static.pexels.com/photos/414171/pexels-photo-414171.jpeg');
     background-size: cover;
     -webkit-animation: slidein 100s;
     animation: slidein 100s;
@@ -151,22 +150,22 @@
 
 @-webkit-keyframes slidein {
     from {
-        background-position: top;
-        background-size: 3000px;
+        background-position: center;
+        background-size: 100%;
     }
     to {
-        background-position: -100px 0px;
+        background-position: -100px 0;
         background-size: 2750px;
     }
 }
 
 @keyframes slidein {
     from {
-        background-position: top;
+        background-position: center;
         background-size: 3000px;
     }
     to {
-        background-position: -100px 0px;
+        background-position: -100px 0;
         background-size: 2750px;
     }
 

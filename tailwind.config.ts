@@ -18,6 +18,7 @@ const config: Config = {
                 warning: "var(--warning)",
                 altLight: "var(--alt-light)",
                 light: "var(--light)",
+                primaryLight: "var(--primary-lighter)",
             },
             screens: {
                 xs: "380px",

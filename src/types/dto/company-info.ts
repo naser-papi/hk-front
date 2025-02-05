@@ -14,4 +14,5 @@ export interface CompanyInfoDto {
     logo: MediaDto;
     copyright: string;
     servicesIntroUrl?: string;
+    backgrounds?: MediaDto[];
 }

@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="completed the github action file">
+      <change afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/background.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/background.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/company-info.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,10 +111,10 @@
       <recent name="D:\projects\hk-app\hk-front\src\stories\template" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\services" />
       <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template" />
-      <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template\common" />
     </key>
   </component>
@@ -217,15 +233,11 @@
       <workItem from="1737314147391" duration="4324000" />
       <workItem from="1737369181787" duration="75000" />
       <workItem from="1737401618948" duration="2494000" />
-      <workItem from="1737446498791" duration="14085000" />
-    </task>
-    <task id="LOCAL-00016" summary="fixed the footer render issue&#10;added the sentry">
-      <option name="closed" value="true" />
-      <created>1730466800967</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1730466800967</updated>
+      <workItem from="1737446498791" duration="15870000" />
+      <workItem from="1738655152564" duration="4719000" />
+      <workItem from="1738666764280" duration="4109000" />
+      <workItem from="1738749176961" duration="3616000" />
+      <workItem from="1738753083241" duration="2390000" />
     </task>
     <task id="LOCAL-00017" summary="changed the default lang to fa&#10;added farsi fonts">
       <option name="closed" value="true" />
@@ -611,7 +623,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737465804705</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="completed the github action file">
+      <option name="closed" value="true" />
+      <created>1737465846189</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1737465846189</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

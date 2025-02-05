@@ -3,6 +3,7 @@ import { AnchorHTMLAttributes } from "react";
 import { faArrowUpRightFromSquare } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
+
 const variants = cva([
     "flex",
     "text-base",
@@ -22,9 +23,10 @@ interface OpenLinkBoxProps
     title: string;
     href: string;
 }
-const OpenLinkBox = ({ title, href }: OpenLinkBoxProps) => {
+
+const OpenLinkBox = ({ title, href, ...rest }: OpenLinkBoxProps) => {
     return (
-        <Link className={variants({})} href={href}>
+        <Link {...rest} className={variants({})} href={href}>
             <span>{title}</span>
             <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
         </Link>

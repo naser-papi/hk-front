@@ -49,7 +49,11 @@ const ExternalLink = ({ logo, title, href }: ExternalLinkProps) => {
             <section className={infoVariants({})}>
                 <ImageKit src={logo} alt={"logo"} width={120} height={120} />
                 <h2>{title}</h2>
-                <OpenLinkBox title={trans("common.gotoPage")} href={href} />
+                <OpenLinkBox
+                    title={trans("common.gotoPage")}
+                    href={href}
+                    target="_blank"
+                />
             </section>
         </div>
     );

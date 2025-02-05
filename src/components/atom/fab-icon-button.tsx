@@ -28,6 +28,7 @@ interface FabIconButtonProps
         VariantProps<typeof fabIconButtonVaraints> {
     label: string;
     icon: IconDefinition;
+    hideLabel?: boolean;
 }
 
 const FabIconButton = ({
@@ -35,6 +36,7 @@ const FabIconButton = ({
     label,
     icon,
     onClick,
+    hideLabel,
 }: FabIconButtonProps) => {
     return (
         <button
@@ -42,7 +44,7 @@ const FabIconButton = ({
             onClick={onClick}
         >
             <FabIcon icon={icon} />
-            <span>{label}</span>
+            {!hideLabel && <span>{label}</span>}
         </button>
     );
 };
