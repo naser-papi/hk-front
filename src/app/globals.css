@@ -78,19 +78,20 @@ body.rtl {
   .side-float-menu {
     @apply fixed left-0 top-1/2 bg-primaryLight bg-opacity-30 shadow z-[9999] rounded-tr-3xl rounded-br-3xl;
     transform: translateY(-50%); /* Center vertically by accounting for its height */
-
-    & > nav {
-      @apply flex flex-col gap-1 items-center py-1;
-
-      & > a {
-        @apply !block text-white font-bold rounded-none;
-      }
-    }
-
-    & > nav:last-child {
-      @apply mt-2;
-    }
   }
+
+  .side-float-menu > nav {
+    @apply flex flex-col gap-1 items-center py-1;
+  }
+
+  .side-float-menu > nav:last-of-type {
+    @apply mt-2;
+  }
+
+  .side-float-menu > nav > a {
+    @apply !block text-white font-bold rounded-none;
+  }
+
   .content-detail-body {
     @apply grid gap-2 w-full items-center;
 
