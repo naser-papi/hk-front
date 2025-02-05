@@ -50,7 +50,47 @@ body.rtl {
   display: none; /* Safari and Chrome */
 }
 
+/* WebKit-based browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px; /* Set the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--primary-lighter); /* Scrollbar track color */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--cyan); /* Scrollbar thumb color */
+  border-radius: 4px; /* Rounded corners for the scrollbar thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary); /* Darken on hover */
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin; /* Thin scrollbar */
+  scrollbar-color: var(--cyan) var(--primary-lighter); /* Thumb and track colors */
+}
+
 @layer utilities {
+  .side-float-menu {
+    @apply fixed left-0 top-1/2 bg-primaryLight bg-opacity-30 shadow z-[9999] rounded-tr-3xl rounded-br-3xl;
+    transform: translateY(-50%); /* Center vertically by accounting for its height */
+
+    & > nav {
+      @apply flex flex-col gap-1 items-center py-1;
+
+      & > a {
+        @apply !block text-white font-bold rounded-none;
+      }
+    }
+
+    & > nav:last-child {
+      @apply mt-2;
+    }
+  }
   .content-detail-body {
     @apply grid gap-2 w-full items-center;
 
@@ -185,22 +225,6 @@ body.rtl {
     background-color: rgba(0, 0, 0, 0.3);
   }
 
-  .side-float-menu {
-    @apply fixed left-0 top-1/2 bg-primaryLight bg-opacity-30 shadow z-[9999] rounded-tr-3xl rounded-br-3xl;
-    transform: translateY(-50%); /* Center vertically by accounting for its height */
-
-    & > nav {
-      @apply flex flex-col gap-1 items-center py-1;
-
-      & > a {
-        @apply !block text-white font-bold rounded-none;
-      }
-    }
-
-    & > nav:last-child {
-      @apply mt-2;
-    }
-  }
 
   .grid-col-2-gap-4 {
     @apply grid grid-cols-2 gap-4;
