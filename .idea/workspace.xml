@@ -4,25 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="completed the github action file">
-      <change afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added some new changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/background.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/background.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/background.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/company-info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,15 +221,7 @@
       <workItem from="1738655152564" duration="4719000" />
       <workItem from="1738666764280" duration="4109000" />
       <workItem from="1738749176961" duration="3616000" />
-      <workItem from="1738753083241" duration="2390000" />
-    </task>
-    <task id="LOCAL-00017" summary="changed the default lang to fa&#10;added farsi fonts">
-      <option name="closed" value="true" />
-      <created>1730654304209</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1730654304209</updated>
+      <workItem from="1738753083241" duration="3520000" />
     </task>
     <task id="LOCAL-00018" summary="removed the sentry">
       <option name="closed" value="true" />
@@ -631,7 +607,15 @@
       <option name="project" value="LOCAL" />
       <updated>1737465846189</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="added some new changes">
+      <option name="closed" value="true" />
+      <created>1738755767031</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1738755767031</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -652,7 +636,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="set font with new way." />
     <MESSAGE value="remove the unneeded font" />
     <MESSAGE value="some changes for test" />
     <MESSAGE value="change Dockerfile to dev state" />
@@ -677,7 +660,8 @@
     <MESSAGE value="refactored HTML normalizing" />
     <MESSAGE value="changed the Dockerfile" />
     <MESSAGE value="completed the github action file" />
-    <option name="LAST_COMMIT_MESSAGE" value="completed the github action file" />
+    <MESSAGE value="added some new changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="added some new changes" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
