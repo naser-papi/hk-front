@@ -2,6 +2,13 @@ import { IAPIInfo } from "@/types/base";
 import { TopEntityQuery } from "@/constants/base";
 
 export const BlogsAPIPath = {
+    getRelatedContents: {
+        url: "api/blog/related-contents/{uuid}",
+        method: "GET",
+        params: {
+            uuid: "",
+        },
+    },
     getTopBlogs: {
         method: "GET",
         url: `api/blogs?populate[0]=cardImage&populate[1]=bannerMedia&${TopEntityQuery}`,

@@ -14,10 +14,12 @@ const variants = cva(
         "@4xl:flex-row",
         "@4xl:items-stretch",
         "@4xl:drop-shadow-lg",
+        "@4xl:[&>img]:w-[420px]",
+        "#4xl:[&>img]:min-h-[300px]",
         "relative",
         "min-w-[300px]",
         "[&>img]:w-full",
-        "[&>img]:h-300px",
+        "[&>img]:min-h-[280px]",
         "[&>img]:max-h-[300px]",
     ],
     {
@@ -52,6 +54,7 @@ const infoVariants = cva(
 );
 const actionsVariants = cva(
     [
+        "actions-part",
         "[&>.hk-button]:w-full",
         "[&>.hk-button]:rounded-t-none",
         "[&>.hk-button]:border-2",

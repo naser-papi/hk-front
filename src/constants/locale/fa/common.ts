@@ -90,4 +90,5 @@ export default {
     min: "دقیقه",
     typeToFilter: "تایپ کنید و Enter رو بزنید",
     allCategories: "همه",
+    relatedContents: "مطالب مرتبط",
 };

@@ -90,4 +90,5 @@ export default {
     min: "min",
     typeToFilter: "Type And Press Enter to Filter",
     allCategories: "All",
+    relatedContents: "Related Contents",
 };

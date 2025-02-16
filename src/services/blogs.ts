@@ -18,6 +18,20 @@ export const GetTopBlogs = cache(async () => {
     }
 });
 
+export const GetRelatedBlogs = cache(async () => {
+    const url = headers().get("x-url");
+    const uuid = url?.split("/").pop();
+    if (uuid) {
+        const apiInfo = { ...BlogsAPIPath.getRelatedContents };
+        apiInfo.params.uuid = uuid;
+        const resp = await mainCall<IAPIResponse<BlogDto[]>>(apiInfo);
+        console.log("====>", resp);
+        if (resp && resp.data) {
+            return resp.data.data?.slice(0, 3) || ([] as BlogDto[]);
+        }
+        return [] as BlogDto[];
+    }
+});
 export const GetBlogList = cache(async () => {
     const url = headers().get("x-url")!;
     const { page, cat, filter } = GetUrlParams(url);
