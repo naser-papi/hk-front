@@ -2,6 +2,13 @@ import { IAPIInfo } from "@/types/base";
 import { TopEntityQuery } from "@/constants/base";
 
 export const ServicesAPIPath = {
+    getRelatedContents: {
+        method: "GET",
+        url: "api/services/related-contents/{uuid}",
+        params: {
+            uuid: "",
+        },
+    },
     getTopServices: {
         method: "GET",
         url: `api/services?populate=icon&${TopEntityQuery}`,

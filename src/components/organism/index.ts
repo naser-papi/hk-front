@@ -27,4 +27,4 @@ export { default as EventDetailBanner } from "./event-detail-banner";
 export { default as EventDetail } from "./event-detail";
 export { default as Background } from "./background";
 export { default as SideFloatMenu } from "./side-float-menu";
-export { default as BlogRelatedContents } from "./blog-related-contents";
+export { default as RelatedContents } from "./related-contents";

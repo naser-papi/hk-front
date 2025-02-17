@@ -2,6 +2,13 @@ import { IAPIInfo } from "@/types/base";
 import { TopEntityQuery } from "@/constants/base";
 
 export const EventsAPIPath = {
+    getRelatedContents: {
+        method: "GET",
+        url: "api/events/related-contents/{uuid}",
+        params: {
+            uuid: "",
+        },
+    },
     getTopEvents: {
         method: "GET",
         url: `api/events?populate[0]=cardImage&populate[1]=bannerMedia&${TopEntityQuery}`,

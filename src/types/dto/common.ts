@@ -30,3 +30,10 @@ export interface BaseDto {
     locale: string;
     publishedAt: string;
 }
+
+export interface RelatedContentDto {
+    documentId: string;
+    title: string;
+    shortDesc: string;
+    cardImage: MediaDto;
+}

@@ -8,6 +8,20 @@ import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
 
+export const GetRelatedEvents = cache(async () => {
+    const url = headers().get("x-url");
+    const uuid = url?.split("/").pop();
+    if (uuid) {
+        const apiInfo = { ...EventsAPIPath.getRelatedContents };
+        apiInfo.params.uuid = uuid;
+        const resp = await mainCall<IAPIResponse<EventDto[]>>(apiInfo);
+        if (resp && resp.data) {
+            return resp.data.data?.slice(0, 3) || ([] as EventDto[]);
+        }
+        return [] as EventDto[];
+    }
+});
+
 export const GetTopEvents = cache(async () => {
     const apiInfo = EventsAPIPath.getTopEvents;
     const resp = await mainCall<ICMSListApiResponse<EventDto>>(apiInfo);

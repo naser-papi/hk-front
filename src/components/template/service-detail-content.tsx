@@ -1,4 +1,4 @@
-import { ServiceDetail } from "@/components/organism";
+import { RelatedContents, ServiceDetail } from "@/components/organism";
 
 const ServiceDetailContent = () => {
     return (
@@ -7,6 +7,9 @@ const ServiceDetailContent = () => {
             className={"template text-black"}
         >
             <ServiceDetail />
+            <div className={"related-contents"}>
+                <RelatedContents contentType={"services"} />
+            </div>
         </section>
     );
 };

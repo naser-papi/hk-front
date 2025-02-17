@@ -25,7 +25,6 @@ export const GetRelatedBlogs = cache(async () => {
         const apiInfo = { ...BlogsAPIPath.getRelatedContents };
         apiInfo.params.uuid = uuid;
         const resp = await mainCall<IAPIResponse<BlogDto[]>>(apiInfo);
-        console.log("====>", resp);
         if (resp && resp.data) {
             return resp.data.data?.slice(0, 3) || ([] as BlogDto[]);
         }

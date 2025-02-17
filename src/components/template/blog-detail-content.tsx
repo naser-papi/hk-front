@@ -1,10 +1,12 @@
-import { BlogDetail, BlogRelatedContents } from "@/components/organism";
+import { BlogDetail, RelatedContents } from "@/components/organism";
 
 const BlogDetailContent = () => {
     return (
         <section id={"blog-detail-content"} className={"template text-black"}>
             <BlogDetail />
-            <BlogRelatedContents />
+            <div className={"related-contents"}>
+                <RelatedContents contentType={"blogs"} />
+            </div>
         </section>
     );
 };

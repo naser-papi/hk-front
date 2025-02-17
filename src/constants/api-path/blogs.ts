@@ -3,7 +3,7 @@ import { TopEntityQuery } from "@/constants/base";
 
 export const BlogsAPIPath = {
     getRelatedContents: {
-        url: "api/blog/related-contents/{uuid}",
+        url: "api/blogs/related-contents/{uuid}",
         method: "GET",
         params: {
             uuid: "",
