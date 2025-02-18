@@ -114,3 +114,10 @@ export interface LabelValue {
         [key: string]: boolean | number | string;
     };
 }
+
+export interface IUserInfo {
+    telegramId: string;
+    email: string;
+    fullName: string;
+    avatar?: string;
+}

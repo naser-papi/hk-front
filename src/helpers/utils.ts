@@ -34,6 +34,15 @@ export const GetErrorText = (error: unknown) => {
     }
     return "Something went wrong.";
 };
+
+export const getAppLocalStorageToken = () => {
+    const exist = getAppLocalStorage();
+    if (exist && Object.prototype.hasOwnProperty.call(exist, "token")) {
+        return exist.token;
+    }
+    return null;
+};
+
 export const clearTokensFormAppLocalStorage = () => {
     const exist = getAppLocalStorage() as ILocalStorageInfo;
     if (exist && exist.hasOwnProperty("token")) {
@@ -47,6 +56,7 @@ export const setTokensToAppLocalStorage = (token: string) => {
     const exist =
         getAppLocalStorage() ??
         ({ token: { access: token, refresh: token } } as ILocalStorageInfo);
+
     exist.token = { access: token, refresh: token };
     localStorage.setItem(GlobalKeys.localStorageInfo, JSON.stringify(exist));
     document.cookie = `hkAuthToken=${token}; path=/; expires=${new Date(Date.now() + 86400000).toUTCString()};`;

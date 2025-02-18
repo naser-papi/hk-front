@@ -20,3 +20,4 @@ export { default as EventsList } from "./events-list";
 export { default as MobileMenu } from "./mobile-menu";
 export { default as EventDetailHero } from "./event-detail-hero";
 export { default as EventDetailContent } from "./event-detail-content";
+export { default as CommentsSection } from "./comments-section";

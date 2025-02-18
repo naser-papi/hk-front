@@ -3,8 +3,10 @@ import i18nConfig from "@/i18nConfig";
 import localFont from "next/font/local";
 import { notFound } from "next/navigation";
 import "../globals.css";
-import { Background, SideFloatMenu } from "@/components/organism";
+import Background from "@/components/organism/background";
+import ClientInitializer from "@/components/organism/client-initializer";
 import GlobalAlert from "@/components/organism/global-alert";
+import SideFloatMenu from "@/components/organism/side-float-menu";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -70,6 +72,7 @@ export default function RootLayout({
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
                 <Background />
+                <ClientInitializer />
                 <GlobalAlert />
                 <SideFloatMenu />
                 {children}
