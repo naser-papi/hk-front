@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="related contents (events &amp; services)">
-      <change afterPath="$PROJECT_DIR$/src/components/organism/store-scroll.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="refactored the side menu">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -232,15 +228,9 @@
       <workItem from="1739728597822" duration="3663000" />
       <workItem from="1739775574606" duration="6555000" />
       <workItem from="1739793426489" duration="4835000" />
-      <workItem from="1739814242521" duration="5912000" />
-    </task>
-    <task id="LOCAL-00024" summary="some new changes">
-      <option name="closed" value="true" />
-      <created>1731776481907</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1731776481907</updated>
+      <workItem from="1739814242521" duration="6640000" />
+      <workItem from="1739822447753" duration="1000" />
+      <workItem from="1739869687659" duration="1894000" />
     </task>
     <task id="LOCAL-00025" summary="some new changes">
       <option name="closed" value="true" />
@@ -626,7 +616,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739794253719</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="refactored the side menu">
+      <option name="closed" value="true" />
+      <created>1739820343907</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1739820343908</updated>
+    </task>
+    <option name="localTasksCounter" value="74" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -647,7 +645,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="a simple cache test" />
     <MESSAGE value="auto change banner cur slide" />
     <MESSAGE value="changed the auth banner" />
     <MESSAGE value="centered the welcome message" />
@@ -672,7 +669,8 @@
     <MESSAGE value="added the post-css nested" />
     <MESSAGE value="related contents (blogs)" />
     <MESSAGE value="related contents (events &amp; services)" />
-    <option name="LAST_COMMIT_MESSAGE" value="related contents (events &amp; services)" />
+    <MESSAGE value="refactored the side menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactored the side menu" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

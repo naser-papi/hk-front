@@ -32,7 +32,7 @@
 
 body {
   color: var(--white);
-  background: #dddddd;
+  background: var(--primary);
   font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
@@ -75,23 +75,90 @@ body.rtl {
 }
 
 @layer utilities {
+  .grid-col-2-gap-4 {
+    @apply grid grid-cols-2 gap-4;
+  }
+
+  .grid-col-2-gap-6 {
+    @apply grid grid-cols-2 gap-6;
+  }
+
+  .row-container {
+    @apply flex items-center gap-2;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-heading {
+    @apply text-7xl font-semibold;
+  }
+
+  .text-alt-heading {
+    @apply text-5xl font-semibold;
+  }
+
+  .text-title {
+    @apply text-2xl font-semibold;
+  }
+
+  .text-alt-title {
+    @apply text-xl font-medium;
+  }
+
+  .text-label {
+    @apply text-lg font-semibold;
+  }
+
+  .text-desc {
+    @apply text-base font-medium;
+  }
+
+  .text-body {
+    @apply text-sm font-normal
+  }
+
+  .border-shadow {
+    @apply border-2 border-white drop-shadow-lg;
+  }
   .related-contents {
-    @apply w-full pt-20 pb-10;
+    width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
   }
   .side-float-menu {
-    @apply fixed left-0 bottom-0 bg-primaryLight bg-opacity-30 z-[9999] rounded-t-3xl w-full ;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background: var(--primary-lighter);
+    z-index: 9999;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    border: 1px solid var(--white);
+    padding: 0 0.5rem;
   }
 
   .side-float-menu > nav > hr {
-    @apply rotate-90 w-[50%] justify-self-center;
+    transform: rotate(90deg);
+    width: 50%;
+    justify-self: center;
   }
 
   .side-float-menu > nav {
-    @apply grid gap-x-2 gap-y-4 items-center p-1 w-full grid-cols-[repeat(auto-fill,minmax(50px, auto))];
+    display: grid;
+    gap: 0.5rem 0.5rem;
+    align-items: center;
+    padding: 0.25rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(50px, auto));
   }
 
   .side-float-menu > nav > a {
-    @apply text-white font-bold text-label;
+    color: var(--white); /* white */
+    font-weight: bold;
+    font-size: 1.5rem; /* Assuming text-label corresponds to a 1rem font size */
+    line-height: 1.5; /* Adjusted based on tailwind's default */
   }
 
   .content-detail-body {
@@ -104,19 +171,19 @@ body.rtl {
     & > article {
       @apply w-full;
 
-      a {
+      & a {
         @apply text-blue-600;
       }
 
-      a:hover {
+      & a:hover {
         @apply text-blue-800 no-underline;
       }
 
-      a:focus {
+      & a:focus {
         @apply outline-none ring-2 ring-blue-500;
       }
 
-      a:visited {
+      & a:visited {
         @apply text-purple-600;
       }
 
@@ -165,16 +232,35 @@ body.rtl {
 
   @media screen and (min-width: 744px) {
     .side-float-menu {
-      @apply fixed left-0 w-auto bottom-auto top-1/2 shadow rounded-t-none rounded-tr-3xl rounded-br-3xl;
-      transform: translateY(-50%); /* Center vertically by accounting for its height */
+      position: fixed;
+      left: 0;
+      width: auto;
+      bottom: auto;
+      top: 50%;
+      box-shadow: var(--tw-shadow);
+      border-top-left-radius: 0;
+      border-top-right-radius: 1.5rem; /* 3xl equivalent in Tailwind */
+      border-bottom-right-radius: 1.5rem; /* 3xl equivalent in Tailwind */
+      transform: translateY(-50%);
+      padding: 0.5rem 0;
     }
 
     .side-float-menu > nav > hr {
-      @apply rotate-0 w-full;
+      transform: rotate(0deg);
+      width: 100%;
     }
 
     .side-float-menu > nav {
-      @apply gap-x-0 gap-y-2 items-center p-0 py-1 flex flex-col;
+      gap: 0.5rem;
+      align-items: center;
+      padding: 0 0.25rem;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .side-float-menu > nav > a {
+      justify-content: center;
+      justify-self: center;
     }
 
 
@@ -240,45 +326,5 @@ body.rtl {
   .page-default-container {
     @apply relative grid h-full max-h-screen w-full place-items-start overflow-y-auto;
     background-color: rgba(0, 0, 0, 0.3);
-  }
-
-
-  .grid-col-2-gap-4 {
-    @apply grid grid-cols-2 gap-4;
-  }
-
-  .grid-col-2-gap-6 {
-    @apply grid grid-cols-2 gap-6;
-  }
-  .row-container{
-    @apply flex items-center gap-2;
-  }
-  .text-balance {
-    text-wrap: balance;
-  }
-  .text-heading{
-    @apply text-7xl font-semibold;
-  }
-  .text-alt-heading{
-    @apply text-5xl font-semibold;
-  }
-  .text-title{
-    @apply text-2xl font-semibold;
-  }
-  .text-alt-title{
-    @apply text-xl font-medium;
-  }
-  .text-label{
-    @apply text-lg font-semibold;
-  }
-  .text-desc{
-    @apply text-base font-medium;
-  }
-  .text-body{
-    @apply text-sm font-normal
-  }
-
-  .border-shadow {
-    @apply border-2 border-white drop-shadow-lg;
   }
 }
