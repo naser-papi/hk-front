@@ -2,8 +2,10 @@ import { GetCompanyInfo } from "@/services/company-info";
 import { ImageKit } from "@/components/atom";
 import { NoData } from "@/components/molecule";
 import { normalizeHTMLContent } from "@/helpers";
+import { isRootPath } from "@/services/server";
 
 const About = async () => {
+    if (!(await isRootPath())) return null;
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (

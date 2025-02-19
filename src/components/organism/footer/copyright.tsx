@@ -4,7 +4,7 @@ const CopyRight = async () => {
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo) return null;
     return (
-        <span className={"my-10 block text-center"}>
+        <span className={"my-5 block text-center"}>
             {companyInfo.copyright}
         </span>
     );

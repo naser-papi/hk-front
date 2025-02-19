@@ -4,17 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 1">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/comments-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -240,23 +236,7 @@
       <workItem from="1739822447753" duration="1000" />
       <workItem from="1739869687659" duration="22434000" />
       <workItem from="1739959177992" duration="11791000" />
-      <workItem from="1739983706540" duration="1727000" />
-    </task>
-    <task id="LOCAL-00027" summary="some new changes">
-      <option name="closed" value="true" />
-      <created>1732092945529</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1732092945529</updated>
-    </task>
-    <task id="LOCAL-00028" summary="list page part 1">
-      <option name="closed" value="true" />
-      <created>1732359594292</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1732359594292</updated>
+      <workItem from="1739983706540" duration="3373000" />
     </task>
     <task id="LOCAL-00029" summary="fixed some issue.&#10;added the video player">
       <option name="closed" value="true" />
@@ -634,7 +614,23 @@
       <option name="project" value="LOCAL" />
       <updated>1739894386726</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="fixed the banner images size calculation">
+      <option name="closed" value="true" />
+      <created>1739985538123</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1739985538123</updated>
+    </task>
+    <task id="LOCAL-00077" summary="comments part 2">
+      <option name="closed" value="true" />
+      <created>1739985591964</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1739985591964</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -655,8 +651,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed the auth banner" />
-    <MESSAGE value="centered the welcome message" />
     <MESSAGE value="changed the banner styles" />
     <MESSAGE value="added detail of services page" />
     <MESSAGE value="added the event list page part 1" />
@@ -680,7 +674,9 @@
     <MESSAGE value="related contents (events &amp; services)" />
     <MESSAGE value="refactored the side menu" />
     <MESSAGE value="comments part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments part 1" />
+    <MESSAGE value="fixed the banner images size calculation" />
+    <MESSAGE value="comments part 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments part 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,8 +1,10 @@
 import { LinkIcon } from "@/components/atom";
 import { faMapLocationDot } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import { GetCompanyInfo } from "@/services/company-info";
+import { isRootPath } from "@/services/server";
 
 const Address = async () => {
+    if (!(await isRootPath())) return null;
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo) return null;
     return (
