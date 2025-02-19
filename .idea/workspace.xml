@@ -4,22 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="refactored the side menu">
-      <change afterPath="$PROJECT_DIR$/src/components/organism/client-initializer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/sign-to-comment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-client-api.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-comments.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/comments-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/store/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,31 +60,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front/src/hooks",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/src/hooks&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Program Files\\JetBrains\\WebStorm 2024.3.2.1\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -243,15 +238,9 @@
       <workItem from="1739793426489" duration="4835000" />
       <workItem from="1739814242521" duration="6640000" />
       <workItem from="1739822447753" duration="1000" />
-      <workItem from="1739869687659" duration="15177000" />
-    </task>
-    <task id="LOCAL-00026" summary="added the blog-banner-carousel">
-      <option name="closed" value="true" />
-      <created>1731840121100</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1731840121100</updated>
+      <workItem from="1739869687659" duration="22434000" />
+      <workItem from="1739959177992" duration="11791000" />
+      <workItem from="1739983706540" duration="1727000" />
     </task>
     <task id="LOCAL-00027" summary="some new changes">
       <option name="closed" value="true" />
@@ -637,7 +626,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739871676266</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="comments part 1">
+      <option name="closed" value="true" />
+      <created>1739894386726</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1739894386726</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -658,7 +655,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="auto change banner cur slide" />
     <MESSAGE value="changed the auth banner" />
     <MESSAGE value="centered the welcome message" />
     <MESSAGE value="changed the banner styles" />
@@ -683,7 +679,8 @@
     <MESSAGE value="related contents (blogs)" />
     <MESSAGE value="related contents (events &amp; services)" />
     <MESSAGE value="refactored the side menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactored the side menu" />
+    <MESSAGE value="comments part 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments part 1" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

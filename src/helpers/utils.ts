@@ -153,3 +153,15 @@ export function addQueryParamsToUrl(url: string, queryParams: IParams): string {
     // Remove the base and return the constructed URL without the leading slash
     return urlObject.pathname.slice(1) + urlObject.search;
 }
+
+export function formatLocaleString(
+    template: string,
+    ...values: string[]
+): string {
+    return template.replace(/{(\d+)}/g, (_, index) => {
+        if (values[Number(index)] !== undefined) {
+            return values[Number(index)];
+        }
+        return `{${index}}`; // Keep the placeholder if no matching value is found
+    });
+}

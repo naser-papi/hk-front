@@ -91,4 +91,7 @@ export default {
     typeToFilter: "تایپ کنید و Enter رو بزنید",
     allCategories: "همه",
     relatedContents: "مطالب مرتبط",
+    writerYourComment:
+        "کاربر عزیز {0}، لطفا نظر خودتان را در مورد این پست با ما به اشتراک گذارید:",
+    yourComment: "نظر شما",
 };

@@ -91,4 +91,7 @@ export default {
     typeToFilter: "Type And Press Enter to Filter",
     allCategories: "All",
     relatedContents: "Related Contents",
+    writerYourComment:
+        "Dear user {0}, please write your comment on this post with us:",
+    yourComment: "Your comment",
 };

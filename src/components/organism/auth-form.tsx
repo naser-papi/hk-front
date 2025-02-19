@@ -147,6 +147,7 @@ const AuthForm = () => {
                     name={"email"}
                     value={dto.email}
                     updateDto={updateDto}
+                    className={"direction-ltr [&_input]:text-left"}
                 />
             </FormItem>
             <FormItem label={t("auth.telegramId")}>
@@ -156,6 +157,7 @@ const AuthForm = () => {
                     name={"telegramId"}
                     value={dto.telegramId}
                     updateDto={updateDto}
+                    className={"direction-ltr [&_input]:text-left"}
                 />
             </FormItem>
             <FormItem label={t("common.fullName")}>
@@ -182,6 +184,7 @@ const AuthForm = () => {
                     type="text"
                     pattern="\d*"
                     inputMode="numeric"
+                    className={"direction-ltr [&_input]:text-left"}
                 />
             </FormItem>
             <Button

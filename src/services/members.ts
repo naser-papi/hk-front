@@ -32,7 +32,7 @@ export const GetMemberByEmailOrTelegramId = cache(
             throw new Error("Email Or TelegramId should be provided");
         }
         const apiInfo = { ...MembersAPIPath.findMember };
-        const filter = `?filters[$or][0][email][$eqi]=${email}&filters[$or][1][telegramId][$eqi]=${telegramId}&fields[0]=fullName&fields[1]=email&fields[2]=telegramId`;
+        const filter = `?filters[$or][0][email][$eqi]=${email}&filters[$or][1][telegramId][$eqi]=${telegramId.replace("@", "")}&fields[0]=fullName&fields[1]=email&fields[2]=telegramId`;
         apiInfo.url += filter;
         const resp = await mainCall<ICMSListApiResponse<MemberDto>>(apiInfo);
         if (resp?.data?.data?.length) {
