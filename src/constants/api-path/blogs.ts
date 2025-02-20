@@ -9,16 +9,21 @@ export const BlogsAPIPath = {
         },
         method: "POST",
         body: {
-            author: {
-                id: "",
-                name: "",
-                email: "",
-                avatar: "",
-            },
             content: "",
             threadOf: undefined,
         },
-        tokenLess: true,
+    },
+    updateComment: {
+        url: "api/comments/api::blog.blog:{uuid}/comment/{id}",
+        params: {
+            uuid: "",
+            id: "",
+        },
+        method: "PUT",
+        body: {
+            content: "",
+            threadOf: undefined,
+        },
     },
     getRelatedContents: {
         url: "api/blogs/related-contents/{uuid}",

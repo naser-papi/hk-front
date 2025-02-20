@@ -4,13 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 2">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed the footer styles">
+      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/aks-to-comment.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/comments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/dto/comment.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/store/comments.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/sign-to-comment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/sign-to-comment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +29,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -236,15 +244,8 @@
       <workItem from="1739822447753" duration="1000" />
       <workItem from="1739869687659" duration="22434000" />
       <workItem from="1739959177992" duration="11791000" />
-      <workItem from="1739983706540" duration="3373000" />
-    </task>
-    <task id="LOCAL-00029" summary="fixed some issue.&#10;added the video player">
-      <option name="closed" value="true" />
-      <created>1732384642919</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1732384642919</updated>
+      <workItem from="1739983706540" duration="4774000" />
+      <workItem from="1740062830049" duration="13872000" />
     </task>
     <task id="LOCAL-00030" summary="added the blog detail page">
       <option name="closed" value="true" />
@@ -630,7 +631,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739985591964</updated>
     </task>
-    <option name="localTasksCounter" value="78" />
+    <task id="LOCAL-00078" summary="fixed the footer styles">
+      <option name="closed" value="true" />
+      <created>1739987191036</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1739987191036</updated>
+    </task>
+    <option name="localTasksCounter" value="79" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +660,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="changed the banner styles" />
     <MESSAGE value="added detail of services page" />
     <MESSAGE value="added the event list page part 1" />
     <MESSAGE value="added the event list page part 2" />
@@ -676,7 +684,8 @@
     <MESSAGE value="comments part 1" />
     <MESSAGE value="fixed the banner images size calculation" />
     <MESSAGE value="comments part 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments part 2" />
+    <MESSAGE value="fixed the footer styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the footer styles" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

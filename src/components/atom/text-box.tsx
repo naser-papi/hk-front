@@ -59,6 +59,7 @@ const TextBox = ({
             {icon && <FontAwesomeIcon icon={icon} />}
             {type === "textarea" ? (
                 <textarea
+                    readOnly={rest.readOnly}
                     className={"text"}
                     onKeyDown={(event) =>
                         onEnterKeyPressed &&

@@ -94,4 +94,7 @@ export default {
     writerYourComment:
         "Dear user {0}, please write your comment on this post with us:",
     yourComment: "Your comment",
+    commentAdded:
+        "Thanks, Your Comment added successfully. It will be published soon after approval.",
+    loginToComment: "Dear user, please log in to share your valuable comments.",
 };

@@ -122,7 +122,9 @@ const AuthForm = () => {
             const token = await GetUserToken(dto);
             if (token) {
                 setTokensToAppLocalStorage(token);
-                router.push("/dashboard");
+                setTimeout(() => {
+                    window.location.href = "/dashboard";
+                }, 1500);
             }
         } catch (error) {
             BaseState.setAlert({
