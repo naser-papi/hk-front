@@ -3,11 +3,12 @@ import { addQueryParamsToUrl, replaceParams } from "@/helpers";
 
 const coreCall = async (info: IAPIInfo, token = "") => {
     const url = info.url;
-    const normalizeUrl = info.params
-        ? replaceParams(url, info.params)
-        : info.query
-          ? addQueryParamsToUrl(url, info.query)
-          : url;
+
+    let normalizeUrl = info.params ? replaceParams(url, info.params) : url;
+    normalizeUrl = info.query
+        ? addQueryParamsToUrl(normalizeUrl, info.query)
+        : normalizeUrl;
+
     const server = process.env.CMS_SERVER ?? process.env.NEXT_PUBLIC_CMS_SERVER;
     const fullURL = `${server}/${normalizeUrl}`;
     if (info.body instanceof FormData) {

@@ -97,4 +97,7 @@ export default {
     commentAdded:
         "Thanks, Your Comment added successfully. It will be published soon after approval.",
     loginToComment: "Dear user, please log in to share your valuable comments.",
+    confirmRemoveComment: "Are you sure you want to remove this comment?",
+    removeComment: "Remove Comment",
+    confirmedComments: "Confirmed Comments",
 };

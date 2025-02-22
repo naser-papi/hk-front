@@ -5,11 +5,13 @@ import { Button } from "@/components/atom";
 interface CommentSavedActionsProps {
     onUpdate: () => void;
     onRemove: () => void;
+    disabled: boolean;
 }
 
 const CommentSavedActions = ({
     onUpdate,
     onRemove,
+    disabled,
 }: CommentSavedActionsProps) => {
     const { t } = useTranslation();
     return (
@@ -22,11 +24,13 @@ const CommentSavedActions = ({
                     label={t("common.update")}
                     onClick={onUpdate}
                     intend={"secondary"}
+                    disabled={disabled}
                 />
                 <Button
                     label={t("common.remove")}
                     onClick={onRemove}
                     intend={"secondary"}
+                    disabled={disabled}
                 />
             </div>
         </div>

@@ -19,6 +19,7 @@ const config: Config = {
                 altLight: "var(--alt-light)",
                 light: "var(--light)",
                 primaryLight: "var(--primary-lighter)",
+                blackLight: "var(--black-light)",
             },
             screens: {
                 xs: "380px",

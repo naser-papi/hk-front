@@ -15,3 +15,5 @@ export { default as DetailPageBanner } from "./detail-page-banner";
 export { default as FlagHeader } from "./flag-header";
 export { default as FormItem } from "./form-item";
 export { default as RelatedCard } from "./related-card";
+export { default as Modal } from "./modal";
+export { default as Comment } from "./comment";

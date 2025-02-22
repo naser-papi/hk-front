@@ -5,3 +5,4 @@ export * from "./external-links";
 export * from "./user-message";
 export * from "./company-info";
 export * from "./banners";
+export * from "./comments";

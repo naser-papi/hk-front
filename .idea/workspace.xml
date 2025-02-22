@@ -4,21 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed the footer styles">
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/aks-to-comment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/stores/comments.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/dto/comment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/types/store/comments.ts" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 3">
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/comment.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/modal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/comments-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/global-confirm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constants/api-path/comments.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/use-remove-comment.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/auth-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-button.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/sign-to-comment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/sign-to-comment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/comments-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stores/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/comments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/comment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/comment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/store/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/store/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/comments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +46,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -107,9 +124,9 @@
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
       <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\services" />
-      <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template\common" />
     </key>
@@ -245,15 +262,10 @@
       <workItem from="1739869687659" duration="22434000" />
       <workItem from="1739959177992" duration="11791000" />
       <workItem from="1739983706540" duration="4774000" />
-      <workItem from="1740062830049" duration="13872000" />
-    </task>
-    <task id="LOCAL-00030" summary="added the blog detail page">
-      <option name="closed" value="true" />
-      <created>1732525610609</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1732525610609</updated>
+      <workItem from="1740062830049" duration="14139000" />
+      <workItem from="1740135661339" duration="20292000" />
+      <workItem from="1740211817182" duration="4686000" />
+      <workItem from="1740231012268" duration="10500000" />
     </task>
     <task id="LOCAL-00031" summary="added the auth form">
       <option name="closed" value="true" />
@@ -639,7 +651,15 @@
       <option name="project" value="LOCAL" />
       <updated>1739987191036</updated>
     </task>
-    <option name="localTasksCounter" value="79" />
+    <task id="LOCAL-00079" summary="comments part 3">
+      <option name="closed" value="true" />
+      <created>1740083121679</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1740083121679</updated>
+    </task>
+    <option name="localTasksCounter" value="80" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -660,7 +680,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added detail of services page" />
     <MESSAGE value="added the event list page part 1" />
     <MESSAGE value="added the event list page part 2" />
     <MESSAGE value="added the event detail page" />
@@ -685,7 +704,8 @@
     <MESSAGE value="fixed the banner images size calculation" />
     <MESSAGE value="comments part 2" />
     <MESSAGE value="fixed the footer styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed the footer styles" />
+    <MESSAGE value="comments part 3" />
+    <option name="LAST_COMMIT_MESSAGE" value="comments part 3" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

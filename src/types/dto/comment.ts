@@ -1,25 +1,10 @@
-export interface Author {
-    id: number;
-    email: string;
-    name: string;
-}
+import { BaseDto } from "@/types/dto/common";
+import { MemberDto } from "@/types/dto/members";
+import { BlogDto } from "@/types/dto/blog";
 
-export interface CommentDto {
-    id: number;
-    documentId: string;
-    content: string;
-    blocked: boolean;
-    blockedThread: boolean;
-    blockReason?: any;
-    isAdminComment?: any;
-    removed?: any;
-    approvalStatus: string;
-    related: string;
-    createdAt: string;
-    updatedAt: string;
-    publishedAt: string;
-    locale?: any;
-    reports: any[];
-    threadOf?: any;
-    author: Author;
+export interface CommentDto extends BaseDto {
+    comment: string;
+    state: "PENDING" | "APPROVED" | "REJECTED" | "DELETED";
+    relatedBlog: BlogDto;
+    author: MemberDto;
 }

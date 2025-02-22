@@ -7,6 +7,7 @@ import Background from "@/components/organism/background";
 import ClientInitializer from "@/components/organism/client-initializer";
 import GlobalAlert from "@/components/organism/global-alert";
 import SideFloatMenu from "@/components/organism/side-float-menu";
+import GlobalConfirm from "@/components/organism/global-confirm";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -74,6 +75,7 @@ export default function RootLayout({
                 <Background />
                 <ClientInitializer />
                 <GlobalAlert />
+                <GlobalConfirm />
                 <SideFloatMenu />
                 {children}
             </body>

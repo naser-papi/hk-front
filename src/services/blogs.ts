@@ -1,12 +1,28 @@
 "use server";
 import { cache } from "react";
-import { BlogsAPIPath } from "@/constants/api-path";
+import { BlogsAPIPath, CommentAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
 import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
-import { BlogDto } from "@/types/dto";
+import { BlogDto, CommentDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
+
+export const GetBlogsComments = cache(async () => {
+    const url = headers().get("x-url");
+    const uuid = url?.split("/").pop();
+    if (uuid) {
+        const apiInfo = CommentAPIPath.getBlogComments;
+        apiInfo.params = {
+            id: uuid,
+        };
+        const resp = await mainCall<CommentDto[]>(apiInfo);
+        if (resp && resp.data) {
+            return resp.data;
+        }
+        return [] as CommentDto[];
+    }
+});
 
 export const GetTopBlogs = cache(async () => {
     const apiInfo = BlogsAPIPath.getTopBlogs;

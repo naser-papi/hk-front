@@ -13,6 +13,7 @@
   --alt-light:#536184;
   --light: rgba(255, 255, 255, 0.8);
   --primary-lighter: rgba(54, 64, 87, 0.7);
+  --black-light: rgba(0, 0, 0, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +28,7 @@
     --alt-light:#536184;
     --light: rgba(255, 255, 255, 0.8);
     --primary-lighter: rgba(54, 64, 87, 0.7);
+    --black-light: rgba(0, 0, 0, 0.7);
   }
 }
 

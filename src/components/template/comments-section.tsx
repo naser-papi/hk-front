@@ -1,14 +1,19 @@
-import { CommentForm, SignToComment } from "@/components/organism/comments";
+import {
+    CommentForm,
+    CommentsList,
+    SignToComment,
+} from "@/components/organism/comments";
 
 const CommentsSection = () => {
     return (
         <div
             className={
-                "template [&_.hk-text-box]:text-label [&_.hk-text-box]:border-white [&_.hk-text-box]:text-white"
+                "template [&_.hk-text-box]:text-label [&_.comments-list]:mt-4 [&_.hk-text-box]:border-white [&_.hk-text-box]:text-white"
             }
         >
             <SignToComment />
             <CommentForm />
+            <CommentsList />
         </div>
     );
 };

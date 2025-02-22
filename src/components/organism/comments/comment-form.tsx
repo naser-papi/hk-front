@@ -1,18 +1,18 @@
 "use client";
 import { useSnapshot } from "valtio/react";
 import BaseState from "@/stores/base";
-import { FormEvent, useReducer } from "react";
+import { FormEvent, useEffect, useReducer } from "react";
 import { useParams } from "next/navigation";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { FormItem } from "@/components/molecule";
 import { Button, TextBox } from "@/components/atom";
-import { useClientApi } from "@/hooks";
-import { BlogsAPIPath } from "@/constants/api-path";
+import { useClientApi, useRemoveComment } from "@/hooks";
+import { CommentAPIPath } from "@/constants/api-path";
 import { CommentDto } from "@/types/dto";
-import { IAPIInfo } from "@/types/base";
 import AksToComment from "@/components/organism/comments/aks-to-comment";
 import CommentSavedActions from "@/components/organism/comments/comment-saved-actions";
 import CommentsState from "@/stores/comments";
+import { IAPIInfo } from "@/types/base";
 
 // Define initial state
 type CommentMode = "new" | "update" | "readonly";
@@ -21,11 +21,12 @@ type ActionType =
     | "SET_LOADING"
     | "RESET"
     | "MESSAGE_SAVED"
+    | "COMMENT_REMOVED"
     | "UPDATE_COMMENT";
 const initialState = {
     mode: "new" as CommentMode,
     message: "",
-    commentId: 0,
+    comment: null as CommentDto | null,
     isLoading: false,
 };
 // Define reducer function
@@ -45,7 +46,15 @@ const commentReducer = (
                 ...state,
                 isLoading: false,
                 mode: "readonly",
-                commentId: action.payload.commentId,
+                comment: action.payload,
+            };
+        case "COMMENT_REMOVED":
+            return {
+                ...state,
+                isLoading: false,
+                mode: "new",
+                comment: null,
+                message: "",
             };
         case "UPDATE_COMMENT":
             return { ...state, isLoading: false, mode: "update" };
@@ -56,14 +65,20 @@ const commentReducer = (
 
 const CommentForm = () => {
     const { userInfo } = useSnapshot(BaseState);
+    const { userCommentForDelete } = useSnapshot(CommentsState);
+    const { removeComment } = useRemoveComment();
     const { uuid } = useParams();
     const { callRestAPI } = useClientApi();
     const { t } = useTranslation();
 
     const [state, dispatch] = useReducer(commentReducer, initialState as never);
 
-    const { message, isLoading, mode, commentId } = state;
+    const { message, isLoading, mode, comment } = state as typeof initialState;
 
+    useEffect(() => {
+        if (userCommentForDelete && userCommentForDelete.id === 0) {
+        }
+    }, [userCommentForDelete]);
     const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         if (!message) {
@@ -77,25 +92,42 @@ const CommentForm = () => {
 
         const apiInfo: IAPIInfo =
             mode === "new"
-                ? BlogsAPIPath.addComment
-                : BlogsAPIPath.updateComment;
-        apiInfo.params = {
-            uuid: uuid as string,
-        };
+                ? CommentAPIPath.addComment
+                : CommentAPIPath.updateComment;
         if (mode === "update") {
-            apiInfo.params.id = commentId;
+            apiInfo.params = {
+                id: comment?.documentId || "",
+            };
+            apiInfo.body = {
+                data: {
+                    comment: message,
+                },
+            };
+        } else {
+            apiInfo.body = {
+                data: {
+                    comment: message,
+                    blogDocumentId: uuid as string,
+                },
+            };
         }
-        apiInfo.body = {
-            content: message,
-            threadOf: undefined,
-        };
 
         const resp = await callRestAPI<CommentDto>(apiInfo);
         if (resp) {
             dispatch({
                 type: "MESSAGE_SAVED",
-                payload: { commentId: resp.id },
+                payload: resp,
             });
+        } else {
+            dispatch({ type: "SET_LOADING", payload: false });
+        }
+    };
+    const doRemoveComment = async () => {
+        if (!comment) return;
+        dispatch({ type: "SET_LOADING", payload: true });
+        const resp = await removeComment(comment);
+        if (resp) {
+            dispatch({ type: "COMMENT_REMOVED", payload: null });
         }
     };
     if (!userInfo) return null;
@@ -112,9 +144,8 @@ const CommentForm = () => {
                     onUpdate={() =>
                         dispatch({ type: "UPDATE_COMMENT", payload: null })
                     }
-                    onRemove={() => {
-                        CommentsState.userCommentIdForDelete = commentId;
-                    }}
+                    disabled={isLoading || mode !== "readonly"}
+                    onRemove={doRemoveComment}
                 />
             )}
 

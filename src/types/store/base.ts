@@ -1,4 +1,4 @@
-import { IAlert, IUserInfo } from "@/types/base";
+import { IAlert, IConfirm, IUserInfo } from "@/types/base";
 
 export interface IBaseState {
     showMenu: boolean;
@@ -6,6 +6,7 @@ export interface IBaseState {
     toggleMenu: () => void;
     locale: string;
     globalAlert: IAlert | null;
+    globalConfirm: IConfirm | null;
     setAlert: (alert: IAlert) => void;
     token?: {
         access: string | undefined;

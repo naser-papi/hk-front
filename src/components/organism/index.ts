@@ -28,3 +28,4 @@ export { default as EventDetail } from "./event-detail";
 export { default as Background } from "./background";
 export { default as SideFloatMenu } from "./side-float-menu";
 export { default as RelatedContents } from "./related-contents";
+export { default as GlobalConfirm } from "./global-confirm";

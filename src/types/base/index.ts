@@ -6,6 +6,7 @@ import { HTTP_METHOD } from "next/dist/server/web/http";
 export type DtoType = {
     [key in string]: string | number | boolean | number[] | undefined | null;
 };
+
 export type TransFuntion = (
     path: NestedKeyOf<LocaleType>,
     config?: any
@@ -38,6 +39,14 @@ export type IParams = {
     [key: string]: string | number;
 };
 export type FormInputValue = string | number | string[] | undefined | boolean;
+
+export interface IConfirm {
+    title: string;
+    content: JSX.Element;
+    onConfirm: () => void;
+    onCancel: () => void;
+    size?: "small" | "medium" | "large";
+}
 
 export interface IAlert {
     type: "success" | "error" | "warn" | "info";
@@ -120,4 +129,5 @@ export interface IUserInfo {
     email: string;
     fullName: string;
     avatar?: string;
+    memberDocumentId: string;
 }

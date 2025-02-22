@@ -5,5 +5,5 @@ export interface ICommentsState {
     list: CommentDto[];
     loading: boolean;
     userCurrentComment?: CommentDto;
-    userCommentIdForDelete?: number;
+    userCommentForDelete: CommentDto | null;
 }
