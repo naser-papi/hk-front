@@ -4,38 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="comments part 3">
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/comment.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/molecule/modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/comments/comments-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/global-confirm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/constants/api-path/comments.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/use-remove-comment.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="finalized the comments.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-button.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/comment-saved-actions.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/comments/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/comments/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/comments-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/share-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/comments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/dto/comment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/comment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/store/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/store/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/store/comments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +40,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/naser-papi/hk-front.git&quot;,
-    &quot;accountId&quot;: &quot;6ce12216-21d8-4e8e-8d5d-2fcb98d48eb7&quot;
+    &quot;accountId&quot;: &quot;c2977a3e-6564-42d7-9641-598c55de56ed&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -265,15 +242,9 @@
       <workItem from="1740062830049" duration="14139000" />
       <workItem from="1740135661339" duration="20292000" />
       <workItem from="1740211817182" duration="4686000" />
-      <workItem from="1740231012268" duration="10500000" />
-    </task>
-    <task id="LOCAL-00031" summary="added the auth form">
-      <option name="closed" value="true" />
-      <created>1734104901080</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1734104901080</updated>
+      <workItem from="1740231012268" duration="11820000" />
+      <workItem from="1740486175687" duration="583000" />
+      <workItem from="1740499327127" duration="3999000" />
     </task>
     <task id="LOCAL-00032" summary="added the Dashboard page.&#10;added the global alert part 1">
       <option name="closed" value="true" />
@@ -659,7 +630,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740083121679</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="finalized the comments.">
+      <option name="closed" value="true" />
+      <created>1740249796762</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1740249796763</updated>
+    </task>
+    <option name="localTasksCounter" value="81" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -680,7 +659,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the event list page part 1" />
     <MESSAGE value="added the event list page part 2" />
     <MESSAGE value="added the event detail page" />
     <MESSAGE value="switched to dev mod" />
@@ -705,7 +683,8 @@
     <MESSAGE value="comments part 2" />
     <MESSAGE value="fixed the footer styles" />
     <MESSAGE value="comments part 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="comments part 3" />
+    <MESSAGE value="finalized the comments." />
+    <option name="LAST_COMMIT_MESSAGE" value="finalized the comments." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

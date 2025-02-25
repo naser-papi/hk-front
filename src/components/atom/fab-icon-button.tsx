@@ -1,5 +1,5 @@
 import { cva, VariantProps } from "class-variance-authority";
-
+import { twMerge } from "tailwind-merge";
 import FabIcon from "./fab-icon";
 import { ButtonHTMLAttributes } from "react";
 import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
@@ -37,10 +37,13 @@ const FabIconButton = ({
     icon,
     onClick,
     hideLabel,
+    className,
+    ...rest
 }: FabIconButtonProps) => {
     return (
         <button
-            className={fabIconButtonVaraints({ disabled })}
+            {...rest}
+            className={twMerge(fabIconButtonVaraints({ disabled }), className)}
             onClick={onClick}
         >
             <FabIcon icon={icon} />

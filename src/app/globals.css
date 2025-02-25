@@ -131,6 +131,8 @@ body.rtl {
   .border-shadow {
     @apply border-2 border-white drop-shadow-lg;
   }
+
+
   .related-contents {
     width: 100%;
     padding-top: 5rem;
@@ -150,17 +152,17 @@ body.rtl {
 
   .side-float-menu > nav > hr {
     transform: rotate(90deg);
-    width: 50%;
+    width: 20px;
     justify-self: center;
   }
 
   .side-float-menu > nav {
-    display: grid;
-    gap: 0.5rem 0.5rem;
+    display: flex;
+    gap: 0.5rem;
     align-items: center;
     padding: 0.25rem;
     width: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(50px, auto));
+    flex-wrap: wrap;
   }
 
   .side-float-menu > nav > a {
@@ -168,7 +170,17 @@ body.rtl {
     font-weight: bold;
     font-size: 1.5rem; /* Assuming text-label corresponds to a 1rem font size */
     line-height: 1.5; /* Adjusted based on tailwind's default */
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
+
+  .side-float-menu > nav > a > span {
+    font-size: 0.7rem;
+  }
+
+
 
   .content-detail-body {
     @apply grid gap-2 w-full items-center;
@@ -246,6 +258,25 @@ body.rtl {
   }
 
   @media screen and (min-width: 744px) {
+    .custom-tooltip {
+      position: relative;
+    }
+
+    .custom-tooltip[title]:hover:after {
+      content: attr(title);
+      position: absolute;
+      top: 50%;
+      left: 50px;
+      border: 1px solid var(--white);
+      padding: 0.3rem 0.5rem;
+      font-size: 0.8rem;
+      background: var(--primary-lighter);
+      color: var(--white);
+      white-space: nowrap;
+      z-index: 9999;
+      border-radius: 0 8px 0 8px;
+    }
+
     .side-float-menu {
       position: fixed;
       left: 0;

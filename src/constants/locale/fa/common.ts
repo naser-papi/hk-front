@@ -101,4 +101,5 @@ export default {
     confirmRemoveComment: "آیا برای حذف نظر خود اطمینان دارید؟",
     removeComment: "حذف نظر",
     confirmedComments: "نظرات تائید شده",
+    share: "اشتراک گذاری",
 };

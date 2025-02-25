@@ -1,8 +1,10 @@
 "use client";
 import { FabIconButton } from "@/components/atom";
 import { faShare } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import useTranslation from "@/helpers/i18n/use-translation";
 
 const ShareButton = () => {
+    const { t } = useTranslation();
     const handleShare = async () => {
         if (navigator.share) {
             try {
@@ -25,6 +27,7 @@ const ShareButton = () => {
             onClick={handleShare}
             icon={faShare}
             label={"Share"}
+            title={t("common.share")}
             hideLabel
         />
     );

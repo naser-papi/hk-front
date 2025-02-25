@@ -100,4 +100,5 @@ export default {
     confirmRemoveComment: "Are you sure you want to remove this comment?",
     removeComment: "Remove Comment",
     confirmedComments: "Confirmed Comments",
+    share: "Share this page",
 };

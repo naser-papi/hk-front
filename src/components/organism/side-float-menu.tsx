@@ -3,9 +3,11 @@ import { MenuLinks } from "@/constants/base";
 import { MenuLink } from "@/components/atom";
 import ShareButton from "@/components/organism/share-button";
 import { useEffect, useState } from "react";
+import useTranslation from "@/helpers/i18n/use-translation";
 
 const SideFloatMenu = () => {
     const [visible, setVisible] = useState(false);
+    const { t } = useTranslation();
     useEffect(() => {
         const scrollElement = document.querySelector(
             "main.page-default-container"
@@ -22,10 +24,9 @@ const SideFloatMenu = () => {
                 {MenuLinks.map((link) => (
                     <MenuLink
                         key={link.id}
-                        label={link.title}
+                        label={t(link.title)}
                         icon={link.icon}
                         href={link.path}
-                        hideLabel
                     />
                 ))}
                 <hr />
