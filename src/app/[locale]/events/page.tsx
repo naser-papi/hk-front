@@ -1,4 +1,3 @@
-import React from "react";
 import { EventsHero, EventsList, Footer } from "@/components/template";
 
 const EventsPage = () => {

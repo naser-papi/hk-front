@@ -4,15 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="finalized the comments.">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="float menu titles">
+      <change afterPath="$PROJECT_DIR$/src/app/[locale]/links/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/links-list-header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/template/links-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/share-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/side-float-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
@@ -244,15 +247,7 @@
       <workItem from="1740211817182" duration="4686000" />
       <workItem from="1740231012268" duration="11820000" />
       <workItem from="1740486175687" duration="583000" />
-      <workItem from="1740499327127" duration="3999000" />
-    </task>
-    <task id="LOCAL-00032" summary="added the Dashboard page.&#10;added the global alert part 1">
-      <option name="closed" value="true" />
-      <created>1734266345540</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1734266345540</updated>
+      <workItem from="1740499327127" duration="7374000" />
     </task>
     <task id="LOCAL-00033" summary="added the Dashboard page part 2.&#10;added the global alert part 2">
       <option name="closed" value="true" />
@@ -638,7 +633,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740249796763</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="float menu titles">
+      <option name="closed" value="true" />
+      <created>1740503640084</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1740503640084</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -659,7 +662,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the event list page part 2" />
     <MESSAGE value="added the event detail page" />
     <MESSAGE value="switched to dev mod" />
     <MESSAGE value="switched to prod mod" />
@@ -684,7 +686,8 @@
     <MESSAGE value="fixed the footer styles" />
     <MESSAGE value="comments part 3" />
     <MESSAGE value="finalized the comments." />
-    <option name="LAST_COMMIT_MESSAGE" value="finalized the comments." />
+    <MESSAGE value="float menu titles" />
+    <option name="LAST_COMMIT_MESSAGE" value="float menu titles" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -1,4 +1,3 @@
-import React from "react";
 import { Container, EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
