@@ -37,7 +37,11 @@ export const GetRelatedContents = cache(async () => {
         apiInfo.params.uuid = uuid;
         const resp = await mainCall<IAPIResponse<RelatedContentDto[]>>(apiInfo);
         if (resp && resp.data) {
-            return resp.data.data?.slice(0, 3) || ([] as RelatedContentDto[]);
+            return (
+                resp.data.data
+                    ?.filter((row) => row.documentId !== uuid)
+                    .slice(0, 3) || ([] as RelatedContentDto[])
+            );
         }
     }
     return [] as RelatedContentDto[];

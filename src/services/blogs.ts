@@ -24,7 +24,7 @@ export const GetBlogsComments = cache(async () => {
     }
 });
 
-export const GetTopBlogs = cache(async () => {
+export const GetTopBlogs = async () => {
     const apiInfo = BlogsAPIPath.getTopBlogs;
     const resp = await mainCall<ICMSListApiResponse<BlogDto>>(apiInfo);
     if (resp && resp.data) {
@@ -32,9 +32,9 @@ export const GetTopBlogs = cache(async () => {
     } else {
         return [] as BlogDto[];
     }
-});
+};
 
-export const GetRelatedBlogs = cache(async () => {
+export const GetRelatedBlogs = async () => {
     const url = headers().get("x-url");
     const uuid = url?.split("/").pop();
     if (uuid) {
@@ -46,8 +46,8 @@ export const GetRelatedBlogs = cache(async () => {
         }
         return [] as BlogDto[];
     }
-});
-export const GetBlogList = cache(async () => {
+};
+export const GetBlogList = async () => {
     const url = headers().get("x-url")!;
     const { page, cat, filter } = GetUrlParams(url);
     const apiInfo = { ...BlogsAPIPath.getBlogList };
@@ -64,9 +64,9 @@ export const GetBlogList = cache(async () => {
     } else {
         return [] as BlogDto[];
     }
-});
+};
 
-export const GetBlogDetail = cache(async (): Promise<BlogDto | undefined> => {
+export const GetBlogDetail = async (): Promise<BlogDto | undefined> => {
     const url = headers().get("x-url");
     const uuid = url?.split("/").pop();
     if (uuid) {
@@ -78,4 +78,4 @@ export const GetBlogDetail = cache(async (): Promise<BlogDto | undefined> => {
         }
     }
     return undefined;
-});
+};

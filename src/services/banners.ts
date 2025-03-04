@@ -1,10 +1,9 @@
-import { cache } from "react";
 import { BannersAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
 import { ICMSListApiResponse } from "@/types/base";
 import { BannerDto } from "@/types/dto";
 
-export const GetHeroBanners = cache(async () => {
+export const GetHeroBanners = async () => {
     const apiInfo = BannersAPIPath.getHeroBanners;
     const resp = await mainCall<ICMSListApiResponse<BannerDto>>(apiInfo);
     if (resp && resp.data) {
@@ -12,4 +11,4 @@ export const GetHeroBanners = cache(async () => {
     } else {
         return [] as BannerDto[];
     }
-});
+};

@@ -12,8 +12,5 @@ export const LinksAPIPath = {
     getTopLinks: {
         method: "GET",
         url: `api/links?populate=icon&${TopEntityQuery}`,
-        options: {
-            next: { revalidate: 3600 },
-        },
     },
 } satisfies { [key: string]: IAPIInfo };

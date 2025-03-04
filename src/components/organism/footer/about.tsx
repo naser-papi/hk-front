@@ -5,7 +5,8 @@ import { normalizeHTMLContent } from "@/helpers";
 import { isRootPath } from "@/services/server";
 
 const About = async () => {
-    if (!(await isRootPath())) return null;
+    const isRoot = await isRootPath();
+    if (!isRoot) return null;
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (

@@ -4,18 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="float menu titles">
-      <change afterPath="$PROJECT_DIR$/src/app/[locale]/links/page.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/organism/links-list-header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/template/links-list.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the links list page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/banners.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,15 +247,9 @@
       <workItem from="1740211817182" duration="4686000" />
       <workItem from="1740231012268" duration="11820000" />
       <workItem from="1740486175687" duration="583000" />
-      <workItem from="1740499327127" duration="7374000" />
-    </task>
-    <task id="LOCAL-00033" summary="added the Dashboard page part 2.&#10;added the global alert part 2">
-      <option name="closed" value="true" />
-      <created>1734356877412</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1734356877412</updated>
+      <workItem from="1740499327127" duration="7772000" />
+      <workItem from="1741081368863" duration="251000" />
+      <workItem from="1741081662937" duration="1990000" />
     </task>
     <task id="LOCAL-00034" summary="added the locales">
       <option name="closed" value="true" />
@@ -641,7 +635,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740503640084</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="added the links list page">
+      <option name="closed" value="true" />
+      <created>1740507369305</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1740507369305</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,7 +664,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the event detail page" />
     <MESSAGE value="switched to dev mod" />
     <MESSAGE value="switched to prod mod" />
     <MESSAGE value="fixed a bug" />
@@ -687,7 +688,8 @@
     <MESSAGE value="comments part 3" />
     <MESSAGE value="finalized the comments." />
     <MESSAGE value="float menu titles" />
-    <option name="LAST_COMMIT_MESSAGE" value="float menu titles" />
+    <MESSAGE value="added the links list page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added the links list page" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
