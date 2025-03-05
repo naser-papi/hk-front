@@ -1,10 +1,12 @@
+import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { BlogDto } from "@/types/dto";
-import { KnowledgeCard } from "../molecule";
-import { GetTopBlogs } from "@/services/blogs";
 import { Container, NoData } from "@/components/molecule";
+import { KnowledgeCard } from "../molecule";
 
 const BlogCardContainer = async () => {
-    const list = await GetTopBlogs();
+    const list = (await HomePageStore.getInstance().getValue(
+        CacheKeys.topBlogs
+    )) as BlogDto[];
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: BlogDto) => (
         <KnowledgeCard

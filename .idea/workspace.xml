@@ -4,18 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the links list page">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="some improvements">
+      <change afterPath="$PROJECT_DIR$/.env.production" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/home-page-store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dockerignore" beforeDir="false" afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/banners.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,8 +38,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -71,7 +83,7 @@
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front/src/hooks&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -97,11 +109,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\projects\hk-app\hk-front" />
       <recent name="D:\projects\hk-app\hk-front\src\hooks" />
       <recent name="D:\projects\hk-app\hk-front\public\assets\images" />
       <recent name="D:\projects\hk-app\hk-front\src\constants\locale\fa" />
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\iran-sans" />
-      <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\yekan" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
@@ -249,15 +261,13 @@
       <workItem from="1740486175687" duration="583000" />
       <workItem from="1740499327127" duration="7772000" />
       <workItem from="1741081368863" duration="251000" />
-      <workItem from="1741081662937" duration="1990000" />
-    </task>
-    <task id="LOCAL-00034" summary="added the locales">
-      <option name="closed" value="true" />
-      <created>1734373156341</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1734373156341</updated>
+      <workItem from="1741081662937" duration="2835000" />
+      <workItem from="1741095123237" duration="184000" />
+      <workItem from="1741165924320" duration="1101000" />
+      <workItem from="1741167960519" duration="5433000" />
+      <workItem from="1741179394729" duration="4128000" />
+      <workItem from="1741184192489" duration="5778000" />
+      <workItem from="1741199329444" duration="1255000" />
     </task>
     <task id="LOCAL-00035" summary="OTP numeric">
       <option name="closed" value="true" />
@@ -643,7 +653,15 @@
       <option name="project" value="LOCAL" />
       <updated>1740507369305</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="some improvements">
+      <option name="closed" value="true" />
+      <created>1741083980178</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1741083980178</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -664,7 +682,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="switched to dev mod" />
     <MESSAGE value="switched to prod mod" />
     <MESSAGE value="fixed a bug" />
     <MESSAGE value="fixed the default language to fa" />
@@ -689,7 +706,8 @@
     <MESSAGE value="finalized the comments." />
     <MESSAGE value="float menu titles" />
     <MESSAGE value="added the links list page" />
-    <option name="LAST_COMMIT_MESSAGE" value="added the links list page" />
+    <MESSAGE value="some improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="some improvements" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

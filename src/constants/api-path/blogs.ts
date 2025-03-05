@@ -12,6 +12,9 @@ export const BlogsAPIPath = {
     getTopBlogs: {
         method: "GET",
         url: `api/blogs?populate[0]=cardImage&populate[1]=bannerMedia&${TopEntityQuery}`,
+        options: {
+            cache: "force-cache",
+        },
     },
     getBlogList: {
         method: "GET",

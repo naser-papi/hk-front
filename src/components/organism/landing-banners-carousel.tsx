@@ -1,12 +1,16 @@
-import { GetHeroBanners } from "@/services/banners";
+import HomePageStore, { CacheKeys } from "@/services/home-page-store";
+
 import {
     BannerCard,
     BulletCarouselContainer,
     NoData,
 } from "@/components/molecule";
+import { BannerDto } from "@/types/dto";
 
 const LandingBannerCarousel = async () => {
-    const banners = await GetHeroBanners();
+    const banners = (await HomePageStore.getInstance().getValue(
+        CacheKeys.banners
+    )) as BannerDto[];
     if (!banners || !banners.length) return <NoData />;
     const images = banners.flatMap((banner) => {
         const result = [];

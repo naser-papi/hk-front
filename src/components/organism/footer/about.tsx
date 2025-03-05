@@ -1,13 +1,17 @@
-import { GetCompanyInfo } from "@/services/company-info";
+import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { ImageKit } from "@/components/atom";
 import { NoData } from "@/components/molecule";
 import { normalizeHTMLContent } from "@/helpers";
 import { isRootPath } from "@/services/server";
+import { CompanyInfoDto } from "@/types/dto";
 
 const About = async () => {
     const isRoot = await isRootPath();
     if (!isRoot) return null;
-    const companyInfo = await GetCompanyInfo();
+    const companyInfo = (await HomePageStore.getInstance().getValue(
+        CacheKeys.companyInfo
+    )) as CompanyInfoDto;
+
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (
         <section

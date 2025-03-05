@@ -1,13 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     reactStrictMode: true,
+    output: "standalone",
     logging: {
         fetches: {
             fullUrl: true,
             hmrRefreshes: true,
         },
     },
-    output: "standalone",
     images: {
         // enable dangerous use of SVG images
         dangerouslyAllowSVG: false,

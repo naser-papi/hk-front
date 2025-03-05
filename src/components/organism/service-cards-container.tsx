@@ -1,9 +1,11 @@
-import { GetTopServices } from "@/services/services";
+import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { NoData, ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
 
 const ServiceCardsContainer = async () => {
-    const list = await GetTopServices();
+    const list = (await HomePageStore.getInstance().getValue(
+        CacheKeys.topServices
+    )) as ServiceDto[];
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: ServiceDto) => (
         <ServiceCard

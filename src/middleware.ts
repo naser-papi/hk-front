@@ -5,6 +5,9 @@ import mainCall from "@/services/rest-api/main-call";
 import { MembersAPIPath } from "@/constants/api-path/members";
 import { ICMSApiResponse } from "@/types/base";
 import { MemberDto } from "@/types/dto/members";
+import { EventEmitter } from "events";
+
+EventEmitter.defaultMaxListeners = 50;
 
 // Helper function for token validation
 async function isAuthenticated(

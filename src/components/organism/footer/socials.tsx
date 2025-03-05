@@ -1,4 +1,4 @@
-import { GetCompanyInfo } from "@/services/company-info";
+import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import {
     faInstagram,
     faTelegram,
@@ -10,7 +10,9 @@ import trans from "@/helpers/i18n/server";
 import { NoData } from "@/components/molecule";
 
 const Socials = async () => {
-    const companyInfo = await GetCompanyInfo();
+    const companyInfo = await HomePageStore.getInstance().getValue(
+        CacheKeys.companyInfo
+    );
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (
         <section className={"socials grid place-items-center gap-y-2"}>
