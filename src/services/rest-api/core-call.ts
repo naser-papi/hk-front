@@ -38,7 +38,6 @@ const coreCall = async (info: IAPIInfo, token = "", retries = 3) => {
             Authorization: info.tokenLess || !token ? "" : `Bearer ${token}`,
         },
         ...info.options,
-        cache: "force-cache",
     });
 };
 
