@@ -1,7 +1,7 @@
 import { ListBannerCard, NoData } from "@/components/molecule";
-import { GetTopEvents } from "@/services/events";
 import { EventDto } from "@/types/dto";
 import { getNavDirection } from "@/helpers";
+import { GetTopEvents } from "@/services/events";
 
 const EventBannerCarousel = async () => {
     const list = await GetTopEvents();

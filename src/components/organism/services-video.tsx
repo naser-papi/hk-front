@@ -1,6 +1,6 @@
-import { GetCompanyInfo } from "@/services/company-info";
 import { NoData } from "@/components/molecule";
 import VideoPlayer from "@/components/molecule/video-player";
+import { GetCompanyInfo } from "@/services/company-info";
 
 const ServicesVideo = async () => {
     const companyInfo = await GetCompanyInfo();

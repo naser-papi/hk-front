@@ -1,5 +1,4 @@
 "use server";
-import { cache } from "react";
 import { LinksAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
 import { ICMSListApiResponse } from "@/types/base";
@@ -8,7 +7,7 @@ import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
 
-export const GetLinksList = cache(async () => {
+export const GetLinksList = async () => {
     const url = headers().get("x-url")!;
     const { page, cat, filter } = GetUrlParams(url);
     const apiInfo = { ...LinksAPIPath.getLinksList };
@@ -25,9 +24,9 @@ export const GetLinksList = cache(async () => {
     } else {
         return [] as LinkDto[];
     }
-});
+};
 
-export const GetTopLinks = cache(async () => {
+export const GetTopLinks = async () => {
     const apiInfo = LinksAPIPath.getTopLinks;
     const resp = await mainCall<ICMSListApiResponse<LinkDto>>(apiInfo);
     if (resp && resp.data) {
@@ -35,4 +34,4 @@ export const GetTopLinks = cache(async () => {
     } else {
         return [] as LinkDto[];
     }
-});
+};

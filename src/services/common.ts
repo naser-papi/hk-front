@@ -21,7 +21,7 @@ export const GetUrlParams = cache((url: string) => {
     return Object.fromEntries(urlInfo.searchParams);
 });
 
-export const GetRelatedContents = cache(async () => {
+export const GetRelatedContents = async () => {
     //sample url: /blogs/{uuid}
     const url = headers().get("x-url");
     const splitUrl = url?.split("/");
@@ -45,4 +45,4 @@ export const GetRelatedContents = cache(async () => {
         }
     }
     return [] as RelatedContentDto[];
-});
+};

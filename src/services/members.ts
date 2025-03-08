@@ -14,7 +14,7 @@ export const GetUserToken = cache(async (dto: MemberDto) => {
     return resp?.data?.token;
 });
 
-export const SendOTPCode = cache(async (dto: MemberDto) => {
+export const SendOTPCode = async (dto: MemberDto) => {
     const apiInfo = MembersAPIPath.sendOTP;
     apiInfo.body.data = dto;
     const resp = await mainCall<boolean>(apiInfo);
@@ -24,7 +24,7 @@ export const SendOTPCode = cache(async (dto: MemberDto) => {
         throw new Error(resp.error);
     }
     throw new Error("Something went wrong");
-});
+};
 
 export const GetMemberByEmailOrTelegramId = cache(
     async (email: string, telegramId: string) => {

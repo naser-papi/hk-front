@@ -1,5 +1,4 @@
 "use server";
-import { cache } from "react";
 import { EventsAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
 import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
@@ -8,7 +7,7 @@ import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
 
-export const GetRelatedEvents = cache(async () => {
+export const GetRelatedEvents = async () => {
     const url = headers().get("x-url");
     const uuid = url?.split("/").pop();
     if (uuid) {
@@ -20,9 +19,9 @@ export const GetRelatedEvents = cache(async () => {
         }
         return [] as EventDto[];
     }
-});
+};
 
-export const GetTopEvents = cache(async () => {
+export const GetTopEvents = async () => {
     const apiInfo = EventsAPIPath.getTopEvents;
     const resp = await mainCall<ICMSListApiResponse<EventDto>>(apiInfo);
     if (resp && resp.data) {
@@ -30,9 +29,19 @@ export const GetTopEvents = cache(async () => {
     } else {
         return [] as EventDto[];
     }
-});
+};
 
-export const GetEventList = cache(async () => {
+export const GetEventList = async () => {
+    const apiInfo = { ...EventsAPIPath.getEventList };
+    const resp = await mainCall<ICMSListApiResponse<EventDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    } else {
+        return [] as EventDto[];
+    }
+};
+
+export const GetFilteredEventList = async () => {
     const url = headers().get("x-url")!;
     const { page, cat, filter } = GetUrlParams(url);
     const apiInfo = { ...EventsAPIPath.getEventList };
@@ -49,9 +58,8 @@ export const GetEventList = cache(async () => {
     } else {
         return [] as EventDto[];
     }
-});
-
-export const GetEventDetail = cache(async (): Promise<EventDto | undefined> => {
+};
+export const GetEventDetail = async (): Promise<EventDto | undefined> => {
     const url = headers().get("x-url");
     const uuid = url?.split("/").pop();
     if (uuid) {
@@ -63,4 +71,4 @@ export const GetEventDetail = cache(async (): Promise<EventDto | undefined> => {
         }
     }
     return undefined;
-});
+};

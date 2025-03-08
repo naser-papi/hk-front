@@ -1,7 +1,7 @@
-import { GetServiceList } from "@/services/services";
 import { Container, NoData, ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
+import { GetServiceList } from "@/services/services";
 
 const ServicesFilterList = async () => {
     const list = await GetServiceList();

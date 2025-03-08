@@ -1,14 +1,12 @@
-import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { faPhoneVolume } from "@awesome.me/kit-026a927a83/icons/classic/solid";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { isRootPath } from "@/services/server";
+import { GetCompanyInfo } from "@/services/company-info";
 
 const CallUs = async () => {
     if (!(await isRootPath())) return null;
-    const companyInfo = await HomePageStore.getInstance().getValue(
-        CacheKeys.companyInfo
-    );
+    const companyInfo = await GetCompanyInfo();
     if (!companyInfo) return null;
     return (
         <section

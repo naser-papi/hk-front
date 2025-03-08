@@ -1,11 +1,9 @@
-import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
+import { GetEventList } from "@/services/events";
 
 const EventCardsContainer = async () => {
-    const list = (await HomePageStore.getInstance().getValue(
-        CacheKeys.topEvents
-    )) as EventDto[];
+    const list = await GetEventList();
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: EventDto) => (
         <EventCard

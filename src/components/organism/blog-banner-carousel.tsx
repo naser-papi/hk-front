@@ -1,7 +1,7 @@
-import { GetTopBlogs } from "@/services/blogs";
 import { BlogDto } from "@/types/dto";
 import { ListBannerCard, NoData } from "@/components/molecule";
 import { getNavDirection } from "@/helpers";
+import { GetTopBlogs } from "@/services/blogs";
 
 const BlogBannerCarousel = async () => {
     const list = await GetTopBlogs();

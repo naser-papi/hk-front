@@ -1,4 +1,3 @@
-import HomePageStore from "@/services/home-page-store";
 import {
     Footer,
     LandingBlogs,
@@ -11,7 +10,7 @@ import {
 import StoreScroll from "@/components/organism/store-scroll";
 
 export default async function Home() {
-    await HomePageStore.getInstance().initialize();
+    console.log("Generating Home>>>>>>>>>>>>>>>>");
     return (
         <main className="page-default-container">
             <StoreScroll />

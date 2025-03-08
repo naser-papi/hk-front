@@ -1,9 +1,7 @@
-import HomePageStore, { CacheKeys } from "@/services/home-page-store";
+import { GetCompanyInfo } from "@/services/company-info";
 
 const CopyRight = async () => {
-    const companyInfo = await HomePageStore.getInstance().getValue(
-        CacheKeys.companyInfo
-    );
+    const companyInfo = await GetCompanyInfo();
 
     if (!companyInfo) return null;
     return (

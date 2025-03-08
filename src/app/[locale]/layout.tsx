@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     description: "An Awesome Immigration Website for NL lovers",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
     params,
 }: Readonly<{

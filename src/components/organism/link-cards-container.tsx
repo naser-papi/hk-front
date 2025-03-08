@@ -1,11 +1,9 @@
-import HomePageStore, { CacheKeys } from "@/services/home-page-store";
 import { ExternalLink, NoData } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
+import { GetTopLinks } from "@/services/external-links";
 
 const LinkCardsContainer = async () => {
-    const list = (await HomePageStore.getInstance().getValue(
-        CacheKeys.topLinks
-    )) as LinkDto[];
+    const list = await GetTopLinks();
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: LinkDto) => (
         <ExternalLink

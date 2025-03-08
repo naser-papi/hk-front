@@ -1,4 +1,3 @@
-import React from "react";
 import { EventsFilterList } from "@/components/organism";
 
 const EventsList = () => {
