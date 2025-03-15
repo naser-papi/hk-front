@@ -366,7 +366,7 @@ body.rtl {
   }
 
   .carousel-container {
-    @apply hidden-scroll flex max-w-5xl items-stretch gap-3 overflow-x-auto;
+    @apply hidden-scroll flex max-w-5xl items-stretch gap-3 overflow-x-auto w-full;
   }
 
   .page-default-container {
