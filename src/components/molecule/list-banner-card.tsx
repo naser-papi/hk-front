@@ -19,7 +19,7 @@ const variants = cva(
         "border-dotted",
         "drop-shadow-lg",
         "border-primary",
-        "w-[min(100%-64px,620px)]",
+        "w-[min(100%-84px,620px)]",
         "shrink-0",
         "[&>img]:w-full",
         "[&>h3]:text-3xl",
@@ -43,6 +43,7 @@ interface ListBannerCardProps
     shortDesc: string;
     link: string;
     navDirection: Direction;
+    detailButtonText?: string;
 }
 
 const ListBannerCard = ({
@@ -50,6 +51,7 @@ const ListBannerCard = ({
     ikUrl,
     shortDesc,
     link,
+    detailButtonText = trans("common.readFullArticle"),
 }: ListBannerCardProps) => {
     return (
         <div className={variants({})}>
@@ -57,7 +59,7 @@ const ListBannerCard = ({
             <ImageKit src={ikUrl} alt={title} width={300} height={300} />
             <p>{shortDesc}</p>
             <section>
-                <Button label={trans("common.readFullArticle")} link={link} />
+                <Button label={detailButtonText} link={link} />
             </section>
         </div>
     );

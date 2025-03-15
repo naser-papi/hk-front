@@ -370,7 +370,7 @@ body.rtl {
   }
 
   .page-default-container {
-    @apply relative grid h-full max-h-screen w-full place-items-start overflow-y-auto;
+    @apply relative grid h-full max-h-screen w-full place-items-start overflow-y-auto overflow-x-clip;
     background-color: rgba(0, 0, 0, 0.3);
   }
 }

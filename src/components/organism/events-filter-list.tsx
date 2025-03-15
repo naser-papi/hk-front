@@ -12,7 +12,7 @@ const EventsFilterList = async () => {
         list?.map((item: EventDto) => (
             <EventCard
                 key={item.id}
-                ikUrl={item.cardImage.url}
+                ikUrl={item.cardImage?.url}
                 title={item.title}
                 date={item.dateAndTime}
                 desc={item.shortDesc}

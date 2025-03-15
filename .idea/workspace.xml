@@ -4,43 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="SSG part 1">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="improved performance">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-banner-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/copyright.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-banners-carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/services-video.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/services-video.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/events-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/events-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/banners.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/company-info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/banners.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/company-info.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/company-info.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/home-page-store.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/members.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -283,15 +256,11 @@
       <workItem from="1741199329444" duration="6885000" />
       <workItem from="1741344856948" duration="610000" />
       <workItem from="1741357095473" duration="12065000" />
-      <workItem from="1741441308692" duration="5662000" />
-    </task>
-    <task id="LOCAL-00038" summary="remove the unneeded font">
-      <option name="closed" value="true" />
-      <created>1735415733379</created>
-      <option name="number" value="00038" />
-      <option name="presentableId" value="LOCAL-00038" />
-      <option name="project" value="LOCAL" />
-      <updated>1735415733379</updated>
+      <workItem from="1741441308692" duration="7507000" />
+      <workItem from="1741614410920" duration="746000" />
+      <workItem from="1741770020190" duration="2441000" />
+      <workItem from="1741943154954" duration="10196000" />
+      <workItem from="1742037354589" duration="6385000" />
     </task>
     <task id="LOCAL-00039" summary="some changes for test">
       <option name="closed" value="true" />
@@ -677,7 +646,15 @@
       <option name="project" value="LOCAL" />
       <updated>1741202959953</updated>
     </task>
-    <option name="localTasksCounter" value="87" />
+    <task id="LOCAL-00087" summary="improved performance">
+      <option name="closed" value="true" />
+      <created>1741447149191</created>
+      <option name="number" value="00087" />
+      <option name="presentableId" value="LOCAL-00087" />
+      <option name="project" value="LOCAL" />
+      <updated>1741447149192</updated>
+    </task>
+    <option name="localTasksCounter" value="88" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -698,7 +675,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed a bug" />
     <MESSAGE value="fixed the default language to fa" />
     <MESSAGE value="fixed language toggle button issue" />
     <MESSAGE value="fixed the category filter buttons issue." />
@@ -723,7 +699,8 @@
     <MESSAGE value="added the links list page" />
     <MESSAGE value="some improvements" />
     <MESSAGE value="SSG part 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="SSG part 1" />
+    <MESSAGE value="improved performance" />
+    <option name="LAST_COMMIT_MESSAGE" value="improved performance" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

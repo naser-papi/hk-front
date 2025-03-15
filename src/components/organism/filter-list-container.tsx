@@ -5,7 +5,6 @@ import { CategoryDto } from "@/types/dto/common";
 import { CategoryList, Container } from "@/components/molecule";
 import { faSearch } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { TextBox } from "@/components/atom";
-import { KeyText } from "@/types/base";
 import useTranslation from "@/helpers/i18n/use-translation";
 
 interface FilterListContainerProps {
@@ -30,12 +29,18 @@ const FilterListContainer = ({
         const urlQuery = `?page=${query.page}&cat=${query.cat}&filter=${query.filter}`;
         router.push(`${route}${urlQuery}`);
     }, [query.page, query.cat, query.filter]);
-    const cats: KeyText[] = list
-        .filter((item) => item.category != undefined)
-        .map((item) => ({
-            key: item.category!.id,
-            text: item.category!.title,
-        }));
+
+    const cats = Array.from(
+        new Map(
+            list
+                .filter((item) => item.category != undefined)
+                .map((item) => [
+                    item.category!.id,
+                    { key: item.category!.id, text: item.category!.title },
+                ])
+        ).values()
+    );
+
     if (cats && cats.length) {
         cats.unshift({ key: 0, text: t("common.allCategories") });
     }

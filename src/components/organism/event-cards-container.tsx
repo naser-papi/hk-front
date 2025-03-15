@@ -8,7 +8,7 @@ const EventCardsContainer = async () => {
     const cards = list.map((item: EventDto) => (
         <EventCard
             key={item.id}
-            ikUrl={item.cardImage.url}
+            ikUrl={item.cardImage?.url}
             desc={item.shortDesc}
             date={item.dateAndTime}
             commentsCount={0}

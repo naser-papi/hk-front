@@ -2,6 +2,7 @@ import { ListBannerCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import { getNavDirection } from "@/helpers";
 import { GetTopEvents } from "@/services/events";
+import trans from "@/helpers/i18n/server";
 
 const EventBannerCarousel = async () => {
     const list = await GetTopEvents();
@@ -13,6 +14,7 @@ const EventBannerCarousel = async () => {
             ikUrl={item.bannerMedia[0].url}
             shortDesc={item.shortDesc}
             link={`/events/${item.documentId}`}
+            detailButtonText={trans("common.seeDetailDot")}
             navDirection={getNavDirection(list.length, index)}
         />
     ));

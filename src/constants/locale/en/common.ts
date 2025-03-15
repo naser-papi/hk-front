@@ -56,6 +56,7 @@ export default {
     general: "General",
     language: "Language",
     detailDot: "Detail...",
+    seeDetailDot: "See Details...",
     services: "Services",
     posts: "Posts",
     events: "Events",

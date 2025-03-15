@@ -56,6 +56,7 @@ export default {
     general: "عمومی",
     language: "زبان",
     detailDot: "جزئیات...",
+    seeDetailDot: "مشاهده جزئیات...",
     services: "خدمات",
     posts: "پست‌ها",
     events: "رویدادها",
