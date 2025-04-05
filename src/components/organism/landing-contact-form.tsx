@@ -23,7 +23,6 @@ const LandingContactForm = () => {
         if (info.fullName && info.message && (info.email || info.phoneNo)) {
             const resp = await SendNewMessage(info);
             if (resp && resp.id) {
-                console.log("success");
                 setInfo({
                     ...initialState,
                 });

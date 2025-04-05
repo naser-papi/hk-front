@@ -4,12 +4,20 @@ import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const variants = cva(
-    ["icon-label", "flex", "gap-2", "items-center", "h-[max-content]"],
+    [
+        "icon-label",
+        "flex",
+        "gap-1",
+        "items-start",
+        "h-[max-content]",
+        "text-xl",
+    ],
     {
         variants: {
             intend: {
                 primary: ["[&>svg]:text-altLight", "text-secondary"],
                 secondary: ["[&>svg]:text-secondary", "text-altLight"],
+                tertiary: ["[&>svg]:text-white", "text-white"],
             },
         },
         defaultVariants: {

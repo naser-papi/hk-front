@@ -1,9 +1,9 @@
 import { EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
-import { GetEventList } from "@/services/events";
+import { GetTopEvents } from "@/services/events";
 
 const EventCardsContainer = async () => {
-    const list = await GetEventList();
+    const list = await GetTopEvents();
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: EventDto) => (
         <EventCard
@@ -12,6 +12,10 @@ const EventCardsContainer = async () => {
             desc={item.shortDesc}
             date={item.dateAndTime}
             commentsCount={0}
+            eventType={item.eventType}
+            eventSubject={item.eventSubject}
+            eventTimeInDay={item.eventTimeInDay}
+            durationPerDay={item.durationPerDay}
             href={`/events/${item.documentId}`}
         />
     ));

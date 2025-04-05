@@ -31,3 +31,5 @@ export { default as RelatedContents } from "./related-contents";
 export { default as GlobalConfirm } from "./global-confirm";
 export { default as LinksFilterList } from "./links-filter-list";
 export { default as LinksListHeader } from "./links-list-header";
+export { default as EventListViewsToggle } from "./event-list-views-toggle";
+export { default as EventListCurrentView } from "./event-list-current-view";

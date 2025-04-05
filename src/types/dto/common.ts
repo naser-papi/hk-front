@@ -1,3 +1,7 @@
+export interface LocationDto {
+    lat: number;
+    lng: number;
+}
 export interface MediaDto {
     id: number;
     documentId: string;

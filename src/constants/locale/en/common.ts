@@ -102,4 +102,12 @@ export default {
     removeComment: "Remove Comment",
     confirmedComments: "Confirmed Comments",
     share: "Share this page",
+    cardView: "Card View",
+    mapView: "Map View",
+    calendarView: "Calendar View",
+    online: "Online",
+    offline: "Offline",
+    inPlace: "In Place",
+    durationPerDay: "{0} days",
+    eventTimeInDay: "{0} minutes",
 };

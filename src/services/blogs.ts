@@ -26,7 +26,6 @@ export const GetBlogsComments = async () => {
 export const GetTopBlogs = async () => {
     const apiInfo = BlogsAPIPath.getTopBlogs;
     const resp = await mainCall<ICMSListApiResponse<BlogDto>>(apiInfo);
-    console.log(">>> called GetTopBlogs");
     if (resp && resp.data) {
         return resp.data.data;
     } else {

@@ -1,4 +1,5 @@
 "use server";
+import { cache } from "react";
 import { EventsAPIPath } from "@/constants/api-path";
 import mainCall from "@/services/rest-api/main-call";
 import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
@@ -31,7 +32,7 @@ export const GetTopEvents = async () => {
     }
 };
 
-export const GetEventList = async () => {
+export const GetEventList = cache(async () => {
     const apiInfo = { ...EventsAPIPath.getEventList };
     const resp = await mainCall<ICMSListApiResponse<EventDto>>(apiInfo);
     if (resp && resp.data) {
@@ -39,7 +40,7 @@ export const GetEventList = async () => {
     } else {
         return [] as EventDto[];
     }
-};
+});
 
 export const GetFilteredEventList = async () => {
     const url = headers().get("x-url")!;

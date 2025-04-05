@@ -5,7 +5,7 @@ import { GetEventDetail } from "@/services/events";
 const EventDetailBanner = async () => {
     const info = await GetEventDetail();
     if (!info) return <NoData />;
-    const imgUrls = info.bannerMedia.map((img) => img.url);
+    const imgUrls = info.bannerMedia?.map((img) => img.url);
     return (
         <DetailPageBanner
             title={info.title}

@@ -18,6 +18,7 @@ const config: Config = {
                 warning: "var(--warning)",
                 altLight: "var(--alt-light)",
                 light: "var(--light)",
+                lightYellow: "var(--light-yellow)",
                 primaryLight: "var(--primary-lighter)",
                 blackLight: "var(--black-light)",
             },

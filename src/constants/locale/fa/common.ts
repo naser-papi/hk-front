@@ -103,4 +103,12 @@ export default {
     removeComment: "حذف نظر",
     confirmedComments: "نظرات تائید شده",
     share: "اشتراک گذاری",
+    cardView: "کارت نما",
+    mapView: "نقشه نما",
+    calendarView: "تقویم نما",
+    online: "آنلاین",
+    offline: "آفلاین",
+    inPlace: "حضوری",
+    durationPerDay: "{0} روز",
+    eventTimeInDay: "به مدت {0} دقیقه",
 };

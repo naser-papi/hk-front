@@ -16,5 +16,4 @@ const trans = (path: NestedKeyOf<LocaleType>) => {
     const t = i18nextInstance.getFixedT(local) as TransFuntion;
     return t(path);
 };
-
 export default trans;

@@ -131,3 +131,13 @@ export interface IUserInfo {
     avatar?: string;
     memberDocumentId: string;
 }
+
+export interface ICalendarEvent {
+    id: string;
+    title: string;
+    start: Date;
+    end: Date;
+    href: string;
+}
+
+export type ViewTypes = "CardList" | "MapView" | "CalendarView";

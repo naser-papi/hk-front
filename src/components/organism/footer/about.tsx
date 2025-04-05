@@ -5,7 +5,6 @@ import { isRootPath } from "@/services/server";
 import { GetCompanyInfo } from "@/services/company-info";
 
 const About = async () => {
-    console.log("About>>>>>>>>>>>>>");
     const isRoot = await isRootPath();
     if (!isRoot) return null;
     const companyInfo = await GetCompanyInfo();

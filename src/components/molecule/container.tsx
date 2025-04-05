@@ -32,9 +32,20 @@ interface ContainerProps
     children: React.ReactNode[] | JSX.Element;
 }
 
-const Container = ({ children, direction, className, gap }: ContainerProps) => {
+const Container = ({
+    children,
+    direction,
+    noScroll,
+    className,
+    gap,
+}: ContainerProps) => {
     return (
-        <article className={twMerge(variants({ direction, gap }), className)}>
+        <article
+            className={twMerge(
+                variants({ direction, gap, noScroll }),
+                className
+            )}
+        >
             {children}
         </article>
     );

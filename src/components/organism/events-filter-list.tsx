@@ -17,6 +17,11 @@ const EventsFilterList = async () => {
                 date={item.dateAndTime}
                 desc={item.shortDesc}
                 commentsCount={0}
+                address={item.address}
+                durationPerDay={item.durationPerDay}
+                eventType={item.eventType}
+                eventSubject={item.eventSubject}
+                eventTimeInDay={item.eventTimeInDay}
                 href={`/events/${item.documentId}`}
             />
         ))

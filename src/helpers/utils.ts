@@ -106,7 +106,8 @@ export function formatPublishDateString(dateString: string | undefined) {
 
     return date.toLocaleDateString("en-US", options);
 }
-export function formatEventDate(date: string): string {
+
+export function formatEventDate(date: string, locale: string): string {
     if (!date) return "";
     const process = new Date(date);
     const options: Intl.DateTimeFormatOptions = {
@@ -116,7 +117,7 @@ export function formatEventDate(date: string): string {
         minute: "numeric",
         hour12: true,
     };
-    return process.toLocaleString("en-US", options).replace(", ", " - ");
+    return process.toLocaleString(locale, options).replace(", ", " - ");
 }
 
 export function getStrapiPaginationQuery(page: number, pageSize: number) {
@@ -156,12 +157,23 @@ export function addQueryParamsToUrl(url: string, queryParams: IParams): string {
 
 export function formatLocaleString(
     template: string,
-    ...values: string[]
+    ...values: string[] | number[]
 ): string {
     return template.replace(/{(\d+)}/g, (_, index) => {
         if (values[Number(index)] !== undefined) {
-            return values[Number(index)];
+            return values[Number(index)].toString();
         }
         return `{${index}}`; // Keep the placeholder if no matching value is found
     });
+}
+
+export function formatSubstring(str: string, count: number) {
+    return str.substring(0, count) + "...";
+}
+
+export function addDurationToDateTime(
+    dateTime: Date,
+    durationPerDay: number
+): Date {
+    return new Date(dateTime.getTime() + durationPerDay * 1000 * 60 * 60 * 24);
 }

@@ -5,8 +5,50 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some styles issue">
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/buttons-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/calendar-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/map-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/molecule/react-big-calendar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-calendar-view-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-list-current-view.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-list-views-toggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/event-mapview-container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/map-event-card-list.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/organism/map-event-locations.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/stores/events.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/types/store/events.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/done.md" beforeDir="false" afterPath="$PROJECT_DIR$/done.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-detail-banner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-detail-banner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/landing-contact-form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/landing-contact-form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/events-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/events-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/i18n/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/i18n/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/banners.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/banners.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/rest-api/core-call.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/event.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,9 +58,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -253,15 +295,33 @@
       <workItem from="1741614410920" duration="746000" />
       <workItem from="1741770020190" duration="2441000" />
       <workItem from="1741943154954" duration="10196000" />
-      <workItem from="1742037354589" duration="7267000" />
-    </task>
-    <task id="LOCAL-00040" summary="change Dockerfile to dev state">
-      <option name="closed" value="true" />
-      <created>1735900454892</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1735900454892</updated>
+      <workItem from="1742037354589" duration="10034000" />
+      <workItem from="1742060611676" duration="3700000" />
+      <workItem from="1742071033370" duration="2957000" />
+      <workItem from="1742109974927" duration="4756000" />
+      <workItem from="1742246810264" duration="4055000" />
+      <workItem from="1742284437780" duration="1049000" />
+      <workItem from="1742623981403" duration="4581000" />
+      <workItem from="1742726416198" duration="1448000" />
+      <workItem from="1742839509174" duration="2768000" />
+      <workItem from="1742890786126" duration="1335000" />
+      <workItem from="1742896462767" duration="1374000" />
+      <workItem from="1742933658782" duration="596000" />
+      <workItem from="1742935789946" duration="1383000" />
+      <workItem from="1742985815501" duration="11495000" />
+      <workItem from="1743098681881" duration="3899000" />
+      <workItem from="1743146240107" duration="6037000" />
+      <workItem from="1743193510253" duration="55000" />
+      <workItem from="1743335323910" duration="10183000" />
+      <workItem from="1743352210827" duration="3565000" />
+      <workItem from="1743364279483" duration="647000" />
+      <workItem from="1743364977052" duration="5836000" />
+      <workItem from="1743424834976" duration="942000" />
+      <workItem from="1743448481781" duration="3635000" />
+      <workItem from="1743537992751" duration="3200000" />
+      <workItem from="1743795168587" duration="1990000" />
+      <workItem from="1743852802551" duration="9627000" />
+      <workItem from="1743872021043" duration="762000" />
     </task>
     <task id="LOCAL-00041" summary="change Dockerfile to dev state">
       <option name="closed" value="true" />
@@ -647,7 +707,15 @@
       <option name="project" value="LOCAL" />
       <updated>1742054874991</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="fixed some styles issue">
+      <option name="closed" value="true" />
+      <created>1742055697928</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1742055697928</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
