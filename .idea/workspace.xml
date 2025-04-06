@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added events views">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed calendar styles.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/react-big-calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/react-big-calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -280,15 +281,7 @@
       <workItem from="1743795168587" duration="1990000" />
       <workItem from="1743852802551" duration="9627000" />
       <workItem from="1743872021043" duration="1454000" />
-      <workItem from="1743935108917" duration="1195000" />
-    </task>
-    <task id="LOCAL-00042" summary="a simple cache test">
-      <option name="closed" value="true" />
-      <created>1735932712606</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1735932712606</updated>
+      <workItem from="1743935108917" duration="3278000" />
     </task>
     <task id="LOCAL-00043" summary="auto change banner cur slide">
       <option name="closed" value="true" />
@@ -674,7 +667,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743872829682</updated>
     </task>
-    <option name="localTasksCounter" value="91" />
+    <task id="LOCAL-00091" summary="fixed calendar styles.">
+      <option name="closed" value="true" />
+      <created>1743936429185</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1743936429185</updated>
+    </task>
+    <option name="localTasksCounter" value="92" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,7 +696,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="fixed the category filter buttons issue." />
     <MESSAGE value="solution for inline medias in CMS Editor" />
     <MESSAGE value="solution for inline youtube videos" />
     <MESSAGE value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
@@ -720,7 +720,8 @@
     <MESSAGE value="improved performance" />
     <MESSAGE value="fixed some styles issue" />
     <MESSAGE value="added events views" />
-    <option name="LAST_COMMIT_MESSAGE" value="added events views" />
+    <MESSAGE value="fixed calendar styles." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed calendar styles." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

@@ -10,7 +10,8 @@ const variants = cva(
         "gap-1",
         "items-start",
         "h-[max-content]",
-        "text-xl",
+        "text-body",
+        "md:text-label",
     ],
     {
         variants: {

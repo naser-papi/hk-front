@@ -38,7 +38,7 @@ const MapEventCard = ({
     return (
         <div
             ref={selected ? curRef : null}
-            className={`flex w-full cursor-pointer items-center gap-4 rounded-lg ${selected ? "bg-altLight" : "bg-primary"}`}
+            className={`flex w-full cursor-pointer items-center gap-4 rounded-lg p-4 ${selected ? "bg-altLight" : "bg-primary"}`}
             {...rest}
         >
             <img
@@ -48,7 +48,11 @@ const MapEventCard = ({
                     "h-[120px] w-[120px] rounded-s-lg border border-gray-200"
                 }
             />
-            <aside className={"flex flex-col gap-4 [&_h4]:flex [&_h4]:gap-4"}>
+            <aside
+                className={
+                    "[&_h4]:text-label flex flex-col gap-4 [&_h4]:flex [&_h4]:gap-4"
+                }
+            >
                 <h4>{eventData.title}</h4>
                 <h4>
                     <IconLabel
@@ -66,7 +70,12 @@ const MapEventCard = ({
                         }
                     />
                 </h4>
-                <Link href={href} className={"cursor-help text-secondary"}>
+                <Link
+                    href={href}
+                    className={
+                        "text-label md:text-alt-title cursor-help text-secondary"
+                    }
+                >
                     {t("common.detailDot")}
                 </Link>
             </aside>
