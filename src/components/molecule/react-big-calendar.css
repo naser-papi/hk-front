@@ -1,32 +1,31 @@
 /* General calendar styles */
 .rbc-calendar {
-    border: 1px solid #ddd; /* Add border to the calendar */
+    border: 1px solid var(--alt-light); /* Add border to the calendar */
     border-radius: 8px;
-    background-color: #ffffff;
-    font-family: 'Inter', sans-serif;
+    background-color: var(--primary);
     padding: 0.5rem;
 }
 
 /* Header (days of the week) styles */
 .rbc-header {
-    color: #4a5568; /* Text color */
+    color: var(--secondary); /* Text color */
     font-weight: 600; /* Bold font */
     text-transform: uppercase;
-    border-bottom: 1px solid #e2e8f0; /* Bottom border */
+    border-bottom: 1px solid var(--white); /* Bottom border */
     padding: 0.5rem;
-    background-color: #f7fafc; /* Light background */
+    background-color: var(--primary); /* Light background */
 }
 
 /* Highlighting weekend days */
 .rbc-day-bg:nth-child(7),
 .rbc-day-bg:nth-child(1) {
-    background-color: #edf2f7; /* Light gray background for weekends */
+    background-color: var(--secondary); /* Light gray background for weekends */
 }
 
 /* Event styles */
 .rbc-event {
-    background-color: #38b2ac !important; /* Teal event background */
-    color: #fff !important; /* Event text color (white) */
+    background-color: var(--warning) !important; /* Teal event background */
+    color: var(--black-light) !important; /* Event text color (white) */
     border-radius: 4px;
     padding: 2px 5px;
     font-size: 0.875rem; /* Small text size */
@@ -38,13 +37,14 @@
 
 /* Today highlight */
 .rbc-day-bg.rbc-today {
-    background-color: #bee3f8; /* Light blue background */
+    background-color: var(--alt-light); /* Light blue background */
+    color: var(--white);
 }
 
 /* Navigation buttons */
 .rbc-toolbar button {
-    background-color: #2d3748; /* Dark grey button background */
-    color: #fff; /* White button text */
+    background-color: var(--primary); /* Dark grey button background */
+    color: var(--white); /* White button text */
     border: none; /* Remove border */
     padding: 0.5rem 1rem;
     margin: 0 5px;
@@ -54,7 +54,7 @@
 }
 
 .rbc-toolbar button:hover {
-    background-color: #4a5568; /* Slightly lighter grey on hover */
+    background-color: var(--secondary); /* Slightly lighter grey on hover */
 }
 
 /* Navigation toolbar text (view names, date range) */
@@ -62,14 +62,14 @@
     font-size: 1rem;
     font-weight: bold;
     text-transform: capitalize;
-    color: #2d3748; /* Darker text */
+    color: var(--white); /* Darker text */
 }
 
 /* Month View Styling */
 .rbc-month-view {
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--white);
 }
 
 .rbc-current-time-indicator {
-    border-color: #38b2ac; /* Current time indicator color (teal) */
+    border-color: var(--white); /* Current time indicator color (teal) */
 }
