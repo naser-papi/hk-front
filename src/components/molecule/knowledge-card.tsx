@@ -39,7 +39,6 @@ const infoVariants = cva(
         "p-4",
         "items-center",
         "drop-shadow-lg",
-        "rounded-bl-lg",
         "[&>h3]:text-title",
         "[&>p]:text-desc",
         "@3xl:[&>h3]:text-3xl",

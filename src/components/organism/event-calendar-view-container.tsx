@@ -23,7 +23,6 @@ const EventCalendarViewContainer = () => {
             const resp =
                 await callRestAPI<ICMSListApiResponse<EventDto>>(apiInfo);
             if (resp) {
-                console.log(">>>>", resp.data);
                 const list: ICalendarEvent[] = resp.data.map((row) => ({
                     id: row.documentId,
                     title: formatSubstring(row.title, 30),

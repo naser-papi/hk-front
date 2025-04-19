@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed mapview-card styles.">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed the build issues.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/comment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/comment.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/knowledge-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-calendar-view-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-calendar-view-container.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +108,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+        <option value="bundled-js-predefined-d6986cc7102b-1632447f56bf-JavaScript-WS-243.26053.12" />
       </set>
     </attachedChunks>
   </component>
@@ -280,15 +283,11 @@
       <workItem from="1743795168587" duration="1990000" />
       <workItem from="1743852802551" duration="9627000" />
       <workItem from="1743872021043" duration="1454000" />
-      <workItem from="1743935108917" duration="3842000" />
-    </task>
-    <task id="LOCAL-00044" summary="changed the auth banner">
-      <option name="closed" value="true" />
-      <created>1736190258836</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1736190258836</updated>
+      <workItem from="1743935108917" duration="5598000" />
+      <workItem from="1744026430094" duration="657000" />
+      <workItem from="1744029783968" duration="851000" />
+      <workItem from="1745007987184" duration="1844000" />
+      <workItem from="1745056205934" duration="5915000" />
     </task>
     <task id="LOCAL-00045" summary="centered the welcome message">
       <option name="closed" value="true" />
@@ -674,7 +673,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743940040611</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="fixed the build issues.">
+      <option name="closed" value="true" />
+      <created>1743940686079</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1743940686079</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -695,7 +702,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="solution for inline youtube videos" />
     <MESSAGE value="removed the extra meta box on blog detail page.&#10;changed styles of those box." />
     <MESSAGE value="refactored HTML normalizing" />
     <MESSAGE value="changed the Dockerfile" />
@@ -720,7 +726,8 @@
     <MESSAGE value="added events views" />
     <MESSAGE value="fixed calendar styles." />
     <MESSAGE value="fixed mapview-card styles." />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed mapview-card styles." />
+    <MESSAGE value="fixed the build issues." />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed the build issues." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
