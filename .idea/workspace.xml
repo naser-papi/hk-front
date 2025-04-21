@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some style issues">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some style issues 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -284,15 +285,10 @@
       <workItem from="1744026430094" duration="657000" />
       <workItem from="1744029783968" duration="851000" />
       <workItem from="1745007987184" duration="1844000" />
-      <workItem from="1745056205934" duration="7485000" />
-    </task>
-    <task id="LOCAL-00046" summary="changed the banner styles">
-      <option name="closed" value="true" />
-      <created>1736191011320</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1736191011320</updated>
+      <workItem from="1745056205934" duration="8245000" />
+      <workItem from="1745151889325" duration="632000" />
+      <workItem from="1745252503923" duration="25000" />
+      <workItem from="1745269939752" duration="1601000" />
     </task>
     <task id="LOCAL-00047" summary="added detail of services page">
       <option name="closed" value="true" />
@@ -678,7 +674,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745067377149</updated>
     </task>
-    <option name="localTasksCounter" value="95" />
+    <task id="LOCAL-00095" summary="fixed some style issues 2">
+      <option name="closed" value="true" />
+      <created>1745069591134</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1745069591134</updated>
+    </task>
+    <option name="localTasksCounter" value="96" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -699,7 +703,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactored HTML normalizing" />
     <MESSAGE value="changed the Dockerfile" />
     <MESSAGE value="completed the github action file" />
     <MESSAGE value="added some new changes" />
@@ -724,7 +727,8 @@
     <MESSAGE value="fixed mapview-card styles." />
     <MESSAGE value="fixed the build issues." />
     <MESSAGE value="fixed some style issues" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some style issues" />
+    <MESSAGE value="fixed some style issues 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some style issues 2" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
