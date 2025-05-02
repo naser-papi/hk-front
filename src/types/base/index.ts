@@ -141,3 +141,11 @@ export interface ICalendarEvent {
 }
 
 export type ViewTypes = "CardList" | "MapView" | "CalendarView";
+
+export type RepeatType =
+    | "None"
+    | "Daily"
+    | "Weekly"
+    | "EveryOtherWeek"
+    | "Monthly"
+    | "Yearly";

@@ -107,8 +107,13 @@ export function formatPublishDateString(dateString: string | undefined) {
     return date.toLocaleDateString("en-US", options);
 }
 
-export function formatEventDate(date: string, locale: string): string {
+export function formatEventDate(
+    date: string,
+    locale: string,
+    withWeekDay?: boolean
+): string {
     if (!date) return "";
+
     const process = new Date(date);
     const options: Intl.DateTimeFormatOptions = {
         month: "long",
@@ -117,9 +122,14 @@ export function formatEventDate(date: string, locale: string): string {
         minute: "numeric",
         hour12: true,
     };
-    return process.toLocaleString(locale, options).replace(", ", " - ");
-}
 
+    // Add weekday to options if withWeekDay is true
+    if (withWeekDay) {
+        options.weekday = "long";
+    }
+
+    return process.toLocaleString(locale, options).replace(", ", ", ");
+}
 export function getStrapiPaginationQuery(page: number, pageSize: number) {
     return `&pagination[page]=${page}&pagination[pageSize]=${pageSize}&sort[0]=id:desc`;
 }

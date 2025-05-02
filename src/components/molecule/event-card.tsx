@@ -4,13 +4,18 @@ import trans from "@/helpers/i18n/server";
 import { BaseHTMLAttributes } from "react";
 import {
     faCalendarDays,
-    faCalendarExclamation,
     faClock,
     faHouseDay,
 } from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import { IconLabel, ImageKit, LinkButton } from "@/components/atom";
+import {
+    AsideRotator,
+    IconLabel,
+    ImageKit,
+    LinkButton,
+} from "@/components/atom";
 import { formatEventDate, formatLocaleString } from "@/helpers";
 import { GetLocaleFromCookie } from "@/services/common";
+import { RepeatType } from "@/types/base";
 
 const variants = cva(
     [
@@ -92,8 +97,8 @@ interface EventCardProps
     date: string;
     href: string;
     commentsCount: number;
-    durationPerDay: number;
     eventTimeInDay: number;
+    repeatType: RepeatType;
     address?: string;
 }
 
@@ -104,37 +109,33 @@ const EventCard = ({
     commentsCount,
     eventType,
     eventSubject,
-    durationPerDay,
     eventTimeInDay,
     address,
     href,
+    repeatType,
 }: EventCardProps) => {
     const locale = GetLocaleFromCookie();
     return (
         <div className={variants({ eventType })}>
+            <AsideRotator rotate={"-rotate-45"}>
+                <strong>
+                    {eventType === "Online"
+                        ? trans("common.online")
+                        : trans("common.inPlace")}
+                </strong>
+            </AsideRotator>
             <ImageKit src={ikUrl} alt={"event"} fill />
             <section className={infoVariants({ eventType })}>
                 <h4>
                     <IconLabel
                         icon={faCalendarDays}
-                        label={formatEventDate(date, locale)}
-                    />
-                    <IconLabel
-                        icon={faCalendarExclamation}
-                        label={
-                            eventType === "Online"
-                                ? trans("common.online")
-                                : trans("common.inPlace")
-                        }
+                        label={formatEventDate(date, locale, true)}
                     />
                 </h4>
                 <h4>
                     <IconLabel
                         icon={faHouseDay}
-                        label={formatLocaleString(
-                            trans("common.durationPerDay"),
-                            durationPerDay || 0
-                        )}
+                        label={trans(`common.repeatType.${repeatType}`)}
                     />
                     <IconLabel
                         icon={faClock}

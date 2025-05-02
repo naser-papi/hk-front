@@ -110,4 +110,12 @@ export default {
     inPlace: "In Place",
     durationPerDay: "{0} days",
     eventTimeInDay: "{0} minutes",
+    repeatType: {
+        None: "None",
+        Daily: "Daily",
+        Weekly: "Weekly",
+        EveryOtherWeek: "EveryOtherWeek",
+        Monthly: "Monthly",
+        Yearly: "Yearly",
+    },
 };

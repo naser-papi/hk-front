@@ -5,8 +5,8 @@ const EventsPopulateQuery =
     "populate[cardImage][fields][0]=url&populate[bannerMedia][fields][0]=url&populate[category][fields][0]=title";
 const EventsFieldsQuery =
     "fields[0]=title&fields[1]=dateAndTime&fields[2]=shortDesc&fields[3]=detailLink" +
-    "&fields[4]=videoUrl&fields[5]=eventType&fields[6]=eventSubject&fields[7]=durationPerDay" +
-    "&fields[8]=eventTimeInDay&fields[9]=eventTimeInDay&fields[10]=location";
+    "&fields[4]=videoUrl&fields[5]=eventType&fields[6]=eventSubject&fields[7]=finishDateAndTime" +
+    "&fields[8]=eventTimeInDay&fields[9]=eventTimeInDay&fields[10]=location&fields[11]=repeatType";
 export const EventsAPIPath = {
     getRelatedContents: {
         method: "GET",

@@ -111,4 +111,12 @@ export default {
     inPlace: "حضوری",
     durationPerDay: "{0} روز",
     eventTimeInDay: "به مدت {0} دقیقه",
+    repeatType: {
+        None: "نامشخص",
+        Daily: "هر روز",
+        Weekly: "یکبار در هفته",
+        EveryOtherWeek: "دوهفته یکبار",
+        Monthly: "یکبار در ماه",
+        Yearly: "یکبار در سال",
+    },
 };

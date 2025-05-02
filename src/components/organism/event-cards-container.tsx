@@ -15,7 +15,7 @@ const EventCardsContainer = async () => {
             eventType={item.eventType}
             eventSubject={item.eventSubject}
             eventTimeInDay={item.eventTimeInDay}
-            durationPerDay={item.durationPerDay}
+            repeatType={item.repeatType}
             href={`/events/${item.documentId}`}
         />
     ));

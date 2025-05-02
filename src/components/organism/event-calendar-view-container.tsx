@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { EventsAPIPath } from "@/constants/api-path";
 import { ICalendarEvent, ICMSListApiResponse } from "@/types/base";
 import { EventDto } from "@/types/dto";
-import { addDurationToDateTime, formatSubstring } from "@/helpers";
+import { GenerateCalendarEvent } from "@/helpers/event-helper";
 
 const CalendarView = dynamic(
     () => import("@/components/molecule/calendar-view"),
@@ -23,17 +23,12 @@ const EventCalendarViewContainer = () => {
             const resp =
                 await callRestAPI<ICMSListApiResponse<EventDto>>(apiInfo);
             if (resp) {
-                const list: ICalendarEvent[] = resp.data.map((row) => ({
-                    id: row.documentId,
-                    title: formatSubstring(row.title, 30),
-                    start: new Date(row.dateAndTime),
-                    end: addDurationToDateTime(
-                        new Date(row.dateAndTime),
-                        row.durationPerDay
-                    ),
-                    href: "",
-                }));
-                setCalendarEvents(list);
+                const list = resp.data.map((row) => GenerateCalendarEvent(row));
+                setCalendarEvents(list.flatMap((x) => x));
+                console.log(
+                    "list",
+                    list.flatMap((x) => x)
+                );
             }
         })();
     }, []);

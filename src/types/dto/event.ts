@@ -4,6 +4,7 @@ import {
     LocationDto,
     MediaDto,
 } from "@/types/dto/common";
+import { RepeatType } from "@/types/base";
 
 export interface EventDto extends BaseDto {
     title: string;
@@ -16,11 +17,12 @@ export interface EventDto extends BaseDto {
     secondSection?: any;
     eventType: "Online" | "InPlace";
     eventSubject: "Learning" | "Hobby" | "Entertainment";
-    durationPerDay: number;
     eventTimeInDay: number;
     videoUrl?: string;
     category?: CategoryDto;
     location?: LocationDto;
     address?: string;
     subTitle?: string;
+    repeatType: RepeatType;
+    finishDateAndTime: string;
 }

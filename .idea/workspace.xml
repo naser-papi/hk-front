@@ -4,10 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some style issues 2">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="fixed some styles issue">
+      <change afterPath="$PROJECT_DIR$/src/components/atom/aside-rotator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/helpers/event-helper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/react-big-calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/react-big-calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-calendar-view-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-calendar-view-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/utils.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/utils.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/dto/event.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/dto/event.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,9 +30,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -57,6 +70,7 @@
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.events.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
@@ -288,15 +302,14 @@
       <workItem from="1745056205934" duration="8245000" />
       <workItem from="1745151889325" duration="632000" />
       <workItem from="1745252503923" duration="25000" />
-      <workItem from="1745269939752" duration="1601000" />
-    </task>
-    <task id="LOCAL-00047" summary="added detail of services page">
-      <option name="closed" value="true" />
-      <created>1736600831042</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1736600831043</updated>
+      <workItem from="1745269939752" duration="1654000" />
+      <workItem from="1745348673651" duration="822000" />
+      <workItem from="1745870842137" duration="1040000" />
+      <workItem from="1746021674093" duration="4927000" />
+      <workItem from="1746044703971" duration="2489000" />
+      <workItem from="1746107874629" duration="3342000" />
+      <workItem from="1746131042958" duration="814000" />
+      <workItem from="1746199625119" duration="7190000" />
     </task>
     <task id="LOCAL-00048" summary="added the event list page part 1">
       <option name="closed" value="true" />
@@ -682,7 +695,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745069591134</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="fixed some styles issue">
+      <option name="closed" value="true" />
+      <created>1745271587657</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1745271587658</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -721,14 +742,14 @@
     <MESSAGE value="some improvements" />
     <MESSAGE value="SSG part 1" />
     <MESSAGE value="improved performance" />
-    <MESSAGE value="fixed some styles issue" />
     <MESSAGE value="added events views" />
     <MESSAGE value="fixed calendar styles." />
     <MESSAGE value="fixed mapview-card styles." />
     <MESSAGE value="fixed the build issues." />
     <MESSAGE value="fixed some style issues" />
     <MESSAGE value="fixed some style issues 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed some style issues 2" />
+    <MESSAGE value="fixed some styles issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed some styles issue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

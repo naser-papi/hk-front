@@ -19,7 +19,11 @@
 /* Highlighting weekend days */
 .rbc-day-bg:nth-child(7),
 .rbc-day-bg:nth-child(1) {
-    background-color: var(--secondary); /* Light gray background for weekends */
+    background-color: var(--alt-light); /* Light gray background for weekends */
+}
+
+.rbc-off-range-bg {
+    background-color: var(--alt) !important;
 }
 
 /* Event styles */
@@ -41,6 +45,18 @@
     color: var(--white);
 }
 
+.rbc-today {
+    background-color: var(--alt-light); /* Light blue background */
+    color: var(--white);
+}
+
+.rbc-overflowing {
+    margin-right: 0 !important;
+}
+
+.rbc-day-slot .rbc-events-container {
+    background-color: unset;
+}
 /* Navigation buttons */
 .rbc-toolbar button {
     background-color: var(--primary); /* Dark grey button background */
@@ -51,6 +67,10 @@
     border-radius: 4px; /* Rounded corners */
     font-size: 0.875rem;
     cursor: pointer;
+}
+
+.rbc-toolbar button.rbc-active {
+    color: var(--primary);
 }
 
 .rbc-toolbar button:hover {
