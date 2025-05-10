@@ -12,9 +12,13 @@ const localizer = momentLocalizer(moment);
 
 interface CalendarViewProps {
     eventList: ICalendarEvent[];
+    onSelectEvent: (event: ICalendarEvent) => void;
 }
 
-export default function CalendarView({ eventList }: CalendarViewProps) {
+export default function CalendarView({
+    eventList,
+    onSelectEvent,
+}: CalendarViewProps) {
     // State for controlling the calendar's date and view
     const [date, setDate] = useState(new Date()); // Current date
     const [view, setView] = useState<View>("month"); // Current view (month, week, day, etc.)
@@ -41,9 +45,7 @@ export default function CalendarView({ eventList }: CalendarViewProps) {
                 startAccessor="start"
                 endAccessor="end"
                 selectable
-                onSelectEvent={(event) =>
-                    alert(`Event clicked: ${event.title}`)
-                }
+                onSelectEvent={onSelectEvent}
                 onSelectSlot={(slotInfo) =>
                     alert(
                         `Time slot selected: ${slotInfo.start.toLocaleString()}`

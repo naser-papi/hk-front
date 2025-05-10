@@ -27,6 +27,7 @@ interface ModalProps extends VariantProps<typeof variants> {
     children: JSX.Element | JSX.Element[];
     closeButtonText?: string;
     confirmButtonText?: string;
+    hideActions?: boolean;
 }
 
 const ModalContainer = ({
@@ -38,6 +39,7 @@ const ModalContainer = ({
     closeButtonText,
     confirmButtonText,
     size,
+    hideActions,
 }: ModalProps) => {
     const { t } = useTranslation();
     if (!isOpen) return null; // Do not render when modal is closed
@@ -57,7 +59,9 @@ const ModalContainer = ({
                     <FontAwesomeIcon
                         icon={faClose}
                         onClick={onClose}
-                        className={"cursor-pointer"}
+                        className={
+                            "hover:animate-spinOnce cursor-pointer hover:text-secondary"
+                        }
                         size={"2x"}
                     />
                 </div>
@@ -66,7 +70,9 @@ const ModalContainer = ({
                 <div className="px-6 py-4">{children}</div>
 
                 {/* Modal Footer */}
-                <div className="flex justify-end gap-4 border-t border-gray-200 px-6 py-4">
+                <div
+                    className={`justify-end gap-4 border-t border-gray-200 px-6 py-4 ${hideActions ? "hidden" : "flex"}`}
+                >
                     <Button
                         onClick={onClose}
                         label={closeButtonText || t("common.cancel")}

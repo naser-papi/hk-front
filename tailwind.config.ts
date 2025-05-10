@@ -8,6 +8,9 @@ const config: Config = {
     ],
     theme: {
         extend: {
+            animation: {
+                spinOnce: "spin 1s linear 1",
+            },
             colors: {
                 primary: "var(--primary)",
                 secondary: "var(--secondary)",

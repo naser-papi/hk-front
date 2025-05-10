@@ -119,4 +119,6 @@ export default {
         Monthly: "یکبار در ماه",
         Yearly: "یکبار در سال",
     },
+    eventDetails: "جزئیات رویداد",
+    addToCalendar: "به تقویم خود اضافه کنید",
 };

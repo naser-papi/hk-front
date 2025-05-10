@@ -5,4 +5,5 @@ export interface IEventsState {
     selectedView: ViewTypes;
     selectedLocationKey?: string;
     list?: EventDto[];
+    showDetailsModal: EventDto | null;
 }

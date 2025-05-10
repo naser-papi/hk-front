@@ -118,4 +118,6 @@ export default {
         Monthly: "Monthly",
         Yearly: "Yearly",
     },
+    eventDetails: "Event Details",
+    addToCalendar: "Add to your Calendar",
 };
