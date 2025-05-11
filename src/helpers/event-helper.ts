@@ -11,6 +11,7 @@ export function GenerateCalendarEvent(event: EventDto): ICalendarEvent[] {
         detailLink,
         documentId,
         eventTimeInDay,
+        shortDesc,
     } = event;
 
     const startDate = new Date(dateAndTime);
@@ -64,6 +65,7 @@ export function GenerateCalendarEvent(event: EventDto): ICalendarEvent[] {
             start: startDate,
             end: calculateEndDate(startDate, eventTimeInDay),
             href: detailLink,
+            description: shortDesc,
         });
         return calendarEvents;
     }
@@ -77,6 +79,7 @@ export function GenerateCalendarEvent(event: EventDto): ICalendarEvent[] {
             start: new Date(currentDate),
             end: calculateEndDate(currentDate, eventTimeInDay), // Use eventTimeInDay for end time
             href: detailLink,
+            description: shortDesc,
         });
 
         switch (repeatType) {
@@ -101,4 +104,17 @@ export function GenerateCalendarEvent(event: EventDto): ICalendarEvent[] {
     }
 
     return calendarEvents;
+}
+
+export function generateGoogleCalendarLink(event: EventDto) {
+    const { title, finishDateAndTime, dateAndTime, shortDesc, address } = event;
+
+    const startD = encodeURIComponent(new Date(dateAndTime).toISOString());
+    const endD = encodeURIComponent(new Date(finishDateAndTime).toISOString());
+
+    return `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+        title
+    )}&details=${encodeURIComponent(shortDesc)}&location=${encodeURIComponent(
+        address!
+    )}&dates=${startD}/${endD}`;
 }

@@ -1,13 +1,13 @@
 "use client";
-import { Modal } from "@/components/molecule";
-import { Button, ImageKit, LinkButton } from "@/components/atom";
+import { AddToGoogleCalendarButton, Modal } from "@/components/molecule";
+import { ImageKit, LinkButton } from "@/components/atom";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { useSnapshot } from "valtio/react";
-import { faCalendarDays } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import EventsState from "@/stores/events";
 import { formatEventDate } from "@/helpers";
 import { useCurrentLocale } from "next-i18n-router/client";
 import i18nConfig from "@/i18nConfig";
+import { EventDto } from "@/types/dto";
 
 const EventDetailModal = () => {
     const { t } = useTranslation();
@@ -55,10 +55,8 @@ const EventDetailModal = () => {
                 <section
                     className={"my-3 flex w-full flex-col gap-4 text-white"}
                 >
-                    <Button
-                        label={t("common.addToCalendar")}
-                        icon={faCalendarDays}
-                        intend={"secondary"}
+                    <AddToGoogleCalendarButton
+                        event={showDetailsModal as EventDto}
                     />
                     <LinkButton
                         label={t("common.eventDetails")}

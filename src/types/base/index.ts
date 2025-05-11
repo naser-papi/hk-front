@@ -138,6 +138,8 @@ export interface ICalendarEvent {
     start: Date;
     end: Date;
     href: string;
+    description: string;
+    address?: string;
 }
 
 export type ViewTypes = "CardList" | "MapView" | "CalendarView";

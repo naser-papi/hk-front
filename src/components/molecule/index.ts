@@ -19,3 +19,4 @@ export { default as Modal } from "./modal";
 export { default as Comment } from "./comment";
 export { default as ButtonList } from "./buttons-list";
 export { default as MapEventCard } from "./map-event-card";
+export { default as AddToGoogleCalendarButton } from "./add-to-google-calendar-button";
