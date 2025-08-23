@@ -14,7 +14,6 @@ import {
     LinkButton,
 } from "@/components/atom";
 import { formatEventDate, formatLocaleString } from "@/helpers";
-import { GetLocaleFromCookie } from "@/services/common";
 import { RepeatType } from "@/types/base";
 
 const variants = cva(
@@ -114,7 +113,7 @@ const EventCard = ({
     href,
     repeatType,
 }: EventCardProps) => {
-    const locale = GetLocaleFromCookie();
+    //const locale = GetLocaleFromCookie();
     return (
         <div className={variants({ eventType })}>
             <AsideRotator rotate={"-rotate-45"}>
@@ -124,12 +123,20 @@ const EventCard = ({
                         : trans("common.inPlace")}
                 </strong>
             </AsideRotator>
-            <ImageKit src={ikUrl} alt={"event"} fill />
+            <ImageKit
+                src={ikUrl}
+                alt={"event"}
+                className={
+                    "absolute left-0 top-0 aspect-[3/4] h-full w-full max-w-[260px]"
+                }
+                width={30}
+                height={40}
+            />
             <section className={infoVariants({ eventType })}>
-                <h4>
+                <h4 className={"font-sans"}>
                     <IconLabel
                         icon={faCalendarDays}
-                        label={formatEventDate(date, locale, true)}
+                        label={formatEventDate(date, "en", true)}
                     />
                 </h4>
                 <h4>

@@ -66,7 +66,7 @@ export default {
     ourServices: "خدمات ما",
     knowledgeSharing: "اشتراک دانش مهاجرت",
     allBlogs: "تمام وبلاگ‌ها",
-    whatHappening: "اخبار و وقایع هلند",
+    whatHappening: "رویدادها در هلند",
     allEvents: "تمام رویدادها",
     usefulLinks: "لینک‌های مفید",
     allLinks: "تمام لینک‌ها",
