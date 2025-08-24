@@ -11,49 +11,44 @@ on:
 
 jobs:
   build:
-    runs-on: 'ubuntu-latest'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read #This is required for actions/checkout
 
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
 
-    - name: Log in to registry
-      uses: docker/login-action@v2
-      with:
-        registry: https://hollandkade.azurecr.io/
-        username: ${{ secrets.AzureAppService_ContainerUsername_a599511b3cb241108f757460c95ea3ff }}
-        password: ${{ secrets.AzureAppService_ContainerPassword_a4d3ff5355564116b4168f773be8a38b }}
+      - name: Log in to container registry
+        uses: docker/login-action@v2
+        with:
+          registry: hollandkade.azurecr.io/
+          username: ${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_77636BFF5FF744AFA61F806DB2CFCC26 }}
+          password: ${{ secrets.AZUREAPPSERVICE_CONTAINERPASSWORD_5009425804DB40B8B7762894B5895DB8 }}
 
-    - name: Build and push container image to registry
-      uses: docker/build-push-action@v3
-      with:
-        push: true
-        tags: hollandkade.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a599511b3cb241108f757460c95ea3ff }}/hollandkade/hk-dev-front:${{ github.sha }}
-        file: ./Dockerfile
-        build-args: |
-          API_SERVER=https://api.holandkade.nl
-          NEXT_PUBLIC_API_SERVER=https://api.holandkade.nl
-          E2E_TEST=no
-          NEXT_PUBLIC_IMAGE_KIT_ID=tdvmspnmgu
-          CMS_SERVER=https://cms.hollandkade.nl
-          NEXT_PUBLIC_CMS_SERVER=https://cms.hollandkade.nl
-          SHOW_CONSTRUCTION=no
+      - name: Build and push container image to registry
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          push: true
+          tags: hollandkade.azurecr.io/${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_77636BFF5FF744AFA61F806DB2CFCC26 }}/hollandkade/hollandkade/hk-dev-front:${{ github.sha }}
+          file: ./Dockerfile
 
   deploy:
     runs-on: ubuntu-latest
+    
     needs: build
-    environment:
-      name: 'production'
-      url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+    
 
     steps:
-    - name: Deploy to Azure Web App
-      id: deploy-to-webapp
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'hk-dev'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8a30fb11660c48eca4550d99260b2a9b }}
-        images: 'hollandkade.azurecr.io/${{ secrets.AzureAppService_ContainerUsername_a599511b3cb241108f757460c95ea3ff }}/hollandkade/hk-dev-front:${{ github.sha }}'
+      
+      - name: Deploy to Azure Web App
+        id: deploy-to-webapp
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: 'hk-dev'
+          slot-name: 'Production'
+          images: 'hollandkade.azurecr.io/${{ secrets.AZUREAPPSERVICE_CONTAINERUSERNAME_77636BFF5FF744AFA61F806DB2CFCC26 }}/hollandkade/hollandkade/hk-dev-front:${{ github.sha }}'
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0267EB7D17C04893A3941ED45E5B9C2F }}
