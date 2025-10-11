@@ -5,6 +5,7 @@ export interface IBaseState {
     clickedMenu: string;
     toggleMenu: () => void;
     locale: string;
+    displayName: string;
     globalAlert: IAlert | null;
     globalConfirm: IConfirm | null;
     setAlert: (alert: IAlert) => void;
