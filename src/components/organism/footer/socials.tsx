@@ -1,9 +1,4 @@
-import {
-    faInstagram,
-    faTelegram,
-    faWhatsapp,
-    faYoutube,
-} from "@awesome.me/kit-8b348a8267/icons/classic/brands";
+import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa6";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { NoData } from "@/components/molecule";
@@ -23,22 +18,22 @@ const Socials = async () => {
                 }
             >
                 <LinkIcon
-                    icon={faInstagram}
+                    icon={FaInstagram}
                     href={companyInfo.instaLink}
                     key={"insta"}
                 />
                 <LinkIcon
-                    icon={faTelegram}
+                    icon={FaTelegram}
                     href={companyInfo.telegramLink}
                     key={"telegram"}
                 />
                 <LinkIcon
-                    icon={faYoutube}
+                    icon={FaYoutube}
                     href={companyInfo.youtubeLink}
                     key={"youtube"}
                 />
                 <LinkIcon
-                    icon={faWhatsapp}
+                    icon={FaWhatsapp}
                     href={companyInfo.whatsappLink}
                     key={"whatsapp"}
                 />

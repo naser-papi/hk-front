@@ -1,7 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { LabelHTMLAttributes } from "react";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconType } from "react-icons";
 
 const variants = cva(
     [
@@ -30,13 +29,14 @@ const variants = cva(
 interface IconLabelProps
     extends LabelHTMLAttributes<HTMLLabelElement>,
         VariantProps<typeof variants> {
-    icon: IconDefinition;
+    icon: IconType;
     label: string | number;
 }
 const IconLabel = ({ icon, label, intend }: IconLabelProps) => {
+    const Icon = icon;
     return (
         <label className={variants({ intend })}>
-            <FontAwesomeIcon icon={icon} />
+            <Icon />
             <span>{label}</span>
         </label>
     );

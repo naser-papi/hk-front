@@ -1,6 +1,6 @@
 import enTranslation from "@/constants/locale/en";
 import { LanguageResources } from "@/constants/locale";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons";
 import { HTTP_METHOD } from "next/dist/server/web/http";
 
 export type DtoType = {
@@ -62,7 +62,7 @@ export interface ILocalStorageInfo {
 
 export interface IMenuLink {
     title: NestedKeyOf<LocaleType>;
-    icon: IconDefinition;
+    icon: IconType;
     path: string;
     id: string;
     isActive?: boolean;

@@ -5,9 +5,45 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the google calendar meet like generator.">
+      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/slide-perv-next.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/slide-perv-next.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/add-to-google-calendar-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/add-to-google-calendar-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/buttons-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/buttons-list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-view.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/quote-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/quote-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-list-views-toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-list-views-toggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/customer-rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/customer-rate.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/share-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/top-nav.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stories/atom/text-box.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/text-box.stories.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +60,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -53,35 +94,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Node.js.events.ts.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "D:\\projects\\hk-app\\hk-front\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "D:\\projects\\hk-app\\hk-front\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\WebStorm 2025.1.3\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.events.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;D:/projects/hk-app/hk-front/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\projects\\hk-app\\hk-front\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;junie.application.models&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -125,7 +171,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-09060db00ec0-JavaScript-WS-251.26927.40" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -324,6 +370,12 @@
       <workItem from="1752418259125" duration="600000" />
       <workItem from="1752438514483" duration="171000" />
       <workItem from="1755975579441" duration="4659000" />
+      <workItem from="1762253909422" duration="1257000" />
+      <workItem from="1762600916772" duration="2495000" />
+      <workItem from="1763726455744" duration="2000" />
+      <workItem from="1764754800578" duration="6828000" />
+      <workItem from="1764799054441" duration="137000" />
+      <workItem from="1764840535745" duration="1373000" />
     </task>
     <task id="LOCAL-00051" summary="switched to dev mod">
       <option name="closed" value="true" />

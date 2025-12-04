@@ -1,6 +1,5 @@
 import { ReactNode } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 
 // Define the ButtonList container component
@@ -26,7 +25,7 @@ const ButtonList = ({ children, className }: ButtonListProps) => {
 // Define the ButtonList.Button sub-component
 interface ButtonProps {
     text: string;
-    icon?: IconDefinition;
+    icon?: IconType;
     onClick?: () => void;
     className?: string;
     isSelected?: boolean;
@@ -49,7 +48,10 @@ const Button = ({
             )}
             onClick={onClick}
         >
-            {icon && <FontAwesomeIcon icon={icon} />}
+            {icon && (() => {
+                const Icon = icon;
+                return <Icon />;
+            })()}
             <span>{text}</span>
         </button>
     );

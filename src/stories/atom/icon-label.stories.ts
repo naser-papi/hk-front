@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { IconLabel } from "@/components/atom";
-import { faHouse } from "@awesome.me/kit-026a927a83/icons/classic/regular";
+import { FaHouse } from "react-icons/fa6";
 
 const meta: Meta<typeof IconLabel> = {
     title: "Atom/IconLabel",
@@ -13,13 +13,13 @@ export const Primary: Story = {
     args: {
         label: "Read More",
         intend: "primary",
-        icon: faHouse,
+        icon: FaHouse,
     },
 };
 export const Secondary: Story = {
     args: {
         label: "Read More",
         intend: "secondary",
-        icon: faHouse,
+        icon: FaHouse,
     },
 };

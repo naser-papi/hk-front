@@ -1,9 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { LinkIcon } from "@/components/atom";
-import {
-    faTelegram,
-    faWhatsapp,
-} from "@awesome.me/kit-8b348a8267/icons/classic/brands";
+import { FaTelegram, FaWhatsapp } from "react-icons/fa6";
 
 const meta: Meta<typeof LinkIcon> = {
     title: "Atom/LinkIcon",
@@ -15,13 +12,13 @@ type Story = StoryObj<typeof LinkIcon>;
 export const Primary: Story = {
     args: {
         href: "#",
-        icon: faWhatsapp,
+        icon: FaWhatsapp,
     },
 };
 export const Secondary: Story = {
     args: {
         href: "#",
-        icon: faTelegram,
+        icon: FaTelegram,
         intend: "secondary",
     },
 };

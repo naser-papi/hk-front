@@ -1,10 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-    faChevronDoubleLeft,
-    faChevronDoubleRight,
-} from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaAnglesLeft, FaAnglesRight } from "react-icons/fa6";
 
 const variants = cva(
     [
@@ -41,8 +37,8 @@ interface SlidePervNextProps
 const SlidePervNext = ({ mode, leftClick, rightClick }: SlidePervNextProps) => {
     return (
         <div className={variants({ mode })}>
-            <FontAwesomeIcon icon={faChevronDoubleLeft} onClick={leftClick} />
-            <FontAwesomeIcon icon={faChevronDoubleRight} onClick={rightClick} />
+            <FaAnglesLeft onClick={leftClick} />
+            <FaAnglesRight onClick={rightClick} />
         </div>
     );
 };

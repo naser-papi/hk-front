@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { MenuLink } from "@/components/atom";
-import { faHandshakeAngle } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaHandshakeAngle } from "react-icons/fa6";
 
 const meta: Meta<typeof MenuLink> = {
     title: "Atom/MenuLink",
@@ -12,7 +12,7 @@ type Story = StoryObj<typeof MenuLink>;
 export const Default: Story = {
     args: {
         label: "Services",
-        icon: faHandshakeAngle,
+        icon: FaHandshakeAngle,
         href: "#",
     },
 };

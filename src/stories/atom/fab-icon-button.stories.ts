@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { FabIconButton } from "@/components/atom";
-import { faPlay } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaPlay } from "react-icons/fa6";
 
 const meta: Meta<typeof FabIconButton> = {
     title: "Atom/FabIconButton",
@@ -11,7 +11,7 @@ type Story = StoryObj<typeof FabIconButton>;
 
 export const Default: Story = {
     args: {
-        icon: faPlay,
+        icon: FaPlay,
         label: "Play Video",
     },
 };

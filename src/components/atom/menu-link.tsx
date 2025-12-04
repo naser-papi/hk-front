@@ -1,8 +1,7 @@
 import { AnchorHTMLAttributes } from "react";
 import { twMerge } from "tailwind-merge";
 import { cva, VariantProps } from "class-variance-authority";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons";
 import Link from "next/link";
 
 const menuLinkVariants = cva(
@@ -32,7 +31,7 @@ interface menuLinkProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
         VariantProps<typeof menuLinkVariants> {
     label: string;
-    icon: IconDefinition;
+    icon: IconType;
     href: string;
     hideLabel?: boolean;
 }
@@ -45,13 +44,14 @@ const MenuLink = ({
     hideLabel,
     className,
 }: menuLinkProps) => {
+    const Icon = icon;
     return (
         <Link
             href={href}
             className={twMerge(menuLinkVariants({ disabled }), className)}
             title={hideLabel ? label : undefined}
         >
-            <FontAwesomeIcon icon={icon} />
+            <Icon />
             {!hideLabel && <span>{label}</span>}
         </Link>
     );

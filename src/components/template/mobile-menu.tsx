@@ -4,7 +4,7 @@ import BaseState from "@/stores/base";
 import { useSnapshot } from "valtio/react";
 import { Button } from "@/components/atom";
 import { MainMenu } from "@/components/organism";
-import { faClose } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaXmark } from "react-icons/fa6";
 
 const MobileMenu = () => {
     const { showMenu } = useSnapshot(BaseState);
@@ -26,7 +26,7 @@ const MobileMenu = () => {
                 <Button
                     label={""}
                     intend={"tertiary"}
-                    icon={faClose}
+                    icon={FaXmark}
                     onClick={closeMenu}
                 />
                 <MainMenu direction={"col"} />

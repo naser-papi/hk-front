@@ -3,31 +3,27 @@ import { useSnapshot } from "valtio/react";
 import EventsState from "@/stores/events";
 import { ButtonList } from "@/components/molecule";
 import useTranslation from "@/helpers/i18n/use-translation";
-import {
-    faCalendarDays,
-    faLocationDot,
-    faRectangleList,
-} from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { FaLocationDot, FaRegCalendarDays, FaRegRectangleList } from "react-icons/fa6";
+import { IconType } from "react-icons";
 import { LocaleType, NestedKeyOf, ViewTypes } from "@/types/base";
 
 const tabs: {
-    icon: IconDefinition;
+    icon: IconType;
     text: NestedKeyOf<LocaleType>;
     key: ViewTypes;
 }[] = [
     {
-        icon: faRectangleList,
+        icon: FaRegRectangleList,
         text: "common.cardView",
         key: "CardList",
     },
     {
-        icon: faLocationDot,
+        icon: FaLocationDot,
         text: "common.mapView",
         key: "MapView",
     },
     {
-        icon: faCalendarDays,
+        icon: FaRegCalendarDays,
         text: "common.calendarView",
         key: "CalendarView",
     },

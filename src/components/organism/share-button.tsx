@@ -1,6 +1,6 @@
 "use client";
 import { FabIconButton } from "@/components/atom";
-import { faShare } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaShare } from "react-icons/fa6";
 import useTranslation from "@/helpers/i18n/use-translation";
 
 const ShareButton = () => {
@@ -25,7 +25,7 @@ const ShareButton = () => {
     return (
         <FabIconButton
             onClick={handleShare}
-            icon={faShare}
+            icon={FaShare}
             label={"Share"}
             title={t("common.share")}
             hideLabel

@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { CategoryDto } from "@/types/dto/common";
 import { CategoryList, Container } from "@/components/molecule";
-import { faSearch } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { TextBox } from "@/components/atom";
 import useTranslation from "@/helpers/i18n/use-translation";
 

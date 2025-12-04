@@ -1,13 +1,5 @@
 import { IMenuLink } from "@/types/base";
-import {
-    faCalendarDays,
-    faDashboard,
-    faHandshakeAngle,
-    faInfo,
-    faLink,
-    faMessageText,
-    faNotebook,
-} from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaBookOpen, FaCalendarDays, FaGaugeHigh, FaHandshakeAngle, FaInfo, FaLink, FaMessage } from "react-icons/fa6";
 
 export const GlobalKeys = {
     localStorageInfo: "HK_APP_INFO",
@@ -16,43 +8,43 @@ export const GlobalKeys = {
 export const MenuLinks: IMenuLink[] = [
     {
         title: "common.services",
-        icon: faHandshakeAngle,
+        icon: FaHandshakeAngle,
         path: "/#services",
         id: "services",
     },
     {
         title: "common.posts",
-        icon: faNotebook,
+        icon: FaBookOpen,
         path: "/#blogs",
         id: "posts",
     },
     {
         title: "common.events",
-        icon: faCalendarDays,
+        icon: FaCalendarDays,
         path: "/#events",
         id: "events",
     },
     {
         title: "common.links",
-        icon: faLink,
+        icon: FaLink,
         path: "/#links",
         id: "links",
     },
     {
         title: "common.contactUs",
-        icon: faMessageText,
+        icon: FaMessage,
         path: "/#contact",
         id: "contact",
     },
     {
         title: "common.aboutUs",
-        icon: faInfo,
+        icon: FaInfo,
         path: "/#about",
         id: "about",
     },
     {
         title: "common.dashboard",
-        icon: faDashboard,
+        icon: FaGaugeHigh,
         path: "/dashboard",
         id: "Dashboard",
     },

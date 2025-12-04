@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from "@storybook/react";
 import { TextBox } from "@/components/atom";
-import { faSearch } from "@awesome.me/kit-026a927a83/icons/classic/regular";
+import { FaMagnifyingGlass } from "react-icons/fa6";
 
 const meta: Meta<typeof TextBox> = {
     title: "Atom/TextBox",
@@ -28,6 +28,6 @@ export const SeachBox: Story = {
         type: "text",
         value: "",
         placeholder: "Search",
-        icon: faSearch,
+        icon: FaMagnifyingGlass,
     },
 };

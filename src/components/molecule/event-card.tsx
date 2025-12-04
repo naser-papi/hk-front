@@ -2,17 +2,8 @@
 import { cva, VariantProps } from "class-variance-authority";
 import trans from "@/helpers/i18n/server";
 import { BaseHTMLAttributes } from "react";
-import {
-    faCalendarDays,
-    faClock,
-    faHouseDay,
-} from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import {
-    AsideRotator,
-    IconLabel,
-    ImageKit,
-    LinkButton,
-} from "@/components/atom";
+import { FaCalendarDay, FaCalendarDays, FaClock } from "react-icons/fa6";
+import { AsideRotator, IconLabel, ImageKit, LinkButton } from "@/components/atom";
 import { formatEventDate, formatLocaleString } from "@/helpers";
 import { RepeatType } from "@/types/base";
 
@@ -135,17 +126,17 @@ const EventCard = ({
             <section className={infoVariants({ eventType })}>
                 <h4 className={"font-sans"}>
                     <IconLabel
-                        icon={faCalendarDays}
+                        icon={FaCalendarDays}
                         label={formatEventDate(date, "en", true)}
                     />
                 </h4>
                 <h4>
                     <IconLabel
-                        icon={faHouseDay}
+                        icon={FaCalendarDay}
                         label={trans(`common.repeatType.${repeatType}`)}
                     />
                     <IconLabel
-                        icon={faClock}
+                        icon={FaClock}
                         label={formatLocaleString(
                             trans("common.eventTimeInDay"),
                             eventTimeInDay || 0

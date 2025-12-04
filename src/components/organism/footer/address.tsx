@@ -1,5 +1,5 @@
 import { LinkIcon } from "@/components/atom";
-import { faMapLocationDot } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaLocationDot } from "react-icons/fa6";
 import { isRootPath } from "@/services/server";
 import { GetCompanyInfo } from "@/services/company-info";
 
@@ -10,7 +10,7 @@ const Address = async () => {
     return (
         <section className={"flex items-center gap-4"}>
             <LinkIcon
-                icon={faMapLocationDot}
+                icon={FaLocationDot}
                 href={`tel:${companyInfo.phoneNo1}`}
                 className={"row-span-2"}
             />

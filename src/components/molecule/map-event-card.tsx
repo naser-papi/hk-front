@@ -5,7 +5,7 @@ import { useCurrentLocale } from "next-i18n-router/client";
 import useTranslation from "@/helpers/i18n/use-translation";
 import Link from "next/link";
 import { AsideRotator, IconLabel } from "@/components/atom";
-import { faCalendarDays } from "@awesome.me/kit-026a927a83/icons/classic/regular";
+import { FaCalendarDays } from "react-icons/fa6";
 import { formatEventDate } from "@/helpers";
 import i18nConfig from "@/i18nConfig";
 
@@ -60,7 +60,7 @@ const MapEventCard = ({
                 <h4>{eventData.title}</h4>
                 <h4>
                     <IconLabel
-                        icon={faCalendarDays}
+                        icon={FaCalendarDays}
                         intend={"tertiary"}
                         label={formatEventDate(
                             eventData.dateAndTime,

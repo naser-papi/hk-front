@@ -2,8 +2,7 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { ButtonHTMLAttributes } from "react";
 import { useRouter } from "next/navigation";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 
 const variants = cva(
@@ -68,7 +67,7 @@ interface ButtonProps
     label: string;
     type?: "button" | "submit";
     link?: string;
-    icon?: IconDefinition;
+    icon?: IconType;
 }
 
 const Button = ({
@@ -102,7 +101,10 @@ const Button = ({
             {...rest}
         >
             {label && label}
-            {icon && <FontAwesomeIcon icon={icon} />}
+            {icon && (() => {
+                const Icon = icon;
+                return <Icon />;
+            })()}
         </button>
     );
 };

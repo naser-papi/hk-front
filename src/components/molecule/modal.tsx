@@ -3,8 +3,7 @@ import ReactDOM from "react-dom";
 import { cva, VariantProps } from "class-variance-authority";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { Button } from "@/components/atom";
-import { faClose } from "@awesome.me/kit-026a927a83/icons/classic/regular";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FaXmark } from "react-icons/fa6";
 
 const variants = cva(
     ["overflow-hidden", "rounded-lg", "bg-primary", "border-shadow"],
@@ -56,13 +55,11 @@ const ModalContainer = ({
                 {/* Modal Header */}
                 <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
                     <div className="text-title">{title}</div>
-                    <FontAwesomeIcon
-                        icon={faClose}
+                    <FaXmark
                         onClick={onClose}
                         className={
-                            "hover:animate-spinOnce cursor-pointer hover:text-secondary"
+                            "hover:animate-spinOnce cursor-pointer hover:text-secondary text-2xl"
                         }
-                        size={"2x"}
                     />
                 </div>
 

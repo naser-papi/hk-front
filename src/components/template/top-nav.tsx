@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { useCurrentLocale } from "next-i18n-router/client";
 import { Button, NlLogo } from "@/components/atom";
 import { MainMenu } from "@/components/organism";
-import { faBars } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaBars } from "react-icons/fa6";
 import { i18nCookieName } from "@/constants/locale";
 import BaseState from "@/stores/base";
 import i18nConfig from "@/i18nConfig";
@@ -33,7 +33,7 @@ const TopNav = () => {
                 }
             >
                 <Button
-                    icon={faBars}
+                    icon={FaBars}
                     label=""
                     intend={"tertiary"}
                     onClick={toggleMenu}

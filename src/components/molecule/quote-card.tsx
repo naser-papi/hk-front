@@ -2,8 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
 import { ProfileAvatar } from "@/components/atom";
 import { ProfileAvatarProps } from "@/components/atom/profile-avatar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faQuoteRight } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaQuoteRight } from "react-icons/fa6";
 
 const variants = cva([
     "grid",
@@ -31,7 +30,7 @@ const QuoteCard = ({ profile, quote }: QuoteCardProps) => {
         <div className={variants({})}>
             <section>
                 <ProfileAvatar {...profile} />
-                <FontAwesomeIcon icon={faQuoteRight} />
+                <FaQuoteRight />
             </section>
             <p>{quote}</p>
         </div>

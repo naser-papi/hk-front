@@ -1,7 +1,6 @@
 "use client";
 import { EventDto } from "@/types/dto";
 import { Button } from "@/components/atom";
-import { faCalendarDays } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 import { useCallback } from "react";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { generateGoogleCalendarLink } from "@/helpers/event-helper";

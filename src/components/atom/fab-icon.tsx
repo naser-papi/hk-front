@@ -1,7 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 
 const iconVariants = cva(
@@ -34,13 +33,14 @@ const iconVariants = cva(
 export interface FabIconProps
     extends BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof iconVariants> {
-    icon: IconDefinition;
+    icon: IconType;
 }
 
 const FabIcon = ({ disabled, icon, className }: FabIconProps) => {
+    const Icon = icon;
     return (
         <div className={twMerge(iconVariants({ disabled }), className)}>
-            <FontAwesomeIcon icon={icon} />
+            <Icon />
         </div>
     );
 };

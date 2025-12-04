@@ -2,8 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { AnchorHTMLAttributes } from "react";
 import Link from "next/link";
 import { twMerge } from "tailwind-merge";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronDoubleRight } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaAnglesRight } from "react-icons/fa6";
 
 const linkButtonVariants = cva(
     [
@@ -78,7 +77,7 @@ const LinkButton = ({
             )}
         >
             <span>{label}</span>
-            <FontAwesomeIcon icon={faChevronDoubleRight} />
+            <FaAnglesRight />
         </Link>
     );
 };

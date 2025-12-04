@@ -2,7 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { twMerge } from "tailwind-merge";
 import FabIcon from "./fab-icon";
 import { ButtonHTMLAttributes } from "react";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
+import { IconType } from "react-icons";
 
 const fabIconButtonVaraints = cva(
     [
@@ -27,7 +27,7 @@ interface FabIconButtonProps
     extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
         VariantProps<typeof fabIconButtonVaraints> {
     label: string;
-    icon: IconDefinition;
+    icon: IconType;
     hideLabel?: boolean;
 }
 

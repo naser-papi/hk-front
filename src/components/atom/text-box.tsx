@@ -1,8 +1,7 @@
 "use client";
 import { cva, VariantProps } from "class-variance-authority";
 import { InputHTMLAttributes, useState } from "react";
-import { IconDefinition } from "@fortawesome/fontawesome-svg-core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 
 const textboxVariants = cva(
@@ -37,7 +36,7 @@ interface TextBoxProps
     type: "text" | "textarea" | "password";
     updateDto?: (name: string, value: any) => void;
     rows?: number;
-    icon?: IconDefinition;
+    icon?: IconType;
     onEnterKeyPressed?: (text: string) => void;
 }
 
@@ -56,7 +55,10 @@ const TextBox = ({
     const [text, setText] = useState(value);
     return (
         <div className={twMerge(textboxVariants({ intend }), className)}>
-            {icon && <FontAwesomeIcon icon={icon} />}
+            {icon && (() => {
+                const Icon = icon;
+                return <Icon />;
+            })()}
             {type === "textarea" ? (
                 <textarea
                     readOnly={rest.readOnly}

@@ -1,7 +1,6 @@
 "use client";
 import { useCallback } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
-import { faLocationCheck } from "@awesome.me/kit-026a927a83/icons/classic/regular";
 
 interface Location {
     key: string;
@@ -15,14 +14,7 @@ interface MapViewProps {
     selectedLocationKey?: string;
 }
 
-const fontAwesomeIcon = {
-    url: `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="red">
-              <path d="${faLocationCheck.icon[4]}" />
-            </svg>
-        `)}`,
-    scaledSize: { width: 40, height: 40 }, // Render size adjustments
-};
+// Using default Google Maps markers; removed Font Awesome based custom marker.
 
 const MapView = ({
     selectedLocationKey,

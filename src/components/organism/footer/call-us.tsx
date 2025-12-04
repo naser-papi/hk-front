@@ -1,4 +1,4 @@
-import { faPhoneVolume } from "@awesome.me/kit-026a927a83/icons/classic/solid";
+import { FaPhoneVolume } from "react-icons/fa6";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { isRootPath } from "@/services/server";
@@ -15,7 +15,7 @@ const CallUs = async () => {
             }
         >
             <LinkIcon
-                icon={faPhoneVolume}
+                icon={FaPhoneVolume}
                 href={`tel:${companyInfo.phoneNo1}`}
                 className={"row-span-2"}
             />
