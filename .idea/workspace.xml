@@ -4,46 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="added the google calendar meet like generator.">
-      <change afterPath="$PROJECT_DIR$/pnpm-lock.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" beforeDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="removed the fontawsome">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main_hk.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/icon-label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-icon.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/menu-link.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/open-link-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/slide-perv-next.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/slide-perv-next.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/add-to-google-calendar-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/add-to-google-calendar-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/buttons-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/buttons-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/map-view.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/map-view.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/quote-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/quote-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-list-views-toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-list-views-toggle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/call-us.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/customer-rate.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/customer-rate.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/socials.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/share-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/share-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/top-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon-button.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/fab-icon.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/icon-label.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/link-icon.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/menu-link.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stories/atom/text-box.stories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/stories/atom/text-box.stories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/types/base/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/types/base/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,15 +339,7 @@
       <workItem from="1763726455744" duration="2000" />
       <workItem from="1764754800578" duration="6828000" />
       <workItem from="1764799054441" duration="137000" />
-      <workItem from="1764840535745" duration="1373000" />
-    </task>
-    <task id="LOCAL-00051" summary="switched to dev mod">
-      <option name="closed" value="true" />
-      <created>1736682199729</created>
-      <option name="number" value="00051" />
-      <option name="presentableId" value="LOCAL-00051" />
-      <option name="project" value="LOCAL" />
-      <updated>1736682199729</updated>
+      <workItem from="1764840535745" duration="3692000" />
     </task>
     <task id="LOCAL-00052" summary="switched to prod mod">
       <option name="closed" value="true" />
@@ -769,7 +725,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746976195342</updated>
     </task>
-    <option name="localTasksCounter" value="100" />
+    <task id="LOCAL-00100" summary="removed the fontawsome">
+      <option name="closed" value="true" />
+      <created>1764842098286</created>
+      <option name="number" value="00100" />
+      <option name="presentableId" value="LOCAL-00100" />
+      <option name="project" value="LOCAL" />
+      <updated>1764842098286</updated>
+    </task>
+    <option name="localTasksCounter" value="101" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -790,7 +754,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="added the post-css nested" />
     <MESSAGE value="related contents (blogs)" />
     <MESSAGE value="related contents (events &amp; services)" />
     <MESSAGE value="refactored the side menu" />
@@ -815,7 +778,8 @@
     <MESSAGE value="some changes for events" />
     <MESSAGE value="added event details modal" />
     <MESSAGE value="added the google calendar meet like generator." />
-    <option name="LAST_COMMIT_MESSAGE" value="added the google calendar meet like generator." />
+    <MESSAGE value="removed the fontawsome" />
+    <option name="LAST_COMMIT_MESSAGE" value="removed the fontawsome" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
