@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="removed the fontawsome">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/dev_hk-dev.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/main_hk.yml" beforeDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="deploy on VPS">
+      <change afterPath="$PROJECT_DIR$/src/components/template/main-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +43,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/naser-papi/hk-front.git&quot;,
-    &quot;accountId&quot;: &quot;90ff0564-9b76-4aa2-bd2a-785f802d2db5&quot;
+    &quot;url&quot;: &quot;https://github.com/naser-papi/hk-front&quot;,
+    &quot;accountId&quot;: &quot;e437cccd-4aec-420b-baa5-bdd274e61c75&quot;
   }
 }</component>
   <component name="MarkdownSettingsMigration">
@@ -61,6 +65,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;Node.js.events.ts.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
@@ -110,11 +115,11 @@
       <recent name="D:\projects\hk-app\hk-front\src\app\[locale]\fonts\iran-sans" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="D:\projects\hk-app\hk-front\src\components\molecule" />
       <recent name="D:\projects\hk-app\hk-front\src\components\organism" />
       <recent name="D:\projects\hk-app\hk-front\src\services" />
       <recent name="D:\projects\hk-app\hk-front\src\components\template" />
-      <recent name="D:\projects\hk-app\hk-front\src\components\template\common" />
     </key>
   </component>
   <component name="RunManager" selected="npm.Next.js: server-side">
@@ -339,15 +344,8 @@
       <workItem from="1763726455744" duration="2000" />
       <workItem from="1764754800578" duration="6828000" />
       <workItem from="1764799054441" duration="137000" />
-      <workItem from="1764840535745" duration="3692000" />
-    </task>
-    <task id="LOCAL-00052" summary="switched to prod mod">
-      <option name="closed" value="true" />
-      <created>1736683225716</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1736683225716</updated>
+      <workItem from="1764840535745" duration="9204000" />
+      <workItem from="1765048004834" duration="3564000" />
     </task>
     <task id="LOCAL-00053" summary="switched to prod mod">
       <option name="closed" value="true" />
@@ -733,7 +731,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764842098286</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="deploy on VPS">
+      <option name="closed" value="true" />
+      <created>1764859183469</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1764859183469</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -754,7 +760,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="related contents (blogs)" />
     <MESSAGE value="related contents (events &amp; services)" />
     <MESSAGE value="refactored the side menu" />
     <MESSAGE value="comments part 1" />
@@ -779,7 +784,8 @@
     <MESSAGE value="added event details modal" />
     <MESSAGE value="added the google calendar meet like generator." />
     <MESSAGE value="removed the fontawsome" />
-    <option name="LAST_COMMIT_MESSAGE" value="removed the fontawsome" />
+    <MESSAGE value="deploy on VPS" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy on VPS" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

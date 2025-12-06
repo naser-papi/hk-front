@@ -40,3 +40,7 @@ next-env.d.ts
 *storybook.log
 # Sentry Config File
 .env.sentry-build-plugin
+
+/public/Hktnew-main
+
+/Hktnew-main
