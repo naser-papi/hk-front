@@ -5,7 +5,7 @@ import face4 from "assets/show-more/face-4.svg";
 
 const LandingLinks = () => {
     return (
-        <section id={"links"} className={"template"}>
+        <section id={"links"} className={"template bg-white"}>
             <h2>{trans("common.usefulLinks")}</h2>
             <LinkCardsContainer />
             <ShowMoreLink

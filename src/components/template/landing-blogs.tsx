@@ -5,7 +5,7 @@ import face6 from "assets/show-more/face-6.svg";
 
 const LandingBlogs = () => {
     return (
-        <section id={"blogs"} className={"template"}>
+        <section id={"blogs"} className={"template bg-white"}>
             <h2>{trans("common.knowledgeSharing")}</h2>
             <BlogCardsContainer />
             <ShowMoreLink

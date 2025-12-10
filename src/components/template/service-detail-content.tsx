@@ -4,7 +4,7 @@ const ServiceDetailContent = () => {
     return (
         <section
             id={"service-detail-content"}
-            className={"template text-black"}
+            className={"template bg-white text-black"}
         >
             <ServiceDetail />
             <div className={"related-contents"}>

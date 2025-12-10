@@ -2,7 +2,7 @@ import ServicesFilterList from "@/components/organism/services-filter-list";
 
 const ServicesList = () => {
     return (
-        <section id={"services-list"} className={"template"}>
+        <section id={"services-list"} className={"template bg-white"}>
             <ServicesFilterList />
         </section>
     );

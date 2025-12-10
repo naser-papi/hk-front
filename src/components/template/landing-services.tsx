@@ -8,7 +8,7 @@ const Services = () => {
         <section
             id={"services"}
             className={
-                "template lg:[&_.service-card-container]:grid-col-2-gap-6"
+                "template bg-white lg:[&_.service-card-container]:grid-col-2-gap-6"
             }
         >
             <h2>{trans("common.ourServices")}</h2>

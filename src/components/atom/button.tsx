@@ -30,17 +30,22 @@ const variants = cva(
                 filter: [
                     "text-primary",
                     "bg-white",
-                    "hover:bg-primary",
-                    "hover:text-white",
+                    "hover:bg-primaryLight",
+                    "hover:text-primary",
                     "rounded-full",
                     "border",
-                    "border-black",
+                    "border-altLight",
                     "px-5",
                     "py-1",
                 ],
             },
             disabled: {
-                true: ["bg-alt", "cursor-not-allowed", "hover:bg-alt"],
+                true: [
+                    "bg-altLight",
+                    "text-blackLight",
+                    "cursor-not-allowed",
+                    "hover:bg-altLight",
+                ],
                 false: [],
             },
             selected: {
