@@ -15,12 +15,12 @@ const MobileMenu = () => {
     return (
         <div
             className={
-                "absolute left-0 top-[70px] w-full border-b border-altLight bg-white p-2 shadow-md lg:hidden"
+                "absolute left-0 top-[70px] w-full bg-primary p-2 lg:hidden"
             }
         >
             <article
                 className={
-                    "w-full text-blackLight [&>button]:ml-auto [&>button]:mr-4"
+                    "w-full text-secondary [&>button]:ml-auto [&>button]:mr-4"
                 }
             >
                 <Button

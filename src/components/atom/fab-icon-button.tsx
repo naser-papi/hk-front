@@ -11,16 +11,12 @@ const fabIconButtonVaraints = cva(
         "items-center",
         "gap-2",
         "text-label",
-        "text-primary",
+        "text-white",
     ],
     {
         variants: {
             disabled: {
-                true: [
-                    "text-blackLight",
-                    "opacity-60",
-                    "cursor-not-allowed",
-                ],
+                true: [],
                 false: [],
             },
         },

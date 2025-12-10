@@ -21,11 +21,15 @@ const TopNav = () => {
         router.refresh();
     };
     return (
-        <nav className={"mobile-nav flex w-full items-center gap-3"}>
+        <nav
+            className={
+                "mobile-nav flex w-full items-center gap-3 drop-shadow-lg"
+            }
+        >
             <NlLogo type={"default"} />
             <aside
                 className={
-                    "flex grow items-center justify-between gap-3 [&>.main-menu]:hidden [&>.main-menu]:lg:flex [&>.menu-toggle]:lg:hidden"
+                    "flex grow items-center justify-between gap-3 [&>.main-menu]:hidden [&>.main-menu]:lg:flex [&>.menu-toggle]:lg:hidden [&_.menu-link]:lg:text-white"
                 }
             >
                 <Button

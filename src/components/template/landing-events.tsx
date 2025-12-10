@@ -5,7 +5,7 @@ import face1 from "assets/show-more/face-1.svg";
 
 const LandingEvents = () => {
     return (
-        <section id={"events"} className={"template bg-white"}>
+        <section id={"events"} className={"template"}>
             <h2>{trans("common.whatHappening")}</h2>
             <EventCardsContainer />
             <ShowMoreLink

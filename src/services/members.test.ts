@@ -1,11 +1,12 @@
 import { GetMemberByEmailOrTelegramId } from "./members";
 import mainCall from "@/services/rest-api/main-call";
 import { MembersAPIPath } from "@/constants/api-path/members";
+import { MemberDto } from "@/types/dto/members";
 
 jest.mock("@/services/rest-api/main-call");
 
 describe("GetMemberByEmailOrTelegramId", () => {
-    const mockMainCall = jest.mocked(mainCall);
+    const mockMainCall = mainCall as jest.MockedFunction<typeof mainCall>;
 
     it("should throw an error if neither email nor telegramId is provided", async () => {
         await expect(GetMemberByEmailOrTelegramId("", "")).rejects.toThrow(
@@ -20,10 +21,10 @@ describe("GetMemberByEmailOrTelegramId", () => {
                     fullName: "John Doe",
                     email: "john@example.com",
                     telegramId: "@john2024",
-                },
+                } as MemberDto,
             ],
         };
-        mockMainCall.mockResolvedValueOnce(mockResponse);
+        mockMainCall.mockResolvedValueOnce(mockResponse as never);
 
         const result = await GetMemberByEmailOrTelegramId(
             "john@example.com",
@@ -40,7 +41,7 @@ describe("GetMemberByEmailOrTelegramId", () => {
     });
 
     it("should return an empty object if no member is found", async () => {
-        mockMainCall.mockResolvedValueOnce({ data: [] });
+        mockMainCall.mockResolvedValueOnce({ data: [] } as never);
 
         const result = await GetMemberByEmailOrTelegramId(
             "nonexistent@example.com",

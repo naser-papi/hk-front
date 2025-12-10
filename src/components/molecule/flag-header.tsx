@@ -16,7 +16,7 @@ const FlagHeader = ({ title }: FlagHeaderProps) => {
             <Image src={flag} alt={"flag"} fill />
             <div
                 className={
-                    "relative z-10 flex h-full w-full items-center justify-between bg-black/40 p-4 backdrop-blur-sm"
+                    "relative z-10 flex h-full w-full items-center justify-between bg-[#364057]/60 p-4"
                 }
             >
                 <h3

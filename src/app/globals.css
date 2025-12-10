@@ -2,61 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-    /* Brand colors (aligned with logo) */
-    --primary: #3b5bb1; /* brand blue */
-    --secondary: #f6a623; /* logo yellow accent */
-
-    /* Neutral & supporting colors */
+  --primary: #364057;
   --white: #ffffff;
-    --black: #0b1020;
-    --black-light: #5e6a80;
-    --cyan: #5e6a80; /* used for scrollbars and subtle accents */
-    --alt: #5e6a80;
-    --alt-light: #d5dbe9;
-    --light-yellow: #ffe6b3;
-    --light: rgba(255, 255, 255, 0.9);
-    --warning: #e59f1a;
-    --primary-lighter: #e2e8fb; /* soft blue background */
-
-    /* Background & surface tokens for the light theme */
-    --bg: #f5f7fb; /* app background */
-    --surface: #ffffff; /* default card/content surface */
-    --surface-muted: #e7ecf8; /* subtle section backgrounds */
-
-    /* Text tokens */
-    --text-primary: #1b2559;
-    --text-secondary: #5e6a80;
-    --text-muted: #8c96a7;
+  --light-yellow: #c7c896;
+  --black:#000000;
+  --cyan: #626262;
+  --alt:#626262;
+  --secondary:#E94D4E;
+  --warning: #FFC107;
+  --alt-light:#536184;
+  --light: rgba(255, 255, 255, 0.8);
+  --primary-lighter: rgba(54, 64, 87, 0.7);
+  --black-light: rgba(0, 0, 0, 0.7);
 }
 
 @media (prefers-color-scheme: dark) {
-    /* For now we keep the same light-theme tokens even in dark mode
-       to avoid maintaining two separate palettes. */
   :root {
-      --primary: #3b5bb1;
-      --secondary: #f6a623;
+    --primary: #364057;
     --white: #ffffff;
-      --black: #0b1020;
-      --black-light: #5e6a80;
-      --cyan: #5e6a80;
-      --alt: #5e6a80;
-      --alt-light: #d5dbe9;
-      --light-yellow: #ffe6b3;
-      --light: rgba(255, 255, 255, 0.9);
-      --warning: #e59f1a;
-      --primary-lighter: #e2e8fb;
-      --bg: #f5f7fb;
-      --surface: #ffffff;
-      --surface-muted: #e7ecf8;
-      --text-primary: #1b2559;
-      --text-secondary: #5e6a80;
-      --text-muted: #8c96a7;
+    --black:#000000;
+    --cyan: #626262;
+    --alt:#626262;
+    --secondary:#E94D4E;
+    --warning: #FFC107;
+    --alt-light:#536184;
+    --light: rgba(255, 255, 255, 0.8);
+    --primary-lighter: rgba(54, 64, 87, 0.7);
+    --black-light: rgba(0, 0, 0, 0.7);
   }
 }
 
 body {
-    color: var(--text-primary);
-    background: var(--bg);
+  color: var(--white);
+  background: var(--primary);
   font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
@@ -253,6 +231,18 @@ body.rtl {
       @apply text-center text-2xl font-bold text-black;
     }
 
+    &:not(.hero):nth-of-type(odd) {
+      @apply bg-[rgba(31,41,55,0.5)];
+
+      & > h2 {
+        @apply text-white;
+      }
+    }
+
+    &:nth-of-type(even) {
+      @apply bg-[rgba(255,255,255,0.5)];
+    }
+
     & .detail-page-banner {
       & .images-carousel {
         min-height: calc((min(1024px, 100vw) - 64px) / 1.77);
@@ -260,11 +250,11 @@ body.rtl {
     }
   }
   .footer {
-      @apply relative z-20 grid justify-start w-full gap-4 mb-20;
+    @apply relative z-20 grid justify-start w-full gap-1 mb-20;
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
 
     & > section {
-        @apply h-fit border-b border-dotted border-altLight py-2 text-blackLight;
+      @apply h-fit border-b-2 border-dotted border-white py-2;
     }
   }
 
@@ -386,6 +376,6 @@ body.rtl {
 
   .page-default-container {
     @apply relative grid h-full max-h-screen w-full place-items-start overflow-y-auto overflow-x-clip;
-      background-color: var(--surface);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 }

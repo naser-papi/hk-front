@@ -4,42 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="feature/add logos as assets">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="deploy on VPS">
+      <change afterPath="$PROJECT_DIR$/src/components/template/main-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/dashboard/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/fab-icon-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/info-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/info-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/link-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/link-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/flag-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/flag-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/auth-template.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/auth-template.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/blogs-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/blogs-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/events-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/events-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-blogs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-blogs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-events.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-events.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-links.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-services.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/main-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/main-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/mobile-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/services-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/top-nav.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/top-nav.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/members.test.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/members.test.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="407" />
-    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,12 +73,10 @@
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
@@ -165,7 +140,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-c7e53b3be11b-JavaScript-WS-253.28294.332" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-WS-252.27397.92" />
       </set>
     </attachedChunks>
   </component>
@@ -370,10 +345,31 @@
       <workItem from="1764754800578" duration="6828000" />
       <workItem from="1764799054441" duration="137000" />
       <workItem from="1764840535745" duration="9204000" />
-      <workItem from="1765048004834" duration="3625000" />
-      <workItem from="1765099119164" duration="4394000" />
-      <workItem from="1765289856360" duration="11420000" />
-      <workItem from="1765360480694" duration="3699000" />
+      <workItem from="1765048004834" duration="3564000" />
+    </task>
+    <task id="LOCAL-00053" summary="switched to prod mod">
+      <option name="closed" value="true" />
+      <created>1736686901569</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1736686901569</updated>
+    </task>
+    <task id="LOCAL-00054" summary="fixed a bug">
+      <option name="closed" value="true" />
+      <created>1736752843026</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1736752843026</updated>
+    </task>
+    <task id="LOCAL-00055" summary="fixed the default language to fa">
+      <option name="closed" value="true" />
+      <created>1737317361824</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1737317361824</updated>
     </task>
     <task id="LOCAL-00056" summary="fixed the default language to fa">
       <option name="closed" value="true" />
@@ -743,31 +739,7 @@
       <option name="project" value="LOCAL" />
       <updated>1764859183469</updated>
     </task>
-    <task id="LOCAL-00102" summary="change top-nav styles &amp; arrangment">
-      <option name="closed" value="true" />
-      <created>1765056782159</created>
-      <option name="number" value="00102" />
-      <option name="presentableId" value="LOCAL-00102" />
-      <option name="project" value="LOCAL" />
-      <updated>1765056782159</updated>
-    </task>
-    <task id="LOCAL-00103" summary="expand README with project details, setup, and usage instructions">
-      <option name="closed" value="true" />
-      <created>1765099887606</created>
-      <option name="number" value="00103" />
-      <option name="presentableId" value="LOCAL-00103" />
-      <option name="project" value="LOCAL" />
-      <updated>1765099887606</updated>
-    </task>
-    <task id="LOCAL-00104" summary="feature/add logos as assets">
-      <option name="closed" value="true" />
-      <created>1765291914598</created>
-      <option name="number" value="00104" />
-      <option name="presentableId" value="LOCAL-00104" />
-      <option name="project" value="LOCAL" />
-      <updated>1765291914599</updated>
-    </task>
-    <option name="localTasksCounter" value="105" />
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -788,6 +760,9 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="related contents (events &amp; services)" />
+    <MESSAGE value="refactored the side menu" />
+    <MESSAGE value="comments part 1" />
     <MESSAGE value="fixed the banner images size calculation" />
     <MESSAGE value="comments part 2" />
     <MESSAGE value="fixed the footer styles" />
@@ -810,10 +785,7 @@
     <MESSAGE value="added the google calendar meet like generator." />
     <MESSAGE value="removed the fontawsome" />
     <MESSAGE value="deploy on VPS" />
-    <MESSAGE value="change top-nav styles &amp; arrangment" />
-    <MESSAGE value="expand README with project details, setup, and usage instructions" />
-    <MESSAGE value="feature/add logos as assets" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature/add logos as assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="deploy on VPS" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
