@@ -4,6 +4,7 @@ import { Button } from "@/components/atom";
 import { useCallback } from "react";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { generateGoogleCalendarLink } from "@/helpers/event-helper";
+import { FaCalendarDays } from "react-icons/fa6";
 
 interface AddToGoogleCalendarButtonProps {
     event: EventDto;
@@ -20,7 +21,7 @@ const AddToGoogleCalendarButton = ({
     return (
         <Button
             label={t("common.addToCalendar") + "  "}
-            icon={faCalendarDays}
+            icon={FaCalendarDays}
             intend={"secondary"}
             onClick={addToGoogleCalendar}
         />

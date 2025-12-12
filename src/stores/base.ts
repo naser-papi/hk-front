@@ -5,6 +5,7 @@ const BaseState = proxy<IBaseState>({
     showMenu: false,
     clickedMenu: "",
     locale: "",
+    displayName: "",
     globalConfirm: null,
     toggleMenu: () => {
         BaseState.showMenu = !BaseState.showMenu;

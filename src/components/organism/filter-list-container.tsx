@@ -5,7 +5,7 @@ import { CategoryDto } from "@/types/dto/common";
 import { CategoryList, Container } from "@/components/molecule";
 import { TextBox } from "@/components/atom";
 import useTranslation from "@/helpers/i18n/use-translation";
-
+import { FaSearchengin } from "react-icons/fa6";
 interface FilterListContainerProps {
     children: JSX.Element[] | JSX.Element;
     route: string;
@@ -47,7 +47,7 @@ const FilterListContainer = ({
         <Container direction={"column"} gap={"little"}>
             <TextBox
                 type={"text"}
-                icon={faSearch}
+                icon={FaSearchengin}
                 className={"w-full"}
                 value={query.filter}
                 placeholder={t("common.typeToFilter")}

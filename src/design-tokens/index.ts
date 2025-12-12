@@ -199,9 +199,9 @@ export const designTokens = {
    */
   typography: {
     fontFamily: {
-      sans: ['var(--font-geist-sans)', 'system-ui', '-apple-system', 'sans-serif'],
-      persian: ['var(--font-iransans)', 'Tahoma', 'Arial', 'sans-serif'],
-      mono: ['var(--font-geist-mono)', 'monospace'],
+      sans: ['var(--font-geist-sans)', 'system-ui', '-apple-system', 'sans-serif'] as string[],
+      persian: ['var(--font-iransans)', 'Tahoma', 'Arial', 'sans-serif'] as string[],
+      mono: ['var(--font-geist-mono)', 'monospace'] as string[],
     },
 
     fontSize: {
@@ -268,20 +268,21 @@ export const designTokens = {
 
   /**
    * Z-Index Scale
+   * All values must be strings for Tailwind compatibility
    */
   zIndex: {
-    hide: -1,
+    hide: '-1',
     auto: 'auto',
-    base: 0,
-    docked: 10,
-    dropdown: 1000,
-    sticky: 1100,
-    banner: 1200,
-    overlay: 1300,
-    modal: 1400,
-    popover: 1500,
-    skipLink: 1600,
-    tooltip: 1700,
+    base: '0',
+    docked: '10',
+    dropdown: '1000',
+    sticky: '1100',
+    banner: '1200',
+    overlay: '1300',
+    modal: '1400',
+    popover: '1500',
+    skipLink: '1600',
+    tooltip: '1700',
   },
 
   /**
@@ -335,7 +336,7 @@ export const designTokens = {
     95: '0.95',
     100: '1',
   },
-} as const;
+};
 
 // Export individual token categories for easier imports
 export const colors = designTokens.colors;
