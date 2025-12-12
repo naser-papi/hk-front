@@ -17,7 +17,6 @@ FROM base AS deps
 WORKDIR /hk-app
 
 # Install dependencies based on the package-lock file
-COPY .npmrc ./
 COPY package*.json package-lock.json* ./
 RUN npm ci
 
