@@ -10,8 +10,8 @@ import {
 
 const Footer = () => {
     return (
-        <footer id={"footer"} className={"template relative"}>
-            <Image src={footerBk} alt="footer" fill className={"z-0"} />
+        <footer id={"footer"} role="contentinfo" className={"template relative"}>
+            <Image src={footerBk} alt="" fill className={"z-0"} aria-hidden="true" />
             <div className={"footer"}>
                 <About />
                 <CallUs />

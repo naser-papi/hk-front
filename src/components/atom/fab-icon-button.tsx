@@ -43,10 +43,15 @@ const FabIconButton = ({
     return (
         <button
             {...rest}
-            className={twMerge(fabIconButtonVaraints({ disabled }), className)}
+            className={twMerge(
+                fabIconButtonVaraints({ disabled }),
+                className,
+                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+            )}
             onClick={onClick}
+            aria-label={hideLabel ? label : undefined}
         >
-            <FabIcon icon={icon} />
+            <FabIcon icon={icon} aria-hidden={hideLabel ? true : undefined} />
             {!hideLabel && <span>{label}</span>}
         </button>
     );

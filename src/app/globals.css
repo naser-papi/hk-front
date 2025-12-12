@@ -2,39 +2,109 @@
 @tailwind components;
 @tailwind utilities;
 :root {
-  --primary: #364057;
+  /* Primary Brand Colors - Professional Blue */
+  --primary: #3d7dc0;
+  --primary-light: #5a91c9;
+  --primary-lighter: #77a5d2;
+  --primary-dark: #2f6ab2;
+  --primary-darker: #1a4d9c;
+
+  /* Secondary/Accent Colors - Warm Orange */
+  --secondary: #ff9800;
+  --secondary-light: #ffb74d;
+  --secondary-lighter: #ffcc80;
+  --secondary-dark: #f57c00;
+  --secondary-darker: #e65100;
+
+  /* Semantic Colors */
+  --success: #4caf50;
+  --success-light: #66bb6a;
+  --success-dark: #388e3c;
+  --warning: #ffc107;
+  --warning-light: #ffd54f;
+  --warning-dark: #ffa000;
+  --error: #f44336;
+  --error-light: #ef5350;
+  --error-dark: #d32f2f;
+  --info: #2196f3;
+  --info-light: #42a5f5;
+  --info-dark: #1976d2;
+
+  /* Neutral Colors */
+  --neutral-50: #fafafa;
+  --neutral-100: #f5f5f5;
+  --neutral-200: #eeeeee;
+  --neutral-300: #e0e0e0;
+  --neutral-400: #bdbdbd;
+  --neutral-500: #9e9e9e;
+  --neutral-600: #757575;
+  --neutral-700: #616161;
+  --neutral-800: #424242;
+  --neutral-900: #212121;
+
+  /* Background Colors */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --bg-tertiary: #f0f2f5;
+  --bg-dark: #1a1f2e;
+  --bg-overlay: rgba(0, 0, 0, 0.5);
+  --bg-overlay-light: rgba(0, 0, 0, 0.3);
+
+  /* Text Colors */
+  --text-primary: #212121;
+  --text-secondary: #424242;
+  --text-tertiary: #616161;
+  --text-disabled: #9e9e9e;
+  --text-inverse: #ffffff;
+  --text-link: #3d7dc0;
+  --text-link-hover: #2f6ab2;
+
+  /* Border Colors */
+  --border-light: #e0e0e0;
+  --border-default: #bdbdbd;
+  --border-dark: #757575;
+  --border-focus: #3d7dc0;
+
+  /* Legacy Support (for gradual migration) */
   --white: #ffffff;
-  --light-yellow: #c7c896;
-  --black:#000000;
-  --cyan: #626262;
-  --alt:#626262;
-  --secondary:#E94D4E;
-  --warning: #FFC107;
-  --alt-light:#536184;
-  --light: rgba(255, 255, 255, 0.8);
-  --primary-lighter: rgba(54, 64, 87, 0.7);
-  --black-light: rgba(0, 0, 0, 0.7);
+  --black: #000000;
+  --cyan: #616161; /* Mapped to neutral-700 for better contrast */
+  --alt: #616161; /* Mapped to neutral-700 */
+  --alt-light: #5a91c9; /* Mapped to primary-light */
+  --light: rgba(255, 255, 255, 0.9);
+  --primary-lighter: rgba(61, 125, 192, 0.85); /* Updated to new primary */
+  --black-light: rgba(0, 0, 0, 0.75);
+  --light-yellow: #ffcc80; /* Mapped to secondary-lighter */
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --primary: #364057;
+    /* Dark mode adjustments - maintain brand colors but adjust backgrounds */
+    --bg-primary: #1a1f2e;
+    --bg-secondary: #252b3d;
+    --bg-tertiary: #2d3447;
+    --text-primary: #ffffff;
+    --text-secondary: #e0e0e0;
+    --text-tertiary: #bdbdbd;
+    --border-light: #424242;
+    --border-default: #616161;
+    --border-dark: #757575;
+    
+    /* Legacy support */
     --white: #ffffff;
-    --black:#000000;
-    --cyan: #626262;
-    --alt:#626262;
-    --secondary:#E94D4E;
-    --warning: #FFC107;
-    --alt-light:#536184;
-    --light: rgba(255, 255, 255, 0.8);
-    --primary-lighter: rgba(54, 64, 87, 0.7);
-    --black-light: rgba(0, 0, 0, 0.7);
+    --black: #000000;
+    --cyan: #bdbdbd; /* Lighter for dark mode */
+    --alt: #bdbdbd;
+    --alt-light: #5a91c9;
+    --light: rgba(255, 255, 255, 0.9);
+    --primary-lighter: rgba(61, 125, 192, 0.85);
+    --black-light: rgba(0, 0, 0, 0.75);
   }
 }
 
 body {
-  color: var(--white);
-  background: var(--primary);
+  color: var(--text-primary);
+  background: var(--bg-primary);
   font-family:var(--font-geist-sans),  Arial, Helvetica, sans-serif;
 }
 
@@ -135,6 +205,38 @@ body.rtl {
 
   .border-shadow {
     @apply border-2 border-white drop-shadow-lg;
+  }
+
+  /* Accessibility: Focus states */
+  *:focus-visible {
+    outline: 2px solid var(--border-focus);
+    outline-offset: 2px;
+  }
+
+  /* Accessibility: Skip navigation link */
+  .skip-link {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .skip-link:focus {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    z-index: 10000;
+    width: auto;
+    height: auto;
+    padding: 0.5rem 1rem;
+    background: var(--secondary);
+    color: var(--text-inverse);
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    outline: 2px solid var(--secondary);
+    outline-offset: 2px;
   }
 
 

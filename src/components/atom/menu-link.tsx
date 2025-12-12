@@ -48,10 +48,15 @@ const MenuLink = ({
     return (
         <Link
             href={href}
-            className={twMerge(menuLinkVariants({ disabled }), className)}
+            className={twMerge(
+                menuLinkVariants({ disabled }),
+                className,
+                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+            )}
             title={hideLabel ? label : undefined}
+            aria-label={hideLabel ? label : undefined}
         >
-            <Icon />
+            <Icon aria-hidden={hideLabel ? true : undefined} />
             {!hideLabel && <span>{label}</span>}
         </Link>
     );

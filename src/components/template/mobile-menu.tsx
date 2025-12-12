@@ -28,6 +28,7 @@ const MobileMenu = () => {
                     intend={"tertiary"}
                     icon={FaXmark}
                     onClick={closeMenu}
+                    ariaLabel="Close menu"
                 />
                 <MainMenu direction={"col"} />
             </article>

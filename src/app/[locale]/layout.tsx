@@ -71,6 +71,10 @@ export default async function RootLayout({
                 className={`h-screen w-screen antialiased ${fontClasses}`}
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
+                {/* Skip Navigation Link for Accessibility */}
+                <a href="#main-content" className="skip-link">
+                    Skip to main content
+                </a>
                 <Background />
                 <ClientInitializer />
                 <GlobalAlert />

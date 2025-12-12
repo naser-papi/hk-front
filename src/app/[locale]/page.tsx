@@ -13,7 +13,7 @@ import StoreScroll from "@/components/organism/store-scroll";
 
 export default async function Home() {
     return (
-        <main className="page-default-container">
+        <main id="main-content" className="page-default-container" role="main">
             <StoreScroll />
             <MainHeader />
             <LandingHero />

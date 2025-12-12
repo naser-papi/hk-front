@@ -1,6 +1,7 @@
 "use client";
 import ReactDOM from "react-dom";
 import { cva, VariantProps } from "class-variance-authority";
+import { useEffect, useRef } from "react";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { Button } from "@/components/atom";
 import { FaXmark } from "react-icons/fa6";
@@ -41,6 +42,66 @@ const ModalContainer = ({
     hideActions,
 }: ModalProps) => {
     const { t } = useTranslation();
+    const modalRef = useRef<HTMLDivElement>(null);
+    const previousFocusRef = useRef<HTMLElement | null>(null);
+
+    // Focus trap and escape key handling
+    useEffect(() => {
+        if (!isOpen) return;
+
+        // Store the previously focused element
+        previousFocusRef.current = document.activeElement as HTMLElement;
+
+        // Focus the modal when it opens
+        const modalElement = modalRef.current;
+        if (modalElement) {
+            const firstFocusable = modalElement.querySelector(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            ) as HTMLElement;
+            firstFocusable?.focus();
+        }
+
+        // Handle escape key
+        const handleEscape = (e: KeyboardEvent) => {
+            if (e.key === "Escape") {
+                onClose();
+            }
+        };
+
+        // Handle focus trap
+        const handleTab = (e: KeyboardEvent) => {
+            if (e.key !== "Tab" || !modalElement) return;
+
+            const focusableElements = modalElement.querySelectorAll(
+                'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+            );
+            const firstElement = focusableElements[0] as HTMLElement;
+            const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+
+            if (e.shiftKey) {
+                if (document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement?.focus();
+                }
+            } else {
+                if (document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement?.focus();
+                }
+            }
+        };
+
+        document.addEventListener("keydown", handleEscape);
+        document.addEventListener("keydown", handleTab);
+
+        return () => {
+            document.removeEventListener("keydown", handleEscape);
+            document.removeEventListener("keydown", handleTab);
+            // Restore focus to previously focused element
+            previousFocusRef.current?.focus();
+        };
+    }, [isOpen, onClose]);
+
     if (!isOpen) return null; // Do not render when modal is closed
 
     return ReactDOM.createPortal(
@@ -50,17 +111,27 @@ const ModalContainer = ({
             }
             role="dialog"
             aria-modal="true"
+            aria-labelledby="modal-title"
+            onClick={(e) => {
+                // Close modal when clicking backdrop
+                if (e.target === e.currentTarget) {
+                    onClose();
+                }
+            }}
         >
-            <div className={variants({ size })}>
+            <div ref={modalRef} className={variants({ size })}>
                 {/* Modal Header */}
                 <div className="flex items-center justify-between border-b border-gray-200 px-6 py-4">
-                    <div className="text-title">{title}</div>
-                    <FaXmark
+                    <h2 id="modal-title" className="text-title">{title}</h2>
+                    <button
                         onClick={onClose}
+                        aria-label="Close dialog"
                         className={
-                            "hover:animate-spinOnce cursor-pointer hover:text-secondary text-2xl"
+                            "hover:animate-spinOnce cursor-pointer hover:text-secondary text-2xl focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary rounded p-1"
                         }
-                    />
+                    >
+                        <FaXmark aria-hidden="true" />
+                    </button>
                 </div>
 
                 {/* Modal Content */}

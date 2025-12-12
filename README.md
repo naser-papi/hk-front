@@ -3,7 +3,7 @@ HollandKade Frontend (hk-front)
 ### Overview
 
 This repository contains the HollandKade frontend built with Next.js 14 (App Router). It provides localized pages (
-Persian/English), authentication‑gated dashboard routes, TailwindCSS styling, Storybook for UI development, and an
+Persian/English), authentication‑gated dashboard routes, TailwindCSS styling, and an
 integration with a headless CMS/API.
 
 Key capabilities:
@@ -14,7 +14,6 @@ Key capabilities:
 - State management with `valtio`
 - Google Maps (`@react-google-maps/api`) and calendar views (`react-big-calendar`)
 - Image optimization with allow‑listed remote hosts
-- Storybook 8 for components
 - Jest + ts-jest for unit testing
 - Dockerfile with standalone output and runtime env injection
 
@@ -25,7 +24,7 @@ Key capabilities:
 - i18n: `next-i18n-router`, `i18next`, `react-i18next`
 - State: `valtio`
 - Maps/Calendar: `@react-google-maps/api`, `react-big-calendar`
-- Tooling: TypeScript 5, ESLint, Prettier, Storybook 8, Jest 29, ts-jest
+- Tooling: TypeScript 5, ESLint, Prettier, Jest 29, ts-jest
 
 ### Project Structure
 
@@ -45,7 +44,6 @@ src/
   constants/                # API path constants
   helpers/                  # Utilities (i18n helpers, etc.)
   services/rest-api/        # API call layer (e.g., `core-call.ts`)
-  stories/                  # Storybook assets/stories
   i18nConfig.ts             # i18n configuration (locales)
   middleware.ts             # i18n + auth middleware
 
@@ -111,8 +109,6 @@ pnpm dev              # Start Next.js in development mode
 pnpm build            # Build for production (standalone output)
 pnpm start            # Start production server (requires pnpm build)
 pnpm lint             # Run ESLint
-pnpm storybook        # Start Storybook on :6006
-pnpm build-storybook  # Build static Storybook
 pnpm test             # Run Jest tests
 ```
 
@@ -150,12 +146,6 @@ parameters. It builds the base URL from `CMS_SERVER` or `NEXT_PUBLIC_CMS_SERVER`
 - It calls the `getUserInfo` endpoint defined in `constants/api-path/members` via `mainCall` to validate the token and
   attach basic user info to response headers.
 - i18n routing is applied for all non‑asset paths via `matcher`.
-
-### Storybook
-
-- Framework: `@storybook/nextjs` v8.
-- Start locally: `pnpm storybook` then open http://localhost:6006
-- Build static: `pnpm build-storybook`
 
 ### Testing
 
@@ -221,9 +211,7 @@ These are non‑breaking recommendations to improve maintainability and DX:
 2. Introduce API type safety with a thin client (e.g., `zod` schemas) around `core-call` responses.
 3. Centralize auth token handling (helper to read/write `hkAuthToken`, handle refresh if applicable).
 4. Add unit tests for middleware logic (using Next.js middleware test harness) and for `helpers`.
-5. Create Storybook stories for key components in `components/template` and `components/organism` to improve UI
-   documentation.
-6. Consider moving image remote host list to an env‑driven allow list to reduce rebuilds when adding hosts.
+5. Consider moving image remote host list to an env‑driven allow list to reduce rebuilds when adding hosts.
 7. Add CI (GitHub Actions) for lint, test, and build checks on PRs.
 8. Enable Next.js `dangerouslyAllowSVG` only if required, and audit SVG sources when enabled.
 9. Document API endpoints in `constants/api-path` and add examples in README or a `docs/` folder.

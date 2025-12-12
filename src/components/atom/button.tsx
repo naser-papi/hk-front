@@ -68,6 +68,7 @@ interface ButtonProps
     type?: "button" | "submit";
     link?: string;
     icon?: IconType;
+    ariaLabel?: string; // For icon-only buttons, provide accessible label
 }
 
 const Button = ({
@@ -80,14 +81,21 @@ const Button = ({
     icon,
     className,
     disabled,
+    ariaLabel,
     ...rest
 }: ButtonProps) => {
     const router = useRouter();
+    // If label is empty but icon exists, use ariaLabel or icon description
+    const accessibleLabel = !label && icon ? ariaLabel : label;
+    const hasIconOnly = !label && icon;
+    
     return (
         <button
             className={twMerge(
                 variants({ intend, selected, disabled }),
-                className
+                className,
+                // Add focus styles for accessibility
+                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
             )}
             type={type ?? "button"}
             onClick={
@@ -98,12 +106,14 @@ const Button = ({
                     : onClick
             }
             disabled={!!disabled}
+            aria-label={hasIconOnly ? accessibleLabel : undefined}
+            aria-hidden={hasIconOnly && !accessibleLabel ? true : undefined}
             {...rest}
         >
-            {label && label}
+            {label && <span>{label}</span>}
             {icon && (() => {
                 const Icon = icon;
-                return <Icon />;
+                return <Icon aria-hidden={hasIconOnly ? true : undefined} />;
             })()}
         </button>
     );
