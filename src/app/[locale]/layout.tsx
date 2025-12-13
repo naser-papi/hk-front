@@ -66,9 +66,9 @@ export default async function RootLayout({
             ? `rtl ${IRANSansXFaNum.variable}`
             : `ltr ${geistSans.variable} ${geistMono.variable}`;
     return (
-        <html lang={params.locale}>
+        <html lang={params.locale} className="overflow-x-hidden">
             <body
-                className={`h-screen w-screen antialiased ${fontClasses}`}
+                className={`h-screen w-screen antialiased overflow-x-hidden ${fontClasses}`}
                 dir={params.locale === "fa" ? "rtl" : "ltr"}
             >
                 {/* Skip Navigation Link for Accessibility */}
