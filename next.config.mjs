@@ -2,6 +2,10 @@
 const nextConfig = {
     reactStrictMode: true,
     output: "standalone",
+    // Performance optimizations
+    compress: true,
+    poweredByHeader: false,
+    swcMinify: true,
     logging: {
         fetches: {
             fullUrl: true,

@@ -11,12 +11,22 @@ const SideFloatMenu = () => {
     useEffect(() => {
         const scrollElement = document.querySelector(
             "main.page-default-container"
-        )! as HTMLElement;
-        scrollElement.addEventListener("scroll", () => {
+        ) as HTMLElement;
+        
+        if (!scrollElement) return;
+        
+        const handleScroll = () => {
             setVisible(scrollElement.scrollTop > 400);
-        });
+        };
+        
+        scrollElement.addEventListener("scroll", handleScroll, { passive: true });
+        
+        // Initial check
+        handleScroll();
 
-        return () => scrollElement.removeEventListener("scroll", () => {});
+        return () => {
+            scrollElement.removeEventListener("scroll", handleScroll);
+        };
     }, []);
     return (
         <aside className={`side-float-menu ${visible ? "block" : "hidden"}`}>

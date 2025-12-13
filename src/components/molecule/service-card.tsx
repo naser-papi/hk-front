@@ -48,7 +48,7 @@ interface ServiceCardProps
 const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
     return (
         <div className={variants({})}>
-            <ImageKit src={ikUrl} alt={title} width={70} height={70} />
+            <ImageKit src={ikUrl} alt={title} width={70} height={70} loading="lazy" />
             <h3>{title}</h3>
             <p>{description}</p>
             <LinkButton

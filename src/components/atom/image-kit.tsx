@@ -16,9 +16,21 @@ const imageKitLoader = ({ src, width, quality }: IImageKitLoader) => {
     return `${src}?tr=${paramsString}`;
 };
 
-const ImageKit = ({ src, alt, ...rest }: ImageProps) => {
+interface ImageKitProps extends Omit<ImageProps, "loader"> {
+    priority?: boolean; // Make priority optional, default to false for lazy loading
+    quality?: number;
+}
+
+const ImageKit = ({ src, alt, priority = false, quality = 75, ...rest }: ImageKitProps) => {
     return (
-        <Image loader={imageKitLoader} src={src} alt={alt} priority {...rest} />
+        <Image
+            loader={(props) => imageKitLoader({ src: props.src, width: props.width, quality })}
+            src={src}
+            alt={alt}
+            priority={priority}
+            loading={priority ? undefined : "lazy"}
+            {...rest}
+        />
     );
 };
 
