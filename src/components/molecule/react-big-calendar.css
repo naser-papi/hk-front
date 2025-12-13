@@ -51,7 +51,7 @@
 }
 
 .rbc-overflowing {
-    margin-right: 0 !important;
+    margin-inline-end: 0 !important;
 }
 
 .rbc-day-slot .rbc-events-container {

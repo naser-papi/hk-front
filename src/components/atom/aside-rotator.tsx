@@ -13,7 +13,7 @@ interface AsideRotatorProps {
 const AsideRotator = ({ children, rotate }: AsideRotatorProps) => {
     return (
         <aside
-            className={`absolute left-0 top-0 z-50 translate-x-[-20px] translate-y-[10px] px-4 text-secondary ${rotate}`}
+            className={`absolute inset-inline-start-0 top-0 z-50 -translate-x-5 rtl:translate-x-5 translate-y-[10px] px-4 text-secondary ${rotate}`}
         >
             {children}
         </aside>

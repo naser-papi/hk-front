@@ -224,7 +224,7 @@ body.rtl {
   /* Accessibility: Skip navigation link */
   .skip-link {
     position: absolute;
-    left: -9999px;
+    inset-inline-start: -9999px;
     width: 1px;
     height: 1px;
     overflow: hidden;
@@ -232,7 +232,7 @@ body.rtl {
 
   .skip-link:focus {
     position: absolute;
-    left: 1rem;
+    inset-inline-start: 1rem;
     top: 1rem;
     z-index: 10000;
     width: auto;
@@ -255,7 +255,7 @@ body.rtl {
   }
   .side-float-menu {
     position: fixed;
-    left: 0;
+    inset-inline-start: 0;
     bottom: 0;
     background: var(--primary-lighter);
     z-index: 9999;
@@ -381,7 +381,7 @@ body.rtl {
       content: attr(title);
       position: absolute;
       top: 50%;
-      left: 50px;
+      inset-inline-start: 50px;
       border: 1px solid var(--white);
       padding: 0.3rem 0.5rem;
       font-size: 0.8rem;
@@ -394,14 +394,14 @@ body.rtl {
 
     .side-float-menu {
       position: fixed;
-      left: 0;
+      inset-inline-start: 0;
       width: auto;
       bottom: auto;
       top: 50%;
       box-shadow: var(--tw-shadow);
-      border-top-left-radius: 0;
-      border-top-right-radius: 1.5rem; /* 3xl equivalent in Tailwind */
-      border-bottom-right-radius: 1.5rem; /* 3xl equivalent in Tailwind */
+      border-start-start-radius: 0;
+      border-start-end-radius: 1.5rem; /* 3xl equivalent in Tailwind */
+      border-end-end-radius: 1.5rem; /* 3xl equivalent in Tailwind */
       transform: translateY(-50%);
       padding: 0.5rem 0;
     }

@@ -118,7 +118,7 @@ const EventCard = ({
                 src={ikUrl}
                 alt={"event"}
                 className={
-                    "absolute left-0 top-0 aspect-[3/4] h-full w-full max-w-[260px]"
+                    "absolute inset-inline-start-0 top-0 aspect-[3/4] h-full w-full max-w-[260px]"
                 }
                 width={30}
                 height={40}

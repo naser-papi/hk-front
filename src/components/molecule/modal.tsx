@@ -139,7 +139,7 @@ const ModalContainer = ({
 
                 {/* Modal Footer */}
                 <div
-                    className={`justify-end gap-4 border-t border-gray-200 px-6 py-4 ${hideActions ? "hidden" : "flex"}`}
+                    className={`justify-end rtl:justify-start gap-4 border-t border-gray-200 px-6 py-4 ${hideActions ? "hidden" : "flex"}`}
                 >
                     <Button
                         onClick={onClose}

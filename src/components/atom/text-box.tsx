@@ -17,7 +17,7 @@ const textboxVariants = cva(
         "[&>.text]:w-full",
         "[&>.text]:outline-none",
         "[&>.text]:bg-transparent",
-        "[&>svg]:mr-2",
+        "[&>svg]:me-2",
         "gap-2",
         "focus-within:outline-2",
         "focus-within:outline-offset-2",
