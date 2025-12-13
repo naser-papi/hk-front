@@ -29,7 +29,7 @@ const BannerCard = ({ title, desc, image, detailLink }: BannerCardProps) => {
             <LinkButton
                 label={trans("common.readMore")}
                 href={detailLink}
-                intend={"secondary"}
+                variant={"secondary"}
                 className={"mt-auto"}
             />
         </div>

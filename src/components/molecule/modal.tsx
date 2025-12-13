@@ -144,12 +144,12 @@ const ModalContainer = ({
                     <Button
                         onClick={onClose}
                         label={closeButtonText || t("common.cancel")}
-                        intend={"secondary"}
+                        variant={"secondary"}
                     />
                     <Button
                         onClick={onConfirm}
                         label={confirmButtonText || t("common.confirm")}
-                        intend={"secondary"}
+                        variant={"secondary"}
                     />
                 </div>
             </div>

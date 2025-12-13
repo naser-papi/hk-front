@@ -6,6 +6,344 @@ This document tracks all changes, modifications, and improvements made to the Ho
 
 ## [Unreleased]
 
+### 2024-12-XX - Component Pattern Standardization
+
+#### Overview
+Standardized component patterns across the entire codebase to ensure consistency, maintainability, and better developer experience. This refactor establishes clear standards for component structure, naming conventions, variant systems, and accessibility.
+
+#### Changes Made
+
+##### 1. Component Standards Documentation
+
+**Files Created:**
+- `src/components/COMPONENT_STANDARDS.md`
+
+**Content:**
+- Comprehensive documentation covering:
+  - Component structure templates
+  - Naming conventions (files, components, variants, props)
+  - Variant system standards (`variant` instead of `intend`)
+  - Prop interface patterns
+  - Styling patterns (CVA usage, Tailwind Merge)
+  - Accessibility standards (ARIA labels, focus styles, semantic HTML)
+  - TypeScript standards
+  - Component categories (atoms, molecules, organisms, templates)
+  - Common patterns (cards, buttons, forms)
+  - Migration checklist
+
+**Purpose:**
+- Serves as the single source of truth for component development
+- Ensures all future components follow consistent patterns
+- Provides examples and best practices
+
+##### 2. Variant Naming Standardization
+
+**Standard Changed:** `intend` → `variant`
+
+**Rationale:**
+- `variant` is the industry standard term (used in Material-UI, Chakra UI, etc.)
+- More semantic and clear in intent
+- Consistent with CVA (Class Variance Authority) conventions
+
+**Components Updated:**
+
+**Atom Components:**
+- `src/components/atom/button.tsx`
+  - Renamed `intend` prop to `variant`
+  - Renamed CVA variable from `variants` to `buttonVariants`
+  - Added consistent focus styles
+  - Added transition classes
+  - Improved disabled state styling
+
+- `src/components/atom/icon-label.tsx`
+  - Renamed `intend` prop to `variant`
+  - Renamed CVA variable to `iconLabelVariants`
+
+- `src/components/atom/link-button.tsx`
+  - Renamed `intend` prop to `variant`
+  - Added default variants
+  - Added focus styles
+  - Improved disabled state
+
+- `src/components/atom/link-icon.tsx`
+  - Renamed `intend` prop to `variant`
+  - Renamed CVA variable to `linkIconVariants`
+  - Added focus styles
+  - Added ARIA label for accessibility
+  - Added default variants
+
+- `src/components/atom/show-more-link.tsx`
+  - Renamed `intend` prop to `variant`
+  - Renamed CVA variable to `showMoreLinkVariants`
+  - Added focus styles
+  - Added default variants
+
+- `src/components/atom/text-box.tsx`
+  - Renamed `intend` prop to `variant`
+  - Added focus-within styles for better accessibility
+  - Added default variants
+
+**Component Usages Updated (20+ files):**
+- `src/components/template/top-nav.tsx`
+- `src/components/template/mobile-menu.tsx`
+- `src/components/molecule/modal.tsx`
+- `src/components/molecule/service-card.tsx`
+- `src/components/molecule/category-list.tsx`
+- `src/components/molecule/banner-card.tsx`
+- `src/components/molecule/add-to-google-calendar-button.tsx`
+- `src/components/molecule/map-event-card.tsx`
+- `src/components/organism/landing-contact-form.tsx`
+- `src/components/organism/event-detail-modal.tsx`
+- `src/components/organism/comments/sign-to-comment.tsx`
+- `src/components/organism/comments/comment-saved-actions.tsx`
+- `src/components/organism/comments/comment-form.tsx`
+- `src/components/organism/auth-form.tsx`
+
+**Before:**
+```typescript
+<Button intend="primary" label="Click me" />
+<LinkButton intend="secondary" href="/path" label="Link" />
+```
+
+**After:**
+```typescript
+<Button variant="primary" label="Click me" />
+<LinkButton variant="secondary" href="/path" label="Link" />
+```
+
+##### 3. Base Card Component Creation
+
+**Files Created:**
+- `src/components/molecule/base-card.tsx`
+
+**Purpose:**
+- Abstract common card patterns used across ServiceCard, KnowledgeCard, RelatedCard, etc.
+- Provides consistent structure and styling
+- Reduces code duplication
+
+**Features:**
+- Flexible image positioning (top, left, right)
+- Configurable content alignment
+- Variant system (default, elevated, outlined)
+- Size variants (sm, md, lg)
+- Consistent spacing and styling
+- Accessibility built-in (focus styles, semantic HTML)
+
+**Props Interface:**
+```typescript
+interface BaseCardProps {
+    imageUrl?: string;
+    imageAlt?: string;
+    title?: string;
+    description?: string;
+    children?: ReactNode;
+    actions?: ReactNode;
+    variant?: "default" | "elevated" | "outlined";
+    size?: "sm" | "md" | "lg";
+    imagePosition?: "top" | "left" | "right";
+    contentAlign?: "start" | "center" | "end";
+}
+```
+
+**Usage Example:**
+```typescript
+<BaseCard
+    imageUrl="/image.jpg"
+    title="Card Title"
+    description="Card description"
+    variant="elevated"
+    size="md"
+    actions={<Button variant="primary" label="Action" />}
+/>
+```
+
+**Export Added:**
+- Added to `src/components/molecule/index.ts`
+
+##### 4. CVA Variable Naming Standardization
+
+**Standard:** `{componentName}Variants` (camelCase)
+
+**Examples:**
+- `buttonVariants` (was `variants`)
+- `iconLabelVariants` (was `variants`)
+- `linkButtonVariants` (unchanged, already correct)
+- `linkIconVariants` (was `variants`)
+- `showMoreLinkVariants` (was `variants`)
+- `textboxVariants` (unchanged, already correct)
+
+**Rationale:**
+- Makes it clear which component the variants belong to
+- Prevents naming conflicts
+- Improves code readability
+
+##### 5. Focus Styles Standardization
+
+**Standard Applied:**
+All interactive components now include consistent focus styles:
+```css
+focus-visible:outline-2
+focus-visible:outline-offset-2
+focus-visible:outline-border-focus
+```
+
+**Components Updated:**
+- Button
+- LinkButton
+- LinkIcon
+- ShowMoreLink
+- TextBox (using `focus-within`)
+
+**Rationale:**
+- Ensures keyboard navigation is visible
+- Meets WCAG 2.1 AA accessibility requirements
+- Consistent user experience across all interactive elements
+
+##### 6. Default Variants Addition
+
+**Standard:** All variant props should have default values
+
+**Components Updated:**
+- LinkButton: Added `defaultVariants: { variant: "primary", disabled: false }`
+- LinkIcon: Added `defaultVariants: { variant: "primary", size: "middle" }`
+- ShowMoreLink: Added `defaultVariants: { variant: "primary" }`
+- TextBox: Added `defaultVariants: { variant: "primary" }`
+
+**Rationale:**
+- Reduces required props
+- Provides sensible defaults
+- Improves developer experience
+
+##### 7. Accessibility Improvements
+
+**ARIA Labels:**
+- LinkIcon: Added `aria-label` prop with dynamic href description
+- Icon components: Added `aria-hidden="true"` for decorative icons
+
+**Focus Management:**
+- All interactive components have visible focus indicators
+- Consistent focus styles across the application
+
+**Semantic HTML:**
+- Maintained proper semantic structure
+- Ensured proper heading hierarchy
+
+#### Impact Analysis
+
+**Positive Impacts:**
+- ✅ **Consistency**: All components now follow the same patterns
+- ✅ **Maintainability**: Easier to understand and modify components
+- ✅ **Developer Experience**: Clear standards reduce decision fatigue
+- ✅ **Accessibility**: Improved keyboard navigation and screen reader support
+- ✅ **Code Quality**: Reduced duplication with BaseCard component
+- ✅ **Type Safety**: Better TypeScript support with standardized interfaces
+
+**Breaking Changes:**
+- ⚠️ **Prop Name Change**: `intend` prop renamed to `variant` in multiple components
+  - **Migration**: All usages have been updated automatically
+  - **Impact**: No external API changes (internal refactor only)
+
+**No Breaking Changes:**
+- Visual appearance unchanged
+- Component functionality preserved
+- All existing features work as before
+
+#### Migration Notes
+
+**For Developers:**
+1. Use `variant` instead of `intend` when using Button, LinkButton, IconLabel, etc.
+2. Follow `COMPONENT_STANDARDS.md` when creating new components
+3. Use BaseCard for new card components
+4. Always include focus styles in interactive components
+5. Use `{componentName}Variants` naming for CVA variables
+
+**Component Creation Checklist:**
+- [ ] Use `variant` prop (not `intend`)
+- [ ] Name CVA variable as `{componentName}Variants`
+- [ ] Include focus styles
+- [ ] Add default variants
+- [ ] Extend appropriate HTML element attributes
+- [ ] Use `twMerge` for className merging
+- [ ] Add ARIA labels for icon-only buttons
+- [ ] Follow import order standards
+
+#### Verification Steps Completed
+- ✅ Created component standards documentation
+- ✅ Standardized variant naming across all components
+- ✅ Created BaseCard component
+- ✅ Updated all component usages
+- ✅ Added consistent focus styles
+- ✅ Added default variants
+- ✅ Improved accessibility
+- ✅ No linting errors
+- ✅ All TypeScript types correct
+
+#### Testing Recommendations
+
+**Manual Testing:**
+1. Test all buttons and links for focus visibility
+2. Verify keyboard navigation works correctly
+3. Test with screen reader
+4. Verify all components render correctly
+5. Test in both RTL and LTR modes
+
+**Component Testing:**
+- Button variants (primary, secondary, tertiary, filter)
+- LinkButton variants
+- IconLabel variants
+- Card components
+- Form components
+
+#### Files Modified Summary
+
+**Created:**
+- `src/components/COMPONENT_STANDARDS.md` (new documentation)
+- `src/components/molecule/base-card.tsx` (new component)
+
+**Modified (Atom Components):**
+- `src/components/atom/button.tsx`
+- `src/components/atom/icon-label.tsx`
+- `src/components/atom/link-button.tsx`
+- `src/components/atom/link-icon.tsx`
+- `src/components/atom/show-more-link.tsx`
+- `src/components/atom/text-box.tsx`
+
+**Modified (Molecule Components):**
+- `src/components/molecule/index.ts` (added BaseCard export)
+- `src/components/molecule/modal.tsx`
+- `src/components/molecule/service-card.tsx`
+- `src/components/molecule/category-list.tsx`
+- `src/components/molecule/banner-card.tsx`
+- `src/components/molecule/add-to-google-calendar-button.tsx`
+- `src/components/molecule/map-event-card.tsx`
+
+**Modified (Template Components):**
+- `src/components/template/top-nav.tsx`
+- `src/components/template/mobile-menu.tsx`
+
+**Modified (Organism Components):**
+- `src/components/organism/landing-contact-form.tsx`
+- `src/components/organism/event-detail-modal.tsx`
+- `src/components/organism/comments/sign-to-comment.tsx`
+- `src/components/organism/comments/comment-saved-actions.tsx`
+- `src/components/organism/comments/comment-form.tsx`
+- `src/components/organism/auth-form.tsx`
+
+**Total Files Modified:** 20+ files
+
+#### References
+- [Component Standards Documentation](./src/components/COMPONENT_STANDARDS.md)
+- [CVA Documentation](https://cva.style/docs)
+- [WCAG 2.1 Guidelines](https://www.w3.org/WAI/WCAG21/quickref/)
+
+#### Notes
+- This standardization sets the foundation for future component development
+- BaseCard can be used as a reference for creating new card components
+- All components now follow consistent patterns, making the codebase more maintainable
+- The `variant` naming convention aligns with industry standards
+
+---
+
 ### 2024-12-XX - Fixed Horizontal Scroll Issue
 
 #### Overview

@@ -15,7 +15,7 @@ const CategoryList = ({ cats, selected, setSelected }: CategoryListProps) => {
                 <Button
                     label={cat.text}
                     key={cat.key}
-                    intend={"filter"}
+                    variant={"filter"}
                     onClick={() => setSelected(cat.key)}
                     selected={selected === cat.key}
                 />

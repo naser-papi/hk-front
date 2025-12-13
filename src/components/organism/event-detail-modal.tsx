@@ -61,7 +61,7 @@ const EventDetailModal = () => {
                     <LinkButton
                         label={t("common.eventDetails")}
                         href={`/${showDetailsModal.id}`}
-                        intend={"primary"}
+                        variant={"primary"}
                         className={"w-full text-center text-white"}
                     />
                 </section>

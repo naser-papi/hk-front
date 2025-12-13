@@ -22,7 +22,7 @@ const AddToGoogleCalendarButton = ({
         <Button
             label={t("common.addToCalendar") + "  "}
             icon={FaCalendarDays}
-            intend={"secondary"}
+            variant={"secondary"}
             onClick={addToGoogleCalendar}
         />
     );

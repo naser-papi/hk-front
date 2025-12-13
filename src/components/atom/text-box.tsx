@@ -19,13 +19,19 @@ const textboxVariants = cva(
         "[&>.text]:bg-transparent",
         "[&>svg]:mr-2",
         "gap-2",
+        "focus-within:outline-2",
+        "focus-within:outline-offset-2",
+        "focus-within:outline-border-focus",
     ],
     {
         variants: {
-            intend: {
+            variant: {
                 primary: [],
                 secondary: [],
             },
+        },
+        defaultVariants: {
+            variant: "primary",
         },
     }
 );
@@ -41,7 +47,7 @@ interface TextBoxProps
 }
 
 const TextBox = ({
-    intend,
+    variant,
     type,
     updateDto,
     name,
@@ -54,7 +60,7 @@ const TextBox = ({
 }: TextBoxProps) => {
     const [text, setText] = useState(value);
     return (
-        <div className={twMerge(textboxVariants({ intend }), className)}>
+        <div className={twMerge(textboxVariants({ variant }), className)}>
             {icon && (() => {
                 const Icon = icon;
                 return <Icon />;

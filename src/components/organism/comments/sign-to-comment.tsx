@@ -17,7 +17,7 @@ const SignToComment = () => {
             <LinkButton
                 label={t("auth.loginToApp")}
                 href={"/auth"}
-                intend={"secondary"}
+                variant={"secondary"}
             />
         </div>
     );

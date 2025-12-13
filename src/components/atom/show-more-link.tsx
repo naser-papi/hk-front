@@ -4,7 +4,7 @@ import Image, { StaticImageData } from "next/image";
 import { AnchorHTMLAttributes } from "react";
 import Link from "next/link";
 
-const variants = cva(
+const showMoreLinkVariants = cva(
     [
         "show-more-button",
         "flex",
@@ -16,28 +16,34 @@ const variants = cva(
         "h-[150px]",
         "[&>span]:z-10",
         "[&>span]:text-label",
+        "focus-visible:outline-2",
+        "focus-visible:outline-offset-2",
+        "focus-visible:outline-border-focus",
     ],
     {
         variants: {
-            intend: {
+            variant: {
                 primary: [],
                 secondary: [],
             },
+        },
+        defaultVariants: {
+            variant: "primary",
         },
     }
 );
 
 interface ShowMoreLinkProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
-        VariantProps<typeof variants> {
+        VariantProps<typeof showMoreLinkVariants> {
     label: string;
     image: StaticImageData;
     href: string;
 }
 
-const ShowMoreLink = ({ label, image, href, intend }: ShowMoreLinkProps) => {
+const ShowMoreLink = ({ label, image, href, variant }: ShowMoreLinkProps) => {
     return (
-        <Link href={href} className={variants({ intend })}>
+        <Link href={href} className={showMoreLinkVariants({ variant })}>
             <Image src={image} alt={"show more"} fill />
             <span>{label}</span>
         </Link>

@@ -4,38 +4,51 @@ import { twMerge } from "tailwind-merge";
 import { AnchorHTMLAttributes } from "react";
 import { IconType } from "react-icons";
 
-const variants = cva(["link-icon", "text-5xl", "rounded-full"], {
-    variants: {
-        intend: {
-            primary: ["text-white"],
-            secondary: ["bg-white", "text-primary", "px-1"],
+const linkIconVariants = cva(
+    [
+        "link-icon",
+        "text-5xl",
+        "rounded-full",
+        "transition-colors",
+        "focus-visible:outline-2",
+        "focus-visible:outline-offset-2",
+        "focus-visible:outline-border-focus",
+    ],
+    {
+        variants: {
+            variant: {
+                primary: ["text-white"],
+                secondary: ["bg-white", "text-primary", "px-1"],
+            },
+            size: {
+                large: [],
+                middle: [],
+                small: [],
+            },
         },
-        size: {
-            large: [],
-            middle: [],
-            small: [],
+        defaultVariants: {
+            variant: "primary",
+            size: "middle",
         },
-    },
-    defaultVariants: {
-        intend: "primary",
-    },
-});
+    }
+);
 
 interface LinkIconProps
     extends AnchorHTMLAttributes<HTMLAnchorElement>,
-        VariantProps<typeof variants> {
+        VariantProps<typeof linkIconVariants> {
     icon: IconType;
     href: string;
 }
 
-const LinkIcon = ({ icon, size, intend, href, className }: LinkIconProps) => {
+const LinkIcon = ({ icon, size, variant, href, className }: LinkIconProps) => {
     const Icon = icon;
     return (
         <Link
             href={href}
-            className={twMerge(variants({ size, intend }), className)}
+            className={twMerge(linkIconVariants({ size, variant }), className)}
+            aria-label={`Link to ${href}`}
         >
-            <Icon />
+            <Icon aria-hidden="true" />
         </Link>
     );
 };

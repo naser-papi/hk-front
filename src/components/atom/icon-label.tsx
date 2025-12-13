@@ -2,7 +2,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import { LabelHTMLAttributes } from "react";
 import { IconType } from "react-icons";
 
-const variants = cva(
+const iconLabelVariants = cva(
     [
         "icon-label",
         "flex",
@@ -14,28 +14,28 @@ const variants = cva(
     ],
     {
         variants: {
-            intend: {
+            variant: {
                 primary: ["[&>svg]:text-altLight", "text-secondary"],
                 secondary: ["[&>svg]:text-secondary", "text-altLight"],
                 tertiary: ["[&>svg]:text-white", "text-white"],
             },
         },
         defaultVariants: {
-            intend: "primary",
+            variant: "primary",
         },
     }
 );
 
 interface IconLabelProps
     extends LabelHTMLAttributes<HTMLLabelElement>,
-        VariantProps<typeof variants> {
+        VariantProps<typeof iconLabelVariants> {
     icon: IconType;
     label: string | number;
 }
-const IconLabel = ({ icon, label, intend }: IconLabelProps) => {
+const IconLabel = ({ icon, label, variant }: IconLabelProps) => {
     const Icon = icon;
     return (
-        <label className={variants({ intend })}>
+        <label className={iconLabelVariants({ variant })}>
             <Icon />
             <span>{label}</span>
         </label>

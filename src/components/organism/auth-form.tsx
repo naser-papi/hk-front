@@ -174,7 +174,7 @@ const AuthForm = () => {
             </FormItem>
             <Button
                 label={t("auth.sendOTP")}
-                intend={"primary"}
+                variant={"primary"}
                 onClick={sendOTP}
                 disabled={dto.isLoading}
             />
@@ -193,7 +193,7 @@ const AuthForm = () => {
                 label={
                     dto.isLogin ? t("auth.loginToApp") : t("auth.registerToApp")
                 }
-                intend={"primary"}
+                variant={"primary"}
                 onClick={loginOrRegister}
                 disabled={
                     !dto.otpCode || dto.otpCode.length < 4 || dto.isLoading

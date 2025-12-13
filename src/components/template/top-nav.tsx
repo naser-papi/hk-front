@@ -35,7 +35,7 @@ const TopNav = () => {
                 <Button
                     icon={FaBars}
                     label=""
-                    intend={"tertiary"}
+                    variant={"tertiary"}
                     onClick={toggleMenu}
                     className={"menu-toggle text-xl font-bold lg:hidden"}
                     ariaLabel="Toggle navigation menu"
@@ -43,7 +43,7 @@ const TopNav = () => {
                 <MainMenu direction={"row"} />
                 <Button
                     label={locale === "fa" ? "EN" : "FA"}
-                    intend={"tertiary"}
+                    variant={"tertiary"}
                     className={"text-xl font-bold text-secondary"}
                     onClick={toggleLang}
                     ariaLabel={`Switch language to ${locale === "fa" ? "English" : "Persian"}`}

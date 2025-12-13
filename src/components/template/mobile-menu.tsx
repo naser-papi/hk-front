@@ -25,7 +25,7 @@ const MobileMenu = () => {
             >
                 <Button
                     label={""}
-                    intend={"tertiary"}
+                    variant={"tertiary"}
                     icon={FaXmark}
                     onClick={closeMenu}
                     ariaLabel="Close menu"

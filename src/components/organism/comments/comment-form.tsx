@@ -164,7 +164,7 @@ const CommentForm = () => {
             <Button
                 label={t("common.confirm")}
                 type={"submit"}
-                intend={"secondary"}
+                variant={"secondary"}
                 disabled={isLoading || mode === "readonly"}
             />
         </form>

@@ -5,11 +5,21 @@ import { useRouter } from "next/navigation";
 import { IconType } from "react-icons";
 import { twMerge } from "tailwind-merge";
 
-const variants = cva(
-    ["hk-button", "block", "rounded-lg", "text-label", "flex-shrink-0"],
+const buttonVariants = cva(
+    [
+        "hk-button",
+        "block",
+        "rounded-lg",
+        "text-label",
+        "flex-shrink-0",
+        "transition-colors",
+        "focus-visible:outline-2",
+        "focus-visible:outline-offset-2",
+        "focus-visible:outline-border-focus",
+    ],
     {
         variants: {
-            intend: {
+            variant: {
                 primary: [
                     "text-white",
                     "bg-primary",
@@ -40,7 +50,7 @@ const variants = cva(
                 ],
             },
             disabled: {
-                true: ["bg-alt", "cursor-not-allowed", "hover:bg-alt"],
+                true: ["bg-alt", "cursor-not-allowed", "hover:bg-alt", "opacity-50"],
                 false: [],
             },
             selected: {
@@ -49,12 +59,12 @@ const variants = cva(
             },
         },
         defaultVariants: {
-            intend: "primary",
+            variant: "primary",
         },
         compoundVariants: [
             {
                 selected: true,
-                intend: "filter",
+                variant: "filter",
                 className: ["bg-primary", "text-white"],
             },
         ],
@@ -63,7 +73,7 @@ const variants = cva(
 
 interface ButtonProps
     extends Omit<ButtonHTMLAttributes<HTMLButtonElement>, "disabled">,
-        VariantProps<typeof variants> {
+        VariantProps<typeof buttonVariants> {
     label: string;
     type?: "button" | "submit";
     link?: string;
@@ -73,7 +83,7 @@ interface ButtonProps
 
 const Button = ({
     label,
-    intend,
+    variant,
     selected,
     onClick,
     link,
@@ -91,12 +101,7 @@ const Button = ({
     
     return (
         <button
-            className={twMerge(
-                variants({ intend, selected, disabled }),
-                className,
-                // Add focus styles for accessibility
-                "focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
-            )}
+            className={twMerge(buttonVariants({ variant, selected, disabled }), className)}
             type={type ?? "button"}
             onClick={
                 link

@@ -61,7 +61,7 @@ const MapEventCard = ({
                 <h4>
                     <IconLabel
                         icon={FaCalendarDays}
-                        intend={"tertiary"}
+                        variant={"tertiary"}
                         label={formatEventDate(
                             eventData.dateAndTime,
                             locale!,

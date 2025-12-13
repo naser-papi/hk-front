@@ -54,7 +54,7 @@ const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
             <LinkButton
                 label={trans("common.readMore")}
                 href={href}
-                intend={"tertiary"}
+                variant={"tertiary"}
             />
         </div>
     );

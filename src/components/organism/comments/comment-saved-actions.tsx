@@ -23,13 +23,13 @@ const CommentSavedActions = ({
                 <Button
                     label={t("common.update")}
                     onClick={onUpdate}
-                    intend={"secondary"}
+                    variant={"secondary"}
                     disabled={disabled}
                 />
                 <Button
                     label={t("common.remove")}
                     onClick={onRemove}
-                    intend={"secondary"}
+                    variant={"secondary"}
                     disabled={disabled}
                 />
             </div>

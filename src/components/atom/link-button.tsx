@@ -17,18 +17,22 @@ const linkButtonVariants = cva(
         "h-[max-content]",
         "[&>svg]:text-secondary",
         "rtl:[&>svg]:rotate-180",
+        "transition-colors",
+        "focus-visible:outline-2",
+        "focus-visible:outline-offset-2",
+        "focus-visible:outline-border-focus",
     ],
     {
         variants: {
             disabled: {
-                true: [],
+                true: ["opacity-50", "cursor-not-allowed"],
                 false: [],
             },
             hover: {
                 true: [],
                 false: [],
             },
-            intend: {
+            variant: {
                 primary: [],
                 secondary: [
                     "bg-secondary",
@@ -50,6 +54,10 @@ const linkButtonVariants = cva(
                 ],
             },
         },
+        defaultVariants: {
+            variant: "primary",
+            disabled: false,
+        },
     }
 );
 
@@ -66,15 +74,16 @@ const LinkButton = ({
     className,
     disabled,
     hover,
-    intend,
+    variant,
 }: LinkButtonProps) => {
     return (
         <Link
             href={href}
             className={twMerge(
-                linkButtonVariants({ disabled, hover, intend }),
+                linkButtonVariants({ disabled, hover, variant }),
                 className
             )}
+            aria-disabled={disabled}
         >
             <span>{label}</span>
             <FaAnglesRight />
