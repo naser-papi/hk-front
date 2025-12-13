@@ -77,13 +77,12 @@ const LinkButton = ({
     variant,
 }: LinkButtonProps) => {
     return (
-        <Link
+        <Link                            
             href={href}
             className={twMerge(
                 linkButtonVariants({ disabled, hover, variant }),
                 className
-            )}
-            aria-disabled={disabled}
+            )}            
         >
             <span>{label}</span>
             <FaAnglesRight />
