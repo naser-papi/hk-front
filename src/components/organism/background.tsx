@@ -4,21 +4,29 @@ import { GetCompanyInfo } from "@/services/company-info";
 
 const ShapeBackground = () => {
     return (
-        <div className={"area absolute left-0 top-0 z-0"}>
-            <ul className={"circles"}>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+        <div className="shape-background absolute left-0 top-0 z-0 h-screen w-screen overflow-hidden">
+            {/* Gradient Background */}
+            <div className="shape-background-gradient absolute inset-0" />
+            
+            {/* Abstract Geometric Shapes - Representing Journey/Path */}
+            <div className="shape-container">
+                {/* Large flowing shapes representing movement and progress */}
+                <div className="shape shape-flow shape-flow-1" />
+                <div className="shape shape-flow shape-flow-2" />
+                <div className="shape shape-flow shape-flow-3" />
+                
+                {/* Geometric nodes representing milestones/connections */}
+                <div className="shape shape-node shape-node-1" />
+                <div className="shape shape-node shape-node-2" />
+                <div className="shape shape-node shape-node-3" />
+                <div className="shape shape-node shape-node-4" />
+                <div className="shape shape-node shape-node-5" />
+                
+                {/* Subtle accent shapes */}
+                <div className="shape shape-accent shape-accent-1" />
+                <div className="shape shape-accent shape-accent-2" />
+                <div className="shape shape-accent shape-accent-3" />
+            </div>
         </div>
     );
 };
