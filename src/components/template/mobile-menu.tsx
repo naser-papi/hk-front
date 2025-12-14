@@ -15,21 +15,14 @@ const MobileMenu = () => {
     return (
         <div
             className={
-                "absolute inset-x-0 top-[70px] w-full bg-primary p-2 lg:hidden"
+                "w-full bg-primary p-2 lg:hidden"
             }
         >
             <article
                 className={
                     "w-full text-secondary [&>button]:ms-auto [&>button]:me-4"
                 }
-            >
-                <Button
-                    label={""}
-                    variant={"tertiary"}
-                    icon={FaXmark}
-                    onClick={closeMenu}
-                    ariaLabel="Close menu"
-                />
+            >               
                 <MainMenu direction={"col"} />
             </article>
         </div>
