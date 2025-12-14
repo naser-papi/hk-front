@@ -33,8 +33,8 @@ interface NlLogoProps
 
 const NlLogo = ({ type = "default" }: NlLogoProps) => {
     return (
-        <Link href={"/"}>
-            {type === "image" ? (
+        <>
+            {type === "image" ? (                
                 <Image
                     src="/assets/logo/small.svg"
                     alt="HollandKade Logo"
@@ -42,11 +42,18 @@ const NlLogo = ({ type = "default" }: NlLogoProps) => {
                     height={134}
                     className="h-auto w-auto max-h-[60px] md:max-h-[80px] drop-shadow-lg"
                     priority
-                />
+                    unoptimized
+                />                
             ) : (
-                <h1 className={logoVariants({ type })}>H</h1>
+                <Link 
+                    href={"/"} 
+                    aria-label="Home"                 
+                >
+                    <h1 className={logoVariants({ type })}>H</h1>
+                </Link>                
             )}
-        </Link>
+        </>
+       
     );
 };
 
