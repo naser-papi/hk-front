@@ -9,6 +9,7 @@ export interface IBaseState {
     globalAlert: IAlert | null;
     globalConfirm: IConfirm | null;
     setAlert: (alert: IAlert) => void;
+    isScrolled: boolean;
     token?: {
         access: string | undefined;
         refresh: string | undefined;

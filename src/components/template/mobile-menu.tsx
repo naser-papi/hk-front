@@ -1,30 +1,34 @@
 "use client";
-import { useCallback } from "react";
 import BaseState from "@/stores/base";
 import { useSnapshot } from "valtio/react";
-import { Button } from "@/components/atom";
 import { MainMenu } from "@/components/organism";
-import { FaXmark } from "react-icons/fa6";
+
 
 const MobileMenu = () => {
-    const { showMenu } = useSnapshot(BaseState);
-    const closeMenu = useCallback(() => {
-        BaseState.toggleMenu();
-    }, []);
+    const { showMenu } = useSnapshot(BaseState);    
+    
     if (!showMenu) return null;
+    
     return (
         <div
-            className={
-                "w-full bg-primary p-2 lg:hidden"
-            }
+            className={`
+                top-full w-full
+                bg-primary backdrop-blur-2xl backdrop-saturate-250
+                border-t border-white/20
+                shadow-2xl
+                lg:hidden
+                transition-all duration-300 ease-in-out
+                overflow-hidden
+            `}
+            style={{
+                WebkitBackdropFilter: 'blur(32px) saturate(150%)',
+                backdropFilter: 'blur(32px) saturate(150%)',
+            }}
+            role="navigation"
+            aria-label="Mobile navigation menu"
+            aria-hidden={!showMenu}
         >
-            <article
-                className={
-                    "w-full text-secondary [&>button]:ms-auto [&>button]:me-4"
-                }
-            >               
-                <MainMenu direction={"col"} />
-            </article>
+            <MainMenu direction="col" />            
         </div>
     );
 };

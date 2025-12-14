@@ -1,46 +1,16 @@
 "use client";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { useSnapshot } from "valtio/react";
 import TopNav from "@/components/template/top-nav";
 import MobileMenu from "@/components/template/mobile-menu";
+import BaseState from "@/stores/base";
+import { useScrollDetection } from "@/hooks";
 
 const MainHeader = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
-
-    useEffect(() => {
-        let pageContainer: HTMLElement | null = null;
-        
-        const handleScroll = () => {
-            // Check scroll position on the page container
-            const scrollTop = pageContainer?.scrollTop ?? window.scrollY ?? document.documentElement.scrollTop ?? 0;
-            setIsScrolled(scrollTop > 20);
-        };
-
-        // Wait for container to be available
-        const setupScrollListener = () => {
-            pageContainer = document.querySelector(".page-default-container") as HTMLElement;
-            
-            if (pageContainer) {
-                pageContainer.addEventListener("scroll", handleScroll, { passive: true });
-                handleScroll(); // Check initial position
-            } else {
-                // Retry after a short delay if container not found
-                setTimeout(setupScrollListener, 100);
-            }
-        };
-
-        // Also listen to window scroll as fallback
-        window.addEventListener("scroll", handleScroll, { passive: true });
-        
-        // Initial setup
-        setupScrollListener();
-        
-        return () => {
-            if (pageContainer) {
-                pageContainer.removeEventListener("scroll", handleScroll);
-            }
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+    const { isScrolled } = useSnapshot(BaseState);
+    
+    // Initialize scroll detection (updates global state)
+    useScrollDetection();
 
     return (
         <header 

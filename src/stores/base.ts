@@ -17,6 +17,7 @@ const BaseState = proxy<IBaseState>({
             BaseState.globalAlert = alert;
         }, 1000);
     },
+    isScrolled: false,
 });
 
 export default BaseState;
