@@ -7,15 +7,14 @@ import Link from "next/link";
 const menuLinkVariants = cva(
     [
         "menu-link",
-        "row-container",
-        "text-secondary",
+        "row-container",      
         "py-2",
         "px-4",
         "w-full",
         "rounded-lg",
         "text-center",
         "hover:bg-altLight",
-        "hover:text-white",
+        "hover:text-white",        
     ],
     {
         variants: {
