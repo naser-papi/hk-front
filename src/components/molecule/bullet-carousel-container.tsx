@@ -44,7 +44,7 @@ const BulletCarouselContainer = ({ children }: ContainerProps) => {
             }
         }, 10 * 1000);
         return () => clearTimeout(interval);
-    }, [index]);
+    }, [index, children.length]);
 
     const bullets = children.map((_, order) => (
         <li
