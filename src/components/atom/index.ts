@@ -19,3 +19,5 @@ export { default as Alert } from "./alert";
 export { default as InfoLine } from "./info-line";
 export { default as AsideRotator } from "./aside-rotator";
 export { default as LoadingSkeleton } from "./loading-skeleton";
+export { default as Tag } from "./tag";
+export { default as DateLabel } from "./date-label";

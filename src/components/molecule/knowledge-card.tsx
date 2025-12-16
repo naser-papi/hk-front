@@ -1,6 +1,6 @@
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import { Button, ImageKit } from "@/components/atom";
+import { Button, ImageKit, Tag, DateLabel } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 
 const variants = cva(
@@ -10,17 +10,28 @@ const variants = cva(
         "flex",
         "flex-col",
         "gap-0",
-        "items-end",
-        "@4xl:flex-row",
-        "@4xl:items-stretch",
-        "@4xl:drop-shadow-lg",
-        "@4xl:[&>img]:w-[420px]",
-        "#4xl:[&>img]:min-h-[300px]",
-        "relative",
+        "bg-white",
+        "rounded-lg",
+        "overflow-hidden",
+        "drop-shadow-lg",
         "min-w-[300px]",
+    ],
+    {
+        variants: {},
+    }
+);
+
+const imageContainerVariants = cva(
+    [
+        "image-container",
+        "relative",
+        "w-full",
+        "overflow-hidden",
         "[&>img]:w-full",
-        "[&>img]:min-h-[280px]",
-        "[&>img]:max-h-[300px]",
+        "[&>img]:h-full",
+        "[&>img]:object-cover",
+        "aspect-[16/9]",
+        "min-h-[200px]",
     ],
     {
         variants: {},
@@ -35,34 +46,57 @@ const infoVariants = cva(
         "w-full",
         "flex",
         "flex-col",
-        "gap-4",
+        "gap-3",
         "p-4",
-        "items-center",
-        "drop-shadow-lg",
-        "[&>h3]:text-title",
-        "[&>p]:text-desc",
-        "@3xl:[&>h3]:text-3xl",
-        "@3xl:[&>p]:text-2xl",
-        "@4xl:grow-1",
-        "@4xl:rounded-bl-none",
-        "@4xl:drop-shadow-none",
+        "pt-4",
     ],
     {
         variants: {},
     }
 );
+
+const titleVariants = cva(
+    [
+        "title",
+        "text-title",
+        "font-bold",
+        "text-lg",
+        "leading-tight",
+        "@3xl:text-xl",
+    ],
+    {
+        variants: {},
+    }
+);
+
+const descriptionVariants = cva(
+    [
+        "description",
+        "text-desc",
+        "text-sm",
+        "text-gray-700",
+        "leading-relaxed",
+        "@3xl:text-base",
+    ],
+    {
+        variants: {},
+    }
+);
+
 const actionsVariants = cva(
     [
         "actions-part",
+        "px-4",
+        "pb-4",
+        "pt-2",
         "[&>.hk-button]:w-full",
-        "[&>.hk-button]:rounded-t-none",
-        "[&>.hk-button]:border-2",
-        "@4xl:absolute",
-        "@4xl:bottom-0",
-        "@4xl:end-0",
-        "@4xl:[&>.hk-button]:rounded-none",
-        "@3xl:w-[fit-content]",
-        "@3xl:[&>.hk-button]:text-2xl",
+        "[&>.hk-button]:rounded-lg",
+        "[&>.hk-button]:border",
+        "[&>.hk-button]:border-gray-300",
+        "[&>.hk-button]:bg-white",
+        "[&>.hk-button]:text-primary",
+        "[&>.hk-button]:hover:bg-gray-50",
+        "[&>.hk-button]:hover:border-gray-400",
     ],
     {
         variants: {},
@@ -76,6 +110,8 @@ interface KnowledgeCardProps
     description: string;
     ikUrl: string;
     href: string;
+    date?: string;
+    tag?: string;
 }
 
 const KnowledgeCard = ({
@@ -83,16 +119,32 @@ const KnowledgeCard = ({
     description,
     ikUrl,
     href,
+    date,
+    tag,
 }: KnowledgeCardProps) => {
     return (
         <div className={variants({})}>
-            <ImageKit src={ikUrl} alt={title} width={300} height={300} />
+            <div className={imageContainerVariants({})}>
+                <ImageKit src={ikUrl} alt={title} width={400} height={225} />
+                {tag && (
+                    <Tag variant="accent" position="absolute">
+                        {tag}
+                    </Tag>
+                )}
+            </div>
             <section className={infoVariants({})}>
-                <h3>{title}</h3>
-                <p>{description}</p>
+                {date && (
+                    <DateLabel date={date} variant="primary" />
+                )}
+                <h3 className={titleVariants({})}>{title}</h3>
+                <p className={descriptionVariants({})}>{description}</p>
             </section>
             <section className={actionsVariants({})}>
-                <Button label={trans("common.viewDetail")} link={href} />
+                <Button
+                    label={trans("common.viewDetail")}
+                    link={href}
+                    variant="tertiary"
+                />
             </section>
         </div>
     );

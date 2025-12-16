@@ -13,6 +13,8 @@ const BlogCardContainer = async () => {
             title={item.title}
             description={item.shortDesc}
             href={`/blogs/${item.documentId}`}
+            date={item.publishedAt}
+            tag={item.category?.title}
         />
     ));
     return (
