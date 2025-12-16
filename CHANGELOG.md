@@ -6,6 +6,289 @@ This document tracks all changes, modifications, and improvements made to the Ho
 
 ## [Unreleased]
 
+### 2024-12-XX - Header & Navigation UI Enhancements with Glassmorphism
+
+#### Overview
+Enhanced the main header and mobile menu components with modern glassmorphism effects, global scroll state management, and improved visual design. Added new logo image variant and gradient backgrounds for better visual hierarchy and user experience.
+
+#### Changes Made
+
+##### 1. Main Header Component Enhancement
+
+**Files Modified:**
+- `src/components/template/main-header.tsx`
+
+**Changes:**
+- Changed positioning from `fixed` to `sticky` for better scroll behavior
+- Added scroll detection that triggers glassmorphism effect when page scrolls > 20px
+- Implemented glassmorphism effect with:
+  - Semi-transparent background (`bg-primary/70`)
+  - Backdrop blur (`backdrop-blur-xl`)
+  - Enhanced shadow and border styling
+  - Smooth transitions (300ms duration)
+- Added `relative` positioning to container for proper mobile menu positioning
+- Integrated with global scroll state for reactive styling
+
+**Before:**
+```tsx
+<header className="fixed top-0 w-full z-50">
+    <div className="bg-primary mx-auto w-full max-w-5xl p-4 drop-shadow-md">
+```
+
+**After:**
+```tsx
+<header className="sticky top-0 w-full z-50 transition-all duration-300">
+    <div className={`
+        relative mx-auto w-full max-w-5xl p-4 
+        transition-all duration-300 ease-in-out
+        ${isScrolled 
+            ? "bg-primary/70 backdrop-blur-xl backdrop-saturate-150 border-b border-white/30 shadow-2xl" 
+            : "bg-primary drop-shadow-md"
+        }
+    `}>
+```
+
+**Impact:**
+- ✅ Modern glassmorphism effect improves visual appeal
+- ✅ Better visual feedback during scroll
+- ✅ Maintains readability with backdrop blur
+- ✅ Smooth transitions enhance user experience
+
+##### 2. Mobile Menu Component Redesign
+
+**Files Modified:**
+- `src/components/template/mobile-menu.tsx`
+- `src/app/globals.css`
+
+**Changes:**
+- Redesigned mobile menu with proper absolute positioning below header
+- Added glassmorphism effect that responds to scroll state
+- Implemented gradient backgrounds on menu links:
+  - Dark gradient from right to transparent on left
+  - Applied via CSS class `.mobile-menu-gradient .menu-link`
+- Enhanced blur intensity (`blur(48px)`) for stronger glassmorphism
+- Added padding and improved spacing
+- Removed unnecessary wrapper elements for cleaner structure
+
+**CSS Added:**
+```css
+.mobile-menu-gradient .menu-link {
+    background: linear-gradient(to left, rgba(66, 66, 66, 0.7) 0%, rgba(66, 66, 66, 0.3) 50%, transparent 100%);
+}
+```
+
+**Impact:**
+- ✅ Better visual hierarchy with gradient backgrounds
+- ✅ Consistent glassmorphism effect matching header
+- ✅ Improved mobile navigation experience
+- ✅ More polished and professional appearance
+
+##### 3. Global Scroll State Management
+
+**Files Created:**
+- `src/hooks/use-scroll-detection.ts`
+
+**Files Modified:**
+- `src/stores/base.ts`
+- `src/types/store/base.ts`
+- `src/hooks/index.ts`
+
+**Changes:**
+- Created reusable `useScrollDetection` hook for scroll detection
+- Added `isScrolled: boolean` to global `BaseState`
+- Hook updates global state when scroll position exceeds 20px
+- Handles both page container scroll and window scroll events
+- Proper cleanup and retry logic for container availability
+
+**Implementation:**
+```typescript
+// Hook updates global state
+const useScrollDetection = () => {
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = pageContainer?.scrollTop ?? window.scrollY ?? 0;
+            BaseState.isScrolled = scrollTop > 20;
+        };
+        // ... event listeners
+    }, []);
+};
+```
+
+**Usage:**
+```tsx
+const { isScrolled } = useSnapshot(BaseState);
+// Use isScrolled in any component
+```
+
+**Impact:**
+- ✅ Centralized scroll state management
+- ✅ Reusable across multiple components
+- ✅ Consistent scroll detection logic
+- ✅ Better performance with single scroll listener
+
+##### 4. Logo Component Enhancement
+
+**Files Modified:**
+- `src/components/atom/nl-logo.tsx`
+
+**Changes:**
+- Added new `image` type variant to display SVG logo
+- Conditional rendering: image type renders Image component directly, other types use Link wrapper
+- Uses Next.js Image component with `unoptimized` prop for SVG support
+- Responsive sizing with `max-h-[60px] md:max-h-[80px]`
+- Proper display properties for correct rendering
+
+**Before:**
+```tsx
+<Link href={"/"}>
+    <h1 className={logoVariants({ type })}>H</h1>
+</Link>
+```
+
+**After:**
+```tsx
+{type === "image" ? (
+    <Image
+        src="/assets/logo/small.svg"
+        alt="HollandKade Logo"
+        width={173}
+        height={134}
+        className="h-auto w-auto max-h-[60px] md:max-h-[80px] drop-shadow-lg"
+        priority
+        unoptimized
+    />
+) : (
+    <Link href={"/"}>
+        <h1 className={logoVariants({ type })}>H</h1>
+    </Link>
+)}
+```
+
+**Impact:**
+- ✅ New logo display option with SVG support
+- ✅ Better branding with actual logo image
+- ✅ Responsive sizing across devices
+- ✅ Maintains backward compatibility with existing types
+
+##### 5. CSS Enhancements
+
+**Files Modified:**
+- `src/app/globals.css`
+
+**Changes:**
+- Added `.mobile-menu-gradient .menu-link` class for gradient backgrounds
+- Gradient creates visual depth and hierarchy
+- Uses rgba colors for proper transparency
+
+**Impact:**
+- ✅ Better visual separation of menu items
+- ✅ Enhanced mobile menu aesthetics
+- ✅ Consistent styling approach
+
+#### Impact Analysis
+
+**Positive Impacts:**
+- ✅ **Modern UI Design**: Glassmorphism effects create contemporary, professional appearance
+- ✅ **Better UX**: Visual feedback during scroll improves user engagement
+- ✅ **Consistent Design**: Header and mobile menu share visual language
+- ✅ **Global State**: Scroll state accessible across components
+- ✅ **Enhanced Branding**: Logo image variant improves brand visibility
+- ✅ **Performance**: Optimized scroll detection with proper cleanup
+
+**Visual Changes:**
+- Header transforms to glassmorphism effect on scroll
+- Mobile menu matches header styling
+- Menu links have gradient backgrounds for depth
+- Logo can now display as SVG image
+
+**No Breaking Changes:**
+- All existing functionality preserved
+- Component APIs remain backward compatible
+- Logo component supports new type while maintaining existing types
+- Global state addition doesn't affect existing code
+
+#### Technical Details
+
+**Scroll Detection:**
+- Listens to both `.page-default-container` scroll and window scroll
+- Updates global state when scroll > 20px
+- Proper cleanup prevents memory leaks
+- Retry logic ensures container availability
+
+**Glassmorphism Implementation:**
+- Uses `backdrop-blur-xl` (16px blur) for header
+- Uses `backdrop-blur-2xl` (24px blur) for mobile menu when scrolled
+- Semi-transparent backgrounds with opacity (70-80%)
+- Backdrop saturation for color vibrancy
+- Vendor prefixes for browser compatibility
+
+**Gradient Background:**
+- Linear gradient from dark (right) to transparent (left)
+- Uses rgba(66, 66, 66, 0.7) → rgba(66, 66, 66, 0.3) → transparent
+- Applied via CSS class selector for performance
+
+#### Verification Steps Completed
+- ✅ Header glassmorphism effect works on scroll
+- ✅ Mobile menu matches header styling
+- ✅ Global scroll state updates correctly
+- ✅ Logo image displays properly
+- ✅ Gradient backgrounds applied to menu links
+- ✅ Smooth transitions work as expected
+- ✅ No linting errors
+- ✅ All components render correctly
+
+#### Testing Recommendations
+
+**Manual Testing:**
+1. Scroll page and verify header glassmorphism effect appears
+2. Test mobile menu on small screens
+3. Verify menu link gradients are visible
+4. Test logo image display in header
+5. Verify scroll state updates in browser DevTools
+6. Test in both RTL and LTR modes
+7. Test on different screen sizes
+
+**Visual Testing:**
+- Verify glassmorphism effect looks correct
+- Check gradient backgrounds on menu items
+- Ensure logo image displays properly
+- Verify smooth transitions
+
+#### Files Modified Summary
+
+**Components:**
+- `src/components/template/main-header.tsx` (scroll detection, glassmorphism)
+- `src/components/template/mobile-menu.tsx` (redesign, glassmorphism, gradients)
+- `src/components/atom/nl-logo.tsx` (image type variant)
+
+**Hooks:**
+- `src/hooks/use-scroll-detection.ts` (new hook)
+- `src/hooks/index.ts` (export added)
+
+**State Management:**
+- `src/stores/base.ts` (isScrolled state added)
+- `src/types/store/base.ts` (type definition added)
+
+**Styles:**
+- `src/app/globals.css` (mobile menu gradient class)
+
+**Total Files Modified:** 8 files (1 new, 7 modified)
+
+#### References
+- [Glassmorphism Design Trend](https://uxdesign.cc/glassmorphism-in-user-interfaces-1f39bb1308c9)
+- [Next.js Image Optimization](https://nextjs.org/docs/pages/api-reference/components/image)
+- [CSS Backdrop Filter](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter)
+
+#### Notes
+- Glassmorphism effects use modern CSS backdrop-filter property
+- Scroll detection optimized with passive event listeners
+- Global state allows any component to react to scroll
+- Logo image variant maintains responsive sizing
+- Gradient backgrounds enhance visual hierarchy without overwhelming content
+- All changes maintain accessibility standards
+
+---
+
 ### 2024-12-XX - Performance Audit and Optimizations
 
 #### Overview
