@@ -348,6 +348,9 @@ body.rtl {
         @apply text-white;
       }
     }
+    &.hero {
+      @apply p-0;
+    }
 
     &:nth-of-type(even) {
       @apply bg-[rgba(255,255,255,0.5)];

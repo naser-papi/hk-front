@@ -5,9 +5,10 @@ import { BulletPoint } from "@/components/atom";
 
 interface ContainerProps {
     children: JSX.Element[];
+    variant?: "default" | "hero";
 }
 
-const BulletCarouselContainer = ({ children }: ContainerProps) => {
+const BulletCarouselContainer = ({ children, variant = "default" }: ContainerProps) => {
     const [index, setIndex] = useState(1);
     const visible = useMemo(() => {
         switch (index) {
@@ -48,13 +49,38 @@ const BulletCarouselContainer = ({ children }: ContainerProps) => {
 
     const bullets = children.map((_, order) => (
         <li
-            className={"cursor-pointer"}
+            className={"cursor-pointer transition-opacity hover:opacity-80"}
             onClick={() => setIndex(order + 1)}
             key={order}
+            aria-label={`Go to slide ${order + 1}`}
         >
             <BulletPoint active={index === order + 1} />
         </li>
     ));
+
+    if (variant === "hero") {
+        return (
+            <article
+                className={twMerge(
+                    "bullet-carousel-container relative w-full [&>.card]:hidden [&>.card]:transition-opacity [&>.card]:duration-1000 [&>.card]:ease-in-out",
+                    visible
+                )}
+            >
+                {children}
+                {/* Bullet navigation positioned absolutely at bottom */}
+                <ul
+                    className={
+                        "absolute bottom-6 left-1/2 z-20 flex -translate-x-1/2 items-center justify-center gap-3 md:bottom-8"
+                    }
+                    role="tablist"
+                    aria-label="Carousel navigation"
+                >
+                    {bullets}
+                </ul>
+            </article>
+        );
+    }
+
     return (
         <article
             className={twMerge(

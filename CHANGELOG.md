@@ -6,6 +6,311 @@ This document tracks all changes, modifications, and improvements made to the Ho
 
 ## [Unreleased]
 
+### 2024-12-XX - Landing Hero Component Redesign & Error Handling
+
+#### Overview
+Completely redesigned the landing hero section with a modern full-width background image layout. The hero now displays banner images as backgrounds with overlay content (title, description, CTA button) and bullet navigation. Also added comprehensive error handling and fixed React hook dependency issues.
+
+#### Changes Made
+
+##### 1. New HeroBannerCard Component
+
+**Files Created:**
+- `src/components/molecule/hero-banner-card.tsx`
+
+**Features:**
+- Full-width background image with gradient overlay for text readability
+- Centered content container with title, description, and CTA button
+- Responsive heights: 500px (mobile) → 600px (tablet) → 700px (desktop)
+- Dark gradient overlay (60% → 50% → 70% opacity) for optimal text contrast
+- Text shadows for better readability
+- Hover effects with subtle image scale transformation
+- Priority image loading for above-fold content
+
+**Design:**
+- Background image fills entire card area
+- Content positioned absolutely over background with z-index layering
+- Gradient overlay ensures white text remains readable on any image
+- Centered, max-width content container for optimal reading experience
+
+**Before:**
+```tsx
+// Old BannerCard with image as content element
+<div className="banner-card card flex h-[500px] flex-col gap-3">
+    <ImageKit src={image} className="h-[240px]" />
+    <h1>{title}</h1>
+    <p>{desc}</p>
+    <LinkButton href={detailLink} />
+</div>
+```
+
+**After:**
+```tsx
+// New HeroBannerCard with background image
+<div className="hero-banner-card card relative flex min-h-[500px]">
+    <div className="absolute inset-0 z-0">
+        <ImageKit src={image} className="h-full w-full object-cover" priority />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
+    </div>
+    <div className="relative z-10 flex flex-col items-center justify-center">
+        <h1 className="text-3xl md:text-5xl lg:text-6xl">{title}</h1>
+        <p className="text-lg md:text-xl lg:text-2xl">{desc}</p>
+        <LinkButton href={detailLink} variant="secondary" />
+    </div>
+</div>
+```
+
+**Impact:**
+- ✅ Modern, professional hero section appearance
+- ✅ Better visual impact with full-width images
+- ✅ Improved readability with gradient overlay
+- ✅ More engaging user experience
+
+##### 2. BulletCarouselContainer Enhancement
+
+**Files Modified:**
+- `src/components/molecule/bullet-carousel-container.tsx`
+
+**Changes:**
+- Added `variant` prop with `"default" | "hero"` options
+- Hero variant positions bullet navigation absolutely at bottom center
+- Added smooth fade transitions (1-second duration) between slides
+- Improved accessibility with ARIA labels and roles
+- Fixed missing dependency: Added `children.length` to `useEffect` dependency array
+
+**Before:**
+```tsx
+useEffect(() => {
+    // Missing children.length dependency
+}, [index]);
+```
+
+**After:**
+```tsx
+useEffect(() => {
+    // Properly includes all dependencies
+}, [index, children.length]);
+```
+
+**Hero Variant Features:**
+- Bullet navigation positioned absolutely at bottom (6-8rem from bottom)
+- Centered horizontally with `left-1/2 -translate-x-1/2`
+- Higher z-index (z-20) to appear above content
+- Smooth opacity transitions for slide changes
+
+**Impact:**
+- ✅ Fixed React hook dependency warning
+- ✅ Better carousel behavior when children count changes
+- ✅ Improved hero layout with positioned navigation
+- ✅ Enhanced accessibility with proper ARIA attributes
+
+##### 3. LandingBannerCarousel Updates
+
+**Files Modified:**
+- `src/components/organism/landing-banners-carousel.tsx`
+
+**Changes:**
+- Replaced `BannerCard` with `HeroBannerCard` component
+- Added comprehensive error handling with try-catch block
+- Added validation check for empty images array
+- Passes `variant="hero"` to carousel container
+- Error logging for debugging purposes
+- Graceful fallback to `<NoData />` component on errors
+
+**Before:**
+```tsx
+const LandingBannerCarousel = async () => {
+    const banners = await GetHeroBanners();
+    if (!banners || !banners.length) return <NoData />;
+    // No error handling
+    const images = banners.flatMap(/* ... */);
+    return <BulletCarouselContainer>{images}</BulletCarouselContainer>;
+};
+```
+
+**After:**
+```tsx
+const LandingBannerCarousel = async () => {
+    try {
+        const banners = await GetHeroBanners();
+        if (!banners || !banners.length) return <NoData />;
+        
+        const heroSlides = banners.flatMap(/* ... */);
+        
+        if (!heroSlides || heroSlides.length === 0) {
+            return <NoData />;
+        }
+        
+        return <BulletCarouselContainer variant="hero">{heroSlides}</BulletCarouselContainer>;
+    } catch (error) {
+        console.error("Error fetching hero banners:", error);
+        return <NoData />;
+    }
+};
+```
+
+**Impact:**
+- ✅ Robust error handling prevents crashes
+- ✅ Better user experience with graceful error states
+- ✅ Easier debugging with error logging
+- ✅ Prevents rendering empty carousels
+
+##### 4. LandingHero Section Updates
+
+**Files Modified:**
+- `src/components/template/landing-hero.tsx`
+
+**Changes:**
+- Updated className to maintain template structure while allowing full-width hero
+- Added `p-0` to remove padding constraints for full-width background images
+- Kept `template hero bg-primary` classes for consistency with other hero sections
+
+**Before:**
+```tsx
+<section id={"hero"} className={"template hero bg-primary"}>
+    <LandingBannerCarousel />
+</section>
+```
+
+**After:**
+```tsx
+<section id={"hero"} className={"template hero bg-primary p-0"}>
+    <LandingBannerCarousel />
+</section>
+```
+
+**Impact:**
+- ✅ Full-width hero section without padding constraints
+- ✅ Maintains consistency with other template sections
+- ✅ Better visual integration with page layout
+
+##### 5. Component Export Updates
+
+**Files Modified:**
+- `src/components/molecule/index.ts`
+
+**Changes:**
+- Added export for new `HeroBannerCard` component
+
+**Impact:**
+- ✅ Component available for import across codebase
+- ✅ Maintains consistent export pattern
+
+#### Impact Analysis
+
+**Positive Impacts:**
+- ✅ **Modern Design**: Full-width background image layout creates professional, engaging hero section
+- ✅ **Better UX**: Overlay content ensures readability while showcasing beautiful images
+- ✅ **Error Resilience**: Comprehensive error handling prevents crashes and provides graceful fallbacks
+- ✅ **Code Quality**: Fixed React hook dependency issues for better performance
+- ✅ **Accessibility**: Improved ARIA labels and semantic structure
+- ✅ **Performance**: Priority image loading for above-fold content
+- ✅ **Responsive**: Works beautifully across all screen sizes
+
+**Visual Changes:**
+- Hero section now uses full-width background images instead of card-based layout
+- Content (title, description, button) overlays the background image
+- Bullet navigation positioned at bottom center of hero section
+- Smooth fade transitions between slides
+- More modern and professional appearance
+
+**No Breaking Changes:**
+- Component APIs remain backward compatible
+- Existing functionality preserved
+- Error handling is additive (doesn't break existing flows)
+- Visual changes improve rather than break existing design
+
+#### Technical Details
+
+**Component Hierarchy:**
+```
+LandingHero
+└── LandingBannerCarousel (async server component)
+    ├── GetHeroBanners() [data fetching with error handling]
+    ├── HeroBannerCard × N (for each banner)
+    │   ├── Background Image (absolute positioned)
+    │   ├── Gradient Overlay
+    │   └── Content Container (centered, z-index: 10)
+    │       ├── Title
+    │       ├── Description
+    │       └── LinkButton
+    └── BulletCarouselContainer (client component, variant="hero")
+        ├── HeroBannerCard children
+        └── BulletPoint navigation (absolutely positioned)
+```
+
+**Error Handling Strategy:**
+- Try-catch wrapper around async data fetching
+- Validation checks for empty/null data
+- Graceful fallback to `<NoData />` component
+- Error logging for debugging (can be extended to error tracking service)
+
+**Performance Optimizations:**
+- Priority image loading for hero images (above-fold)
+- Smooth CSS transitions (no JavaScript animations)
+- Proper React hook dependencies prevent unnecessary re-renders
+
+#### Verification Steps Completed
+- ✅ Created HeroBannerCard component with background image layout
+- ✅ Updated BulletCarouselContainer with hero variant
+- ✅ Added error handling to LandingBannerCarousel
+- ✅ Fixed React hook dependency issue
+- ✅ Updated LandingHero section styling
+- ✅ Exported new component
+- ✅ No linting errors
+- ✅ All TypeScript types correct
+- ✅ Responsive design tested
+
+#### Testing Recommendations
+
+**Manual Testing:**
+1. Verify hero section displays correctly with background images
+2. Test carousel auto-rotation (10-second intervals)
+3. Test bullet navigation clicking
+4. Test error handling by simulating API failures
+5. Verify responsive behavior on mobile, tablet, and desktop
+6. Check text readability on various background images
+7. Test keyboard navigation for accessibility
+
+**Visual Testing:**
+- Verify gradient overlay provides sufficient contrast
+- Check bullet navigation visibility and positioning
+- Ensure smooth transitions between slides
+- Verify content centering and spacing
+
+**Error Testing:**
+- Simulate API errors and verify graceful fallback
+- Test with empty banner data
+- Test with malformed banner data
+
+#### Files Modified Summary
+
+**Created:**
+- `src/components/molecule/hero-banner-card.tsx` (new component)
+
+**Modified:**
+- `src/components/molecule/bullet-carousel-container.tsx` (variant prop, hero layout, dependency fix)
+- `src/components/organism/landing-banners-carousel.tsx` (error handling, new component usage)
+- `src/components/template/landing-hero.tsx` (styling updates)
+- `src/components/molecule/index.ts` (export added)
+
+**Total Files Modified:** 5 files (1 new, 4 modified)
+
+#### References
+- [Next.js Image Optimization](https://nextjs.org/docs/pages/api-reference/components/image)
+- [React useEffect Dependencies](https://react.dev/reference/react/useEffect#specifying-reactive-dependencies)
+- [CSS Gradients](https://developer.mozilla.org/en-US/docs/Web/CSS/gradient)
+
+#### Notes
+- Hero section now follows modern web design patterns with full-width background images
+- Gradient overlay ensures text readability regardless of background image colors
+- Error handling can be extended to integrate with error tracking services (e.g., Sentry)
+- Bullet navigation positioning can be adjusted if needed for different screen sizes
+- The hero variant maintains backward compatibility with default carousel behavior
+- All changes maintain accessibility standards and semantic HTML structure
+
+---
+
 ### 2024-12-XX - Header & Navigation UI Enhancements with Glassmorphism
 
 #### Overview

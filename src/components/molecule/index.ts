@@ -4,6 +4,7 @@ export { default as QuoteCard } from "./quote-card";
 export { default as EventCard } from "./event-card";
 export { default as ExternalLink } from "./external-link";
 export { default as BannerCard } from "./banner-card";
+export { default as HeroBannerCard } from "./hero-banner-card";
 export { default as ListBannerCard } from "./list-banner-card";
 export { default as CategoryList } from "./category-list";
 export { default as Container } from "./container";

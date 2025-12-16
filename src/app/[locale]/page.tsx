@@ -5,20 +5,21 @@ import {
     LandingServices,
     MainHeader,
 } from "@/components/template";
+import { LoadingSkeleton } from "@/components/atom";
 import StoreScroll from "@/components/organism/store-scroll";
 import dynamic from "next/dynamic";
 
 // Lazy load below-fold components for better initial page load
 const LandingBlogs = dynamic(() => import("@/components/template/landing-blogs"), {
-    loading: () => <div className="h-64 animate-pulse bg-neutral-200 rounded-lg" />,
+    loading: LoadingSkeleton,
 });
 
 const LandingEvents = dynamic(() => import("@/components/template/landing-events"), {
-    loading: () => <div className="h-64 animate-pulse bg-neutral-200 rounded-lg" />,
+    loading: LoadingSkeleton,
 });
 
 const LandingContact = dynamic(() => import("@/components/template/landing-contact"), {
-    loading: () => <div className="h-64 animate-pulse bg-neutral-200 rounded-lg" />,
+    loading: LoadingSkeleton,
 });
 
 export default async function Home() {
@@ -26,9 +27,9 @@ export default async function Home() {
         <main id="main-content" className="page-default-container" role="main">
             <StoreScroll />
             <MainHeader />
-            <LandingHero />
-            <LandingServices />
+            <LandingHero />            
             <LandingBlogs />
+            <LandingServices />
             <LandingEvents />
             <LandingLinks />
             <LandingContact />

@@ -120,4 +120,6 @@ export default {
     },
     eventDetails: "Event Details",
     addToCalendar: "Add to your Calendar",
+    latestArticles: "Latest Articles",
+    latestArticlesDesc:"Stay informed with our latest immigration guides and tips"
 };

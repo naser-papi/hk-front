@@ -1,18 +1,18 @@
 import trans from "@/helpers/i18n/server";
 import { BlogCardsContainer } from "@/components/organism";
-import { ShowMoreLink } from "@/components/atom";
-import face6 from "assets/show-more/face-6.svg";
+import { Button } from "@/components/atom";
 
 const LandingBlogs = () => {
     return (
         <section id={"blogs"} className={"template"}>
-            <h2>{trans("common.knowledgeSharing")}</h2>
-            <BlogCardsContainer />
-            <ShowMoreLink
-                label={trans("common.allBlogs")}
-                image={face6}
-                href={"/blogs"}
-            />
+            <header className="flex justify-between items-center w-full my-10">
+                <div className="flex flex-col gap-2">
+                    <h2 className="text-2xl font-bold">{trans("common.latestArticles")}</h2>
+                    <p className="text-sm text-gray-500">{trans("common.latestArticlesDesc")}</p>
+                </div>
+                <Button variant="secondary" label={trans("common.allBlogs")} link="/blogs" />                    
+            </header>            
+            <BlogCardsContainer />           
         </section>
     );
 };

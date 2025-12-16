@@ -1,5 +1,5 @@
 import {
-    BannerCard,
+    HeroBannerCard,
     BulletCarouselContainer,
     NoData,
 } from "@/components/molecule";
@@ -13,11 +13,11 @@ const LandingBannerCarousel = async () => {
             return <NoData />;
         }
 
-        const images = banners.flatMap((banner) => {
+        const heroSlides = banners.flatMap((banner) => {
             const result = [];
             if (banner.blogs && banner.blogs.bannerMedia) {
                 result.push(
-                    <BannerCard
+                    <HeroBannerCard
                         title={banner.blogs.title}
                         desc={banner.blogs.shortDesc}
                         image={banner.blogs.bannerMedia.url}
@@ -28,7 +28,7 @@ const LandingBannerCarousel = async () => {
             }
             if (banner.link && banner.link.bannerMedia) {
                 result.push(
-                    <BannerCard
+                    <HeroBannerCard
                         title={banner.link.title}
                         desc={banner.link.shortDesc}
                         image={banner.link.bannerMedia.url}
@@ -39,7 +39,7 @@ const LandingBannerCarousel = async () => {
             }
             if (banner.event && banner.event.bannerMedia) {
                 result.push(
-                    <BannerCard
+                    <HeroBannerCard
                         title={banner.event.title}
                         desc={banner.event.shortDesc}
                         image={banner.event.bannerMedia[0].url}
@@ -50,7 +50,7 @@ const LandingBannerCarousel = async () => {
             }
             if (banner.service && banner.service.bannerMedia) {
                 result.push(
-                    <BannerCard
+                    <HeroBannerCard
                         title={banner.service.title}
                         desc={banner.service.shortDesc}
                         image={banner.service.bannerMedia.url}
@@ -62,11 +62,11 @@ const LandingBannerCarousel = async () => {
             return result;
         });
 
-        if (!images || images.length === 0) {
+        if (!heroSlides || heroSlides.length === 0) {
             return <NoData />;
         }
 
-        return <BulletCarouselContainer>{images}</BulletCarouselContainer>;
+        return <BulletCarouselContainer variant="hero">{heroSlides}</BulletCarouselContainer>;
     } catch (error) {
         // Log error for debugging (in production, you might want to send to error tracking service)
         console.error("Error fetching hero banners:", error);
