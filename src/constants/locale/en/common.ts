@@ -121,5 +121,8 @@ export default {
     eventDetails: "Event Details",
     addToCalendar: "Add to your Calendar",
     latestArticles: "Latest Articles",
-    latestArticlesDesc:"Stay informed with our latest immigration guides and tips"
+    latestArticlesDesc:"Stay informed with our latest immigration guides and tips",
+    topServices:"Latest Services",
+    topServicesDesc:"See our latest services for immigration to the Netherlands"
+
 };

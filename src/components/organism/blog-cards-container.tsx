@@ -21,7 +21,7 @@ const BlogCardContainer = async () => {
         <Container
             direction={"column"}
             gap={"big"}
-            className={"w-full @container"}
+            className={"w-full @container lg:grid lg:grid-cols-2"}
         >
             {cards}
         </Container>

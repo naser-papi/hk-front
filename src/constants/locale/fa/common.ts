@@ -122,5 +122,7 @@ export default {
     eventDetails: "جزئیات رویداد",
     addToCalendar: "به تقویم خود اضافه کنید",
     latestArticles: "آخرین مقالات",
-    latestArticlesDesc:"با مقالات ما همیشه برای مهاجرت به هلند به روز بمانید"
+    latestArticlesDesc:"با مقالات ما همیشه برای مهاجرت به هلند به روز بمانید",
+    topServices:"جدیدترین خدمات ما",
+    topServicesDesc:"خدمات ما برای مهاجرت به هلند را بشناسید",
 };

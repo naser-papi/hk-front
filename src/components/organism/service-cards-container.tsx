@@ -1,4 +1,4 @@
-import { NoData, ServiceCard } from "@/components/molecule";
+import { Container, NoData, ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
 import { GetServiceList } from "@/services/services";
 
@@ -15,13 +15,12 @@ const ServiceCardsContainer = async () => {
         />
     ));
     return (
-        <article
-            className={
-                "service-card-container grid w-full place-items-center gap-y-8"
-            }
-        >
+        <Container
+            direction={"column"}
+            gap={"big"}
+            className={"w-full @container lg:grid lg:grid-cols-2 gap-y-8 place-items-center"}>
             {cards}
-        </article>
+        </Container>        
     );
 };
 

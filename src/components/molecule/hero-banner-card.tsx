@@ -12,7 +12,7 @@ const HeroBannerCard = ({ title, desc, image, detailLink }: HeroBannerCardProps)
     return (
         <div
             className={
-                "hero-banner-card card relative flex min-h-[500px] w-full flex-col items-center justify-center overflow-hidden md:min-h-[600px] lg:min-h-[700px]"
+                "hero-banner-card card relative flex min-h-[500px] w-full flex-col items-start justify-end overflow-hidden md:min-h-[600px] lg:min-h-[700px]"
             }
         >
             {/* Background Image */}
@@ -30,7 +30,7 @@ const HeroBannerCard = ({ title, desc, image, detailLink }: HeroBannerCardProps)
             </div>
 
             {/* Content Container */}
-            <div className="relative z-10 flex w-full max-w-4xl flex-col items-center justify-center gap-6 px-4 py-12 text-center text-white md:gap-8 md:px-8">
+            <div className="relative z-10 flex w-full  flex-col items-start gap-6 px-4 pb-12 text-start text-white bg-gradient-to-t from-[rgba(0,0,0,0.7)] via-[rgba(0,0,0,0.6)] to-transparent md:gap-8 md:px-8 md:pb-16">
                 {/* Title */}
                 <h1 className="text-3xl font-bold leading-tight drop-shadow-lg md:text-5xl lg:text-6xl">
                     {title}

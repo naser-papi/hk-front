@@ -1,23 +1,22 @@
 import trans from "@/helpers/i18n/server";
 import ServiceCardsContainer from "@/components/organism/service-cards-container";
-import { ShowMoreLink } from "@/components/atom";
-import face2 from "assets/show-more/face-2.svg";
+import { SectionHeader } from "@/components/molecule";
+
 
 const Services = () => {
     return (
         <section
             id={"services"}
-            className={
-                "template lg:[&_.service-card-container]:grid-col-2-gap-6"
-            }
+            className={"template"}
         >
-            <h2>{trans("common.ourServices")}</h2>
-            <ServiceCardsContainer />
-            <ShowMoreLink
-                label={trans("common.allServices")}
-                image={face2}
-                href={"/services"}
+            <SectionHeader
+                title={trans("common.topServices")}
+                description={trans("common.topServicesDesc")}
+                descriptionClassName="text-gray-100"
+                buttonLabel={trans("common.allServices")}
+                buttonLink="/services"
             />
+            <ServiceCardsContainer />           
         </section>
     );
 };

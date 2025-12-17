@@ -6,6 +6,173 @@ This document tracks all changes, modifications, and improvements made to the Ho
 
 ## [Unreleased]
 
+### 2024-12-17 - SectionHeader Component Extraction
+
+#### Overview
+Extracted a reusable `SectionHeader` molecule component from repeated header patterns in landing sections. This component provides a consistent header structure with title, description, and action button, improving code maintainability and ensuring design consistency across all landing sections.
+
+#### Changes Made
+
+##### 1. SectionHeader Component Created
+
+**Files Created:**
+- `src/components/molecule/section-header.tsx`
+
+**Features:**
+- Flexible props interface for title, description, button label, and button link
+- Customizable description text color via `descriptionClassName` prop
+- Consistent layout with flexbox (title/description on left, button on right)
+- Responsive design with proper spacing
+- TypeScript typed for type safety
+
+**Props Interface:**
+```typescript
+interface SectionHeaderProps {
+    title: string;
+    description: string;
+    descriptionClassName?: string;
+    buttonLabel: string;
+    buttonLink: string;
+}
+```
+
+**Component Structure:**
+- Header element with flex layout
+- Left section: Title (h2) and description (p)
+- Right section: Secondary button with link
+- Customizable description styling for different text colors
+
+##### 2. Landing Sections Refactored
+
+**Files Modified:**
+- `src/components/template/landing-blogs.tsx`
+- `src/components/template/landing-services.tsx`
+
+**Changes:**
+- Replaced duplicate header markup with `SectionHeader` component
+- Removed redundant Button component imports
+- Added SectionHeader import from molecule index
+- Maintained all existing functionality and styling
+- Preserved i18n translation integration
+
+**Before (landing-blogs.tsx):**
+```tsx
+<header className="flex justify-between items-center w-full my-10">
+    <div className="flex flex-col gap-2">
+        <h2 className="text-2xl font-bold">{trans("common.latestArticles")}</h2>
+        <p className="text-sm text-gray-900">{trans("common.latestArticlesDesc")}</p>
+    </div>
+    <Button variant="secondary" label={trans("common.allBlogs")} link="/blogs" />
+</header>
+```
+
+**After (landing-blogs.tsx):**
+```tsx
+<SectionHeader
+    title={trans("common.latestArticles")}
+    description={trans("common.latestArticlesDesc")}
+    buttonLabel={trans("common.allBlogs")}
+    buttonLink="/blogs"
+/>
+```
+
+**Landing Services Customization:**
+- Uses `descriptionClassName="text-gray-100"` for different text color
+- Demonstrates component flexibility for varying designs
+
+##### 3. Component Export Added
+
+**Files Modified:**
+- `src/components/molecule/index.ts`
+
+**Changes:**
+- Added `SectionHeader` to molecule component exports
+- Maintains consistent export pattern with other molecule components
+
+#### Impact Analysis
+
+**Positive Impacts:**
+- ✅ **Code Reusability**: Eliminated duplicate header markup across sections
+- ✅ **Maintainability**: Single source of truth for section headers
+- ✅ **Consistency**: Ensures uniform header structure across landing sections
+- ✅ **Flexibility**: Customizable styling via props (e.g., description color)
+- ✅ **Type Safety**: Full TypeScript support with clear prop definitions
+- ✅ **DRY Principle**: Reduced code duplication by ~12 lines per section
+- ✅ **Scalability**: Easy to use in future sections (events, contact, etc.)
+- ✅ **Easier Updates**: Changes to header design only need to be made once
+
+**No Breaking Changes:**
+- Visual appearance unchanged
+- All functionality preserved
+- Component interfaces remain the same
+- No impact on existing user experience
+
+#### Verification Steps Completed
+- ✅ Created SectionHeader component with proper TypeScript types
+- ✅ Refactored landing-blogs.tsx to use new component
+- ✅ Refactored landing-services.tsx to use new component
+- ✅ Added component export to molecule index
+- ✅ No linting errors introduced
+- ✅ All translations working correctly
+- ✅ Visual consistency maintained
+
+#### Testing Recommendations
+
+**Manual Testing:**
+1. Verify blogs section header displays correctly
+2. Verify services section header displays correctly
+3. Check button links work ("All Blogs", "All Services")
+4. Test responsiveness on mobile, tablet, and desktop
+5. Verify text colors match design (gray-900 vs gray-100)
+6. Test in both RTL (Persian) and LTR (English) modes
+
+**Component Testing:**
+- Verify SectionHeader renders with all required props
+- Test optional `descriptionClassName` prop
+- Verify button click navigation works correctly
+
+#### Files Modified Summary
+
+**Created:**
+- `src/components/molecule/section-header.tsx` (new component)
+
+**Modified:**
+- `src/components/template/landing-blogs.tsx` (refactored to use SectionHeader)
+- `src/components/template/landing-services.tsx` (refactored to use SectionHeader)
+- `src/components/molecule/index.ts` (added SectionHeader export)
+
+**Total Files Modified:** 4 files (1 new, 3 modified)
+
+#### Future Usage
+
+The `SectionHeader` component can now be easily used in other sections:
+
+```tsx
+// Example usage in future sections
+<SectionHeader
+    title={trans("common.sectionTitle")}
+    description={trans("common.sectionDescription")}
+    descriptionClassName="text-gray-100" // Optional customization
+    buttonLabel={trans("common.viewAll")}
+    buttonLink="/section"
+/>
+```
+
+**Candidate Sections:**
+- Landing Events section
+- Landing Contact section
+- Any future landing sections with similar header pattern
+
+#### Notes
+- Component follows established molecule component patterns
+- Uses existing Button atom component for consistency
+- Maintains i18n translation support
+- Responsive design uses existing Tailwind utility classes
+- Component is flexible enough for different text colors while maintaining structure
+- This refactoring sets a pattern for extracting reusable components from repeated UI patterns
+
+---
+
 ### 2024-12-XX - Landing Hero Component Redesign & Error Handling
 
 #### Overview
