@@ -1,4 +1,4 @@
-import { EventCard, NoData } from "@/components/molecule";
+import { EventCard, NoData, Container } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import { GetTopEvents } from "@/services/events";
 
@@ -9,24 +9,25 @@ const EventCardsContainer = async () => {
         <EventCard
             key={item.id}
             ikUrl={item.cardImage?.url}
+            title={item.title}
             desc={item.shortDesc}
             date={item.dateAndTime}
             commentsCount={0}
             eventType={item.eventType}
-            eventSubject={item.eventSubject}
             eventTimeInDay={item.eventTimeInDay}
             repeatType={item.repeatType}
+            address={item.address}
             href={`/events/${item.documentId}`}
         />
     ));
     return (
-        <article
-            className={
-                "event-cards-container grid w-full place-items-center gap-y-8 @container"
-            }
+        <Container
+            direction={"column"}
+            gap={"big"}
+            className={"w-full @container lg:grid lg:grid-cols-2 gap-y-8"}
         >
             {cards}
-        </article>
+        </Container>
     );
 };
 

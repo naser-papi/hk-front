@@ -123,6 +123,11 @@ export default {
     latestArticles: "Latest Articles",
     latestArticlesDesc:"Stay informed with our latest immigration guides and tips",
     topServices:"Latest Services",
-    topServicesDesc:"See our latest services for immigration to the Netherlands"
+    topServicesDesc:"See our latest services for immigration to the Netherlands",
+    upcomingEvents: "Upcoming Events",
+    upcomingEventsDesc: "Join our workshops, webinars, and consultation sessions",
+    registerNow: "Register Now",
+    spotsAvailable: "{0} spots available",
+    onlinePlatform: "Online ({0})"
 
 };

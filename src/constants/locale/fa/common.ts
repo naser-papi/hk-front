@@ -125,4 +125,9 @@ export default {
     latestArticlesDesc:"با مقالات ما همیشه برای مهاجرت به هلند به روز بمانید",
     topServices:"جدیدترین خدمات ما",
     topServicesDesc:"خدمات ما برای مهاجرت به هلند را بشناسید",
+    upcomingEvents: "رویدادهای پیش رو",
+    upcomingEventsDesc: "در کارگاه‌ها، وبینارها و جلسات مشاوره ما شرکت کنید",
+    registerNow: "ثبت نام",
+    spotsAvailable: "{0} جای خالی موجود است",
+    onlinePlatform: "آنلاین ({0})",
 };

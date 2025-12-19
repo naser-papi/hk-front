@@ -19,7 +19,6 @@ const EventsFilterList = async () => {
                 commentsCount={0}
                 address={item.address}
                 eventType={item.eventType}
-                eventSubject={item.eventSubject}
                 eventTimeInDay={item.eventTimeInDay}
                 repeatType={item.repeatType}
                 href={`/events/${item.documentId}`}

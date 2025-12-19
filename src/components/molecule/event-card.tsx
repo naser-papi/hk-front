@@ -2,78 +2,30 @@
 import { cva, VariantProps } from "class-variance-authority";
 import trans from "@/helpers/i18n/server";
 import { BaseHTMLAttributes } from "react";
-import { FaCalendarDay, FaCalendarDays, FaClock } from "react-icons/fa6";
-import { AsideRotator, IconLabel, ImageKit, LinkButton } from "@/components/atom";
-import { formatEventDate, formatLocaleString } from "@/helpers";
+import { FaCalendarDays, FaLocationDot, FaUsers } from "react-icons/fa6";
+import { ImageKit, IconLabel, Button } from "@/components/atom";
+import { formatLocaleString } from "@/helpers";
 import { RepeatType } from "@/types/base";
+import { GetLocaleFromCookie } from "@/services/common";
 
-const variants = cva(
+const cardVariants = cva(
     [
         "event-card",
+        "bg-white",
+        "rounded-lg",
+        "overflow-hidden",
+        "shadow-md",
+        "flex",
+        "flex-col",
         "w-full",
-        "min-w-[300px]",
-        "pe-[90px]",
-        "grid",
-        "relative",
-        "[&>img]:z-0",
-        "@sm:min-w-[360px]",
-        "@3xl:h-[260px]",
-        "@5xl:pe-[120px]",
+        "transition-shadow",
+        "hover:shadow-lg",
     ],
     {
         variants: {
-            selected: {
-                true: [],
-                false: [],
-            },
             eventType: {
                 Online: [],
                 InPlace: [],
-            },
-            eventSubject: {
-                Learning: [],
-                Hobby: [],
-                Entertainment: [],
-            },
-        },
-    }
-);
-
-const infoVariants = cva(
-    [
-        "bg-gradient-to-r",
-        "from-white",
-        "to-transparent",
-        "from-50%",
-        "to-100%",
-        "info-part",
-        "grid",
-        "gap-y-3",
-        "text-primary",
-        "text-lg",
-        "font-semibold",
-        "p-3",
-        "z-10",
-        "[&>h4]:row-container",
-        "w-full",
-        "h-full",
-        "text-sm",
-        "@sm:text-base",
-        "@3xl:text-2xl",
-        "@3xl:[&_.link-button]:text-2xl",
-        "rtl:bg-gradient-to-l",
-        "md:text-xl",
-    ],
-    {
-        variants: {
-            eventType: {
-                Online: ["from-lightYellow"],
-                InPlace: [],
-            },
-            eventSubject: {
-                Learning: [],
-                Hobby: [],
-                Entertainment: [],
             },
         },
     }
@@ -81,8 +33,9 @@ const infoVariants = cva(
 
 interface EventCardProps
     extends BaseHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof variants> {
+        VariantProps<typeof cardVariants> {
     ikUrl: string;
+    title: string;
     desc: string;
     date: string;
     href: string;
@@ -90,62 +43,138 @@ interface EventCardProps
     eventTimeInDay: number;
     repeatType: RepeatType;
     address?: string;
+    spotsAvailable?: number;
 }
 
 const EventCard = ({
     ikUrl,
+    title,
     desc,
     date,
-    commentsCount,
     eventType,
-    eventSubject,
-    eventTimeInDay,
-    address,
     href,
-    repeatType,
+    address,
+    spotsAvailable,
 }: EventCardProps) => {
-    //const locale = GetLocaleFromCookie();
+    const locale = GetLocaleFromCookie();
+    
+    // Format date nicely: "October 20, 2025 - 3:00 PM CET"
+    const formatDateForDisplay = (dateString: string): string => {
+        if (!dateString) return "";
+        const dateObj = new Date(dateString);
+        const isRTL = locale === "fa";
+        
+        // Format date part
+        const dateOptions: Intl.DateTimeFormatOptions = {
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+        };
+        const datePart = dateObj.toLocaleDateString(
+            isRTL ? "fa-IR" : "en-US",
+            dateOptions
+        );
+        
+        // Format time part
+        const timeOptions: Intl.DateTimeFormatOptions = {
+            hour: "numeric",
+            minute: "2-digit",
+            hour12: true,
+        };
+        const timePart = dateObj.toLocaleTimeString(
+            isRTL ? "fa-IR" : "en-US",
+            timeOptions
+        );
+        
+        // Combine with separator
+        return `${datePart} - ${timePart}`;
+    };
+
+    // Get location/platform text
+    const getLocationText = (): string => {
+        if (eventType === "Online") {
+            // For online events, show platform if available, otherwise just "Online"
+            return address || trans("common.online");
+        }
+        return address || trans("common.location");
+    };
+
     return (
-        <div className={variants({ eventType })}>
-            <AsideRotator rotate={"-rotate-45"}>
-                <strong>
+        <div className={cardVariants({ eventType })}>
+            {/* Image Container with Badge */}
+            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-lg">
+                <ImageKit
+                    src={ikUrl}
+                    alt={title}
+                    className="w-full h-full object-cover"
+                    width={400}
+                    height={300}
+                />
+                {/* Badge Overlay */}
+                <div
+                    className={`absolute top-3 right-3 px-3 py-1 rounded-full text-white text-sm font-semibold ${
+                        eventType === "Online"
+                            ? "bg-blue-600"
+                            : "bg-green-600"
+                    }`}
+                >
                     {eventType === "Online"
                         ? trans("common.online")
                         : trans("common.inPlace")}
-                </strong>
-            </AsideRotator>
-            <ImageKit
-                src={ikUrl}
-                alt={"event"}
-                className={
-                    "absolute inset-inline-start-0 top-0 aspect-[3/4] h-full w-full max-w-[260px]"
-                }
-                width={30}
-                height={40}
-            />
-            <section className={infoVariants({ eventType })}>
-                <h4 className={"font-sans"}>
+                </div>
+            </div>
+
+            {/* Content Section */}
+            <div className="p-5 flex flex-col gap-4 flex-grow">
+                {/* Title */}
+                <h3 className="text-xl font-bold text-gray-900 line-clamp-2">
+                    {title}
+                </h3>
+
+                {/* Description */}
+                <p className="text-gray-600 text-sm line-clamp-2 flex-grow">
+                    {desc}
+                </p>
+
+                {/* Info Lines */}
+                <div className="flex flex-col gap-2">
+                    {/* Date/Time */}
                     <IconLabel
                         icon={FaCalendarDays}
-                        label={formatEventDate(date, "en", true)}
+                        label={formatDateForDisplay(date)}
+                        variant="primary"
                     />
-                </h4>
-                <h4>
+
+                    {/* Location/Platform */}
                     <IconLabel
-                        icon={FaCalendarDay}
-                        label={trans(`common.repeatType.${repeatType}`)}
+                        icon={FaLocationDot}
+                        label={getLocationText()}
+                        variant="primary"
                     />
-                    <IconLabel
-                        icon={FaClock}
-                        label={formatLocaleString(
-                            trans("common.eventTimeInDay"),
-                            eventTimeInDay || 0
-                        )}
+
+                    {/* Spots Available (optional) */}
+                    {spotsAvailable !== undefined && (
+                        <IconLabel
+                            icon={FaUsers}
+                            label={formatLocaleString(
+                                trans("common.spotsAvailable"),
+                                spotsAvailable.toString()
+                            )}
+                            variant="primary"
+                        />
+                    )}
+                </div>
+
+                {/* Register Now Button */}
+                <div className="mt-2">
+                    <Button
+                        label={trans("common.registerNow")}
+                        variant="primary"
+                        link={href}
+                        className="w-full bg-orange-500 hover:bg-orange-600"
                     />
-                </h4>
-                <p>{desc}</p>
-                <LinkButton label={trans("common.detailDot")} href={href} />
-            </section>
+                </div>
+            </div>
         </div>
     );
 };
