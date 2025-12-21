@@ -6,6 +6,324 @@ This document tracks all changes, modifications, and improvements made to the Ho
 
 ## [Unreleased]
 
+### 2024-12-XX - Links Section Refactor & External Link Card UI Redesign
+
+#### Overview
+Refactored the landing links section to match the code style and structure of blogs, services, and events sections, and completely redesigned the external link card component to match a modern card-based UI design. The new design features clean white cards with icon badges, clear typography, and external link indicators.
+
+#### Changes Made
+
+##### 1. Landing Links Section Refactor
+
+**Files Modified:**
+- `src/components/template/landing-links.tsx`
+
+**Changes:**
+- Replaced custom `<h2>` tag and `ShowMoreLink` component with `SectionHeader` component
+- Now follows the same pattern as `landing-blogs.tsx`, `landing-services.tsx`, and `landing-events.tsx`
+- Uses translation keys for "Useful Links" title and description
+- Added `descriptionClassName="text-gray-100"` for custom text color
+- Consistent header structure across all landing sections
+
+**Before:**
+```tsx
+<section id={"links"} className={"template"}>
+    <h2>{trans("common.usefulLinks")}</h2>
+    <LinkCardsContainer />
+    <ShowMoreLink
+        label={trans("common.allLinks")}
+        image={face4}
+        href={"/links"}
+    />
+</section>
+```
+
+**After:**
+```tsx
+<section id={"links"} className={"template"}>
+    <SectionHeader
+        title={trans("common.usefulLinks")}
+        description={trans("common.usefulResourcesDesc")}
+        descriptionClassName="text-gray-100"
+        buttonLabel={trans("common.allLinks")}
+        buttonLink="/links"
+    />
+    <LinkCardsContainer />
+</section>
+```
+
+**Impact:**
+- ✅ Consistent code structure across all landing sections
+- ✅ Better maintainability with shared component
+- ✅ Improved visual consistency
+
+##### 2. Link Cards Container Update
+
+**Files Modified:**
+- `src/components/organism/link-cards-container.tsx`
+
+**Changes:**
+- Replaced plain `<article>` tag with `Container` component
+- Uses 3-column grid layout on large screens (`lg:grid lg:grid-cols-3`)
+- Matches the structure used in other card containers
+- Added `description` prop to ExternalLink components
+
+**Before:**
+```tsx
+return (
+    <article className="link-cards-container grid w-full place-items-center gap-y-8 @container">
+        {cards}
+    </article>
+);
+```
+
+**After:**
+```tsx
+return (
+    <Container
+        direction={"column"}
+        gap={"big"}
+        className={"w-full @container lg:grid lg:grid-cols-3 gap-y-8"}
+    >
+        {cards}
+    </Container>
+);
+```
+
+**Impact:**
+- ✅ Consistent container structure across card containers
+- ✅ Better responsive grid layout
+- ✅ Improved code reusability
+
+##### 3. External Link Component Complete Redesign
+
+**Files Modified:**
+- `src/components/molecule/external-link.tsx`
+
+**Old Design:**
+- Background image overlay with opacity
+- Large logo image (120x120px) centered
+- Title overlaid on background
+- OpenLinkBox button at bottom
+- Complex positioning with z-index layers
+
+**New Design:**
+- Clean white card with rounded corners and shadow
+- Icon badge in top-left with orange background (`bg-orange-50` / `#FFF7ED`)
+- Globe icon (`FaGlobe`) in orange color (`text-orange-600` / `#ea580c`)
+- Title in dark gray, bold
+- Description text below title (optional)
+- External link indicator icon (`FaUpRightFromSquare`) in top-right corner
+- Entire card is clickable and opens in new tab
+- Hover effects: shadow increase and slight scale
+
+**Key Features:**
+- Modern card-based design with proper spacing
+- Icon badge with globe icon representing web/external links
+- Responsive design with proper padding
+- Proper semantic HTML structure
+- Hover effects with smooth transitions
+- Clean typography hierarchy
+- External link indicator for clear UX
+
+**Component Structure:**
+```tsx
+<Link href={href} target="_blank" rel="noopener noreferrer">
+    <div className="external-link bg-white rounded-lg shadow-md">
+        <div className="p-5 flex flex-col gap-4 relative">
+            {/* External Link Indicator - Top Right */}
+            <FaUpRightFromSquare className="absolute top-4 right-4" />
+            
+            {/* Icon Badge - Top Left */}
+            <div className="bg-orange-50 rounded-lg p-3 w-fit">
+                <FaGlobe className="w-8 h-8 text-orange-600" />
+            </div>
+            
+            {/* Title */}
+            <h3>{title}</h3>
+            
+            {/* Description */}
+            {description && <p>{description}</p>}
+        </div>
+    </div>
+</Link>
+```
+
+**Icon Changes:**
+- Replaced `ImageKit` component with `FaGlobe` icon from `react-icons/fa6`
+- Removed `logo` prop from component interface
+- Icon styled with orange color to match design theme
+- Icon badge uses orange-50 background for visual consistency
+
+**Impact:**
+- ✅ Modern, professional card design
+- ✅ Better visual hierarchy
+- ✅ Improved readability
+- ✅ Clear external link indication
+- ✅ Better mobile responsiveness
+- ✅ Consistent iconography across all cards
+
+##### 4. Translation Keys Added
+
+**Files Modified:**
+- `src/constants/locale/en/common.ts`
+- `src/constants/locale/fa/common.ts`
+
+**New Translation Keys:**
+- `usefulResources`: "Useful Resources" / "منابع مفید"
+- `usefulResourcesDesc`: "Quick access to helpful websites and official resources for your immigration journey" / "دسترسی سریع به وب‌سایت‌های مفید و منابع رسمی برای سفر مهاجرتی شما"
+
+**Impact:**
+- ✅ Proper i18n support for new UI elements
+- ✅ Consistent translation patterns
+- ✅ Both English and Farsi translations provided
+
+##### 5. Component Usage Updates
+
+**Files Modified:**
+- `src/components/organism/link-cards-container.tsx`
+- `src/components/organism/links-filter-list.tsx`
+
+**Changes:**
+- Removed unused `logo` prop from all ExternalLink usages
+- Added `description` prop to ExternalLink components
+- Updated prop passing to match new component interface
+
+**Impact:**
+- ✅ Cleaner component interface
+- ✅ Removed unused props
+- ✅ Better type safety
+- ✅ Simplified component API
+
+#### Impact Analysis
+
+**Positive Impacts:**
+- ✅ **Code Consistency**: Links section now matches blogs, services, and events sections
+- ✅ **Modern Design**: New card design is more professional and user-friendly
+- ✅ **Better UX**: Clear visual hierarchy and external link indication
+- ✅ **Maintainability**: Consistent patterns across all landing sections
+- ✅ **Responsive Design**: Better mobile and tablet experience
+- ✅ **Accessibility**: Proper semantic HTML and clear visual structure
+- ✅ **i18n Support**: Full translation support for new UI elements
+- ✅ **Icon Consistency**: All cards use the same globe icon for visual consistency
+
+**Visual Changes:**
+- External link cards now use vertical card layout instead of background image overlay
+- Globe icon replaces individual logo images for consistency
+- External link indicator moved to top-right corner
+- Cleaner, more modern appearance
+- Better spacing and typography
+- Orange accent color for icon badge matches design theme
+
+**No Breaking Changes:**
+- Component APIs simplified (removed unused `logo` prop)
+- All existing functionality preserved
+- Translation keys added (no removals)
+- Visual changes improve rather than break existing design
+
+#### Technical Details
+
+**Component Props:**
+```typescript
+interface ExternalLinkProps {
+    title: string;
+    description?: string;
+    href: string;
+}
+```
+
+**Styling Approach:**
+- Uses Tailwind CSS utility classes
+- CVA (Class Variance Authority) for variant system (prepared for future variants)
+- Responsive design with container queries
+- Hover effects with smooth transitions
+- Proper focus states for accessibility
+- Orange color scheme for icon badge (`orange-50` background, `orange-600` icon)
+
+**Icon Implementation:**
+- Uses `FaGlobe` from `react-icons/fa6` for web/external link representation
+- Icon size: 32x32px (w-8 h-8)
+- Icon color: `text-orange-600` (#ea580c)
+- Badge background: `bg-orange-50` (#FFF7ED)
+- Consistent across all external link cards
+
+#### Verification Steps Completed
+- ✅ Refactored landing-links.tsx to use SectionHeader
+- ✅ Updated link-cards-container.tsx to use Container component
+- ✅ Completely redesigned external-link.tsx with new UI
+- ✅ Replaced image with globe icon
+- ✅ Removed unused logo prop
+- ✅ Added all required translation keys
+- ✅ Updated all ExternalLink usages
+- ✅ No linting errors
+- ✅ All TypeScript types correct
+- ✅ Responsive design verified
+
+#### Testing Recommendations
+
+**Manual Testing:**
+1. Verify links section header displays correctly with SectionHeader
+2. Test external link cards render with new design
+3. Verify globe icon displays correctly in orange badge
+4. Test external link indicator icon in top-right corner
+5. Verify card opens link in new tab when clicked
+6. Check description text displays when provided
+7. Test responsive behavior on mobile, tablet, and desktop
+8. Verify hover effects (shadow and scale)
+9. Test in both RTL and LTR modes
+10. Check translation keys work in both languages
+
+**Visual Testing:**
+- Verify card design matches provided design reference
+- Check icon badge positioning and colors
+- Verify external link indicator visibility
+- Check spacing and typography
+- Verify orange color scheme consistency
+
+**Functional Testing:**
+- Test all links open correctly in new tabs
+- Verify `rel="noopener noreferrer"` security attribute
+- Test with missing optional props (description)
+- Verify translation keys work in both languages
+- Test keyboard navigation and focus states
+
+#### Files Modified Summary
+
+**Template Components:**
+- `src/components/template/landing-links.tsx` (refactored to use SectionHeader)
+
+**Organism Components:**
+- `src/components/organism/link-cards-container.tsx` (updated to use Container, grid layout, added description)
+- `src/components/organism/links-filter-list.tsx` (removed unused logo prop, added description)
+
+**Molecule Components:**
+- `src/components/molecule/external-link.tsx` (complete redesign, replaced image with icon)
+
+**Translation Files:**
+- `src/constants/locale/en/common.ts` (added new translation keys)
+- `src/constants/locale/fa/common.ts` (added new translation keys)
+
+**Total Files Modified:** 6 files
+
+#### References
+- SectionHeader component pattern (from landing-blogs.tsx, landing-services.tsx, landing-events.tsx)
+- Container component usage (from blog-cards-container.tsx, service-cards-container.tsx, event-cards-container.tsx)
+- Design reference image provided by user
+
+#### Notes
+- External link card design follows modern card-based UI patterns
+- Globe icon provides consistent visual representation for all external links
+- Icon badge uses orange color scheme (`orange-50` background, `orange-600` icon) for visual consistency
+- External link indicator (`FaUpRightFromSquare`) clearly indicates external navigation
+- Description is optional and only displays when provided
+- Entire card is clickable for better UX
+- All links open in new tabs with proper security attributes (`rel="noopener noreferrer"`)
+- Component follows established patterns from other landing sections
+- Design is responsive and works well on all screen sizes
+- Removed dependency on individual logo images, simplifying component API
+
+---
+
 ### 2024-12-XX - Events Section Refactor & Event Card UI Redesign
 
 #### Overview
