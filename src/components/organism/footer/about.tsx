@@ -3,6 +3,7 @@ import { NoData } from "@/components/molecule";
 import { normalizeHTMLContent } from "@/helpers";
 import { isRootPath } from "@/services/server";
 import { GetCompanyInfo } from "@/services/company-info";
+import trans from "@/helpers/i18n/server";
 
 const About = async () => {
     const isRoot = await isRootPath();
@@ -11,26 +12,19 @@ const About = async () => {
 
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
     return (
-        <section
-            className={
-                "grid grid-cols-[52px_auto] items-center gap-x-2 gap-y-2"
-            }
-        >
-            <ImageKit
-                src={companyInfo.logo.url}
-                alt={companyInfo.title}
-                width={48}
-                height={48}
-            />
-            <h3 className={"text-2xl font-bold text-cyan"}>
-                {companyInfo.title}
+        <section className="footer-about">
+            <h3 className="text-xl font-bold text-white mb-4">
+                {trans("common.aboutHollandKade")}
             </h3>
             <article
-                className={"col-span-2 text-base text-white"}
+                className="text-white text-sm leading-relaxed mb-3"
                 dangerouslySetInnerHTML={{
                     __html: normalizeHTMLContent(companyInfo.about),
                 }}
             ></article>
+            <p className="text-white text-sm">
+                {trans("common.over10YearsExperience")}
+            </p>
         </section>
     );
 };

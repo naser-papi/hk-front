@@ -5,8 +5,8 @@ const CopyRight = async () => {
 
     if (!companyInfo) return null;
     return (
-        <span className={"my-5 block text-center"}>
-            {companyInfo.copyright}
+        <span className={"copyright my-5 block text-center"}>
+            {companyInfo.copyright || "Copyright © 2025 All rights reserved."}
         </span>
     );
 };

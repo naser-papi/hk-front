@@ -132,4 +132,13 @@ export default {
     registerNow: "ثبت نام",
     spotsAvailable: "{0} جای خالی موجود است",
     onlinePlatform: "آنلاین ({0})",
+    readyToStartJourney: "آماده شروع سفر خود هستید؟",
+    ctaDescription: "بگذارید تیم با تجربه ما شما را در فرآیند مهاجرت راهنمایی کند. همین امروز برای مشاوره رایگان با ما تماس بگیرید.",
+    getFreeConsultation: "دریافت مشاوره رایگان",
+    quickLinks: "لینک‌های سریع",
+    home: "خانه",
+    aboutHollandKade: "درباره هلند کید",
+    over10YearsExperience: "بیش از ۱۰ سال تجربه در مشاوره مهاجرت.",
+    followUs: "ما را دنبال کنید",
+    stayConnectedSocialMedia: "در شبکه‌های اجتماعی با ما در ارتباط باشید تا از آخرین اخبار و نکات مهاجرتی مطلع شوید.",
 };

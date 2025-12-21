@@ -73,7 +73,7 @@ const LandingContactForm = () => {
             />
             <Button
                 label={t("common.sendMessage")}
-                variant={"secondary"}
+                variant={"primary"}
                 type={"submit"}
                 className={"lg:col-span-2"}
             />

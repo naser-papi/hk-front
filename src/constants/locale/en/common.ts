@@ -130,6 +130,15 @@ export default {
     upcomingEventsDesc: "Join our workshops, webinars, and consultation sessions",
     registerNow: "Register Now",
     spotsAvailable: "{0} spots available",
-    onlinePlatform: "Online ({0})"
+    onlinePlatform: "Online ({0})",
+    readyToStartJourney: "Ready to Start Your Journey?",
+    ctaDescription: "Let our experienced team guide you through the immigration process. Contact us today for a free consultation.",
+    getFreeConsultation: "Get Free Consultation",
+    quickLinks: "Quick Links",
+    home: "Home",
+    aboutHollandKade: "About Holland Kade",
+    over10YearsExperience: "Over 10 years of experience in immigration consulting.",
+    followUs: "Follow Us",
+    stayConnectedSocialMedia: "Stay connected on social media for updates and immigration tips."
 
 };

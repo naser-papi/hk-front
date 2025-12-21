@@ -1,4 +1,4 @@
-import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa6";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { NoData } from "@/components/molecule";
@@ -7,36 +7,32 @@ import { GetCompanyInfo } from "@/services/company-info";
 const Socials = async () => {
     const companyInfo = await GetCompanyInfo();
     if (!companyInfo || !Object.entries(companyInfo).length) return <NoData />;
+    
+    // Map available social links - use existing ones or create placeholders
+    const socialLinks = [
+        { icon: FaFacebook, href: companyInfo.instaLink || "#", key: "facebook" },
+        { icon: FaTwitter, href: companyInfo.telegramLink || "#", key: "twitter" },
+        { icon: FaLinkedin, href: companyInfo.youtubeLink || "#", key: "linkedin" },
+        { icon: FaInstagram, href: companyInfo.instaLink || "#", key: "instagram" },
+    ];
+
     return (
-        <section className={"socials grid place-items-center gap-y-2"}>
-            <span className={"text-secondary"}>
-                {trans("common.anyQuestion")}
-            </span>
-            <div
-                className={
-                    "flex w-full items-center justify-between text-white"
-                }
-            >
-                <LinkIcon
-                    icon={FaInstagram}
-                    href={companyInfo.instaLink}
-                    key={"insta"}
-                />
-                <LinkIcon
-                    icon={FaTelegram}
-                    href={companyInfo.telegramLink}
-                    key={"telegram"}
-                />
-                <LinkIcon
-                    icon={FaYoutube}
-                    href={companyInfo.youtubeLink}
-                    key={"youtube"}
-                />
-                <LinkIcon
-                    icon={FaWhatsapp}
-                    href={companyInfo.whatsappLink}
-                    key={"whatsapp"}
-                />
+        <section className="footer-socials">
+            <h3 className="text-xl font-bold text-white mb-4">
+                {trans("common.followUs")}
+            </h3>
+            <p className="text-white text-sm mb-4">
+                {trans("common.stayConnectedSocialMedia")}
+            </p>
+            <div className="flex items-center gap-4 justify-center">
+                {socialLinks.map((social) => (
+                    <LinkIcon
+                        key={social.key}
+                        icon={social.icon}
+                        href={social.href}
+                        className="text-white hover:text-orange-400 transition-colors text-2xl"
+                    />
+                ))}
             </div>
         </section>
     );
