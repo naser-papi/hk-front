@@ -69,6 +69,8 @@ export default {
     whatHappening: "What is happening around you",
     allEvents: "All Events",
     usefulLinks: "Useful Links",
+    usefulResources: "Useful Resources",
+    usefulResourcesDesc: "Quick access to helpful websites and official resources for your immigration journey",
     allLinks: "All Links",
     getInTouch: "Get in touch",
     haveAQuestion: "Have be any question?\n" + "feel free to Contact",

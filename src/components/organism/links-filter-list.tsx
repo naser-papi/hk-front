@@ -12,8 +12,8 @@ const LinksFilterList = async () => {
         list?.map((item: LinkDto) => (
             <ExternalLink
                 key={item.id}
-                logo={item.icon.url}
                 title={item.title}
+                description={item.shortDesc}
                 href={item.detailLink}
             />
         ))

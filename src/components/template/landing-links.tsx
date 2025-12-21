@@ -1,18 +1,18 @@
 import trans from "@/helpers/i18n/server";
 import { LinkCardsContainer } from "@/components/organism";
-import { ShowMoreLink } from "@/components/atom";
-import face4 from "assets/show-more/face-4.svg";
+import { SectionHeader } from "@/components/molecule";
 
 const LandingLinks = () => {
     return (
         <section id={"links"} className={"template"}>
-            <h2>{trans("common.usefulLinks")}</h2>
-            <LinkCardsContainer />
-            <ShowMoreLink
-                label={trans("common.allLinks")}
-                image={face4}
-                href={"/links"}
+            <SectionHeader
+                title={trans("common.usefulLinks")}
+                description={trans("common.usefulResourcesDesc")}
+                buttonLabel={trans("common.allLinks")}
+                descriptionClassName="text-gray-100"
+                buttonLink="/links"
             />
+            <LinkCardsContainer />
         </section>
     );
 };

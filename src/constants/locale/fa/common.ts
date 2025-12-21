@@ -69,6 +69,8 @@ export default {
     whatHappening: "رویدادها در هلند",
     allEvents: "تمام رویدادها",
     usefulLinks: "لینک‌های مفید",
+    usefulResources: "منابع مفید",
+    usefulResourcesDesc: "دسترسی سریع به وب‌سایت‌های مفید و منابع رسمی برای سفر مهاجرتی شما",
     allLinks: "تمام لینک‌ها",
     getInTouch: "با ما در تماس باشید",
     haveAQuestion: "سوالی دارید؟\n" + "براحتی با ما در تماس باشید",

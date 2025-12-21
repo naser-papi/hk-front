@@ -1,4 +1,4 @@
-import { ExternalLink, NoData } from "@/components/molecule";
+import { ExternalLink, NoData, Container } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
 import { GetTopLinks } from "@/services/external-links";
 
@@ -8,19 +8,19 @@ const LinkCardsContainer = async () => {
     const cards = list.map((item: LinkDto) => (
         <ExternalLink
             key={item.id}
-            logo={item.icon.url}
             title={item.title}
+            description={item.shortDesc}
             href={item.detailLink}
         />
     ));
     return (
-        <article
-            className={
-                "link-cards-container grid w-full place-items-center gap-y-8 @container"
-            }
+        <Container
+            direction={"column"}
+            gap={"big"}
+            className={"w-full @container lg:grid lg:grid-cols-3 gap-y-8"}
         >
             {cards}
-        </article>
+        </Container>
     );
 };
 

@@ -1,61 +1,73 @@
+"use server";
 import { cva, VariantProps } from "class-variance-authority";
 import { BaseHTMLAttributes } from "react";
-import Image from "next/image";
-import { ImageKit, OpenLinkBox } from "@/components/atom";
-import urlImg from "assets/images/url.jpeg";
-import trans from "@/helpers/i18n/server";
+import Link from "next/link";
+import { FaUpRightFromSquare, FaGlobe } from "react-icons/fa6";
 
-const variants = cva([
-    "w-full",
-    "external-link",
-    "min-w-[300px]",
-    "relative",
-    "[&>img]:z-0",
-    "[&>img]:opacity-50",
-    "[&>img]:rounded-lg",
-    "@3xl:h-[300px]",
-    "@5xl:h-[360px]",
-]);
+const cardVariants = cva(
+    [
+        "external-link",
+        "bg-white",
+        "rounded-lg",
+        "overflow-hidden",
+        "shadow-md",
+        "flex",
+        "flex-col",
+        "w-full",
+        "transition-all",
+        "hover:shadow-lg",
+        "hover:scale-[1.02]",
+        "cursor-pointer",
+        "group",
+    ],
+    {
+        variants: {},
+    }
+);
 
-const infoVariants = cva([
-    "z-10",
-    "relative",
-    "w-full",
-    "h-full",
-    "grid",
-    "place-items-center",
-    "gap-y-4",
-    "p-4",
-    "text-primary",
-    "text-lg",
-    "font-semibold",
-    "[&>h2]:text-border-white",
-    "[&>img]:rounded-full",
-    "[&>img]:drop-shadow-lg",
-    "[&>img]:bg-white",
-    "md:text-xl",
-]);
 interface ExternalLinkProps
     extends BaseHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof variants> {
-    logo: string;
+        VariantProps<typeof cardVariants> {
     title: string;
+    description?: string;
     href: string;
 }
-const ExternalLink = ({ logo, title, href }: ExternalLinkProps) => {
+
+const ExternalLink = ({
+    title,
+    description,
+    href,
+    ...rest
+}: ExternalLinkProps) => {
     return (
-        <div className={variants({})}>
-            <Image src={urlImg} alt={"url"} fill />
-            <section className={infoVariants({})}>
-                <ImageKit src={logo} alt={"logo"} width={120} height={120} />
-                <h2>{title}</h2>
-                <OpenLinkBox
-                    title={trans("common.gotoPage")}
-                    href={href}
-                    target="_blank"
-                />
-            </section>
-        </div>
+        <Link href={href} target="_blank" rel="noopener noreferrer">
+            <div className={cardVariants({})} {...rest}>
+                {/* Content Section */}
+                <div className="p-5 flex flex-col gap-4 relative">
+                    {/* External Link Indicator - Top Right */}
+                    <div className="absolute top-4 right-4 text-gray-400 group-hover:text-gray-600 transition-colors">
+                        <FaUpRightFromSquare className="w-4 h-4" />
+                    </div>
+
+                    {/* Icon Badge - Top Left */}
+                    <div className="bg-orange-50 rounded-lg p-3 w-fit">
+                        <FaGlobe className="w-8 h-8 text-orange-600" />
+                    </div>
+
+                    {/* Title */}
+                    <h3 className="text-lg font-bold text-gray-900 line-clamp-2">
+                        {title}
+                    </h3>
+
+                    {/* Description */}
+                    {description && (
+                        <p className="text-sm text-gray-600 line-clamp-2">
+                            {description}
+                        </p>
+                    )}
+                </div>
+            </div>
+        </Link>
     );
 };
 
