@@ -1,22 +1,31 @@
-import trans from "@/helpers/i18n/server";
-import Link from "next/link";
+"use client";
+import useTranslation from "@/helpers/i18n/use-translation";
 
 const CTA = () => {
+    const { t } = useTranslation();
+    
+    const scrollToForm = () => {
+        const form = document.querySelector(".contact-form");
+        if (form) {
+            form.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    };
+
     return (
-        <section className="footer-cta bg-secondary py-12 px-4 text-center text-white">
+        <div id="cta" className="footer-cta bg-secondary py-12 px-4 text-center text-white">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                {trans("common.readyToStartJourney")}
+                {t("common.readyToStartJourney")}
             </h2>
             <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
-                {trans("common.ctaDescription")}
+                {t("common.ctaDescription")}
             </p>
-            <Link
-                href="/#contact"
-                className="inline-block bg-white text-secondary hover:bg-gray-100 px-6 py-3 rounded-lg text-lg font-semibold transition-colors"
+            <button
+                onClick={scrollToForm}
+                className="inline-block bg-white text-secondary hover:bg-gray-100 px-6 py-3 rounded-lg text-lg font-semibold transition-colors cursor-pointer"
             >
-                {trans("common.getFreeConsultation")}
-            </Link>
-        </section>
+                {t("common.getFreeConsultation")}
+            </button>
+        </div>
     );
 };
 
