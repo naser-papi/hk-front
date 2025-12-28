@@ -139,6 +139,8 @@ export default {
     aboutHollandKade: "About Holland Kade",
     over10YearsExperience: "Over 10 years of experience in immigration consulting.",
     followUs: "Follow Us",
-    stayConnectedSocialMedia: "Stay connected on social media for updates and immigration tips."
+    stayConnectedSocialMedia: "Stay connected on social media for updates and immigration tips.",
+    blogsHeader:"Immigration Blog",
+    blogsHeaderDesc:"Expert insights, guides, and updates on Netherlands immigration",
 
 };

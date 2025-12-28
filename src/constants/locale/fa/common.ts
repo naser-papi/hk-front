@@ -141,4 +141,6 @@ export default {
     over10YearsExperience: "بیش از ۱۰ سال تجربه در مشاوره مهاجرت.",
     followUs: "ما را دنبال کنید",
     stayConnectedSocialMedia: "در شبکه‌های اجتماعی با ما در ارتباط باشید تا از آخرین اخبار و نکات مهاجرتی مطلع شوید.",
+    blogsHeader:"وبلاگ مهاجرت",
+    blogsHeaderDesc:"نکات و راهنمایی‌های مهاجرتی به هلند",
 };

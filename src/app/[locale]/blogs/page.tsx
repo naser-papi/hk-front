@@ -1,8 +1,9 @@
-import { BlogsHero, BlogsList, Footer } from "@/components/template";
+import { BlogsHero, BlogsList, Footer, MainHeader } from "@/components/template";
 
 const BlogsPage = () => {
     return (
         <main className="page-default-container">
+            <MainHeader />
             <BlogsHero />
             <BlogsList />
             <Footer />

@@ -44,27 +44,30 @@ const FilterListContainer = ({
         cats.unshift({ key: 0, text: t("common.allCategories") });
     }
     return (
-        <Container direction={"column"} gap={"little"}>
-            <TextBox
-                type={"text"}
-                icon={FaSearchengin}
-                className={"w-full"}
-                value={query.filter}
-                placeholder={t("common.typeToFilter")}
-                onEnterKeyPressed={(filter) =>
-                    setQuery((perv) => ({
-                        ...perv,
-                        filter,
-                    }))
-                }
-            />
-            <CategoryList
-                cats={cats}
-                selected={query.cat}
-                setSelected={(key: number) =>
-                    setQuery((perv) => ({ ...perv, cat: key }))
-                }
-            />
+        <Container direction={"column"} gap={"little"} className={"filter-list-container"}>
+            <div className={"flex flex-col w-full items-center gap-4 mb-4 bg-white p-4 rounded-lg shadow-md"}>
+                <TextBox
+                    type={"text"}
+                    icon={FaSearchengin}
+                    className={"w-full"}
+                    value={query.filter}
+                    placeholder={t("common.typeToFilter")}
+                    onEnterKeyPressed={(filter) =>
+                        setQuery((perv) => ({
+                            ...perv,
+                            filter,
+                        }))
+                    }
+                />
+                <CategoryList
+                    cats={cats}
+                    selected={query.cat}
+                    setSelected={(key: number) =>
+                        setQuery((perv) => ({ ...perv, cat: key }))
+                    }
+                />
+            </div>
+         
             {children}
         </Container>
     );
