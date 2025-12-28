@@ -1,4 +1,4 @@
-import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube, FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa6";
+import { FaInstagram, FaTelegram, FaWhatsapp, FaYoutube, FaSquareInstagram, FaTwitter, FaLinkedin } from "react-icons/fa6";
 import { LinkIcon } from "@/components/atom";
 import trans from "@/helpers/i18n/server";
 import { NoData } from "@/components/molecule";
@@ -10,10 +10,10 @@ const Socials = async () => {
     
     // Map available social links - use existing ones or create placeholders
     const socialLinks = [
-        { icon: FaFacebook, href: companyInfo.instaLink || "#", key: "facebook" },
-        { icon: FaTwitter, href: companyInfo.telegramLink || "#", key: "twitter" },
-        { icon: FaLinkedin, href: companyInfo.youtubeLink || "#", key: "linkedin" },
-        { icon: FaInstagram, href: companyInfo.instaLink || "#", key: "instagram" },
+        { icon: FaSquareInstagram, href: companyInfo.instaLink || "#", key: "instagram" },
+        { icon: FaTelegram, href: companyInfo.telegramLink || "#", key: "telegram" },
+        { icon: FaYoutube, href: companyInfo.youtubeLink || "#", key: "youtube" },
+        { icon: FaWhatsapp, href: companyInfo.whatsappLink || "#", key: "whatsapp" },
     ];
 
     return (
@@ -24,13 +24,13 @@ const Socials = async () => {
             <p className="text-white text-sm mb-4">
                 {trans("common.stayConnectedSocialMedia")}
             </p>
-            <div className="flex items-center gap-4 justify-center">
+            <div className="flex items-center gap-8 justify-center">
                 {socialLinks.map((social) => (
                     <LinkIcon
                         key={social.key}
                         icon={social.icon}
                         href={social.href}
-                        className="text-white hover:text-orange-400 transition-colors text-2xl"
+                        className="text-white hover:text-orange-400 transition-colors text-6xl"
                     />
                 ))}
             </div>
