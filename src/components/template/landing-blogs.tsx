@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/molecule";
 
 const LandingBlogs = () => {
     return (
-        <section id={"blogs"} className={"template"}>
+        <section id={"blogs"} className={"template scroll-mt-20"}>
             <SectionHeader
                 title={trans("common.latestArticles")}
                 description={trans("common.latestArticlesDesc")}

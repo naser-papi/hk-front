@@ -1,5 +1,3 @@
-import Image from "next/image";
-import footerBk from "assets/images/footer-bk.png";
 import {
     About,
     ContactUs,

@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/molecule";
 
 const LandingLinks = () => {
     return (
-        <section id={"links"} className={"template"}>
+        <section id={"links"} className={"template scroll-mt-20"}>
             <SectionHeader
                 title={trans("common.usefulLinks")}
                 description={trans("common.usefulResourcesDesc")}

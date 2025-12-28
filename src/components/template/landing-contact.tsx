@@ -4,7 +4,7 @@ const LandingContact = () => {
     return (
         <>
             <CTA />
-            <section id={"contact"} className={"template"}>     
+            <section id={"contact"} className={"template scroll-mt-60"}>     
                 <LandingContactForm />
             </section>
         </>

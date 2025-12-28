@@ -7,7 +7,7 @@ const Services = () => {
     return (
         <section
             id={"services"}
-            className={"template"}
+            className={"template scroll-mt-20"}
         >
             <SectionHeader
                 title={trans("common.topServices")}

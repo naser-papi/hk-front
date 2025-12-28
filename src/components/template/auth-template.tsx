@@ -7,7 +7,7 @@ const AuthTemplate = () => {
     return (
         <div
             className={
-                "template min-h-screen !place-items-start !gap-2 bg-[rgba(31,41,55,0.5)] !p-0 [&>.auth-form]:p-4 md:[&>.auth-form]:gap-4 lg:[&>.auth-form]:gap-5 [&>.auth-form_.hk-text-box]:bg-white"
+                "template min-h-screen !place-items-start !gap-2 !p-0 [&>.auth-form]:p-4 md:[&>.auth-form]:gap-4 lg:[&>.auth-form]:gap-5 [&>.auth-form_.hk-text-box]:bg-white"
             }
         >
             <AuthHeader />

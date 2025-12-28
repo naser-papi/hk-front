@@ -4,7 +4,7 @@ import { SectionHeader } from "@/components/molecule";
 
 const LandingEvents = () => {
     return (
-        <section id={"events"} className={"template"}>
+        <section id={"events"} className={"template scroll-mt-20"}>
             <SectionHeader
                 title={trans("common.upcomingEvents")}
                 description={trans("common.upcomingEventsDesc")}

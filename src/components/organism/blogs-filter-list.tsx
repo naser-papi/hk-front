@@ -22,7 +22,8 @@ const BlogsFilterList = async () => {
     return (
         <FilterListContainer list={list} route={"/blogs"}>
             <Container
-                direction={"column"}
+                layout="grid"
+                columns={2}
                 gap={"big"}
                 className={"@container"}
             >

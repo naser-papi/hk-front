@@ -1,5 +1,4 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { FormItem } from "@/components/molecule";
 import { Button, TextBox } from "@/components/atom";
 import { useCallback, useState } from "react";
@@ -24,8 +23,7 @@ interface AuthFormState extends MemberDto {
     isLoading: boolean;
 }
 
-const AuthForm = () => {
-    const router = useRouter();
+const AuthForm = () => { 
     const { locale } = useSnapshot(BaseState);
     const { t } = useTranslation(locale);
     const [dto, setDto] = useState({

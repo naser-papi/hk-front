@@ -362,6 +362,11 @@ body.rtl {
       }
     }
   }
+  .auth-page {
+    & > .template {
+      @apply !bg-[rgba(31,41,55,0.5)];
+    }
+  }
   .footer-cta {
     @apply w-full max-w-5xl mx-auto;
   }
