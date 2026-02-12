@@ -1,9 +1,13 @@
 import {
-    BlogDetailContent,
-    BlogDetailHero,
+    BlogDetailContent,    
     CommentsSection,
+    MainHeader,
+    BlogDetailHero,
+    RelatedContentContainer,
 } from "@/components/template";
+
 import Footer from "@/components/template/footer";
+
 
 // couldn't be rendered statically because it used `headers`
 // import { GetBlogList } from "@/services/blogs";
@@ -18,9 +22,11 @@ import Footer from "@/components/template/footer";
 const BlogDetailPage = () => {
     return (
         <main className="page-default-container">
+            <MainHeader />                        
             <BlogDetailHero />
-            <BlogDetailContent />
+            <BlogDetailContent />            
             <CommentsSection />
+            <RelatedContentContainer contentType={"blogs"} />
             <Footer />
         </main>
     );

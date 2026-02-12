@@ -1,10 +1,13 @@
 import { GetBlogDetail } from "@/services/blogs";
 import { NoData, VideoPlayer } from "@/components/molecule";
 import { normalizeHTMLContent } from "@/helpers";
+import { BlogDto } from "@/types/dto/blog";
 
-const BlogDetail = async () => {
-    const info = await GetBlogDetail();
-    if (!info) return <NoData />;
+interface BlogDetailProps {
+    info: BlogDto;
+}
+const BlogDetail = async ({ info }: BlogDetailProps) => {   
+    
     const replacedFontFS = normalizeHTMLContent(info.firstSection);
     const replacedFontSS = normalizeHTMLContent(info.secondSection);
     return (

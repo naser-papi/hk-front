@@ -1,18 +1,18 @@
-import { BlogDetailBanner } from "@/components/organism";
-import TopNav from "./top-nav";
-import MobileMenu from "./mobile-menu";
+import { ImagesCarousel, NoData } from "@/components/molecule";
+import { GetBlogDetail } from "@/services/blogs";
 
-const BlogDetailHero = () => {
+const BlogDetailHero = async() => {
+    const info = await GetBlogDetail();
+    if (!info) return <NoData />;
+    const imgUrls = info.bannerMedia?.url
     return (
         <section
             id={"blog-detail-hero"}
             className={
-                "template bg-primary [&_.detail-page-banner]:mt-4 [&_.info-box:last-of-type]:w-auto"
+                "template bg-primary !p-0 [&_.images-carousel]:min-w-full [&_.images-carousel]:aspect-video"
             }
-        >
-            <TopNav />
-            <BlogDetailBanner />
-            <MobileMenu />
+        >           
+            <ImagesCarousel images={[imgUrls]} />
         </section>
     );
 };

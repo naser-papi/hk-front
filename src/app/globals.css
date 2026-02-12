@@ -163,6 +163,32 @@ body.rtl {
     direction: rtl;
   }
 
+  .folded_corner{
+    position: relative;
+    border-radius: 40px;    
+    /* cut TOP-LEFT */
+    clip-path: polygon(
+      100px 0,
+      100% 0,
+      100% 100%,
+      0 100%,
+      0 70px
+    );
+  }
+  
+  /* the folded piece */
+  .folded_corner::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+  
+    background: #5991a1;    
+    border-bottom-right-radius: 50px;
+    box-shadow: -4px 5px 5px rgba(26, 31, 46, 0.95);
+  }
 
   .direction-ltr {
     direction: ltr;

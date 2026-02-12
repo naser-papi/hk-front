@@ -23,4 +23,6 @@ export { default as EventDetailContent } from "./event-detail-content";
 export { default as CommentsSection } from "./comments-section";
 export { default as LinksList } from "./links-list";
 export { default as MainHeader } from "./main-header";
+export { default as RelatedContentContainer } from "./related-content-container";
+export { default as DetailContentHeader } from "./detail-content-header";
 
