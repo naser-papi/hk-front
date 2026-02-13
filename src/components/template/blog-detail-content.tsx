@@ -5,6 +5,7 @@ import { DetailContentHeader } from "@/components/template";
 import { LabelValue } from "@/types/base";
 import trans from "@/helpers/i18n/server";
 import { formatPublishDateString } from "@/helpers";
+
 const BlogDetailContent = async () => {
     const info = await GetBlogDetail();
     if (!info) return <NoData />;
@@ -37,11 +38,13 @@ const BlogDetailContent = async () => {
         },
     ];
     return (
-        <section id={"blog-detail-content"}
-            style={{ marginTop: '-200px', marginLeft: 'auto', 
-                marginRight: 'auto', marginBottom: '16px', backgroundColor: 'rgba(255,255,255,0.8)', zIndex: 20  }}
-            className={"template text-black folded_corner"}>
-                <DetailContentHeader title={info.title} meta={meta} />
+        <section
+            id={"blog-detail-content"}
+            className={
+                "template xs:folded-corner z-20 mx-auto mb-[100px] mt-[-50px] !bg-white text-black sm:mt-[-100px] lg:mt-[-200px]"
+            }
+        >
+            <DetailContentHeader title={info.title} meta={meta} />
             <BlogDetail info={info} />
         </section>
     );

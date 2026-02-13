@@ -1,13 +1,16 @@
 import {
-    BlogDetailContent,    
+    BlogDetailContent,
+    BlogDetailHero,
     CommentsSection,
     MainHeader,
-    BlogDetailHero,
     RelatedContentContainer,
 } from "@/components/template";
+import dynamic from "next/dynamic";
+import { LoadingSkeleton } from "@/components/atom";
 
-import Footer from "@/components/template/footer";
-
+const Footer = dynamic(() => import("@/components/template/footer"), {
+    loading: LoadingSkeleton,
+});
 
 // couldn't be rendered statically because it used `headers`
 // import { GetBlogList } from "@/services/blogs";
@@ -22,9 +25,9 @@ import Footer from "@/components/template/footer";
 const BlogDetailPage = () => {
     return (
         <main className="page-default-container">
-            <MainHeader />                        
+            <MainHeader />
             <BlogDetailHero />
-            <BlogDetailContent />            
+            <BlogDetailContent />
             <CommentsSection />
             <RelatedContentContainer contentType={"blogs"} />
             <Footer />

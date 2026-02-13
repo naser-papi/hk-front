@@ -21,3 +21,4 @@ export { default as AsideRotator } from "./aside-rotator";
 export { default as LoadingSkeleton } from "./loading-skeleton";
 export { default as Tag } from "./tag";
 export { default as DateLabel } from "./date-label";
+export { default as HtmlViewer } from "./html-viewer";

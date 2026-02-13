@@ -9,10 +9,12 @@ const InfoLine = ({ text, label }: InfoBoxProps) => {
     return (
         <figure
             className={
-                "bg-light rounded-br-2xl rounded-tl-2xl p-2 text-base font-medium leading-tight text-primary"
+                "rounded-br-xl rounded-tl-xl bg-secondary px-3 py-2 text-base font-medium leading-tight text-primary"
             }
         >
-            <span className={"pe-1 text-secondary"}>{`${label}: `}</span>
+            <span
+                className={"pe-1 text-secondary-lighter"}
+            >{`${label}: `}</span>
             <strong>{text}</strong>
         </figure>
     );

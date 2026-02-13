@@ -15,14 +15,20 @@ const DetailContentHeader = ({ title, meta }: DetailContentHeaderProps) => {
                 text={item.value.toString()}
             />
         ));
-    return (<header className="pb-4 border-b border-gray-600 w-full flex flex-col flex-start">
-        <h1 className="text-4xl font-bold">{title}</h1>
-        {cards && cards.length && (
-            <article className={"carousel-container justify-stretch"}>
-                {cards}
-            </article>
-        )}
-    </header>);
+    return (
+        <header className="flex-start flex w-full flex-col gap-8 border-b border-gray-600 pb-4">
+            <h1 className="text-3xl font-bold sm:text-4xl">{title}</h1>
+            {cards && cards.length && (
+                <article
+                    className={
+                        "flex max-w-sm flex-wrap items-center gap-4 sm:max-w-lg md:max-w-none"
+                    }
+                >
+                    {cards}
+                </article>
+            )}
+        </header>
+    );
 };
 
 export default DetailContentHeader;

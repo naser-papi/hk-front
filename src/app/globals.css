@@ -163,7 +163,7 @@ body.rtl {
     direction: rtl;
   }
 
-  .folded_corner{
+    .folded-corner {
     position: relative;
     border-radius: 40px;    
     /* cut TOP-LEFT */
@@ -177,17 +177,17 @@ body.rtl {
   }
   
   /* the folded piece */
-  .folded_corner::before{
+    .folded-corner::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100px;
     height: 100px;
-  
-    background: #5991a1;    
+
+        background: var(--secondary);
     border-bottom-right-radius: 50px;
-    box-shadow: -4px 5px 5px rgba(26, 31, 46, 0.95);
+        box-shadow: 2px 1px 10px rgba(26, 31, 46, 0.95);
   }
 
   .direction-ltr {

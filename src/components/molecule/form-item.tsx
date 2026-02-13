@@ -11,11 +11,8 @@ const FormItem = ({ label, children, className }: FormItemProps) => {
         <div className={twMerge("w-full", className)}>
             <label
                 className={
-                    "mb-2 inline-block px-3 py-1 rounded-md font-normal text-sm text-[var(--black-light)]"
+                    "mb-2 inline-block rounded-md bg-secondary-lighter px-3 py-1 text-sm font-normal text-[var(--black-light)]"
                 }
-                style={{
-                    background: "linear-gradient(to top, var(--primary) 0%, var(--primary-light) 35%, transparent 65%)",
-                }}
             >
                 {`${label}:`}
             </label>

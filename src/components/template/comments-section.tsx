@@ -8,7 +8,7 @@ const CommentsSection = () => {
     return (
         <div
             className={
-                "template [&_.hk-text-box]:text-label [&_.comments-list]:mt-4 [&_.hk-text-box]:border-white [&_.hk-text-box]:text-white"
+                "template [&_.hk-text-box]:text-label my-6 rounded-2xl [&_.comments-list]:mt-4 [&_.hk-text-box]:border-white [&_.hk-text-box]:text-white"
             }
         >
             <SignToComment />

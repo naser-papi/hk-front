@@ -1,24 +1,31 @@
-import {
-    Footer,
-    LandingHero,
-    LandingLinks,
-    LandingServices,
-    MainHeader,
-} from "@/components/template";
+import { LandingHero, LandingLinks, LandingServices, MainHeader, } from "@/components/template";
 import { LoadingSkeleton } from "@/components/atom";
 import StoreScroll from "@/components/organism/store-scroll";
 import dynamic from "next/dynamic";
 
 // Lazy load below-fold components for better initial page load
-const LandingBlogs = dynamic(() => import("@/components/template/landing-blogs"), {
-    loading: LoadingSkeleton,
-});
+const LandingBlogs = dynamic(
+    () => import("@/components/template/landing-blogs"),
+    {
+        loading: LoadingSkeleton,
+    }
+);
 
-const LandingEvents = dynamic(() => import("@/components/template/landing-events"), {
-    loading: LoadingSkeleton,
-});
+const LandingEvents = dynamic(
+    () => import("@/components/template/landing-events"),
+    {
+        loading: LoadingSkeleton,
+    }
+);
 
-const LandingContact = dynamic(() => import("@/components/template/landing-contact"), {
+const LandingContact = dynamic(
+    () => import("@/components/template/landing-contact"),
+    {
+        loading: LoadingSkeleton,
+    }
+);
+
+const Footer = dynamic(() => import("@/components/template/footer"), {
     loading: LoadingSkeleton,
 });
 
@@ -27,7 +34,7 @@ export default async function Home() {
         <main id="main-content" className="page-default-container" role="main">
             <StoreScroll />
             <MainHeader />
-            <LandingHero />            
+            <LandingHero />
             <LandingBlogs />
             <LandingServices />
             <LandingEvents />

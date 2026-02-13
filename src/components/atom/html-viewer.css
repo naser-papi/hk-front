@@ -1,0 +1,180 @@
+/* Wrapper for Strapi HTML (RTL + readable typography) */
+.rich-content {
+    direction: rtl;
+    text-align: right;
+
+    line-height: 1.9;
+    font-size: 16px;
+
+    /* Use your app’s font stack (override if you want Persian-specific fonts) */
+    font-family: inherit;
+
+    /* Better wrapping for long words/links */
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+/* Vertical rhythm: consistent spacing between blocks */
+.rich-content > * + * {
+    margin-top: 0.9rem;
+}
+
+/* Headings */
+.rich-content h1,
+.rich-content h2,
+.rich-content h3,
+.rich-content h4 {
+    margin: 1.2rem 0 0.6rem;
+    line-height: 1.35;
+    font-weight: 700;
+}
+
+/* Sizes (tweak to match your design system) */
+.rich-content h1 {
+    font-size: 1.8rem;
+}
+
+.rich-content h2 {
+    font-size: 1.5rem;
+}
+
+.rich-content h3 {
+    font-size: 1.2rem;
+}
+
+.rich-content h4 {
+    font-size: 1.05rem;
+}
+
+/* Paragraphs */
+.rich-content p {
+    margin: 0;
+}
+
+/* Lists */
+.rich-content ul,
+.rich-content ol {
+    padding: 0;
+    margin: 0.6rem 0;
+    /* RTL-friendly indentation */
+    padding-right: 1.25rem;
+}
+
+.rich-content li {
+    margin: 0.35rem 0;
+}
+
+/* Keep nested lists visually clear */
+.rich-content li > ul,
+.rich-content li > ol {
+    margin-top: 0.4rem;
+    padding-right: 1.25rem;
+}
+
+/* Inline emphasis */
+.rich-content strong {
+    font-weight: 700;
+}
+
+.rich-content em {
+    font-style: italic;
+}
+
+/* Links */
+.rich-content a {
+    color: inherit;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.rich-content a:hover {
+    opacity: 0.85;
+}
+
+/* Code (in case Strapi content includes code snippets later) */
+.rich-content code {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.95em;
+
+    padding: 0.15rem 0.35rem;
+    border-radius: 6px;
+
+    background: rgba(0, 0, 0, 0.06);
+}
+
+/* Preformatted blocks */
+.rich-content pre {
+    direction: ltr;
+    unicode-bidi: bidi-override;
+
+    margin: 0.9rem 0;
+    padding: 0.9rem;
+
+    overflow: auto;
+    border-radius: 10px;
+
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.rich-content pre code {
+    padding: 0;
+    background: transparent;
+}
+
+/* Blockquotes */
+.rich-content blockquote {
+    margin: 0.9rem 0;
+    padding: 0.6rem 1rem;
+
+    border-right: 4px solid rgba(0, 0, 0, 0.18);
+    background: rgba(0, 0, 0, 0.04);
+    border-radius: 10px;
+}
+
+/* Images inside content */
+.rich-content img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+
+    margin: 0.9rem auto;
+    border-radius: 12px;
+}
+
+/* Tables (if Strapi ever outputs them) */
+.rich-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95em;
+}
+
+.rich-content th,
+.rich-content td {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 0.6rem;
+    vertical-align: top;
+}
+
+.rich-content th {
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+/* Horizontal rule */
+.rich-content hr {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+    margin: 1.2rem 0;
+}
+
+/* Optional: make embedded English parts behave better in RTL */
+.rich-content [lang="en"] {
+    direction: ltr;
+    unicode-bidi: isolate;
+    display: inline-block;
+}
+  
