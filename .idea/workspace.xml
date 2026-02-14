@@ -4,26 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/atom/html-viewer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/atom/html-viewer.tsx" afterDir="false" />
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/some ui style issues.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/[uuid]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/info-line.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/info-line.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/form-item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/form-item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/hero-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/hero-banner-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blog-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/footer/address.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/comments-section.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/comments-section.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +104,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/naser/Projects/hk-front/node_modules/prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
+    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
     "to.speed.mode.migration.done": "true",
     "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
     "vue.rearranger.settings.migration": "true"
@@ -128,6 +118,13 @@
         <entry key="com.intellij.reactbuddy.storybook" value="false" />
       </map>
     </option>
+  </component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1773313224177" />
+    <option name="spentUsd" value="0.01125275" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="9" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -370,15 +367,8 @@
       <workItem from="1764840535745" duration="9204000" />
       <workItem from="1765048004834" duration="3564000" />
       <workItem from="1770996753948" duration="460000" />
-      <workItem from="1770997350818" duration="2921000" />
-    </task>
-    <task id="LOCAL-00053" summary="switched to prod mod">
-      <option name="closed" value="true" />
-      <created>1736686901569</created>
-      <option name="number" value="00053" />
-      <option name="presentableId" value="LOCAL-00053" />
-      <option name="project" value="LOCAL" />
-      <updated>1736686901569</updated>
+      <workItem from="1770997350818" duration="3358000" />
+      <workItem from="1771099046275" duration="2311000" />
     </task>
     <task id="LOCAL-00054" summary="fixed a bug">
       <option name="closed" value="true" />
@@ -764,7 +754,15 @@
       <option name="project" value="LOCAL" />
       <updated>1764859183469</updated>
     </task>
-    <option name="localTasksCounter" value="102" />
+    <task id="LOCAL-00102" summary="bugfix/some ui style issues.">
+      <option name="closed" value="true" />
+      <created>1771000548723</created>
+      <option name="number" value="00102" />
+      <option name="presentableId" value="LOCAL-00102" />
+      <option name="project" value="LOCAL" />
+      <updated>1771000548724</updated>
+    </task>
+    <option name="localTasksCounter" value="103" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -785,7 +783,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="related contents (events &amp; services)" />
     <MESSAGE value="refactored the side menu" />
     <MESSAGE value="comments part 1" />
     <MESSAGE value="fixed the banner images size calculation" />
@@ -810,7 +807,8 @@
     <MESSAGE value="added the google calendar meet like generator." />
     <MESSAGE value="removed the fontawsome" />
     <MESSAGE value="deploy on VPS" />
-    <option name="LAST_COMMIT_MESSAGE" value="deploy on VPS" />
+    <MESSAGE value="bugfix/some ui style issues." />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix/some ui style issues." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

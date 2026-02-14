@@ -145,5 +145,5 @@ export default {
     stayConnectedSocialMedia:
         "در شبکه‌های اجتماعی با ما در ارتباط باشید تا از آخرین اخبار و نکات مهاجرتی مطلع شوید.",
     blogsHeader: "وبلاگ مهاجرت",
-    blogsHeaderDesc: "نکات و راهنمایی‌های مهاجرتی به هلند",
+    blogsHeaderDesc: "نکات و مطالب مفید مهاجرت به هلند",
 };

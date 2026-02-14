@@ -6,16 +6,17 @@ import { CategoryList, Container } from "@/components/molecule";
 import { TextBox } from "@/components/atom";
 import useTranslation from "@/helpers/i18n/use-translation";
 import { FaSearchengin } from "react-icons/fa6";
+
 interface FilterListContainerProps {
     children: JSX.Element[] | JSX.Element;
     route: string;
-    list: { id: number; category?: CategoryDto }[];
+    catList: CategoryDto[];
 }
 
 const FilterListContainer = ({
     children,
     route,
-    list,
+    catList,
 }: FilterListContainerProps) => {
     const [query, setQuery] = useState({
         filter: "",
@@ -31,12 +32,7 @@ const FilterListContainer = ({
 
     const cats = Array.from(
         new Map(
-            list
-                .filter((item) => item.category != undefined)
-                .map((item) => [
-                    item.category!.id,
-                    { key: item.category!.id, text: item.category!.title },
-                ])
+            catList.map((item) => [item.id, { key: item.id, text: item.title }])
         ).values()
     );
 
@@ -44,13 +40,22 @@ const FilterListContainer = ({
         cats.unshift({ key: 0, text: t("common.allCategories") });
     }
     return (
-        <Container direction={"column"} gap={"little"} className={"filter-list-container"}>
-            <div className={"flex flex-col w-full items-center gap-4 mb-4 bg-white p-4 rounded-lg shadow-md"}>
+        <Container
+            direction={"column"}
+            gap={"little"}
+            className={"filter-list-container"}
+        >
+            <div
+                className={
+                    "mb-4 flex w-full flex-col items-center gap-4 rounded-lg bg-white p-4 shadow-md"
+                }
+            >
                 <TextBox
                     type={"text"}
                     icon={FaSearchengin}
                     className={"w-full"}
                     value={query.filter}
+                    clearable
                     placeholder={t("common.typeToFilter")}
                     onEnterKeyPressed={(filter) =>
                         setQuery((perv) => ({
@@ -67,7 +72,7 @@ const FilterListContainer = ({
                     }
                 />
             </div>
-         
+
             {children}
         </Container>
     );

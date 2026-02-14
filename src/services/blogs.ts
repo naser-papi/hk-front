@@ -6,6 +6,7 @@ import { BlogDto, CommentDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
+import { CategoryDto } from "@/types/dto/common";
 
 export const GetBlogsComments = async () => {
     const url = headers().get("x-url");
@@ -54,6 +55,15 @@ export const GetBlogList = async () => {
     } else {
         return [] as BlogDto[];
     }
+};
+
+export const getBlogsUnionCategories = async () => {
+    const apiInfo = BlogsAPIPath.getBlogsUnionCategories;
+    const resp = await mainCall<ICMSListApiResponse<CategoryDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    }
+    return [] as CategoryDto[];
 };
 
 export const GetFilteredBlogList = async () => {

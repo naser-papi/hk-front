@@ -27,6 +27,10 @@ export const BlogsAPIPath = {
             cache: "no-cache",
         },
     },
+    getBlogsUnionCategories: {
+        method: "GET",
+        url: "api/blogs/union-categories",
+    },
     getBlogDetail: {
         method: "GET",
         url: "api/blogs/{uuid}?" + BlogsPopulateQuery,

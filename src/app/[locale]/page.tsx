@@ -1,4 +1,9 @@
-import { LandingHero, LandingLinks, LandingServices, MainHeader, } from "@/components/template";
+import {
+    LandingHero,
+    LandingLinks,
+    LandingServices,
+    MainHeader,
+} from "@/components/template";
 import { LoadingSkeleton } from "@/components/atom";
 import StoreScroll from "@/components/organism/store-scroll";
 import dynamic from "next/dynamic";

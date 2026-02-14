@@ -1,10 +1,11 @@
-import { GetBlogList } from "@/services/blogs";
+import { getBlogsUnionCategories, GetFilteredBlogList } from "@/services/blogs";
 import { BlogDto } from "@/types/dto";
 import { Container, KnowledgeCard, NoData } from "@/components/molecule";
 import FilterListContainer from "./filter-list-container";
 
 const BlogsFilterList = async () => {
-    const list = await GetBlogList();
+    const list = await GetFilteredBlogList();
+    const catList = await getBlogsUnionCategories();
     const noData = !list || !list.length;
     const cards = noData ? (
         <NoData />
@@ -20,7 +21,7 @@ const BlogsFilterList = async () => {
         ))
     );
     return (
-        <FilterListContainer list={list} route={"/blogs"}>
+        <FilterListContainer catList={catList} route={"/blogs"}>
             <Container
                 layout="grid"
                 columns={2}
