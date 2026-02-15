@@ -1,9 +1,9 @@
 import { Container, ExternalLink, NoData } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
-import { GetTopLinks } from "@/services/external-links";
+import { GetLinksList } from "@/services/external-links";
 
 const LinkCardsContainer = async () => {
-    const list = await GetTopLinks();
+    const list = await GetLinksList();
     if (!list || !list.length) return <NoData />;
     const cards = list.map((item: LinkDto) => (
         <ExternalLink
@@ -15,9 +15,10 @@ const LinkCardsContainer = async () => {
     ));
     return (
         <Container
+            layout={"carousel"}
             direction={"row"}
             gap={"big"}
-            className={"w-full gap-y-8 @container lg:grid lg:grid-cols-3"}
+            className={"w-ful @container"}
         >
             {cards}
         </Container>

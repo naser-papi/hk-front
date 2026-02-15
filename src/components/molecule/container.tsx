@@ -18,6 +18,15 @@ const variants = cva(["w-full", "z-20"], {
         layout: {
             flex: ["flex", "items-center"],
             grid: ["grid"],
+            carousel: [
+                "flex",
+                "max-w-full",
+                "items-center",
+                "items-stretch",
+                "flex-row",
+                "overflow-x-auto",
+                "hidden-scroll",
+            ],
         },
         direction: {
             row: [],
@@ -55,8 +64,7 @@ const variants = cva(["w-full", "z-20"], {
 });
 
 interface ContainerProps
-    extends BaseHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof variants> {
+    extends BaseHTMLAttributes<HTMLDivElement>, VariantProps<typeof variants> {
     children: React.ReactNode[] | JSX.Element;
     columns?: ColumnCount;
 }
@@ -71,7 +79,9 @@ const Container = ({
     columns = 1,
 }: ContainerProps) => {
     const gridColumnClass =
-        layout === "grid" ? columnClassMap[columns] ?? columnClassMap[1] : undefined;
+        layout === "grid"
+            ? (columnClassMap[columns] ?? columnClassMap[1])
+            : undefined;
 
     return (
         <article

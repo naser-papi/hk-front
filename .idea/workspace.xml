@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/blog list filter">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/other parts filter lists issue">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/[uuid]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/section-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/section-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/external-link.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/event-detail-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/event-detail-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/landing-links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-links.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,10 +117,10 @@
   </component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773313224177" />
-    <option name="spentUsd" value="0.1678745" />
+    <option name="spentUsd" value="0.191855" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="1" />
+    <option name="suspendCountdown" value="0" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -377,14 +366,6 @@
       <workItem from="1770997350818" duration="3358000" />
       <workItem from="1771099046275" duration="4783000" />
       <workItem from="1771157933969" duration="10008000" />
-    </task>
-    <task id="LOCAL-00055" summary="fixed the default language to fa">
-      <option name="closed" value="true" />
-      <created>1737317361824</created>
-      <option name="number" value="00055" />
-      <option name="presentableId" value="LOCAL-00055" />
-      <option name="project" value="LOCAL" />
-      <updated>1737317361824</updated>
     </task>
     <task id="LOCAL-00056" summary="fixed the default language to fa">
       <option name="closed" value="true" />
@@ -770,7 +751,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771101488233</updated>
     </task>
-    <option name="localTasksCounter" value="104" />
+    <task id="LOCAL-00104" summary="bugfix/other parts filter lists issue">
+      <option name="closed" value="true" />
+      <created>1771173844639</created>
+      <option name="number" value="00104" />
+      <option name="presentableId" value="LOCAL-00104" />
+      <option name="project" value="LOCAL" />
+      <updated>1771173844640</updated>
+    </task>
+    <option name="localTasksCounter" value="105" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -791,7 +780,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="comments part 1" />
     <MESSAGE value="fixed the banner images size calculation" />
     <MESSAGE value="comments part 2" />
     <MESSAGE value="fixed the footer styles" />
@@ -816,7 +804,8 @@
     <MESSAGE value="deploy on VPS" />
     <MESSAGE value="bugfix/some ui style issues." />
     <MESSAGE value="bugfix/blog list filter" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugfix/blog list filter" />
+    <MESSAGE value="bugfix/other parts filter lists issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix/other parts filter lists issue" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
