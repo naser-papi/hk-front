@@ -1,4 +1,4 @@
-import { EventCard, NoData, Container } from "@/components/molecule";
+import { Container, EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import { GetTopEvents } from "@/services/events";
 
@@ -17,6 +17,7 @@ const EventCardsContainer = async () => {
             eventTimeInDay={item.eventTimeInDay}
             repeatType={item.repeatType}
             address={item.address}
+            verticalLayout={true}
             href={`/events/${item.documentId}`}
         />
     ));
@@ -24,7 +25,7 @@ const EventCardsContainer = async () => {
         <Container
             direction={"column"}
             gap={"big"}
-            className={"w-full @container lg:grid lg:grid-cols-2 gap-y-8"}
+            className={"w-full gap-y-8 @container lg:grid lg:grid-cols-2"}
         >
             {cards}
         </Container>

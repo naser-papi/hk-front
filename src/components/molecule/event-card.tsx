@@ -16,6 +16,7 @@ const cardVariants = cva(
         "overflow-hidden",
         "shadow-md",
         "flex",
+        "flex-col",
         "w-full",
         "transition-shadow",
         "hover:shadow-lg",
@@ -26,20 +27,34 @@ const cardVariants = cva(
                 Online: [],
                 InPlace: [],
             },
+            verticalLayout: {
+                true: ["md:flex-col"],
+                false: ["md:flex-row"],
+            },
         },
     }
 );
 
-const imageContainerVariants = cva(["w-1/2", "relative", "min-h-[300px]"]);
+const imageContainerVariants = cva(["relative", "min-h-[360px]", "w-full"], {
+    variants: {
+        verticalLayout: {
+            true: ["md:w-full"],
+            false: ["md:w-1/2"],
+        },
+    },
+});
 
-const contentVariants = cva([
-    "w-1/2",
-    "flex",
-    "flex-col",
-    "justify-between",
-    "p-6",
-    "gap-4",
-]);
+const contentVariants = cva(
+    ["flex", "flex-col", "justify-between", "p-6", "gap-4", "w-full"],
+    {
+        variants: {
+            verticalLayout: {
+                true: ["md:w-full"],
+                false: ["md:w-1/2"],
+            },
+        },
+    }
+);
 
 const titleVariants = cva([
     "text-xl",
@@ -76,6 +91,7 @@ const EventCard = ({
     href,
     address,
     spotsAvailable,
+    verticalLayout,
 }: EventCardProps) => {
     const locale = GetLocaleFromCookie();
 
@@ -121,9 +137,9 @@ const EventCard = ({
     };
 
     return (
-        <div className={cardVariants({ eventType })}>
+        <div className={cardVariants({ eventType, verticalLayout })}>
             {/* Image Container with Badge */}
-            <div className={imageContainerVariants()}>
+            <div className={imageContainerVariants({ verticalLayout })}>
                 <ImageKit
                     src={ikUrl}
                     alt={title}
@@ -143,7 +159,7 @@ const EventCard = ({
             </div>
 
             {/* Content Section */}
-            <div className={contentVariants()}>
+            <div className={contentVariants({ verticalLayout })}>
                 <div className="flex flex-col gap-3">
                     {/* Title */}
                     <h3 className={titleVariants()}>{title}</h3>

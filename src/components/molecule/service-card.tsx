@@ -23,9 +23,6 @@ const variants = cva(
                 false: ["md:flex-row"],
             },
         },
-        defaultVariants: {
-            verticalLayout: false,
-        },
     }
 );
 
@@ -35,9 +32,6 @@ const imageContainerVariants = cva(["relative", "min-h-[360px]", "w-full"], {
             true: ["md:w-full"],
             false: ["md:w-1/2"],
         },
-    },
-    defaultVariants: {
-        verticalLayout: false,
     },
 });
 
@@ -49,9 +43,6 @@ const contentVariants = cva(
                 true: ["md:w-full"],
                 false: ["md:w-1/2"],
             },
-        },
-        defaultVariants: {
-            verticalLayout: false,
         },
     }
 );

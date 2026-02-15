@@ -5,7 +5,7 @@ interface SectionHeaderProps {
     description: string;
     descriptionClassName?: string;
     buttonLabel: string;
-    buttonLink: string;
+    buttonLink?: string;
 }
 
 const SectionHeader = ({
@@ -16,15 +16,22 @@ const SectionHeader = ({
     buttonLink,
 }: SectionHeaderProps) => {
     return (
-        <header className="flex justify-between items-center w-full my-10">
+        <header className="my-10 flex w-full items-center justify-between">
             <div className="flex flex-col gap-2">
                 <h2 className="text-2xl font-bold">{title}</h2>
-                <p className={`text-sm ${descriptionClassName}`}>{description}</p>
+                <p className={`text-sm ${descriptionClassName}`}>
+                    {description}
+                </p>
             </div>
-            <Button variant="secondary" label={buttonLabel} link={buttonLink} />
+            {buttonLink === undefined ? null : (
+                <Button
+                    variant="secondary"
+                    label={buttonLabel}
+                    link={buttonLink}
+                />
+            )}
         </header>
     );
 };
 
 export default SectionHeader;
-

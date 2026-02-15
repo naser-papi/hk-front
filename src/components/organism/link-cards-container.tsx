@@ -1,4 +1,4 @@
-import { ExternalLink, NoData, Container } from "@/components/molecule";
+import { Container, ExternalLink, NoData } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
 import { GetTopLinks } from "@/services/external-links";
 
@@ -15,9 +15,9 @@ const LinkCardsContainer = async () => {
     ));
     return (
         <Container
-            direction={"column"}
+            direction={"row"}
             gap={"big"}
-            className={"w-full @container lg:grid lg:grid-cols-3 gap-y-8"}
+            className={"w-full gap-y-8 @container lg:grid lg:grid-cols-3"}
         >
             {cards}
         </Container>

@@ -6,32 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/blog list filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/services/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/services/[uuid]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/[uuid]/page.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/section-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/section-header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-detail.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/link-cards-container.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-cards-container.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/events-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/events-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/service-detail-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/service-detail-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/services-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services-hero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/services-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/event-detail-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/event-detail-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/event-detail-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/landing-links.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/landing-links.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,10 +128,10 @@
   </component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773313224177" />
-    <option name="spentUsd" value="0.10399925" />
+    <option name="spentUsd" value="0.1678745" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="4" />
+    <option name="suspendCountdown" value="1" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

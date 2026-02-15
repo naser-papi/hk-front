@@ -10,7 +10,6 @@ const LandingLinks = () => {
                 description={trans("common.usefulResourcesDesc")}
                 buttonLabel={trans("common.allLinks")}
                 descriptionClassName="text-gray-100"
-                buttonLink="/links"
             />
             <LinkCardsContainer />
         </section>

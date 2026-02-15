@@ -11,6 +11,7 @@ const ServiceCardsContainer = async () => {
             ikUrl={item.icon.url}
             title={item.title}
             description={item.shortDesc}
+            verticalLayout={true}
             href={`/services/${item.documentId}`}
         />
     ));
@@ -18,9 +19,12 @@ const ServiceCardsContainer = async () => {
         <Container
             direction={"column"}
             gap={"big"}
-            className={"w-full @container lg:grid lg:grid-cols-2 gap-y-8 place-items-center"}>
+            className={
+                "w-full place-items-center gap-y-8 @container lg:grid lg:grid-cols-2"
+            }
+        >
             {cards}
-        </Container>        
+        </Container>
     );
 };
 

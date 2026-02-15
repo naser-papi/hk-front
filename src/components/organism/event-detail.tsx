@@ -1,23 +1,20 @@
-import React from "react";
-import { NoData, VideoPlayer } from "@/components/molecule";
-import { GetEventDetail } from "@/services/events";
+import { VideoPlayer } from "@/components/molecule";
 import { normalizeHTMLContent } from "@/helpers";
+import { EventDto } from "@/types/dto";
+import { HtmlViewer } from "@/components/atom";
 
-const EventDetail = async () => {
-    const info = await GetEventDetail();
-    if (!info) return <NoData />;
+interface EventDetailProps {
+    info: EventDto;
+}
+const EventDetail = async ({ info }: EventDetailProps) => {
     const replacedFontFS = normalizeHTMLContent(info.firstSection);
     const replacedFontSS = normalizeHTMLContent(info.secondSection);
     return (
         <div className={"content-detail-body"}>
-            <p>{info.shortDesc}</p>
-            <article
-                dangerouslySetInnerHTML={{ __html: replacedFontFS }}
-            ></article>
+            <h3>{info.shortDesc}</h3>
+            <HtmlViewer content={replacedFontFS} />
             <VideoPlayer url={info.videoUrl} />
-            <article
-                dangerouslySetInnerHTML={{ __html: replacedFontSS }}
-            ></article>
+            <HtmlViewer content={replacedFontSS} />
         </div>
     );
 };

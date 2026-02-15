@@ -1,13 +1,10 @@
 import { Container, NoData, ServiceCard } from "@/components/molecule";
 import { ServiceDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
-import {
-    GetServiceList,
-    GetServicesUnionCategories,
-} from "@/services/services";
+import { GetFilteredServiceList, GetServicesUnionCategories, } from "@/services/services";
 
 const ServicesFilterList = async () => {
-    const list = await GetServiceList();
+    const list = await GetFilteredServiceList();
     const catList = await GetServicesUnionCategories();
     const noData = !list || !list.length;
     const cards = noData ? (
@@ -19,7 +16,7 @@ const ServicesFilterList = async () => {
                 ikUrl={item.icon.url}
                 title={item.title}
                 description={item.shortDesc}
-                verticalLayout={true}
+                verticalLayout={false}
                 href={`/services/${item.documentId}`}
             />
         ))

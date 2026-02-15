@@ -1,17 +1,18 @@
-import { MobileMenu, TopNav } from "@/components/template";
-import { EventDetailBanner } from "@/components/organism";
+import { GetEventDetail } from "@/services/events";
+import { ImagesCarousel, NoData } from "@/components/molecule";
 
-const EventDetailHero = () => {
+const EventDetailHero = async () => {
+    const info = await GetEventDetail();
+    if (!info) return <NoData />;
+    const imgUrls = info.bannerMedia[0]?.url;
     return (
         <section
-            id={"event-detail-hero"}
+            id={"blog-detail-hero"}
             className={
-                "template bg-primary [&_.detail-page-banner]:mt-4 [&_.info-box:last-of-type]:w-auto"
+                "template bg-primary !p-0 [&_.images-carousel]:aspect-video [&_.images-carousel]:min-w-full"
             }
         >
-            <TopNav />
-            <EventDetailBanner />
-            <MobileMenu />
+            <ImagesCarousel images={[imgUrls]} />
         </section>
     );
 };

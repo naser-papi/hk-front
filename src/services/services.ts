@@ -6,6 +6,7 @@ import { ServiceDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { CategoryDto } from "@/types/dto/common";
+import { getStrapiPaginationQuery } from "@/helpers";
 
 export const GetTopServices = async () => {
     const apiInfo = ServicesAPIPath.getTopServices;
@@ -28,7 +29,7 @@ export const GetServiceList = async () => {
 };
 
 export const GetServicesUnionCategories = async () => {
-    const apiInfo = ServicesAPIPath.getServiceList;
+    const apiInfo = ServicesAPIPath.getServicesUnionCategories;
     const resp = await mainCall<ICMSListApiResponse<CategoryDto>>(apiInfo);
     if (resp && resp.data) {
         return resp.data.data;
@@ -40,6 +41,14 @@ export const GetFilteredServiceList = async () => {
     const url = headers().get("x-url")!;
     const { page, cat, filter } = GetUrlParams(url);
     const apiInfo = { ...ServicesAPIPath.getServiceList };
+    if (cat && cat !== "0") {
+        apiInfo.url += `&filters[category][id][$eq]=${cat}`;
+    }
+    if (filter) {
+        apiInfo.url += `&filters[$or][0][title][$containsi]=${filter}&filters[$or][1][shortDesc][$containsi]=${filter}`;
+    }
+    apiInfo.url += getStrapiPaginationQuery(1, 10);
+
     const resp = await mainCall<ICMSListApiResponse<ServiceDto>>(apiInfo);
     if (resp && resp.data) {
         return resp.data.data;

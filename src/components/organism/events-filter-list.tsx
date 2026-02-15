@@ -1,10 +1,13 @@
 import { Container, EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
-import { GetEventList, GetEventsUnionCategories } from "@/services/events";
+import {
+    GetEventsUnionCategories,
+    GetFilteredEventList,
+} from "@/services/events";
 
 const EventsFilterList = async () => {
-    const list = await GetEventList();
+    const list = await GetFilteredEventList();
     const catList = await GetEventsUnionCategories();
     const noData = !list || !list.length;
     const cards = noData ? (
@@ -22,6 +25,7 @@ const EventsFilterList = async () => {
                 eventType={item.eventType}
                 eventTimeInDay={item.eventTimeInDay}
                 repeatType={item.repeatType}
+                verticalLayout={false}
                 href={`/events/${item.documentId}`}
             />
         ))

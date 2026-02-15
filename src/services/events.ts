@@ -60,7 +60,7 @@ export const GetFilteredEventList = async () => {
         apiInfo.url += `&filters[category][id][$eq]=${cat}`;
     }
     if (filter) {
-        apiInfo.url += `&filters[$or][0][title][$containsi]=${filter}&filters[$or][1][shortDesc][$containsi]=${filter}`;
+        apiInfo.url += `&filters[$or][0][title][$containsi]=${filter}&filters[$or][1][shortDesc][$containsi]=${filter}&filters[$or][2][subTitle][$containsi]=${filter}`;
     }
     apiInfo.url += getStrapiPaginationQuery(1, 10);
     const resp = await mainCall<ICMSListApiResponse<EventDto>>(apiInfo);
