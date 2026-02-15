@@ -1,18 +1,18 @@
-import TopNav from "@/components/template/top-nav";
-import MobileMenu from "@/components/template/mobile-menu";
-import { ServiceDetailBanner } from "@/components/organism";
+import { GetServiceDetail } from "@/services/services";
+import { ImagesCarousel, NoData } from "@/components/molecule";
 
-const ServiceDetailHero = () => {
+const ServiceDetailHero = async () => {
+    const info = await GetServiceDetail();
+    if (!info) return <NoData />;
+    const imgUrls = info.bannerMedia?.url;
     return (
         <section
-            id={"service-detail-hero"}
+            id={"blog-detail-hero"}
             className={
-                "template bg-primary [&_.detail-page-banner]:mt-4 [&_.info-box:last-of-type]:w-auto"
+                "template bg-primary !p-0 [&_.images-carousel]:aspect-video [&_.images-carousel]:min-w-full"
             }
         >
-            <TopNav />
-            <ServiceDetailBanner />
-            <MobileMenu />
+            <ImagesCarousel images={[imgUrls]} />
         </section>
     );
 };

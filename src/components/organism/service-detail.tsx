@@ -1,21 +1,21 @@
 import { NoData, VideoPlayer } from "@/components/molecule";
-import { GetServiceDetail } from "@/services/services";
 import { normalizeHTMLContent } from "@/helpers";
+import { HtmlViewer } from "@/components/atom";
+import { ServiceDto } from "@/types/dto";
 
-const ServiceDetail = async () => {
-    const info = await GetServiceDetail();
+interface ServiceDetailProps {
+    info: ServiceDto;
+}
+const ServiceDetail = async ({ info }: ServiceDetailProps) => {
     if (!info) return <NoData />;
     const replacedFontFS = normalizeHTMLContent(info.firstSection);
     const replacedFontSS = normalizeHTMLContent(info.secondSection);
     return (
         <div className={"content-detail-body"}>
-            <article
-                dangerouslySetInnerHTML={{ __html: replacedFontFS }}
-            ></article>
+            <h3>{info.shortDesc}</h3>
+            <HtmlViewer content={replacedFontFS} />
             <VideoPlayer url={info.videoUrl} />
-            <article
-                dangerouslySetInnerHTML={{ __html: replacedFontSS }}
-            ></article>
+            <HtmlViewer content={replacedFontSS} />
         </div>
     );
 };

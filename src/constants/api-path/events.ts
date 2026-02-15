@@ -29,6 +29,10 @@ export const EventsAPIPath = {
             cache: "no-cache",
         },
     },
+    getEventsUnionCategories: {
+        method: "GET",
+        url: "api/events/union-categories",
+    },
     getEventDetail: {
         method: "GET",
         url: `api/events/{uuid}?${EventsPopulateQuery}`,

@@ -4,16 +4,35 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/some ui style issues.">
+    <list default="true" id="87798913-f5c4-4d7b-9cfe-75f425672048" name="Changes" comment="bugfix/blog list filter">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/[locale]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/atom/text-box.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/atom/text-box.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/blogs-filter-list.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/filter-list-container.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/blog-detail-content.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/blogs/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/blogs/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/events/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/services/[uuid]/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/services/[uuid]/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/[locale]/services/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/event-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/list-banner-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/molecule/service-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/event-banner-carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/events-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/links-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/service-detail.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/organism/services-filter-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/detail-content-header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/events-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/events-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/service-detail-content.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/service-detail-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/service-detail-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/services-hero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services-hero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template/services-list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template/services-list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/external-links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/api-path/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/api-path/services.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/base.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/base.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants/locale/en/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/en/common.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/locale/fa/common.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/blogs.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/blogs.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/events.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/events.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/external-links.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/external-links.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/services.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/services.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,44 +91,44 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Node.js.events.ts.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "dev",
-    "ignore.virus.scanning.warn.message": "true",
-    "javascript.preferred.runtime.type.id": "node",
-    "js.debugger.nextJs.config.created.client": "true",
-    "js.debugger.nextJs.config.created.server": "true",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/projects/hk-app/hk-front",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "D:/projects/hk-app/hk-front/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/naser/Projects/hk-front/node_modules/prettier",
-    "settings.editor.selected.configurable": "ml.llm.LLMConfigurable",
-    "to.speed.mode.migration.done": "true",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_MARK_IGNORED_FILES_AS_EXCLUDED&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.events.ts.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultAutoModeForALLUsers.v1&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/projects/hk-app/hk-front&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;D:/projects/hk-app/hk-front/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/naser/Projects/hk-front/node_modules/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;ml.llm.LLMConfigurable&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -121,10 +140,10 @@
   </component>
   <component name="RecapSpentCounter">
     <option name="endsOfQuotaMs" value="1773313224177" />
-    <option name="spentUsd" value="0.01125275" />
+    <option name="spentUsd" value="0.10399925" />
   </component>
   <component name="RecapUselessUpdatesCounter">
-    <option name="suspendCountdown" value="9" />
+    <option name="suspendCountdown" value="4" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -368,15 +387,8 @@
       <workItem from="1765048004834" duration="3564000" />
       <workItem from="1770996753948" duration="460000" />
       <workItem from="1770997350818" duration="3358000" />
-      <workItem from="1771099046275" duration="2311000" />
-    </task>
-    <task id="LOCAL-00054" summary="fixed a bug">
-      <option name="closed" value="true" />
-      <created>1736752843026</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1736752843026</updated>
+      <workItem from="1771099046275" duration="4783000" />
+      <workItem from="1771157933969" duration="10008000" />
     </task>
     <task id="LOCAL-00055" summary="fixed the default language to fa">
       <option name="closed" value="true" />
@@ -762,7 +774,15 @@
       <option name="project" value="LOCAL" />
       <updated>1771000548724</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="bugfix/blog list filter">
+      <option name="closed" value="true" />
+      <created>1771101488233</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1771101488233</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -783,7 +803,6 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="refactored the side menu" />
     <MESSAGE value="comments part 1" />
     <MESSAGE value="fixed the banner images size calculation" />
     <MESSAGE value="comments part 2" />
@@ -808,7 +827,8 @@
     <MESSAGE value="removed the fontawsome" />
     <MESSAGE value="deploy on VPS" />
     <MESSAGE value="bugfix/some ui style issues." />
-    <option name="LAST_COMMIT_MESSAGE" value="bugfix/some ui style issues." />
+    <MESSAGE value="bugfix/blog list filter" />
+    <option name="LAST_COMMIT_MESSAGE" value="bugfix/blog list filter" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

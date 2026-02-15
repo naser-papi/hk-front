@@ -10,52 +10,93 @@ const variants = cva(
         "w-full",
         "flex",
         "flex-col",
-        "p-4",
-        "gap-8",
+        "overflow-hidden",
         "bg-white",
         "text-primary",
-        "items-center",
         "rounded-lg",
         "drop-shadow-lg",
-        "[&>.hk-button]:w-full",
-        "w-[300px]",
-        "[&>img]:w-[70px]",
-        "[&>img]:h-[70px]",
-        "[&>h3]:text-title",
-        "[&>p]:text-desc",
-        "[&>p]:text-altLight",
-        "[&>p]:text-center",
-        "md:[&>img]:w-[140px]",
-        "md:[&>img]:h-[140px]",
-        "md:[&>h3]:text-3xl",
-        "md:[&>p]:text-2xl",
-        "md:[&>.link-button]:text-2xl",
     ],
     {
-        variants: {},
+        variants: {
+            verticalLayout: {
+                true: ["md:flex-col"],
+                false: ["md:flex-row"],
+            },
+        },
+        defaultVariants: {
+            verticalLayout: false,
+        },
     }
 );
 
+const imageContainerVariants = cva(["relative", "min-h-[360px]", "w-full"], {
+    variants: {
+        verticalLayout: {
+            true: ["md:w-full"],
+            false: ["md:w-1/2"],
+        },
+    },
+    defaultVariants: {
+        verticalLayout: false,
+    },
+});
+
+const contentVariants = cva(
+    ["flex", "flex-col", "justify-between", "p-6", "gap-4", "w-full"],
+    {
+        variants: {
+            verticalLayout: {
+                true: ["md:w-full"],
+                false: ["md:w-1/2"],
+            },
+        },
+        defaultVariants: {
+            verticalLayout: false,
+        },
+    }
+);
+
+const titleVariants = cva(["text-title", "font-semibold", "md:text-3xl"]);
+
+const descriptionVariants = cva(["text-desc", "flex-grow", "md:text-2xl"]);
+
 interface ServiceCardProps
-    extends BaseHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof variants> {
+    extends BaseHTMLAttributes<HTMLDivElement>, VariantProps<typeof variants> {
     ikUrl: string;
     title: string;
     description: string;
     href: string;
 }
 
-const ServiceCard = ({ title, ikUrl, description, href }: ServiceCardProps) => {
+const ServiceCard = ({
+    title,
+    ikUrl,
+    description,
+    href,
+    verticalLayout,
+}: ServiceCardProps) => {
     return (
-        <div className={variants({})}>
-            <ImageKit src={ikUrl} alt={title} width={70} height={70} loading="lazy" />
-            <h3>{title}</h3>
-            <p>{description}</p>
-            <LinkButton
-                label={trans("common.readMore")}
-                href={href}
-                variant={"tertiary"}
-            />
+        <div className={variants({ verticalLayout })}>
+            <div className={imageContainerVariants({ verticalLayout })}>
+                <ImageKit
+                    src={ikUrl}
+                    alt={title}
+                    fill
+                    className="object-cover"
+                    loading="lazy"
+                />
+            </div>
+            <div className={contentVariants({ verticalLayout })}>
+                <div className="flex flex-col gap-3">
+                    <h3 className={titleVariants()}>{title}</h3>
+                    <p className={descriptionVariants()}>{description}</p>
+                </div>
+                <LinkButton
+                    label={trans("common.readMore")}
+                    href={href}
+                    variant={"tertiary"}
+                />
+            </div>
         </div>
     );
 };

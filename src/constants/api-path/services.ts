@@ -25,6 +25,10 @@ export const ServicesAPIPath = {
         method: "GET",
         url: `api/services?${ServicesFieldsQuery}&${ServicesPopulateQuery}`,
     },
+    getServicesUnionCategories: {
+        method: "GET",
+        url: "api/services/union-categories",
+    },
     getServiceDetail: {
         method: "GET",
         url: `api/services/{uuid}?${ServicesPopulateQuery}`,

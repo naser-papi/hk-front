@@ -5,6 +5,7 @@ import { IAPIResponse, ICMSListApiResponse } from "@/types/base";
 import { ServiceDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
+import { CategoryDto } from "@/types/dto/common";
 
 export const GetTopServices = async () => {
     const apiInfo = ServicesAPIPath.getTopServices;
@@ -24,6 +25,15 @@ export const GetServiceList = async () => {
     } else {
         return [] as ServiceDto[];
     }
+};
+
+export const GetServicesUnionCategories = async () => {
+    const apiInfo = ServicesAPIPath.getServiceList;
+    const resp = await mainCall<ICMSListApiResponse<CategoryDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    }
+    return [] as CategoryDto[];
 };
 
 export const GetFilteredServiceList = async () => {

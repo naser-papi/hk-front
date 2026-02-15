@@ -1,10 +1,14 @@
-import { GetLinksList } from "@/services/external-links";
+import {
+    GetLinksList,
+    GetLinksUnionCategories,
+} from "@/services/external-links";
 import { Container, ExternalLink, NoData } from "@/components/molecule";
 import { LinkDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
 
 const LinksFilterList = async () => {
     const list = await GetLinksList();
+    const catList = await GetLinksUnionCategories();
     const noData = !list || !list.length;
     const cards = noData ? (
         <NoData />
@@ -19,7 +23,7 @@ const LinksFilterList = async () => {
         ))
     );
     return (
-        <FilterListContainer list={list} route={"/links"}>
+        <FilterListContainer catList={catList} route={"/links"}>
             <Container
                 direction={"column"}
                 gap={"big"}

@@ -6,6 +6,7 @@ import { LinkDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
+import { CategoryDto } from "@/types/dto/common";
 
 export const GetLinksList = async () => {
     const url = headers().get("x-url")!;
@@ -24,6 +25,15 @@ export const GetLinksList = async () => {
     } else {
         return [] as LinkDto[];
     }
+};
+
+export const GetLinksUnionCategories = async () => {
+    const apiInfo = LinksAPIPath.getLinksUnionCategories;
+    const resp = await mainCall<ICMSListApiResponse<CategoryDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    }
+    return [] as CategoryDto[];
 };
 
 export const GetTopLinks = async () => {

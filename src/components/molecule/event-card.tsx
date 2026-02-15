@@ -3,7 +3,7 @@ import { cva, VariantProps } from "class-variance-authority";
 import trans from "@/helpers/i18n/server";
 import { BaseHTMLAttributes } from "react";
 import { FaCalendarDays, FaLocationDot, FaUsers } from "react-icons/fa6";
-import { ImageKit, IconLabel, Button } from "@/components/atom";
+import { Button, IconLabel, ImageKit } from "@/components/atom";
 import { formatLocaleString } from "@/helpers";
 import { RepeatType } from "@/types/base";
 import { GetLocaleFromCookie } from "@/services/common";
@@ -16,7 +16,6 @@ const cardVariants = cva(
         "overflow-hidden",
         "shadow-md",
         "flex",
-        "flex-col",
         "w-full",
         "transition-shadow",
         "hover:shadow-lg",
@@ -31,8 +30,29 @@ const cardVariants = cva(
     }
 );
 
+const imageContainerVariants = cva(["w-1/2", "relative", "min-h-[300px]"]);
+
+const contentVariants = cva([
+    "w-1/2",
+    "flex",
+    "flex-col",
+    "justify-between",
+    "p-6",
+    "gap-4",
+]);
+
+const titleVariants = cva([
+    "text-xl",
+    "font-bold",
+    "text-gray-900",
+    "line-clamp-2",
+]);
+
+const descriptionVariants = cva(["text-gray-600", "text-sm", "line-clamp-2"]);
+
 interface EventCardProps
-    extends BaseHTMLAttributes<HTMLDivElement>,
+    extends
+        BaseHTMLAttributes<HTMLDivElement>,
         VariantProps<typeof cardVariants> {
     ikUrl: string;
     title: string;
@@ -44,6 +64,7 @@ interface EventCardProps
     repeatType: RepeatType;
     address?: string;
     spotsAvailable?: number;
+    verticalLayout?: boolean;
 }
 
 const EventCard = ({
@@ -57,13 +78,13 @@ const EventCard = ({
     spotsAvailable,
 }: EventCardProps) => {
     const locale = GetLocaleFromCookie();
-    
+
     // Format date nicely: "October 20, 2025 - 3:00 PM CET"
     const formatDateForDisplay = (dateString: string): string => {
         if (!dateString) return "";
         const dateObj = new Date(dateString);
         const isRTL = locale === "fa";
-        
+
         // Format date part
         const dateOptions: Intl.DateTimeFormatOptions = {
             month: "long",
@@ -74,7 +95,7 @@ const EventCard = ({
             isRTL ? "fa-IR" : "en-US",
             dateOptions
         );
-        
+
         // Format time part
         const timeOptions: Intl.DateTimeFormatOptions = {
             hour: "numeric",
@@ -85,7 +106,7 @@ const EventCard = ({
             isRTL ? "fa-IR" : "en-US",
             timeOptions
         );
-        
+
         // Combine with separator
         return `${datePart} - ${timePart}`;
     };
@@ -102,20 +123,17 @@ const EventCard = ({
     return (
         <div className={cardVariants({ eventType })}>
             {/* Image Container with Badge */}
-            <div className="relative w-full aspect-[4/3] overflow-hidden rounded-t-lg">
+            <div className={imageContainerVariants()}>
                 <ImageKit
                     src={ikUrl}
                     alt={title}
-                    className="w-full h-full object-cover"
-                    width={400}
-                    height={300}
+                    fill
+                    className="object-cover"
                 />
                 {/* Badge Overlay */}
                 <div
-                    className={`absolute top-3 right-3 px-3 py-1 rounded-full text-white text-sm font-semibold ${
-                        eventType === "Online"
-                            ? "bg-blue-600"
-                            : "bg-green-600"
+                    className={`absolute right-3 top-3 rounded-full px-3 py-1 text-sm font-semibold text-white ${
+                        eventType === "Online" ? "bg-blue-600" : "bg-green-600"
                     }`}
                 >
                     {eventType === "Online"
@@ -125,55 +143,51 @@ const EventCard = ({
             </div>
 
             {/* Content Section */}
-            <div className="p-5 flex flex-col gap-4 flex-grow">
-                {/* Title */}
-                <h3 className="text-xl font-bold text-gray-900 line-clamp-2">
-                    {title}
-                </h3>
+            <div className={contentVariants()}>
+                <div className="flex flex-col gap-3">
+                    {/* Title */}
+                    <h3 className={titleVariants()}>{title}</h3>
 
-                {/* Description */}
-                <p className="text-gray-600 text-sm line-clamp-2 flex-grow">
-                    {desc}
-                </p>
+                    {/* Description */}
+                    <p className={descriptionVariants()}>{desc}</p>
 
-                {/* Info Lines */}
-                <div className="flex flex-col gap-2">
-                    {/* Date/Time */}
-                    <IconLabel
-                        icon={FaCalendarDays}
-                        label={formatDateForDisplay(date)}
-                        variant="primary"
-                    />
-
-                    {/* Location/Platform */}
-                    <IconLabel
-                        icon={FaLocationDot}
-                        label={getLocationText()}
-                        variant="primary"
-                    />
-
-                    {/* Spots Available (optional) */}
-                    {spotsAvailable !== undefined && (
+                    {/* Info Lines */}
+                    <div className="flex flex-col gap-2">
+                        {/* Date/Time */}
                         <IconLabel
-                            icon={FaUsers}
-                            label={formatLocaleString(
-                                trans("common.spotsAvailable"),
-                                spotsAvailable.toString()
-                            )}
+                            icon={FaCalendarDays}
+                            label={formatDateForDisplay(date)}
                             variant="primary"
                         />
-                    )}
+
+                        {/* Location/Platform */}
+                        <IconLabel
+                            icon={FaLocationDot}
+                            label={getLocationText()}
+                            variant="primary"
+                        />
+
+                        {/* Spots Available (optional) */}
+                        {spotsAvailable !== undefined && (
+                            <IconLabel
+                                icon={FaUsers}
+                                label={formatLocaleString(
+                                    trans("common.spotsAvailable"),
+                                    spotsAvailable.toString()
+                                )}
+                                variant="primary"
+                            />
+                        )}
+                    </div>
                 </div>
 
                 {/* Register Now Button */}
-                <div className="mt-2">
-                    <Button
-                        label={trans("common.registerNow")}
-                        variant="primary"
-                        link={href}
-                        className="w-full bg-orange-500 hover:bg-orange-600"
-                    />
-                </div>
+                <Button
+                    label={trans("common.registerNow")}
+                    variant="primary"
+                    link={href}
+                    className="w-full bg-orange-500 hover:bg-orange-600"
+                />
             </div>
         </div>
     );

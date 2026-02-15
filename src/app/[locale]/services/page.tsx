@@ -1,8 +1,14 @@
-import { Footer, ServicesHero, ServicesList } from "@/components/template";
+import {
+    Footer,
+    MainHeader,
+    ServicesHero,
+    ServicesList,
+} from "@/components/template";
 
 const ServicesPage = () => {
     return (
         <main className="page-default-container">
+            <MainHeader />
             <ServicesHero />
             <ServicesList />
             <Footer />

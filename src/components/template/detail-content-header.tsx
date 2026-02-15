@@ -18,7 +18,7 @@ const DetailContentHeader = ({ title, meta }: DetailContentHeaderProps) => {
     return (
         <header className="flex-start flex w-full flex-col gap-8 border-b border-gray-600 pb-4">
             <h1 className="text-3xl font-bold sm:text-4xl">{title}</h1>
-            {cards && cards.length && (
+            {cards && cards.length > 0 && (
                 <article
                     className={
                         "flex max-w-sm flex-wrap items-center gap-4 sm:max-w-lg md:max-w-none"

@@ -18,7 +18,11 @@ const EventBannerCarousel = async () => {
             navDirection={getNavDirection(list.length, index)}
         />
     ));
-    return <article className={"carousel-container"}>{cards}</article>;
+    return (
+        <article className={"carousel-container bg-secondary p-4"}>
+            {cards}
+        </article>
+    );
 };
 
 export default EventBannerCarousel;

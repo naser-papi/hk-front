@@ -7,6 +7,7 @@ import { EventDto } from "@/types/dto";
 import { headers } from "next/headers";
 import { GetUrlParams } from "@/services/common";
 import { getStrapiPaginationQuery } from "@/helpers";
+import { CategoryDto } from "@/types/dto/common";
 
 export const GetRelatedEvents = async () => {
     const url = headers().get("x-url");
@@ -41,6 +42,15 @@ export const GetEventList = cache(async () => {
         return [] as EventDto[];
     }
 });
+
+export const GetEventsUnionCategories = async () => {
+    const apiInfo = EventsAPIPath.getEventsUnionCategories;
+    const resp = await mainCall<ICMSListApiResponse<CategoryDto>>(apiInfo);
+    if (resp && resp.data) {
+        return resp.data.data;
+    }
+    return [] as CategoryDto[];
+};
 
 export const GetFilteredEventList = async () => {
     const url = headers().get("x-url")!;

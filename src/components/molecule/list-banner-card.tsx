@@ -22,6 +22,7 @@ const variants = cva(
         "w-[min(calc(100vw-84px),531px)]",
         "shrink-0",
         "[&>img]:w-full",
+        "[&>img]:rounded-lg",
         "[&>h3]:text-xl",
         "md:[&>h3]:text-2xl",
         "lg:[&>h3]:text-3xl",
@@ -40,8 +41,7 @@ const variants = cva(
 );
 
 interface ListBannerCardProps
-    extends BaseHTMLAttributes<HTMLDivElement>,
-        VariantProps<typeof variants> {
+    extends BaseHTMLAttributes<HTMLDivElement>, VariantProps<typeof variants> {
     title: string;
     ikUrl: string;
     shortDesc: string;

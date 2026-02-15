@@ -13,6 +13,10 @@ export const LinksAPIPath = {
             cache: "no-cache",
         },
     },
+    getLinksUnionCategories: {
+        method: "GET",
+        url: "api/links/union-categories",
+    },
     getTopLinks: {
         method: "GET",
         url: `api/links?${LinksPopulateQuery}&${TopEntityQuery}`,

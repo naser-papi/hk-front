@@ -70,7 +70,8 @@ export default {
     allEvents: "All Events",
     usefulLinks: "Useful Links",
     usefulResources: "Useful Resources",
-    usefulResourcesDesc: "Quick access to helpful websites and official resources for your immigration journey",
+    usefulResourcesDesc:
+        "Quick access to helpful websites and official resources for your immigration journey",
     allLinks: "All Links",
     getInTouch: "Get in touch",
     haveAQuestion: "Have be any question?\n" + "feel free to Contact",
@@ -123,24 +124,33 @@ export default {
     eventDetails: "Event Details",
     addToCalendar: "Add to your Calendar",
     latestArticles: "Latest Articles",
-    latestArticlesDesc:"Stay informed with our latest immigration guides and tips",
-    topServices:"Latest Services",
-    topServicesDesc:"See our latest services for immigration to the Netherlands",
+    latestArticlesDesc:
+        "Stay informed with our latest immigration guides and tips",
+    topServices: "Latest Services",
+    topServicesDesc:
+        "See our latest services for immigration to the Netherlands",
     upcomingEvents: "Upcoming Events",
-    upcomingEventsDesc: "Join our workshops, webinars, and consultation sessions",
+    upcomingEventsDesc:
+        "Join our workshops, webinars, and consultation sessions",
     registerNow: "Register Now",
     spotsAvailable: "{0} spots available",
     onlinePlatform: "Online ({0})",
     readyToStartJourney: "Ready to Start Your Journey?",
-    ctaDescription: "Let our experienced team guide you through the immigration process. Contact us today for a free consultation.",
+    ctaDescription:
+        "Let our experienced team guide you through the immigration process. Contact us today for a free consultation.",
     getFreeConsultation: "Get Free Consultation",
     quickLinks: "Quick Links",
     home: "Home",
     aboutHollandKade: "About Holland Kade",
-    over10YearsExperience: "Over 10 years of experience in immigration consulting.",
+    over10YearsExperience:
+        "Over 10 years of experience in immigration consulting.",
     followUs: "Follow Us",
-    stayConnectedSocialMedia: "Stay connected on social media for updates and immigration tips.",
-    blogsHeader:"Immigration Blog",
-    blogsHeaderDesc:"Expert insights, guides, and updates on Netherlands immigration",
-
+    stayConnectedSocialMedia:
+        "Stay connected on social media for updates and immigration tips.",
+    blogsHeader: "Immigration Blog",
+    blogsHeaderDesc:
+        "Expert insights, guides, and updates on Netherlands immigration",
+    servicesHeader: "Immigration Services",
+    servicesHeaderDesc:
+        "Professional visa and immigration consulting services for the Netherlands",
 };

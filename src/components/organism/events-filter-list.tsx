@@ -1,10 +1,11 @@
 import { Container, EventCard, NoData } from "@/components/molecule";
 import { EventDto } from "@/types/dto";
 import FilterListContainer from "@/components/organism/filter-list-container";
-import { GetEventList } from "@/services/events";
+import { GetEventList, GetEventsUnionCategories } from "@/services/events";
 
 const EventsFilterList = async () => {
     const list = await GetEventList();
+    const catList = await GetEventsUnionCategories();
     const noData = !list || !list.length;
     const cards = noData ? (
         <NoData />
@@ -26,7 +27,7 @@ const EventsFilterList = async () => {
         ))
     );
     return (
-        <FilterListContainer list={list} route={"/events"}>
+        <FilterListContainer catList={catList} route={"/events"}>
             <Container
                 direction={"column"}
                 gap={"big"}
